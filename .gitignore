@@ -1,0 +1,8 @@
+outputs/*.xlsx
+outputs/*.csv
+*.env
+.env*
+__pycache__/
+*.pyc
+clients/
+confidentiel/

@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/recherche_entreprises.py:*)",
+      "Bash(python3 scripts/bodacc.py:*)",
+      "Bash(python3 scripts/sec_edgar.py:*)",
+      "Bash(pip install:*)",
+      "Read(./**)",
+      "Write(./outputs/**)",
+      "WebSearch",
+      "WebFetch"
+    ],
+    "deny": [
+      "Read(./**/*.env)",
+      "Read(./**/.env*)",
+      "Read(~/.ssh/**)",
+      "Read(./**/*secret*)",
+      "Read(./**/*credential*)",
+      "Read(./clients/**)",
+      "Read(./confidentiel/**)",
+      "Write(./CLAUDE.md)",
+      "Write(./SOURCES.md)"
+    ]
+  }
+}
