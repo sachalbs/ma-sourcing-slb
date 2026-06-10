@@ -1,0 +1,60 @@
+639 | Crypto mining | USD 349.8 M | 2024 | https://news.moomoo.com/notice/304320967/bitdeer-technologies-20-f-registration-statement-annual-report-transition-report | Mid cap 200M-1Md | Oui
+640 | Crypto mining | n.d. | n.d. | n.d. | n.d. | Non
+641 | Crypto mining | n.d. | n.d. | n.d. | n.d. | Non
+642 | Crypto mining | USD 269.3 M | 2024 | https://investor.canaan-creative.com/news-releases/news-release-details/canaan-inc-reports-unaudited-fourth-quarter-and-full-year-2024/ | Mid cap 200M-1Md | Oui
+643 | IA / Numérique | JPY 277.41 Md | 2024 | https://stockanalysis.com/quote/otc/GMOYF/revenue/ | Large cap / groupe >1 Md | Oui
+644 | IA / Numérique | JPY 225.4 Md | 2024 | https://www.sbigroup.co.jp/english/investors/disclosure/presentation/pdf/250509presentations.pdf | Large cap / groupe >1 Md | Oui
+645 | Quantique | TWD 2 894 Md | 2024 | https://investor.tsmc.com/static/annualReports/2024/english/index.html | Large cap / groupe >1 Md | Oui
+646 | Quantique | TWD 530.6 Md | 2024 | https://stockanalysis.com/quote/tpe/2454/revenue/ | Large cap / groupe >1 Md | Oui
+647 | Quantique | TWD 6 860 Md | 2024 | https://www.foxconn.com/en-us/press-center/press-releases/latest-news/1554 | Large cap / groupe >1 Md | Oui
+648 | Quantique | TWD 1 410 Md | 2024 | https://stockanalysis.com/quote/tpe/2382/revenue/ | Large cap / groupe >1 Md | Oui
+649 | Quantique | TWD 421.1 Md | 2024 | https://filecenter.deltaww.com/ir/download/financial_report/Q42024_eng_Consolidated%20Financial%20Report.pdf | Large cap / groupe >1 Md | Oui
+650 | Quantique | KRW 300 875 Md | 2024 | https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2024-results | Large cap / groupe >1 Md | Oui
+651 | Quantique | KRW 66 193 Md | 2024 | https://news.skhynix.com/sk-hynix-announces-4q24-financial-results/ | Large cap / groupe >1 Md | Oui
+652 | Énergie | HKD 91.0 Md | 2024 | https://annualreport.clpgroup.com/AR2024/Snapshot/en/financial-performance.html | Large cap / groupe >1 Md | Oui
+653 | Énergie | KRW 94 001 Md | 2024 | https://cm.asiae.co.kr/en/article/2025022814314291606 | Large cap / groupe >1 Md | Oui
+729 | Énergie | BRL 40.18 Md | 2024 | https://www.macrotrends.net/stocks/charts/EBR.B/eletrobras/revenue | Large cap / groupe >1 Md | Oui
+730 | Énergie | BRL 39.8 Md | 2024 | https://ri.cemig.com.br/en | Large cap / groupe >1 Md | Oui
+731 | Énergie | USD 4.2 Md | 2024 | https://www.macrotrends.net/stocks/charts/ELP/companhia-paranaense-de-energia-copel/revenue | Large cap / groupe >1 Md | Oui
+732 | Énergie | BRL 11.22 Md | 2024 | https://stockanalysis.com/quote/bvmf/EGIE3/revenue/ | Large cap / groupe >1 Md | Oui
+733 | Énergie | BRL 3.78 Md | 2024 | https://stockanalysis.com/quote/bvmf/AESB3/revenue/ | Mid cap 200M-1Md | Oui
+734 | Énergie | BRL 11.39 Md | 2024 | https://stockanalysis.com/quote/bvmf/ENEV3/ | Large cap / groupe >1 Md | Oui
+735 | Énergie | BRL 42.63 Md | 2024 | https://companiesmarketcap.com/cpfl-energia/revenue/ | Large cap / groupe >1 Md | Oui
+736 | Énergie | USD 12.61 Md | 2024 | https://companiesmarketcap.com/enel-americas/revenue/ | Large cap / groupe >1 Md | Oui
+737 | Énergie | USD 1 576 M | 2024 | https://www.colbun.cl/home/2025/01/29/colbun-cierra-2024-con-ebitda-de-us642-4-millones | Mid cap 200M-1Md | Oui
+738 | Énergie | USD 4.22 Md | 2024 | https://companiesmarketcap.com/enel-chile/revenue/ | Large cap / groupe >1 Md | Oui
+739 | Énergie | COP 14.74 T | 2024 | https://stockanalysis.com/quote/bvc/ISA/revenue/ | Large cap / groupe >1 Md | Oui
+740 | Énergie | COP 7 972 Md | 2024 | https://www.valoraanalitik.com/grupo-energia-bogota-cerro-2024-con-ingresos-de-8-billones-y-un-ebitda-ajustado-de-51-billones/ | Large cap / groupe >1 Md | Oui
+741 | Énergie | MXN 667 Md | 2024 | https://www.cfe.gob.mx/finanzas/financial-economic-information/Quarterly%20Investor%20Presentations%20Doc/2024/120325_4T24_versi%C3%B3n%20ingl%C3%A9s_VFF.pdf | Large cap / groupe >1 Md | Oui
+742 | Énergie | USD 1 876 M | 2024 | https://www.sec.gov/Archives/edgar/data/0001469395/000129281425000808/ex99-1.htm | Mid cap 200M-1Md | Oui
+743 | Énergie | USD 6.2 Md | 2024 | https://www.zoominfo.com/c/pan-american-energy-llc/347331489 | Large cap / groupe >1 Md | Oui
+819 | Énergie | KES 56.3 Md | 2024 | https://kenyanwallstreet.com/kengens-profits-surge-35-5-to-kes-6-8-billion | Mid cap 200M-1Md | Oui
+820 | Énergie | ZAR 295.8 Md | 2024 | https://www.eskom.co.za/wp-content/uploads/2024/12/Eskom-results-presentation-2024.pdf | Large cap / groupe >1 Md | Oui
+821 | Quantique | USD 9.76 Md | 2024 | https://news.frontierafricareports.com/article/ocp-reports-solid-performance-in-2024-revenues-rea | Large cap / groupe >1 Md | Oui
+822 | Énergie | USD 45 Md | 2024 | https://sonatrach.com/wp-content/uploads/2025/12/RA_2024_EN_-08-dec.pdf | Large cap / groupe >1 Md | Oui
+823 | Énergie | ZAR 275.1 Md | 2024 | https://www.prnewswire.com/news-releases/sasol-limited-audited-financial-results-for-the-year-ended-30-june-2024-302226150.html | Large cap / groupe >1 Md | Oui
+824 | Quantique | USD 2.17 Md | 2024 | https://investor.exxaro.com/financialresults/annual-2024/ | Large cap / groupe >1 Md | Oui
+825 | Quantique | USD 5 202 M | 2024 | https://www.goldfields.com/reports/q4-2025/revenue.php | Large cap / groupe >1 Md | Oui
+826 | Quantique | ZAR 56.9 Md | 2024 | https://reports.sibanyestillwater.com/2024/ | Large cap / groupe >1 Md | Oui
+827 | Quantique | ZAR 86.4 Md | 2024 | https://stockanalysis.com/quote/otc/IMPUY/revenue/ | Large cap / groupe >1 Md | Oui
+828 | Quantique | USD 3 282 M | 2024 | https://www.nasdaq.com/articles/harmony-gold-minings-earnings-and-revenues-increase-fy24 | Large cap / groupe >1 Md | Oui
+829 | Quantique | ZAR 70.1 Md | 2024 | https://www.rttnews.com/3623064/kumba-iron-ore-fy-profit-slips-but-revenue-rises.aspx | Large cap / groupe >1 Md | Oui
+830 | Énergie | n.d. | n.d. | n.d. | n.d. | Non
+831 | Énergie | n.d. | n.d. | n.d. | n.d. | Non
+832 | Énergie | n.d. | n.d. | n.d. | n.d. | Non
+833 | Énergie | ZMW 30.8 Md | 2024 | https://diggers.news/business/2025/12/29/zescos-turnover-increased-to-k30-8-billion-in-2024-report/ | Mid cap 200M-1Md | Oui
+909 | Crypto mining | USD 184.1 M | 2024 | https://iren.com/investors/reports | Small cap <200M | Non
+910 | Énergie | AUD 13.6 Md | 2024 | https://stockanalysis.com/quote/asx/AGL/revenue/ | Large cap / groupe >1 Md | Oui
+911 | Énergie | AUD 16.18 Md | 2024 | https://stockanalysis.com/quote/otc/OGFGF/revenue/ | Large cap / groupe >1 Md | Oui
+912 | Énergie | AUD 7 197 M | 2024 | https://www.energyaustralia.com.au/about-us/media/news/energyaustralia-delivers-improved-performance | Large cap / groupe >1 Md | Oui
+913 | Énergie | NZD 4.86 Md | 2024 | https://www.meridianenergy.co.nz/about-us/investors/reports/annual-results-and-reports | Large cap / groupe >1 Md | Oui
+914 | Énergie | NZD 2.87 Md | 2024 | https://companiesmarketcap.com/nzd/contact-energy/revenue/ | Large cap / groupe >1 Md | Oui
+915 | Énergie | NZD 2.62 Md | 2024 | https://companiesmarketcap.com/nzd/genesis-energy/revenue/ | Large cap / groupe >1 Md | Oui
+916 | Énergie | NZD 3.43 Md | 2024 | https://www.listcorp.com/asx/mcy/mercury-nz-limited/news/fy2024-full-year-results-3070818.html | Large cap / groupe >1 Md | Oui
+917 | Énergie | NZD 3.24 Md | 2024 | https://infratil.com/news/infratil-full-year-results-for-the-year-ended-31-march-2024/ | Large cap / groupe >1 Md | Oui
+918 | Énergie | AUD 3.06 Md | 2024 | https://stockanalysis.com/quote/asx/APA/revenue/ | Large cap / groupe >1 Md | Oui
+919 | Data center / télécom / Software | AUD 404.3 M | 2024 | https://nextdc.com/hubfs/Financial%20Reports/280827%20-%20FY24%20Results%20Announcement.pdf | Mid cap 200M-1Md | Oui
+920 | Data center / télécom / Software | AUD 363.3 M | 2024 | https://www.macquarietechnologygroup.com/assets/wp-content/uploads/2024/09/MAQ-2024-Appendix-4E-Annual-Report.pdf | Mid cap 200M-1Md | Oui
+921 | Data center / télécom / Software | AUD 416.6 M | 2024 | https://stockanalysis.com/quote/asx/SLC/revenue/ | Mid cap 200M-1Md | Oui
+922 | Data center / télécom / Software | NZD 3.86 Md | 2024 | https://uk.marketscreener.com/quote/stock/SPARK-NEW-ZEALAND-LIMITED-6492600/news/Spark-New-Zealand-Posts-Fiscal-2024-Revenue-Down-14-to-NZ-3-86-Billion-EPS-of-NZ-0-173-47716076/ | Large cap / groupe >1 Md | Oui
+923 | Data center / télécom / Software | AUD 23.5 Md | 2024 | https://www.telstra.com.au/content/dam/tcom/about-us/investors/pdf-g/telstra-annual-report-2024-interactive.pdf | Large cap / groupe >1 Md | Oui
