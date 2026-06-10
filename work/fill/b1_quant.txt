@@ -1,0 +1,35 @@
+40 | GBP 510 M | FY2024/25 | https://www.oxinst.com/assets/uploads/Investor/Oxford%20Instruments%20preliminary%20FY%20results%202024-25_13%20June%202025.pdf | Mid cap 200M-1Md
+43 | EUR 10.894 Md | FY2023/24 | https://www.zeiss.com/corporate/en/about-zeiss/present/newsroom/press-releases/2024/end-of-year.html | Large cap / groupe >1 Md
+45 | EUR 1.116 Md | FY2024 | https://www.jenoptik.com/news/pressreleases/2025/03/25/results-of-fiscal-year-2024 | Large cap / groupe >1 Md
+46 | EUR 5.2 Md | FY2023/24 | https://www.trumpf.com/en_INT/company/newsroom/ | Large cap / groupe >1 Md
+121 | USD 38.5 Md | FY2024 | https://investor.honeywell.com/news-releases/news-release-details/honeywell-announces-fourth-quarter-and-full-year-2024-results | Large cap / groupe >1 Md
+122 | USD 4.98 Md | FY2024 | https://investor.keysight.com/investor-news-and-events/financial-press-releases/press-release-details/2024/Keysight-Technologies-Reports-Fourth-Quarter-and-Fiscal-Year-2024-Results/default.aspx | Large cap / groupe >1 Md
+129 | USD 4.708 Md | FY2024 | https://www.globenewswire.com/news-release/2024/08/15/2931247/11543/en/Coherent-Corp-Reports-Fourth-Quarter-and-Full-Year-Fiscal-2024-Results.html | Large cap / groupe >1 Md
+130 | USD 4.641 Md | FY2024 | https://stockanalysis.com/stocks/cdns/revenue/ | Large cap / groupe >1 Md
+131 | USD 6.127 Md | FY2024 | https://www.sec.gov/Archives/edgar/data/0000883241/000119312524270723/d868165dex991.htm | Large cap / groupe >1 Md
+132 | USD 27.18 Md | FY2024 | https://www.globenewswire.com/news-release/2024/11/14/2981573/0/en/Applied-Materials-Announces-Fourth-Quarter-and-Fiscal-Year-2024-Results.html | Large cap / groupe >1 Md
+133 | USD 14.91 Md | FY2024 | https://www.sec.gov/Archives/edgar/data/0000707549/000070754924000099/lrcx_exhibitx991xq4x2024.htm | Large cap / groupe >1 Md
+134 | USD 2.82 Md | FY2024 | https://www.sec.gov/Archives/edgar/data/0000097210/000095017024116845/ter-ex99_1.htm | Large cap / groupe >1 Md
+135 | USD 6.51 Md | FY2024 | https://www.investor.agilent.com/news-and-events/news/news-details/2024/Agilent-Reports-Fourth-Quarter-Fiscal-Year-2024-Financial-Results/default.aspx | Large cap / groupe >1 Md
+238 | USD 12.1 Md | FY2024 | https://www.airproducts.com/company/news-center/2024/11/1107-air-products-fiscal-2024-fourth-quarter-earnings | Large cap / groupe >1 Md
+239 | EUR 27.058 Md | FY2024 | https://www.airliquide.com/group/press-releases-news/2025-02-21/2024-building-record-margin-improvement-and-major-commercial-successes-fueling-future-growth-air | Large cap / groupe >1 Md
+240 | USD 62.4 Md | FY2024 | https://www.sec.gov/Archives/edgar/data/0001243429/000124342925000020/exhibit99231125.htm | Large cap / groupe >1 Md
+241 | EUR 9.5 Md | FY2024 | https://www.arkema.com/usa/en/media/news/global/investorrelations/2025/20250227-arkema-2024-full-year-results/ | Large cap / groupe >1 Md
+242 | EUR 65.3 Md | FY2024 | https://www.basf.com/global/en/media/news-releases/2025/01/p-25-014 | Large cap / groupe >1 Md
+245 | USD 43.0 Md | FY2024 | https://investors.dow.com/en/news/news-details/2025/Dow-reports-fourth-quarter-2024-results/default.aspx | Large cap / groupe >1 Md
+246 | EUR 12.8 Md | FY2024 | https://our-company.dsm-firmenich.com/en/our-company/news/press-releases/2025/dsm-firmenich-reports-full-year-2024-results.html | Large cap / groupe >1 Md
+247 | USD 9.38 Md | FY2024 | https://www.businesswire.com/news/home/20250130973764/en/Eastman-Announces-Fourth-Quarter-and-Full-Year-2024-Financial-Results | Large cap / groupe >1 Md
+248 | EUR 15.2 Md | FY2024 | https://www.evonik.com/en/news/press-releases/2025/03/Evonik-beats-results.html | Large cap / groupe >1 Md
+249 | EUR 11.95 Md | FY2024 | https://www.freudenberg.com/en/company/press-media/news-detail/2025-03-20-freudenberg-sees-strong-earnings-growth | Large cap / groupe >1 Md
+250 | USD 6.04 Md | FY2024 | https://www.huntsman.com/news/media-releases/detail/595/huntsman-announces-fourth-quarter-2024-earnings | Large cap / groupe >1 Md
+253 | USD 33.0 Md | FY2024 | https://www.sec.gov/Archives/edgar/data/0001707925/000165495425001186/linde_ex991.htm | Large cap / groupe >1 Md
+255 | SAR 139.98 Md | FY2024 | https://www.sabic.com/en/news/46714-sabic-full-year-2024-results | Large cap / groupe >1 Md
+256 | EUR 46.6 Md | FY2024 | https://www.saint-gobain.com/sites/saint-gobain.com/files/media/document/CP_Resultats_2024_VF_t.pdf | Large cap / groupe >1 Md
+257 | EUR 4.686 Md | FY2024 | https://www.globenewswire.com/news-release/2025/03/06/3037914/0/en/Solvay-fourth-quarter-and-full-year-2024-results.html | Large cap / groupe >1 Md
+333 | USD 23.9 Md | FY2024 | https://www.sec.gov/Archives/edgar/data/313616/000031361625000004/dhr-20250129xex991.htm | Large cap / groupe >1 Md
+334 | USD 3.37 Md | FY2024 | https://ir.bruker.com/press-releases/press-release-details/2025/Bruker-Reports-Fourth-Quarter-and-Full-Year-2024-Financial-Results/default.aspx | Large cap / groupe >1 Md
+335 | JPY 203.96 Md | FY2024 | https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/01_HQ/ir/financial-information/quarterly-financial-reports/h_ir_fr2024-year.pdf | Large cap / groupe >1 Md
+336 | JPY 317.37 Md | FY2024 | https://static.horiba.com/fileadmin/Horiba/Company/Investor_Relations/IR_Library/Financial_Statements/2022-/20250213_FL_en_b8Z.pdf | Large cap / groupe >1 Md
+337 | n.d. | n.d. | https://meetiqm.com/press-releases/iqm-quantum-computers-raises-over-300-million-in-series-b-funding-round/ | Small cap <200M
+338 | n.d. | n.d. | https://www.cbinsights.com/company/pasqal/financials | Small cap <200M
+339 | n.d. | n.d. | https://www.quandela.com/ | Small cap <200M

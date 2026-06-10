@@ -1,0 +1,66 @@
+47 | EUR 118.7 Md | FY2024 | https://www.edf.fr/sites/groupe/files/2025-02/annual-results-2024-pr-en-2025-02-21.pdf | Large cap / groupe >1 Md
+48 | EUR 73.8 Md | FY2024 | https://www.engie.com/en/investors/financial-publications/financial-results/financial-results-2024/ | Large cap / groupe >1 Md
+49 | EUR 78.9 Md | FY2024 | https://www.enel.com/content/dam/enel-common/press/en/2025-march/Enel%20results%20FY%202024ENG.pdf | Large cap / groupe >1 Md
+50 | EUR 44.7 Md | FY2024 | https://www.iberdrola.com/documents/20125/4923596/report-24FY.pdf | Large cap / groupe >1 Md
+51 | EUR 24.2 Md | FY2024 | https://www.rwe.com/en/press/rwe-ag/2025-03-20-rwe-achieves-strong-earnings-in-2024/ | Large cap / groupe >1 Md
+52 | EUR 86.0 Md | FY2024 | https://www.macrotrends.net/stocks/charts/EONGY/eon-se/revenue | Large cap / groupe >1 Md
+53 | EUR 5.79 Md | FY2024 | https://www.fortum.com/en/media/2025/02/fortum-financial-statements-bulletin-2024-good-generation-optimisation-warm-wet-and-windy-conditions-2024 | Large cap / groupe >1 Md
+54 | SEK 245.6 Md | FY2024 | https://group.vattenfall.com/press-and-media/pressreleases/2025/vattenfall--year-end-report-2024 | Large cap / groupe >1 Md
+55 | NOK 53.7 Md | FY2024 | https://www.globenewswire.com/news-release/2025/03/05/3037122/0/en/Strong-results-despite-lower-power-prices.html | Large cap / groupe >1 Md
+56 | EUR 14.97 Md | FY2024 | https://www.statista.com/statistics/1528838/edp-energias-de-portugal-revenue/ | Large cap / groupe >1 Md
+57 | GBP 10.5 Md | FY2023/24 | https://www.sse.com/annual-report-2024/ | Large cap / groupe >1 Md
+58 | DKK 71.0 Md | FY2024 | https://orsted.com/en/company-announcement-list/2025/02/delivering-operational-earnings-in-line-with-expec-142508951 | Large cap / groupe >1 Md
+59 | EUR 8.2 Md | FY2024 | https://www.verbund.com/en/group/news-press/press-releases/2025/3/20/corporate-news-verbund-2024-annual-results | Large cap / groupe >1 Md
+60 | CZK 344.7 Md | FY2024 | https://www.cez.cz/webpublic/file/edee/ospol/fileexport-s/pro-investory/informacni-povinnost-emitenta/2025-03/en-report-on-financial-results-4q2024.pdf | Large cap / groupe >1 Md
+61 | EUR 68.9 Md (est.) | FY2024 | https://companiesmarketcap.com/uniper/revenue/ | Large cap / groupe >1 Md
+74 | USD 32.8 Md | FY2024 | https://www.marketscreener.com/quote/stock/ABB-LTD-9365000/news/ABB-record-revenues-in-2024-48911094/ | Large cap / groupe >1 Md
+145 | USD 24.9 Md | FY2024 | https://www.eaton.com/us/en-us/company/news-insights/news-releases/2024/eaton-reports-record-fourth-quarter-2024-results.html | Large cap / groupe >1 Md
+146 | USD 34.1 Md | FY2024 | https://www.businesswire.com/news/home/20250204545887/en/Cummins-Reports-Strong-Fourth-Quarter-and-Full-Year-2024-Results-Incurs-Charges-Associated-with-Reorganization-of-Accelera | Large cap / groupe >1 Md
+147 | USD 64.8 Md | FY2024 | https://www.prnewswire.com/news-releases/caterpillar-reports-fourth-quarter-and-full-year-2024-results-302364343.html | Large cap / groupe >1 Md
+148 | USD 34.9 Md | FY2024 | https://www.gevernova.com/news/press-releases/ge-vernova-reports-fourth-quarter-full-year-2024-financial-results | Large cap / groupe >1 Md
+149 | USD 23.6 Md | FY2024 | https://investors.constellationenergy.com/news-releases/news-release-details/constellation-reports-fourth-quarter-and-full-year-2024-results | Large cap / groupe >1 Md
+150 | USD 2.07 Md | FY2024 | https://www.globenewswire.com/news-release/2025/02/27/3034317/0/en/Talen-Energy-Reports-Full-Year-2024-Results-Exceeds-2024-Guidance-and-Reaffirms-2025-Guidance.html | Large cap / groupe >1 Md
+178 | USD 19.7 Md | FY2024 | https://www.statista.com/statistics/726617/american-electric-power-revenue/ | Large cap / groupe >1 Md
+180 | USD 69.7 M | FY2024 | https://www.investing.com/news/sec-filings/ballard-power-announces-q4-2024-financial-results-93CH-3926758 | Small cap <200M
+181 | n.d. | n.d. | https://www.banpunext.co.th/ | n.d.
+182 | CHF 4.8 Md | FY2024 | https://www.bkw.ch/en/about-us/news/media/press-releases/default-00221e0b9e3607339c59df67df161422 | Large cap / groupe >1 Md
+183 | USD 86.0 Md | FY2024 | https://bn.brookfield.com/press-releases/brookfield-corporation-reports-record-2024-results | Large cap / groupe >1 Md
+184 | n.d. | n.d. | https://www.butagaz.fr | n.d.
+185 | USD 15.3 Md | FY2024 | https://investor.conedison.com/news-releases/news-release-details/con-edison-reports-2024-earnings | Large cap / groupe >1 Md
+186 | USD 14.5 Md | FY2024 | https://news.dominionenergy.com/press-releases/press-releases/2025/Dominion-Energy-announces-2024-financial-results/default.aspx | Large cap / groupe >1 Md
+187 | GBP 6.16 Md | FY2024 | https://www.drax.com/financial-news/full-year-results-for-the-twelve-months-ended-31-december-2024/ | Large cap / groupe >1 Md
+188 | USD 30.4 Md | FY2024 | https://www.macrotrends.net/stocks/charts/DUK/duke-energy/revenue | Large cap / groupe >1 Md
+189 | n.d. | n.d. | https://www.edfinvest.com | n.d.
+190 | EUR 2.4 Md (est.) | FY2024 | https://companiesmarketcap.com/edp-renovaveis/revenue/ | Large cap / groupe >1 Md
+191 | EUR 0.91 Md | FY2024 | https://www.macrotrends.net/stocks/charts/ENGGY/enagas-sa/revenue | Mid cap 200M-1Md
+192 | EUR 7.24 Md | FY2024 | https://news.eneco.com/solid-results-in-an-uncertain-market/ | Large cap / groupe >1 Md
+193 | EUR 78.9 Md | FY2024 | https://www.enel.com/content/dam/enel-common/press/en/2025-march/Enel%20results%20FY%202024ENG.pdf | Large cap / groupe >1 Md
+194 | EUR 73.8 Md | FY2024 | https://www.engie.com/en/investors/financial-publications/financial-results/financial-results-2024/ | Large cap / groupe >1 Md
+195 | EUR 23.3 Md | FY2024 | https://epgroup.eu/documents/aboutus/EP_Group_AR_2024.pdf | Large cap / groupe >1 Md
+196 | EUR 0.79 Md | FY2024 | https://www.marketscreener.com/quote/stock/ERG-S-P-A-76233/news/ERG-S-p-A-Reports-Earnings-Results-for-the-Full-Year-Ended-December-31-2024-49317963/ | Mid cap 200M-1Md
+197 | EUR 7.25 Md | FY2024 | https://esb.ie/media-centre-news/press-releases/article/2025/03/20/esb-group-announces-2024-annual-results | Large cap / groupe >1 Md
+198 | n.d. | n.d. | https://eren-groupe.com | n.d.
+199 | USD 23.0 Md | FY2024 | https://companiesmarketcap.com/exelon-corporation/revenue/ | Large cap / groupe >1 Md
+200 | EUR 0.61 Md | FY2024 | https://www.globenewswire.com/news-release/2025/03/27/3050832/0/en/Fluxys-Belgium-Regulated-information-2024-annual-results.html | Mid cap 200M-1Md
+201 | EUR 5.79 Md | FY2024 | https://www.fortum.com/en/media/2025/02/fortum-financial-statements-bulletin-2024-good-generation-optimisation-warm-wet-and-windy-conditions-2024 | Large cap / groupe >1 Md
+202 | n.d. | n.d. | https://www.frv.com | n.d.
+203 | EUR 1.60 Md | FY2024 | https://www.publicatiesgasunie.nl/en/2024-annual-report/key-figures | Large cap / groupe >1 Md
+204 | MYR 0.81 Md | FY2024 | https://www.gentari.com/insight/2024-year-focused-growth | Mid cap 200M-1Md
+205 | EUR 2.09 Md | FY2024 | https://www.natrangroupe.com/sites/default/files/ov/overview-2024.pdf | Large cap / groupe >1 Md
+206 | CHF 0.33 Md | FY2024/25 | https://www.schweizeraktien.net/blog/2025/07/23/holdigaz-operativer-gewinn-steigt-im-jubilaeumsjahr-2024-25-um-mehr-als-ein-drittel-69107/ | Mid cap 200M-1Md
+208 | EUR 17.9 Md | FY2024 | https://met.com/en/media/press-releases/strong-performance-reinforces-met-group-s-role-as-energy-transition-company/ | Large cap / groupe >1 Md
+209 | GBP 19.85 Md | FY2023/24 | https://www.statista.com/statistics/633869/national-grid-revenue-uk/ | Large cap / groupe >1 Md
+210 | EUR 19.3 Md | FY2024 | https://www.naturgy.com/files/Naturgy_2024_Results.pdf | Large cap / groupe >1 Md
+212 | USD 11.9 Md | FY2024 | https://www.businesswire.com/news/home/20250211270679/en/Eversource-Energy-Reports-Full-Year-Fourth-Quarter-2024-Results | Large cap / groupe >1 Md
+213 | USD 28.1 Md | FY2024 | https://www.businesswire.com/news/home/20250225063184/en/NRG-Energy-Inc.-Reports-Full-Year-2024-Financial-Results | Large cap / groupe >1 Md
+214 | AUD 15.97 Md | FY2024 (juin) | https://www.originenergy.com.au/about/investors-media/full-year-results-2024/ | Large cap / groupe >1 Md
+215 | DKK 71.0 Md | FY2024 | https://orsted.com/en/company-announcement-list/2025/02/delivering-operational-earnings-in-line-with-expec-142508951 | Large cap / groupe >1 Md
+216 | USD 0.63 Md | FY2024 | https://www.stocktitan.net/financials/PLUG/ | Mid cap 200M-1Md
+217 | EUR 24.2 Md | FY2024 | https://www.rwe.com/en/press/rwe-ag/2025-03-20-rwe-achieves-strong-earnings-in-2024/ | Large cap / groupe >1 Md
+218 | NOK 6.57 Md | FY2024 | https://www.pv-tech.org/scatec-revenue-drops-yoy-and-on-quarterly-basis-in-q4-2024/ | Large cap / groupe >1 Md
+219 | GBP 10.5 Md | FY2023/24 | https://www.sse.com/annual-report-2024/ | Large cap / groupe >1 Md
+220 | USD 13.2 Md | FY2024 | https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001032208&type=10-K | Large cap / groupe >1 Md
+221 | EUR 7.9 Md (est.) | FY2024 | https://annualreport.shv.nl/2024/care-for-performance/care-for-our-performance/financial-performance | Large cap / groupe >1 Md
+222 | EUR 34.5 Md | FY2024 (sept.) | https://www.siemens-energy.com/global/en/home/press-releases/earnings-release-q4-fy-2024.html | Large cap / groupe >1 Md
+223 | n.d. | n.d. | https://www.skens.com | Large cap / groupe >1 Md
+224 | EUR 3.56 Md | FY2024 | https://www.snam.it/en/media/news-and-press-releases/comunicati-stampa/2025/Snam-Financial-Results-2024.html | Large cap / groupe >1 Md

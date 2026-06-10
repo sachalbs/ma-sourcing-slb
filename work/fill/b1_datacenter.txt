@@ -1,0 +1,44 @@
+2 | EUR 993 M | FY2024 | https://corporate.ovhcloud.com/en-gb/newsroom/news/fy2024-annual-results/ | Mid cap 200M-1Md
+3 | EUR 1.56 Md | FY2024 | https://www.ionos-group.com/investor-relations/publications/announcements/ionos-with-full-year-2024-results-and-guidance-for-2025.html | Large cap / groupe >1 Md
+4 | EUR 25.7 Md | FY2024 | https://report.telekom.com/annual-report-2024/management-report/development-of-business-in-the-operating-segments/germany.html | Large cap / groupe >1 Md
+5 | EUR 115.8 Md | FY2024 | https://www.telekom.com/en/media/media-information/archive/financial-report-2024-1088068 | Large cap / groupe >1 Md
+6 | GBP 20.4 Md | FY2025 | https://newsroom.bt.com/results-for-the-full-year-to-31-march-2025/ | Large cap / groupe >1 Md
+7 | EUR 37.4 Md | FY2025 | https://investors.vodafone.com/~/media/Files/V/Vodafone-IR/documents/performance/financial-results/2025/vodafone-fy25-results-announcement.pdf | Large cap / groupe >1 Md
+8 | EUR 41.3 Md | FY2024 | https://www.telefonica.com/en/communication-room/press-room/telefonica-increases-revenue-e41315-million-2024-meets-financial-targets/ | Large cap / groupe >1 Md
+9 | CHF 11 Md | FY2024 | https://www.swisscom.ch/en/about/news/2025/02/13-results-2024.html | Large cap / groupe >1 Md
+10 | EUR 6.4 Md | FY2024 | https://www.proximus.com/news/2025/202502-financial-results-q4-2024.html | Large cap / groupe >1 Md
+11 | EUR 2.2 Md | FY2024 | https://news.cision.com/elisa-oyj/r/elisa-s-financial-statements-release-2024,c4098695 | Large cap / groupe >1 Md
+12 | NOK 79.9 Md | FY2024 | https://www.globenewswire.com/news-release/2025/02/06/3021705/0/en/Solid-2024-on-the-right-track-for-2025.html | Large cap / groupe >1 Md
+13 | SEK 89 127 M | FY2024 | https://www.teliacompany.com/en/news/telia-company-yearend-report-january-december-2024-2025-01-30-06-00-00 | Large cap / groupe >1 Md
+14 | EUR 5.41 Md | FY2024 | https://newsroom.a1.group/news-solid-financial-year-2024-for-a1-group-31-total-revenue-growth-51-ebitda-growth?id=212758&menueid=14594&l=english | Large cap / groupe >1 Md
+15 | EUR 2.19 Md | FY2024 | https://www.telecompaper.com/news/colt-group-revenues-grow-32-to-eur-22-billion-in-2024--1537229 | Large cap / groupe >1 Md
+16 | EUR 10 024 M | FY2024 | https://www.iliad.fr/media/2024_Financial_Report_iliad_Group_b3931d530f.pdf | Large cap / groupe >1 Md
+32 | EUR 19.9 Md | FY2024 | https://www.nokia.com/system/files/2025-01/nokia_results_2024_q4.pdf | Large cap / groupe >1 Md
+91 | USD 10.1 Md | FY2024 | https://www.businesswire.com/news/home/20250225731064/en/American-Tower-Corporation-Reports-Fourth-Quarter-and-Full-Year-2024-Financial-Results | Large cap / groupe >1 Md
+92 | USD 6.1 Md | FY2024 | https://investors.ironmountain.com/news/news-details/2025/Iron-Mountain-Reports-Fourth-Quarter-and-Full-Year-2024-Results/default.aspx | Large cap / groupe >1 Md
+93 | USD 13.1 Md | FY2024 | https://ir.lumen.com/news/news-details/2025/Lumen-Technologies-reports-fourth-quarter-and-full-year-2024-results/default.aspx | Large cap / groupe >1 Md
+94 | USD 1.04 Md | FY2024 | https://www.prnewswire.com/news-releases/cogent-communications-reports-fourth-quarter-and-full-year-2024-results-and-increases-its-regular-quarterly-dividend-on-its-common-stock-302386550.html | Large cap / groupe >1 Md
+95 | USD 2.58 Md | n.d. | https://en.wikipedia.org/wiki/Zayo_Group | Large cap / groupe >1 Md
+96 | CAD 20.6 Md | FY2024 | https://about.rogers.com/wp-content/uploads/Rogers-Q4-2024-Press-Release1.pdf | Large cap / groupe >1 Md
+97 | CAD 24.4 Md | FY2024 | https://www.bce.ca/news-and-media/releases/show/BCE-reports-2024-Q4-and-full-year-results-announces-2025-financial-targets | Large cap / groupe >1 Md
+98 | CAD 20.1 Md | FY2024 | https://www.sec.gov/Archives/edgar/data/0000868675/000110465925012538/tm251168d3_ex99-1.htm | Large cap / groupe >1 Md
+99 | n.d. | n.d. | https://www.flexential.com | n.d.
+100 | n.d. | n.d. | https://www.qtsdatacenters.com | n.d.
+101 | n.d. | n.d. | https://www.cyrusone.com | n.d.
+102 | n.d. | n.d. | https://www.switch.com | n.d.
+103 | n.d. | n.d. | https://www.databank.com | n.d.
+104 | n.d. | n.d. | https://aligneddc.com | n.d.
+105 | n.d. | n.d. | https://www.cologix.com | n.d.
+144 | USD 8.01 Md | FY2024 | https://investors.vertiv.com/financial-news/news-details/2024/Vertiv-Reports-Strong-Fourth-Quarter-with-Organic-Orders-Growth/default.aspx | Large cap / groupe >1 Md
+233 | EUR 1.1 Md | FY2024 | https://www.auto-infos.fr/article/tsg-group-franchit-le-cap-du-milliard-d-euros-de-chiffre-d-affaires.282642 | Large cap / groupe >1 Md
+298 | USD 638 Md | FY2024 | https://s2.q4cdn.com/299287126/files/doc_financials/2025/ar/Amazon-2024-Annual-Report.pdf | Large cap / groupe >1 Md
+307 | USD 8.75 Md | FY2024 | https://www.sec.gov/Archives/edgar/data/0001101239/000162828025005122/eqix-123124xpr.htm | Large cap / groupe >1 Md
+308 | USD 5.55 Md | FY2024 | https://www.prnewswire.com/news-releases/digital-realty-reports-fourth-quarter-2024-results-302376450.html | Large cap / groupe >1 Md
+309 | EUR 3.94 Md | FY2024 | https://www.cellnex.com/news/cellnex-growth-accelerated-path-results-2024/ | Large cap / groupe >1 Md
+310 | SEK 8.1 Md | FY2024 | https://www.mynewsdesk.com/globalconnect/pressreleases/globalconnect-delivered-strong-growth-in-2024-and-expanded-its-footprint-across-northern-europe-3384653 | Mid cap 200M-1Md
+311 | USD 53.8 Md | FY2024 | https://www.sec.gov/Archives/edgar/data/0000858877/000085887724000017/csco-20240727.htm | Large cap / groupe >1 Md
+312 | USD 7.0 Md | FY2024 | https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2025/Arista-Networks-Inc.-Reports-Fourth-Quarter-and-Year-End-2024-Financial-Results/ | Large cap / groupe >1 Md
+313 | JPY 13 705 Md | FY2024 | https://group.ntt/en/ir/library/results/2024/pdf/fy2024q4kessan0509e.pdf | Large cap / groupe >1 Md
+314 | JPY 5 918 Md | FY2024 | https://news.kddi.com/kddi/corporate/english/ir-news/2025/05/14/7639.html | Large cap / groupe >1 Md
+315 | SGD 14.15 Md | FY2025 | https://www.singtel.com/about-us/media-centre/news-releases/singtel-post-fy25-net-profit | Large cap / groupe >1 Md
+316 | INR 1 745.6 Md | FY2025 | https://www.airtel.in/about-bharti/equity/results/annual-results | Large cap / groupe >1 Md

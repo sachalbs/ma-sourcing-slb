@@ -1,0 +1,47 @@
+17 | EUR 34.2 Md | FY2024 | https://www.prnewswire.com/news-releases/sap-announces-q4-and-fy-2024-results-302361469.html | Large cap / groupe >1 Md
+18 | EUR 6.2 Md | FY2024 | https://www.3ds.com/newsroom/press-releases/dassault-systemes-strong-q4-results-driven-new-business-acceleration-and-expanded-3dexperience-footprint | Large cap / groupe >1 Md
+19 | EUR 38.2 Md | FY2024 | https://www.se.com/ww/en/Images/release-fy-results-2024_tcm564-505646.pdf | Large cap / groupe >1 Md
+20 | EUR 75.9 Md | FY2024 | https://press.siemens.com/global/en/pressrelease/strong-fourth-quarter-completes-successful-fiscal-2024 | Large cap / groupe >1 Md
+21 | EUR 1.4 Md (est., entité indienne Bosch Global Software Technologies, INR 12 700 cr, FY clôt. mars 2025) | FY2024 | https://tracxn.com/d/companies/boschglobalsoftwaretechnologies/__tL33Kz9Zz3ul02GwAcNRyIqFerEG2N_rNdbZ2CWdTEc | Large cap / groupe >1 Md
+22 | EUR 22.1 Md | FY2024 | https://www.capgemini.com/news/press-releases/full-year-2024-results/ | Large cap / groupe >1 Md
+23 | EUR 5.8 Md | FY2024 | https://www.businesswire.com/news/home/20250226764580/en/Sopra-Steria-Group-SA-Results-up-in-2024-despite-a-wait-and-see-market | Large cap / groupe >1 Md
+24 | EUR 4.9 Md | FY2024 | https://www.cnmv.es/portal/consultas/ifa/listadoifa?id=0&nif=A-28599033&lang=en | Large cap / groupe >1 Md
+25 | EUR 2.3 Md | FY2024 | https://www.reply.com/en/newsroom/financial-news/the-board-of-directors-approved-the-draft-financial-statements-for-the-year-2024 | Large cap / groupe >1 Md
+26 | GBP 2.3 Md | FY2024 | https://www.sage.com/investors/investor-downloads/press-releases/2024/11/full-year-2024-results-20-november-2024/ | Large cap / groupe >1 Md
+27 | EUR 5.9 Md | FY2024 | https://www.wolterskluwer.com/en/news/wolters-kluwer-2024-full-year-report | Large cap / groupe >1 Md
+28 | USD 1.04 Md | FY2024 | https://www.temenos.com/press_release/temenos-announces-preliminary-q4-and-fy24-results-k5q11psn8/ | Large cap / groupe >1 Md
+29 | USD 690 M | FY2024 (clôt. juin 2024) | https://ir.darktrace.com/regulatory-news/2024/7/18/1843731 | Mid cap 200M-1Md
+30 | EUR 2.8 Md | FY2024 | https://www.visma.com/news/visma-releases-annual-and-sustainability-reports-for-2024 | Large cap / groupe >1 Md
+31 | EUR 5.4 Md | FY2024 | https://hexagon.com/company/newsroom/press-releases/2025/hexagon-year-end-report-1-january---31-december-2024 | Large cap / groupe >1 Md
+33 | EUR 15.0 Md | FY2024 (clôt. sept. 2024) | https://www.infineon.com/press-release/2024/infxx202411-020 | Large cap / groupe >1 Md
+34 | USD 13.3 Md | FY2024 | https://www.sec.gov/Archives/edgar/data/0000932787/000093278724000016/stm-6k_20241107.htm | Large cap / groupe >1 Md
+35 | EUR 28.3 Md | FY2024 | https://www.asml.com/en/news/press-releases/2025/q4-2024-financial-results | Large cap / groupe >1 Md
+44 | EUR 9.6 Md | FY2024 | https://atos.net/wp-content/uploads/2025/03/PR-Atos-FY-2024-results.pdf | Large cap / groupe >1 Md
+106 | USD 62.8 Md | FY2024 | https://www.sec.gov/Archives/edgar/data/0000051143/000005114324000004/ibm-20240124xex991.htm | Large cap / groupe >1 Md
+107 | USD 57.4 Md | FY2025 (clôt. mai 2025) | https://www.sec.gov/Archives/edgar/data/0001341439/000095017025084831/orcl-ex99_1.htm | Large cap / groupe >1 Md
+108 | USD 37.9 Md | FY2025 (clôt. janv. 2025) | https://www.sec.gov/Archives/edgar/data/0001108524/000110852425000002/crm-q4fy25xexhibit991.htm | Large cap / groupe >1 Md
+109 | USD 11.0 Md | FY2024 | https://www.sec.gov/Archives/edgar/data/1373715/000137371525000010/now-20241231.htm | Large cap / groupe >1 Md
+110 | USD 21.5 Md | FY2024 (clôt. nov. 2024) | https://www.sec.gov/Archives/edgar/data/0000796343/000079634324000250/adbeex991q424.htm | Large cap / groupe >1 Md
+111 | USD 2.9 Md | FY2024 | https://www.sec.gov/Archives/edgar/data/0001321655/000132165524000207/a2024q3ex991earningsrelease.htm | Large cap / groupe >1 Md
+112 | USD 3.6 Md | FY2025 (clôt. janv. 2025) | https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-fourth-quarter-and-full-year-of-fiscal-2025/ | Large cap / groupe >1 Md
+113 | USD 8.4 Md | FY2025 (clôt. janv. 2025) | https://investor.workday.com/news-and-events/press-releases/news-details/2025/Workday-Announces-Fiscal-2025-Fourth-Quarter-and-Full-Year-Financial-Results-02-25-2025/default.aspx | Large cap / groupe >1 Md
+114 | USD 16.3 Md | FY2024 (clôt. juil. 2024) | https://www.sec.gov/Archives/edgar/data/0000896878/000089687824000035/fy24q4earningspressrelease.htm | Large cap / groupe >1 Md
+115 | USD 25.8 Md | FY2024 | https://www.amd.com/en/newsroom/press-releases/2025-2-4-amd-reports-fourth-quarter-and-full-year-2024-fina.html | Large cap / groupe >1 Md
+116 | USD 39.0 Md | FY2024 (clôt. sept. 2024) | https://www.sec.gov/Archives/edgar/data/0000804328/000080432824000075/Financial_Report.xlsx | Large cap / groupe >1 Md
+117 | USD 51.6 Md | FY2024 (clôt. nov. 2024) | https://www.sec.gov/Archives/edgar/data/0001730168/000173016824000125/avgo-11032024x8kxex99.htm | Large cap / groupe >1 Md
+118 | USD 95.6 Md | FY2025 (clôt. janv. 2025) | https://investors.delltechnologies.com/news-releases/news-release-details/dell-technologies-delivers-fourth-quarter-and-full-year-fiscal-2 | Large cap / groupe >1 Md
+119 | USD 30.1 Md | FY2024 (clôt. oct. 2024) | https://www.hpe.com/us/en/newsroom/press-release/2024/12/hewlett-packard-enterprise-reports-fiscal-2024-fourth-quarter-results.html | Large cap / groupe >1 Md
+120 | USD ~3.0 Md (run rate sortie d'exercice clôt. janv. 2025, société non cotée) | FY2025 | https://www.constellationr.com/insights/news/databricks-annual-revenue-run-rate-hits-3-billion-compared-snowflakes-377-billion | Large cap / groupe >1 Md
+127 | USD 11.0 Md | FY2024 (clôt. mars 2024) | https://www.sec.gov/Archives/edgar/data/0001443646/000144364624000199/finalbahexhibit991q2fy25.htm | Large cap / groupe >1 Md
+128 | USD 16.7 Md | FY2024 | https://www.businesswire.com/news/home/20241205728686/en/ | Large cap / groupe >1 Md
+143 | USD 14.9 Md | FY2024 (clôt. juin 2024) | https://ir.supermicro.com/news/news-details/2024/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2024-Financial-Results/default.aspx | Large cap / groupe >1 Md
+317 | USD 64.9 Md | FY2024 (clôt. août 2024) | https://www.sec.gov/Archives/edgar/data/0001467373/000146737324000266/fy24q4plc8-kexhibit.htm | Large cap / groupe >1 Md
+318 | USD 19.7 Md | FY2024 | https://www.prnewswire.com/news-releases/cognizant-reports-fourth-quarter-and-full-year-2024-results-302369335.html | Large cap / groupe >1 Md
+319 | USD 130.5 Md | FY2025 (clôt. janv. 2025) | https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025 | Large cap / groupe >1 Md
+320 | USD 8.0 Md | FY2024 (clôt. juil. 2024) | https://www.prnewswire.com/news-releases/palo-alto-networks-reports-fiscal-fourth-quarter-and-fiscal-year-2024-financial-results-302225612.html | Large cap / groupe >1 Md
+321 | EUR 6.3 Md | FY2024 | https://www.eqs-news.com/news/corporate/bechtle-veroeffentlicht-vorlaeufige-geschaeftszahlen-2024/bff2b343-5c1c-416c-8796-5b771a05078b_en | Large cap / groupe >1 Md
+322 | INR 2 553 Md (~USD 30 Md) | FY2025 (clôt. mars 2025) | https://www.tcs.com/who-we-are/newsroom/press-release/tcs-financial-results-q4-fy-2025 | Large cap / groupe >1 Md
+323 | USD 19.3 Md | FY2025 (clôt. mars 2025) | https://www.sec.gov/Archives/edgar/data/0001067491/000106749125000010/exv99w02.htm | Large cap / groupe >1 Md
+324 | JPY 3 477 Md | FY2024 (clôt. mars 2025) | https://www.fujitsu.com/global/about/ir/data/results/2024/ | Large cap / groupe >1 Md
+325 | KRW 13 828 Md (~USD 10 Md) | FY2024 | https://www.samsungsds.com/en/news/2024results-250124.html | Large cap / groupe >1 Md
+361 | USD 187 M | FY2024 (clôt. juin 2024) | https://irisenergy.gcs-web.com/news-releases/news-release-details/iren-reports-full-year-fy24-results | Small cap <200M

@@ -1,0 +1,60 @@
+654 | Naval / Maritime | TWD 332,8 Md | 2023 | https://companiesmarketcap.com/evergreen-marine/revenue/ | Large cap / groupe >1 Md | Oui
+655 | Naval / Maritime | TWD 187,4 Md | 2023 | https://stockanalysis.com/quote/tpe/2609/ | Large cap / groupe >1 Md | Oui
+656 | Naval / Maritime | TWD 113,9 Md | 2023 | https://stockanalysis.com/quote/tpe/2615/ | Large cap / groupe >1 Md | Oui
+657 | Naval / Maritime | USD 3 058 M | 2024 | https://www.tipranks.com/news/company-announcements/sitc-international-holdings-reports-strong-financial-growth-in-2024 | Large cap / groupe >1 Md | Oui
+658 | Naval / Maritime | HKD 11 Md+ | 2024 | https://companiesmarketcap.com/china-merchants-port/revenue/ | Large cap / groupe >1 Md | Oui
+659 | Naval / Maritime | CNY 15 Md+ | 2024 | https://stockanalysis.com/quote/hkg/2866/ | Large cap / groupe >1 Md | Oui
+660 | Naval / Maritime | JPY 2 400 Md+ | FY2024 | https://companiesmarketcap.com/nippon-yusen/revenue/ | Large cap / groupe >1 Md | Oui
+661 | Naval / Maritime | JPY 1 700 Md+ | FY2024 | https://companiesmarketcap.com/mitsui-osk-lines/revenue/ | Large cap / groupe >1 Md | Oui
+662 | Naval / Maritime | JPY 900 Md+ | FY2024 | https://companiesmarketcap.com/kawasaki-kisen/revenue/ | Large cap / groupe >1 Md | Oui
+663 | Naval / Maritime | JPY 1 850 Md+ | FY2024 | https://companiesmarketcap.com/kawasaki-heavy-industries/revenue/ | Large cap / groupe >1 Md | Oui
+664 | Naval / Maritime | JPY 500 Md+ (est.) | FY2023 | https://en.wikipedia.org/wiki/Imabari_Shipbuilding | Large cap / groupe >1 Md | Oui
+665 | Naval / Maritime | KRW 11 700 Md | 2023 | https://companiesmarketcap.com/hd-hyundai-heavy-industries/revenue/ | Large cap / groupe >1 Md | Oui
+666 | Naval / Maritime | KRW 9 360 Md | 2023 | https://companiesmarketcap.com/hanwha-ocean/revenue/ | Large cap / groupe >1 Md | Oui
+667 | Naval / Maritime | KRW 8 010 Md | 2023 | https://companiesmarketcap.com/samsung-heavy-industries/revenue/ | Large cap / groupe >1 Md | Oui
+668 | Naval / Maritime | RMB 26,5 Md (USD 4,89 Md) | FY2024 | https://www.hellenicshippingnews.com/yangzijiang-shipbuilding-reports-62-y-o-y-increase-in-earnings-of-rmb6-63-mil-for-fy2024/ | Large cap / groupe >1 Md | Oui
+744 | Naval / Maritime | USD 486,6 M (R$ ~770 M) | 2023 | https://www.investegate.co.uk/announcement/rns/ocean-wilsons-holdings-ltd---ocn/preliminary-results-for-the-year-ended-31-dec-2023/8101300 | Mid cap 200M-1Md | Oui
+745 | Naval / Maritime | R$ 2,9 Md | 2024 | https://datamarnews.com/noticias/santos-brasil-records-net-profit-of-r741-9-million-in-2024/ | Mid cap 200M-1Md | Oui
+746 | Naval / Maritime | R$ 2,79 Md | 2024 | https://www.abralog.com.br/noticias/log-in-logistica-integrada-registra-receita-superior-a-r-27-bilhoes-em-2024/ | Mid cap 200M-1Md | Oui
+747 | Énergie | R$ 130 Md+ | 2024 | https://stockanalysis.com/quote/bvmf/UGPA3/financials/ | Large cap / groupe >1 Md | Oui
+748 | Naval / Maritime | R$ 13,9 Md | 2024 | https://agfeed.com.br/negocios/rumo-fatura-quase-r-14-bi-em-2024-com-mais-transporte-no-agro-e-vai-investir-mais/ | Large cap / groupe >1 Md | Oui
+749 | Naval / Maritime | R$ 1,35 Md | 2024 | https://www.investing.com/equities/hidrovias-do-brasil-sa-income-statement | Large cap / groupe >1 Md | Oui
+750 | Naval / Maritime | USD 578 M | 2024 | https://www.bairdmaritime.com/tugs/harbour-tugs-and-operation/saam-ends-2024-with-59m-net-income-growth-in-canada-and-brazil-markets | Mid cap 200M-1Md | Oui
+751 | Naval / Maritime | n.d. (holding Hapag-Lloyd ; rés. net USD 388 M) | 2024 | https://www.csav.com/investor/csav-cierra-un-positivo-2024-con-utilidades-por-us-3883-millones/ | Mid cap 200M-1Md | Oui
+752 | Naval / Maritime | USD ~5 Md (est. groupe) | 2024 | https://www.bnamericas.com/en/company-profile/ultramar-agencia-maritima-ltda | Large cap / groupe >1 Md | Oui
+753 | Naval / Maritime | MXN ~60 Md (Q2 24 : 15,2 Md) | 2024 | https://gmxt.mx/en/home/ | Large cap / groupe >1 Md | Oui
+754 | Naval / Maritime | MXN 1 970 M | 2024 | https://www.macrotrends.net/stocks/charts/GTMAY/grupo-tmm-sab/revenue | Small cap <200M | Non
+755 | Naval / Maritime | n.d. | n.d. | n.d. | Small cap <200M | Non
+756 | Quantique | USD 37,5 Md | 2024 | https://www.macrotrends.net/stocks/charts/VALE/vale/revenue | Large cap / groupe >1 Md | Oui
+757 | Énergie | R$ ~10 Md (est.) | 2024 | https://transpetro.com.br/ | Large cap / groupe >1 Md | Oui
+758 | Énergie | R$ 40 Md+ (consolidé) | 2024 | https://stockanalysis.com/quote/bvmf/CSAN3/financials/ | Large cap / groupe >1 Md | Oui
+834 | Naval / Maritime | ZAR 7,4 Md | 2024 | https://www.hellenicshippingnews.com/grindrod-limited-announces-resillient-results-for-the-2024-financial-year/ | Mid cap 200M-1Md | Oui
+835 | Naval / Maritime | ZAR 76,7 Md | FY2024 (mars 2024) | https://www.engineeringnews.co.za/article/transnet-volumes-revenue-up-but-falls-short-of-recovery-targets-2024-04-26 | Large cap / groupe >1 Md | Oui
+836 | Naval / Maritime | ZAR 10,06 Md | 2024 | https://www.seafoodsource.com/news/business-finance/oceana-group-posts-flat-revenue-drop-in-profit-amid-challenging-drop-in-fish-oil-prices | Mid cap 200M-1Md | Oui
+837 | Naval / Maritime | ZAR ~6 Md (est.) | 2024 | https://www.seafoodsource.com/news/business-finance/sea-harvest-group-posts-increased-ebit-and-revenue-despite-difficult-fy-2024 | Mid cap 200M-1Md | Oui
+838 | Naval / Maritime | ZAR 64,9 Md | FY2024 (juin 2024) | https://www.moneyweb.co.za/news/companies-and-deals/super-group-revenue-up-profits-down/ | Large cap / groupe >1 Md | Oui
+839 | Naval / Maritime | MAD 5,008 Md | 2024 | https://medias24.com/2025/04/30/marsa-maroc-depasse-les-5-mmdh-de-chiffre-daffaires-en-2024/ | Mid cap 200M-1Md | Oui
+840 | Naval / Maritime | MAD 11,23 Md (USD 1,21 Md) | 2024 | https://northafricapost.com/86618-tanger-med-group-revenue-up-12-3-in-2024.html | Large cap / groupe >1 Md | Oui
+841 | Naval / Maritime | USD 3,99 Md | 2024 | https://www.zawya.com/en/special-coverage/corporate-earnings/suez-canals-revenues-hit-4bln-in-2024-sx5ki5p3 | Large cap / groupe >1 Md | Oui
+842 | Naval / Maritime | EGP 6,58 Md | FY2023/24 (juin 2024) | https://en.portnews.ru/news/368630/ | Mid cap 200M-1Md | Oui
+843 | Naval / Maritime | USD ~5 Md (est. AGL) | 2024 | https://pitchbook.com/profiles/company/210761-65 | Large cap / groupe >1 Md | Oui
+844 | Naval / Maritime | NGN 758 Md (jan-nov 2024) | 2024 | https://dailytrust.com/npa-our-revenue-rose-by-33-9-percent-in-2024/ | Large cap / groupe >1 Md | Oui
+845 | Naval / Maritime | KES 60,98 Md | 2023 | https://www.kenyans.co.ke/news/98994-kpas-revenue-grows-ksh-61b-2023-cargo-surge-6 | Mid cap 200M-1Md | Oui
+846 | Naval / Maritime | N$ 1,7 Md | FY2024 (mars 2024) | https://thebrief.com.na/2024/05/namport-handles-record-8-million-tonnes-in-cargo/ | Small cap <200M | Non
+847 | Naval / Maritime | FCFA 77,34 Md | 2024 | https://walf-groupe.com/blog/2025/05/01/port-autonome-de-dakar-un-chiffre-daffaires-en-hausse-en-2024-selon-le-dg/ | Small cap <200M | Non
+848 | Naval / Maritime | n.d. (filiale DP World ; groupe USD 20 Md) | 2024 | https://www.londonstockexchange.com/news-article/91SN/dp-world-reports-2024-revenue-and-ebitda/16938411 | Small cap <200M | Non
+924 | Naval / Maritime | AUD 1 469 M | FY2024 (juin 2024) | https://www.austal.com/media-releases/austal-reports-improved-ebit-565-million-fy2024-order-book-worth-127-billion | Large cap / groupe >1 Md | Oui
+925 | Naval / Maritime | AUD ~54-126 M | 2024/25 | https://www.ibisworld.com/au/company/incat-tasmania-pty-ltd/10191/ | Small cap <200M | Non
+926 | Naval / Maritime | AUD 3,5 Md | FY2024 (juin 2024) | https://www.nasdaq.com/articles/qube-holdings-reports-strong-fy24-financial-performance | Large cap / groupe >1 Md | Oui
+927 | Naval / Maritime | AUD 3 844 M | FY2024 (juin 2024) | https://www.thedcn.com.au/news/aurizon-releases-2024-full-year-results/ | Large cap / groupe >1 Md | Oui
+928 | Naval / Maritime | AUD 2 040 M | FY2024 (juin 2024) | https://stockanalysis.com/quote/asx/KLS/revenue/ | Large cap / groupe >1 Md | Oui
+929 | Naval / Maritime | AUD 5,6 Md | 2023 | https://en.wikipedia.org/wiki/Toll_Group | Large cap / groupe >1 Md | Oui
+930 | Naval / Maritime | AUD 928 M (base 100%) | FY2024 (juin 2024) | https://www.worldcargonews.com/news/2024/08/patrick-terminals-fy2024-results-boosted-by-market-share-surge-during-dp-world-strikes/ | Mid cap 200M-1Md | Oui
+931 | Naval / Maritime | AUD ~500 M+ (est. ; non publié) | 2024 | https://giia.net/case-studies/port-of-melbourne/ | Mid cap 200M-1Md | Oui
+932 | Naval / Maritime | AUD ~400 M (est. ; non publié) | FY2024 | https://www.portbris.com.au/resources/financial-performance | Mid cap 200M-1Md | Oui
+933 | Naval / Maritime | AUD ~230 M | FY2024 | https://www.ibisworld.com/australia/company/newcastle-port-corporation/432459/ | Small cap <200M | Non
+934 | Naval / Maritime | NZD 56,1 M | FY2024 (juin 2024) | https://southport.co.nz/annual-report/2024 | Small cap <200M | Non
+935 | Naval / Maritime | NZD 141,4 M | FY2024 (sept 2024) | https://www.napierport.co.nz/fllyr-napier-port-2024-annual-results/ | Small cap <200M | Non
+936 | Naval / Maritime | NZD 339 M | FY2024 (juin 2024) | https://www.poal.co.nz/customer-centre/forms-and-resources/2024-annual-report | Mid cap 200M-1Md | Oui
+937 | Naval / Maritime | AUD ~400 M (est. ; rachat Cyan AUD 1,1 Md) | FY2024 | https://www.bairdmaritime.com/offshore/offshore-support-maintenance/cyan-renewables-acquires-australias-mma-offshore-in-au11-billion-deal | Mid cap 200M-1Md | Oui
+938 | Naval / Maritime | AUD 732 M | FY2024/25 | https://aidn.org.au/babcock-contributes-758m-to-australias-gdp-reinforcing-economic-growth-and-security/ | Mid cap 200M-1Md | Oui

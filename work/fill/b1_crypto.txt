@@ -1,0 +1,16 @@
+136 | USD 656 M | FY2024 | https://ir.mara.com/news-events/press-releases/detail/1390/mara-announces-fourth-quarter-and-full-year-2024-results | Mid cap 200M-1Md
+137 | USD 510 M | FY2024 | https://www.businesswire.com/news/home/20250226238202/en/Core-Scientific-Announces-Fiscal-Fourth-Quarter-and-Full-Fiscal-Year-2024-Results | Mid cap 200M-1Md
+138 | USD 377 M | FY2024 | https://www.riotplatforms.com/riot-platforms-reports-full-year-2024-financial-results-current-operational-and-financial-highlights/ | Mid cap 200M-1Md
+139 | USD 379 M | FY2024 | https://www.sec.gov/Archives/edgar/data/0000827876/000095017024132247/clsk-ex99_1.htm | Mid cap 200M-1Md
+140 | USD 162 M | FY2024 | https://www.globenewswire.com/news-release/2025/03/03/3035396/0/en/Hut-8-Reports-Fourth-Quarter-and-Full-Year-2024-Results.html | Small cap <200M
+141 | USD 151 M | FY2024 | https://www.globenewswire.com/news-release/2025/02/25/3031863/0/en/Cipher-Mining-Provides-Fourth-Quarter-and-Full-Year-2024-Business-Update.html | Small cap <200M
+142 | USD 140 M | FY2024 | https://investors.terawulf.com/news-events/press-releases/detail/103/terawulf-reports-fourth-quarter-and-full-year-2024-results | Small cap <200M
+177 | CHF 6 600 M | FY2024 | https://www.alpiq.com/newsroom/media-releases/focus-on-flexibility-pays-off-for-alpiq | Large cap / groupe >1 Md
+179 | CHF 7 383 M | FY2023/24 | https://www.axpo.com/us/en/media-releases/2024/axpo-reports-another-successful-financial-year-as-strategy-pays-.html | Large cap / groupe >1 Md
+207 | CAD 15 700 M est. | FY2024 | https://www.hydroquebec.com/data/documents-donnees/pdf/M1029_22024G415_HQ_Rapport_annuel_2024_EN_F_V8_2-ACCESSIBLE.pdf | Large cap / groupe >1 Md
+211 | USD 24 753 M | FY2024 | https://www.sec.gov/Archives/edgar/data/753308/000075330825000003/neeq42024exhibit99.htm | Large cap / groupe >1 Md
+229 | CAD 12 270 M | FY2024 | https://www.tcenergy.com/announcements/2025/2025-02-14-tc-energy-reports-solid-fourth-quarter-2024-operating-and-financial-results/ | Large cap / groupe >1 Md
+266 | CAD 53 500 M | FY2024 | https://www.enbridge.com/investment-center | Large cap / groupe >1 Md
+358 | USD 193 M | FY2024 | https://www.sec.gov/Archives/edgar/data/0001812477/000121390025026575/ea023426801ex99-1_bitfarms.htm | Small cap <200M
+359 | USD 350 M | FY2024 | https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-reports-unaudited-financial-results-fourth-quarter-and | Mid cap 200M-1Md
+360 | USD 144 M | FY2025 | https://ir.applieddigital.com/news-events/press-releases/detail/126/applied-digital-reports-fiscal-fourth-quarter-and-full-year | Small cap <200M

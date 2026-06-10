@@ -1,0 +1,60 @@
+624 | Quantique | 3 256 800 M JPY | FY2024 | https://www.global.toshiba/ww/ir/corporate/library.html | Large cap / groupe >1 Md | Oui
+625 | Quantique | 9 783 500 M JPY | FY2024 | https://www.hitachi.com/IR-e/library/annual/index.html | Large cap / groupe >1 Md | Oui
+626 | Quantique | 5 522 100 M JPY | FY2024 | https://www.mitsubishielectric.com/en/ir/library/index.html | Large cap / groupe >1 Md | Oui
+627 | Data center / télécom / Software | 13 704 600 M JPY | FY2024 | https://group.ntt/en/ir/library/results/ | Large cap / groupe >1 Md | Oui
+628 | Data center / télécom / Software | 17 940 000 M KRW | FY2024 | https://www.sktelecom.com/en/about/ir/finance.do | Large cap / groupe >1 Md | Oui
+629 | Quantique | 300 870 000 M KRW | FY2024 | https://www.samsung.com/global/ir/financial-information/audit-and-business-report/ | Large cap / groupe >1 Md | Oui
+630 | Quantique | 87 730 000 M KRW | FY2024 | https://www.lg.com/global/ir/reports/earnings-release.jsp | Large cap / groupe >1 Md | Oui
+631 | Data center / télécom / Software | 862 100 M CNY | FY2024 | https://www.huawei.com/en/annual-report/2024 | Large cap / groupe >1 Md | Oui
+632 | Data center / télécom / Software | 528 200 M CNY | FY2024 | https://www.chinatelecom-h.com/en/ir/report.php | Large cap / groupe >1 Md | Oui
+633 | IA / Numérique | 996 347 M CNY | FY2025 | https://www.alibabagroup.com/en-US/ir-financial-reports | Large cap / groupe >1 Md | Oui
+634 | IA / Numérique | 2 408 930 M INR | FY2024 | https://www.tcs.com/who-we-are/investor-relations/financial-statements | Large cap / groupe >1 Md | Oui
+635 | IA / Numérique | 1 536 700 M INR | FY2024 | https://www.infosys.com/investors/reports-filings/annual-report.html | Large cap / groupe >1 Md | Oui
+636 | IA / Numérique | 35 521 M INR | FY2024 | https://www.tataelxsi.com/news-and-events/press-releases/tata-elxsi-delivers-13-revenue-growth-in-fy24-ebitda-margin-at-29-5 | Mid cap 200M-1Md | Oui
+637 | IA / Numérique | 4 367 200 M JPY | FY2024 | https://www.nttdata.com/global/en/investors/library | Large cap / groupe >1 Md | Oui
+638 | Data center / télécom / Software | 3 477 000 M JPY | FY2024 | https://www.nec.com/en/global/ir/library/annual.html | Large cap / groupe >1 Md | Oui
+714 | Énergie | 490 935 M BRL | FY2024 | https://www.investidorpetrobras.com.br/en/results-and-announcements/results-center/ | Large cap / groupe >1 Md | Oui
+715 | Quantique | 37 524 M USD | FY2024 | https://vale.com/investors | Large cap / groupe >1 Md | Oui
+716 | Quantique | 70 010 M BRL | FY2024 | https://www.braskem-ri.com.br/en/results-center | Large cap / groupe >1 Md | Oui
+717 | Aerospace | 6 395 M USD | FY2024 | https://www.embraer.com/media-center/en/ | Large cap / groupe >1 Md | Oui
+718 | Quantique | 16 200 M USD | FY2024 | https://www.cemex.com/investors/financial-information | Large cap / groupe >1 Md | Oui
+719 | Quantique | 18 300 000 M COP | FY2024 | https://www.grupoargos.com/en/investors/ | Large cap / groupe >1 Md | Oui
+720 | Énergie | 133 286 000 M COP | FY2024 | https://www.ecopetrol.com.co/wps/portal/Home/en/investors | Large cap / groupe >1 Md | Oui
+721 | IA / Numérique | 750 422 M MXN | FY2024 | https://www.femsa.com/en/investors/ | Large cap / groupe >1 Md | Oui
+722 | IA / Numérique | 12 690 000 M CLP | FY2024 | https://www.cencosud.com/cencosud/investors | Large cap / groupe >1 Md | Oui
+723 | IA / Numérique | 12 240 000 M CLP | FY2024 | https://investors.falabella.com/ | Large cap / groupe >1 Md | Oui
+724 | IA / Numérique | 197 600 M MXN | FY2024 | https://www.gcarso.com.mx/en/investors | Large cap / groupe >1 Md | Oui
+725 | Quantique | 13 200 M USD | FY2024 | https://www.gmexico.com/EN/Pages/InvestorRelations.aspx | Large cap / groupe >1 Md | Oui
+726 | Quantique | 4 528.8 M USD | FY2024 | https://www.sec.gov/Archives/edgar/data/0000909037/000090903725000007/a6-k_4q2024earningsrelease.htm | Large cap / groupe >1 Md | Oui
+727 | Quantique | 16 400 M USD | FY2024 | https://www.codelco.com/prontus_codelco/site/edic/base/port/inversionistas.html | Large cap / groupe >1 Md | Oui
+728 | Énergie | 18 700 M USD | FY2024 | https://www.investancia.ypf.com/en/Paginas/financial-reports.aspx | Large cap / groupe >1 Md | Oui
+804 | Quantique | 4 234 M USD | FY2024 | https://www.goldfields.com/financial-reports.php | Large cap / groupe >1 Md | Oui
+805 | Quantique | 108 700 M ZAR | FY2024 | https://www.sibanyestillwater.com/investors/results-reports/annual/ | Large cap / groupe >1 Md | Oui
+806 | Quantique | 86 400 M ZAR | FY2024 | https://www.implats.co.za/financial-reports.php | Large cap / groupe >1 Md | Oui
+807 | Quantique | 39 100 M ZAR | FY2024 | https://www.exxaro.com/investor/ | Large cap / groupe >1 Md | Oui
+808 | Quantique | 67 600 M ZAR | FY2024 | https://www.angloamericankumba.com/investors/results-and-presentations | Large cap / groupe >1 Md | Oui
+809 | Quantique | 11 400 M ZAR | FY2024 | https://arm.co.za/financial-results/ | Large cap / groupe >1 Md | Oui
+810 | Quantique | 33 100 M ZAR | FY2024 | https://www.northam.co.za/investors-and-media/results-and-reports | Large cap / groupe >1 Md | Oui
+811 | Quantique | 63 100 M ZAR | FY2024 | https://www.harmony.co.za/invest/results/ | Large cap / groupe >1 Md | Oui
+812 | Quantique | 91 400 M MAD | FY2024 | https://www.ocpgroup.ma/en/investors/financial-results | Large cap / groupe >1 Md | Oui
+813 | Énergie | 60 000 M USD est. | FY2023 | https://sonatrach.com/en/ | Large cap / groupe >1 Md | Oui
+814 | Quantique | 3 000 000 M NGN est. | FY2024 | https://www.dangote.com/investor-relations/ | Large cap / groupe >1 Md | Oui
+815 | Data center / télécom / Software | 349 000 M KES | FY2024 | https://www.safaricom.co.ke/investor-relations/financial-results | Large cap / groupe >1 Md | Oui
+816 | Data center / télécom / Software | 58 600 M EGP | FY2024 | https://te.eg/wps/portal/te/Personal/footer/About-TE/Investor-Relations | Large cap / groupe >1 Md | Oui
+817 | Data center / télécom / Software | 36 700 M MAD | FY2024 | https://www.iam.ma/groupe-maroc-telecom/investisseurs/information-financiere.aspx | Large cap / groupe >1 Md | Oui
+818 | IA / Numérique | n.d. | n.d. | https://www.banquemisr.com/en/Pages/default.aspx | n.d. | Non
+894 | IA / Numérique | 17 200 M AUD | FY2024 | https://www.macquarie.com/au/en/investors.html | Large cap / groupe >1 Md | Oui
+895 | IA / Numérique | 27 200 M AUD | FY2024 | https://www.commbank.com.au/about-us/investors.html | Large cap / groupe >1 Md | Oui
+896 | IA / Numérique | 20 800 M AUD | FY2024 | https://www.nab.com.au/about-us/shareholder-centre | Large cap / groupe >1 Md | Oui
+897 | IA / Numérique | 20 900 M AUD | FY2024 | https://www.anz.com.au/about-us/investor-centre/ | Large cap / groupe >1 Md | Oui
+898 | IA / Numérique | 21 500 M AUD | FY2024 | https://www.westpac.com.au/about-westpac/investor-centre/ | Large cap / groupe >1 Md | Oui
+899 | Data center / télécom / Software | 23 200 M AUD | FY2024 | https://www.telstra.com.au/aboutus/investors | Large cap / groupe >1 Md | Oui
+900 | Quantique | 55 658 M USD | FY2024 | https://www.bhp.com/investors/annual-reporting | Large cap / groupe >1 Md | Oui
+901 | Quantique | 53 658 M USD | FY2024 | https://www.riotinto.com/en/invest/financial-news-performance | Large cap / groupe >1 Md | Oui
+902 | Quantique | 18 224 M USD | FY2024 | https://www.fortescue.com/investors-and-media/financial-results | Large cap / groupe >1 Md | Oui
+903 | Énergie | 13 176 M USD | FY2024 | https://www.woodside.com/investors/reports-investor-briefings | Large cap / groupe >1 Md | Oui
+904 | Quantique | 14 800 M USD | FY2024 | https://www.csl.com/investors | Large cap / groupe >1 Md | Oui
+905 | Quantique | 2 258 M AUD | FY2024 | https://www.cochlear.com/au/en/about-us/investor-centre | Large cap / groupe >1 Md | Oui
+906 | Quantique | 4 900 M USD | FY2024 | https://investors.resmed.com/ | Large cap / groupe >1 Md | Oui
+907 | Quantique | 7 916 M AUD | FY2024 | https://www.orica.com/investors | Large cap / groupe >1 Md | Oui
+908 | Énergie | 11 900 M AUD | FY2024 | https://www.worley.com/en/investors | Large cap / groupe >1 Md | Oui
