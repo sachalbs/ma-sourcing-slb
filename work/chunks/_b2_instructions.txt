@@ -1,0 +1,9 @@
+RÈGLES DE RECADRAGE SECTORIEL (choisis le secteur le PLUS juste parmi ces 7 exactement, en respectant l'orthographe) :
+- "Data center / télécom / Software"  -> télécoms, opérateurs, data centers, tours télécom, fibre, hébergement cloud, infrastructures réseau
+- "IA / Numérique"                    -> éditeurs de logiciels, ESN / services IT, plateformes numériques, fintech, e-commerce tech, banques et assurances (composante numérique), médias numériques
+- "Aerospace"                         -> compagnies aériennes, aéroports, aéronautique, spatial, défense aéro
+- "Quantique"                         -> mines, métaux, matériaux avancés, chimie, semi-conducteurs, photonique, deep tech (logique "matériaux/deeptech" du client)
+- "Énergie"                           -> électricité, gaz, pétrole, utilities, renouvelables, midstream, raffinage
+- "Naval / Maritime"                  -> transport maritime, armateurs, ports, chantiers navals, logistique portuaire, offshore
+- "Crypto mining"                     -> mineurs de crypto-actifs et fabricants de matériel de minage uniquement
+Si une société ne rentre dans aucun, choisis le secteur le plus proche parmi les 7 (ne laisse jamais un secteur hors de cette liste).

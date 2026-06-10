@@ -1,0 +1,16 @@
+136	États-Unis	Marathon Digital Holdings	https://www.mara.com
+137	États-Unis	Core Scientific	https://www.corescientific.com
+138	États-Unis	Riot Platforms	https://www.riotplatforms.com
+139	États-Unis	CleanSpark	https://www.cleanspark.com
+140	États-Unis / Canada	Hut 8	https://hut8.com
+141	États-Unis	Cipher Mining	https://www.ciphermining.com
+142	États-Unis	TeraWulf	https://www.terawulf.com
+177	Suisse	ALPIQ	https://www.alpiq.com
+179	Suisse	AXPO	https://www.axpo.com
+207	Canada	Hydro Québec	https://www.hydroquebec.com
+211	États-Unis	Nextera Energy 	https://www.nexteraenergy.com
+229	Canada	TC Énergie	https://www.tcenergy.com
+266	Canada	Enbridge	https://www.enbridge.com
+358	Canada	Bitfarms	https://www.bitfarms.com
+359	Singapour	Bitdeer	https://www.bitdeer.com
+360	USA	Applied Digital	https://www.applieddigital.com

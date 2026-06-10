@@ -1,0 +1,35 @@
+40	Royaume-Uni	Oxford Instruments	https://www.oxinst.com
+43	Allemagne	Zeiss Group	https://www.zeiss.com
+45	Allemagne	Jenoptik	https://www.jenoptik.com
+46	Allemagne	TRUMPF	https://www.trumpf.com
+121	États-Unis	Honeywell International	https://www.honeywell.com
+122	États-Unis	Keysight Technologies	https://www.keysight.com
+129	États-Unis	Coherent Corp.	https://www.coherent.com
+130	États-Unis	Cadence Design Systems	https://www.cadence.com
+131	États-Unis	Synopsys	https://www.synopsys.com
+132	États-Unis	Applied Materials	https://www.appliedmaterials.com
+133	États-Unis	Lam Research	https://www.lamresearch.com
+134	États-Unis	Teradyne	https://www.teradyne.com
+135	États-Unis	Agilent Technologies	https://www.agilent.com
+238	États-Unis	Air Products	https://www.airproducts.com
+239	France	Air Liquide	https://www.airliquide.com
+240	Luxembourg	ArcelorMittal	https://corporate.arcelormittal.com
+241	France	ARKEMA	https://www.arkema.com
+242	Allemagne	O-BASF	https://www.basf.com
+245	États-Unis	Dow	https://www.dow.com
+246	Suisse	Dsm-firmenich	https://www.dsm-firmenich.com
+247	États-Unis	EASTMAN	https://www.eastman.com
+248	Allemagne	EVONIK	https://www.evonik.com
+249	Allemagne	FREUDENBERG	https://www.freudenberg.com
+250	États-Unis	HUNTSMAN	https://www.huntsman.com
+253	Royaume-Uni	Linde	https://www.linde.com
+255	Arabie saoudite	Sabic	https://www.sabic.com
+256	France	SAINT-GOBIN	https://www.saint-gobain.com
+257	Belgique	SOLVAY	https://www.solvay.com
+333	USA	Danaher	https://www.danaher.com
+334	USA	Bruker	https://www.bruker.com
+335	Japon	Hamamatsu Photonics	https://www.hamamatsu.com
+336	Japon	HORIBA	https://www.horiba.com
+337	Finlande	IQM	https://www.meetiqm.com
+338	France	Pasqal	https://www.pasqal.com
+339	France	Quandela	https://www.quandela.com

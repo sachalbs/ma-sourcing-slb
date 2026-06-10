@@ -1,0 +1,360 @@
+594	Chine	Data center	GDS Holdings
+595	Chine	Data center	Chindata Group
+596	Singapour	Data center	ST Telemedia Global Data Centres
+597	Singapour	Data center	Keppel Ltd
+598	Japon	Data center	KDDI
+599	Japon	Data center	SoftBank Corp.
+600	Japon	Data center	NEC Corporation
+601	Japon	Data center	Fujitsu
+602	Corée du Sud	Data center	KT Corporation
+603	Corée du Sud	Data center	SK Telecom
+604	Corée du Sud	Data center	LG Uplus
+605	Inde	Data center	Reliance Jio Platforms
+606	Inde	Data center	Bharti Airtel
+607	Inde	Data center	Adani Enterprises / AdaniConneX
+608	Inde	Data center	Tata Communications
+609	Chine	IA	Baidu
+610	Chine	IA	SenseTime
+611	Chine	IA	iFlytek
+612	Chine	IA	NetEase
+613	Japon	IA	NEC Corporation
+614	Japon	IA	Fujitsu
+615	Corée du Sud	IA	Naver
+616	Corée du Sud	IA	Kakao
+617	Corée du Sud	IA	Samsung SDS
+618	Inde	IA	Tata Consultancy Services
+619	Inde	IA	Infosys
+620	Inde	IA	Wipro
+621	Inde	IA	HCLTech
+622	Inde	IA	Tech Mahindra
+623	Japon	IA	CyberAgent
+624	Japon	Quantique	Toshiba
+625	Japon	Quantique	Hitachi
+626	Japon	Quantique	Mitsubishi Electric
+627	Japon	Quantique	NTT
+628	Corée du Sud	Quantique	SK Telecom
+629	Corée du Sud	Quantique	Samsung Electronics
+630	Corée du Sud	Quantique	LG Electronics
+631	Chine	Quantique	Huawei
+632	Chine	Quantique	China Telecom
+633	Chine	Quantique	Alibaba Group
+634	Inde	Quantique	Tata Consultancy Services
+635	Inde	Quantique	Infosys
+636	Inde	Quantique	Tata Elxsi
+637	Japon	Quantique	NTT Data
+638	Japon	Quantique	NEC Corporation
+639	Singapour	Crypto mining	Bitdeer Technologies
+640	Chine	Crypto mining	Bitmain Technologies
+641	Chine	Crypto mining	MicroBT
+642	Chine	Crypto mining	Canaan Inc.
+643	Japon	Crypto mining	GMO Internet Group
+644	Japon	Crypto mining	SBI Holdings
+645	Taïwan	Crypto mining	TSMC
+646	Taïwan	Crypto mining	MediaTek
+647	Taïwan	Crypto mining	Foxconn
+648	Taïwan	Crypto mining	Quanta Computer
+649	Taïwan	Crypto mining	Delta Electronics
+650	Corée du Sud	Crypto mining	Samsung Electronics
+651	Corée du Sud	Crypto mining	SK hynix
+652	Hong Kong	Crypto mining	CLP Holdings
+653	Corée du Sud	Crypto mining	KEPCO
+654	Taïwan	Naval / Maritime	Evergreen Marine
+655	Taïwan	Naval / Maritime	Yang Ming Marine Transport
+656	Taïwan	Naval / Maritime	Wan Hai Lines
+657	Chine / Hong Kong	Naval / Maritime	SITC International
+658	Chine	Naval / Maritime	China Merchants Port
+659	Chine	Naval / Maritime	COSCO Shipping Development
+660	Japon	Naval / Maritime	NYK Line
+661	Japon	Naval / Maritime	Mitsui O.S.K. Lines
+662	Japon	Naval / Maritime	K Line
+663	Japon	Naval / Maritime	Kawasaki Heavy Industries
+664	Japon	Naval / Maritime	Imabari Shipbuilding
+665	Corée du Sud	Naval / Maritime	HD Hyundai Heavy Industries
+666	Corée du Sud	Naval / Maritime	Hanwha Ocean
+667	Corée du Sud	Naval / Maritime	Samsung Heavy Industries
+668	Singapour / Chine	Naval / Maritime	Yangzijiang Shipbuilding
+669	Japon	Aerospace	Mitsubishi Heavy Industries
+670	Japon	Aerospace	Kawasaki Heavy Industries
+671	Japon	Aerospace	IHI Corporation
+672	Japon	Aerospace	Subaru Corporation
+673	Corée du Sud	Aerospace	Korea Aerospace Industries
+674	Corée du Sud	Aerospace	Hanwha Aerospace
+675	Corée du Sud	Aerospace	LIG Nex1
+676	Inde	Aerospace	Hindustan Aeronautics
+677	Inde	Aerospace	Bharat Electronics
+678	Inde	Aerospace	Bharat Dynamics
+679	Chine	Aerospace	AVIC
+680	Chine	Aerospace	COMAC
+681	Chine	Aerospace	CASC
+682	Israël	Aerospace	Israel Aerospace Industries
+683	Israël	Aerospace	Elbit Systems
+684	Mexique	Data center	América Móvil
+685	Brésil	Data center	Telefônica Brasil
+686	Brésil	Data center	TIM Brasil
+687	Argentine	Data center	Telecom Argentina
+688	Chili	Data center	Entel Chile
+689	Mexique	Data center	Axtel
+690	Mexique	Data center	Megacable Holdings
+691	Mexique	Data center	Grupo Televisa
+692	Brésil	Data center	V.tal
+693	Brésil	Data center	Scala Data Centers
+694	Brésil	Data center	Ascenty
+695	Argentine	Data center	Cirion Technologies
+696	Brésil	Data center	ODATA
+697	Colombie	Data center	Claro Colombia
+698	Uruguay	Data center	Antel
+699	Brésil	IA	TOTVS
+700	Brésil	IA	Stefanini Group
+701	Brésil	IA	CI&T
+702	Argentine	IA	MercadoLibre
+703	Brésil	IA	Nubank
+704	Brésil	IA	StoneCo
+705	Brésil	IA	PagBank
+706	Brésil	IA	B3
+707	Brésil	IA	Itaú Unibanco
+708	Brésil	IA	Banco do Brasil
+709	Brésil	IA	Bradesco
+710	Mexique	IA	Banorte
+711	Mexique	IA	Grupo Bimbo
+712	Brésil	IA	WEG
+713	Uruguay	IA	dLocal
+714	Brésil	Quantique	Petrobras
+715	Brésil	Quantique	Vale
+716	Brésil	Quantique	Braskem
+717	Brésil	Quantique	Embraer
+718	Mexique	Quantique	Cemex
+719	Colombie	Quantique	Grupo Argos
+720	Colombie	Quantique	Ecopetrol
+721	Mexique	Quantique	FEMSA
+722	Chili	Quantique	Cencosud
+723	Chili	Quantique	Falabella
+724	Mexique	Quantique	Grupo Carso
+725	Mexique	Quantique	Grupo México
+726	Chili	Quantique	SQM
+727	Chili	Quantique	Codelco
+728	Argentine	Quantique	YPF
+729	Brésil	Crypto mining	Eletrobras
+730	Brésil	Crypto mining	Cemig
+731	Brésil	Crypto mining	Copel
+732	Brésil	Crypto mining	Engie Brasil Energia
+733	Brésil	Crypto mining	AES Brasil
+734	Brésil	Crypto mining	Eneva
+735	Brésil	Crypto mining	CPFL Energia
+736	Chili	Crypto mining	Enel Américas
+737	Chili	Crypto mining	Colbún
+738	Chili	Crypto mining	Enel Chile
+739	Colombie	Crypto mining	ISA
+740	Colombie	Crypto mining	Grupo Energía Bogotá
+741	Mexique	Crypto mining	CFE
+742	Argentine	Crypto mining	Pampa Energía
+743	Argentine	Crypto mining	Pan American Energy
+744	Brésil	Naval / Maritime	Wilson Sons
+745	Brésil	Naval / Maritime	Santos Brasil
+746	Brésil	Naval / Maritime	Log-In Logística
+747	Brésil	Naval / Maritime	Ultrapar
+748	Brésil	Naval / Maritime	Rumo
+749	Brésil	Naval / Maritime	Hidrovias do Brasil
+750	Chili	Naval / Maritime	SAAM
+751	Chili	Naval / Maritime	CSAV
+752	Chili	Naval / Maritime	Ultramar
+753	Mexique	Naval / Maritime	Grupo México Transportes
+754	Mexique	Naval / Maritime	TMM
+755	Argentine	Naval / Maritime	Murchison Group
+756	Brésil	Naval / Maritime	Vale
+757	Brésil	Naval / Maritime	Transpetro
+758	Brésil	Naval / Maritime	Cosan
+759	Brésil	Aerospace	Embraer
+760	Chili	Aerospace	LATAM Airlines Group
+761	Brésil	Aerospace	Azul
+762	Brésil	Aerospace	Gol Linhas Aéreas
+763	Colombie	Aerospace	Avianca Group
+764	Panama	Aerospace	Copa Holdings
+765	Mexique	Aerospace	Volaris
+766	Mexique	Aerospace	Viva Aerobus
+767	Mexique	Aerospace	Aeroméxico
+768	Argentine	Aerospace	Aerolíneas Argentinas
+769	Chili	Aerospace	Sky Airline
+770	Mexique	Aerospace	Grupo Aeroportuario del Sureste
+771	Mexique	Aerospace	Grupo Aeroportuario del Pacífico
+772	Mexique	Aerospace	Grupo Aeroportuario Centro Norte
+773	Argentine	Aerospace	Corporación América Airports
+774	Afrique du Sud	Data center	MTN Group
+775	Afrique du Sud	Data center	Vodacom Group
+776	Afrique du Sud	Data center	Telkom SA
+777	Maurice	Data center	Liquid Intelligent Technologies
+778	Afrique du Sud	Data center	Africa Data Centres
+779	Afrique du Sud	Data center	Teraco Data Environments
+780	Nigeria	Data center	MainOne
+781	Maurice	Data center	WIOCC Group
+782	Namibie	Data center	Paratus Group
+783	Afrique du Sud	Data center	SEACOM
+784	Kenya	Data center	Safaricom
+785	Égypte	Data center	Telecom Egypt
+786	Maroc	Data center	Maroc Telecom
+787	Sénégal	Data center	Sonatel
+788	Maurice	Data center	IHS Towers
+789	Afrique du Sud	IA	Naspers
+790	Afrique du Sud	IA	MultiChoice Group
+791	Afrique du Sud	IA	Standard Bank Group
+792	Afrique du Sud	IA	FirstRand
+793	Afrique du Sud	IA	Absa Group
+794	Afrique du Sud	IA	Nedbank Group
+795	Afrique du Sud	IA	Capitec Bank
+796	Afrique du Sud	IA	Discovery Limited
+797	Afrique du Sud	IA	Sanlam
+798	Afrique du Sud	IA	Shoprite Holdings
+799	Afrique du Sud	IA	Pick n Pay Stores
+800	Afrique du Sud	IA	Aspen Pharmacare
+801	Afrique du Sud	IA	Sasol
+802	Afrique du Sud	IA	Old Mutual
+803	Afrique du Sud	IA	Bidvest Group
+804	Afrique du Sud	Quantique	Gold Fields
+805	Afrique du Sud	Quantique	Sibanye-Stillwater
+806	Afrique du Sud	Quantique	Impala Platinum
+807	Afrique du Sud	Quantique	Exxaro Resources
+808	Afrique du Sud	Quantique	Kumba Iron Ore
+809	Afrique du Sud	Quantique	African Rainbow Minerals
+810	Afrique du Sud	Quantique	Northam Platinum
+811	Afrique du Sud	Quantique	Harmony Gold
+812	Maroc	Quantique	OCP Group
+813	Algérie	Quantique	Sonatrach
+814	Nigeria	Quantique	Dangote Group
+815	Kenya	Quantique	Safaricom
+816	Égypte	Quantique	Telecom Egypt
+817	Maroc	Quantique	Maroc Telecom
+818	Égypte	Quantique	Banque Misr
+819	Kenya	Crypto mining	KenGen
+820	Afrique du Sud	Crypto mining	Eskom
+821	Maroc	Crypto mining	OCP Group
+822	Algérie	Crypto mining	Sonatrach
+823	Afrique du Sud	Crypto mining	Sasol
+824	Afrique du Sud	Crypto mining	Exxaro Resources
+825	Afrique du Sud	Crypto mining	Gold Fields
+826	Afrique du Sud	Crypto mining	Sibanye-Stillwater
+827	Afrique du Sud	Crypto mining	Impala Platinum
+828	Afrique du Sud	Crypto mining	Harmony Gold
+829	Afrique du Sud	Crypto mining	Kumba Iron Ore
+830	Nigeria	Crypto mining	Egbin Power
+831	Égypte	Crypto mining	Egyptian Electricity Holding
+832	RD Congo	Crypto mining	SNEL
+833	Zambie	Crypto mining	ZESCO
+834	Afrique du Sud	Naval / Maritime	Grindrod
+835	Afrique du Sud	Naval / Maritime	Transnet
+836	Afrique du Sud	Naval / Maritime	Oceana Group
+837	Afrique du Sud	Naval / Maritime	Sea Harvest
+838	Afrique du Sud	Naval / Maritime	Super Group
+839	Maroc	Naval / Maritime	Marsa Maroc
+840	Maroc	Naval / Maritime	Tanger Med Port Authority
+841	Égypte	Naval / Maritime	Suez Canal Authority
+842	Égypte	Naval / Maritime	Alexandria Container & Cargo Handling
+843	Côte d’Ivoire	Naval / Maritime	Africa Global Logistics
+844	Nigeria	Naval / Maritime	Nigerian Ports Authority
+845	Kenya	Naval / Maritime	Kenya Ports Authority
+846	Namibie	Naval / Maritime	Namport
+847	Sénégal	Naval / Maritime	Port Autonome de Dakar
+848	Égypte	Naval / Maritime	DP World Sokhna
+849	Éthiopie	Aerospace	Ethiopian Airlines
+850	Égypte	Aerospace	EgyptAir Holding
+851	Maroc	Aerospace	Royal Air Maroc
+852	Algérie	Aerospace	Air Algérie
+853	Kenya	Aerospace	Kenya Airways
+854	Maurice	Aerospace	Air Mauritius
+855	Angola	Aerospace	TAAG Angola Airlines
+856	Afrique du Sud	Aerospace	Airlink
+857	Afrique du Sud	Aerospace	FlySafair
+858	Afrique du Sud	Aerospace	Airports Company South Africa
+859	Éthiopie	Aerospace	Ethiopian Airports
+860	Égypte	Aerospace	Egyptian Holding Company for Airports and Air Navigation
+861	Kenya	Aerospace	Kenya Airports Authority
+862	Afrique du Sud	Aerospace	Paramount Group
+863	Afrique du Sud	Aerospace	Denel
+864	Australie	Data center	Telstra
+865	Australie	Data center	TPG Telecom
+866	Nouvelle-Zélande	Data center	Spark New Zealand
+867	Nouvelle-Zélande	Data center	Chorus New Zealand
+868	Australie	Data center	Vocus Group
+869	Australie	Data center	NEXTDC
+870	Australie	Data center	Macquarie Technology Group
+871	Australie	Data center	CDC Data Centres
+872	Australie	Data center	AirTrunk
+873	Nouvelle-Zélande	Data center	Datacom Group
+874	Australie	Data center	Superloop
+875	Australie	Data center	Goodman Group
+876	Australie	Data center	Dicker Data
+877	Australie	Data center	Ventia
+878	Nouvelle-Zélande	Data center	Infratil
+879	Australie	IA	Atlassian
+880	Australie	IA	Canva
+881	Australie	IA	TechnologyOne
+882	Australie	IA	WiseTech Global
+883	Nouvelle-Zélande	IA	Xero
+884	Australie	IA	REA Group
+885	Australie	IA	SEEK
+886	Australie	IA	CAR Group
+887	Australie	IA	Domain Holdings
+888	Australie	IA	Computershare
+889	Australie	IA	Commonwealth Bank
+890	Australie	IA	National Australia Bank
+891	Australie	IA	ANZ Group
+892	Australie	IA	Westpac
+893	Australie	IA	QBE Insurance
+894	Australie	Quantique	Macquarie Group
+895	Australie	Quantique	Commonwealth Bank
+896	Australie	Quantique	National Australia Bank
+897	Australie	Quantique	ANZ Group
+898	Australie	Quantique	Westpac
+899	Australie	Quantique	Telstra
+900	Australie	Quantique	BHP
+901	Australie / Royaume-Uni	Quantique	Rio Tinto
+902	Australie	Quantique	Fortescue
+903	Australie	Quantique	Woodside Energy
+904	Australie	Quantique	CSL
+905	Australie	Quantique	Cochlear
+906	Australie / États-Unis	Quantique	ResMed
+907	Australie	Quantique	Orica
+908	Australie	Quantique	Worley
+909	Australie	Crypto mining	IREN
+910	Australie	Crypto mining	AGL Energy
+911	Australie	Crypto mining	Origin Energy
+912	Australie	Crypto mining	EnergyAustralia
+913	Nouvelle-Zélande	Crypto mining	Meridian Energy
+914	Nouvelle-Zélande	Crypto mining	Contact Energy
+915	Nouvelle-Zélande	Crypto mining	Genesis Energy
+916	Nouvelle-Zélande	Crypto mining	Mercury NZ
+917	Nouvelle-Zélande	Crypto mining	Infratil
+918	Australie	Crypto mining	APA Group
+919	Australie	Crypto mining	NEXTDC
+920	Australie	Crypto mining	Macquarie Technology Group
+921	Australie	Crypto mining	Superloop
+922	Nouvelle-Zélande	Crypto mining	Spark New Zealand
+923	Australie	Crypto mining	Telstra
+924	Australie	Naval / Maritime	Austal
+925	Australie	Naval / Maritime	Incat Tasmania
+926	Australie	Naval / Maritime	Qube Holdings
+927	Australie	Naval / Maritime	Aurizon
+928	Australie	Naval / Maritime	Kelsian Group
+929	Australie	Naval / Maritime	Toll Group
+930	Australie	Naval / Maritime	Patrick Terminals
+931	Australie	Naval / Maritime	Port of Melbourne
+932	Australie	Naval / Maritime	Port of Brisbane
+933	Australie	Naval / Maritime	Port of Newcastle
+934	Nouvelle-Zélande	Naval / Maritime	South Port New Zealand
+935	Nouvelle-Zélande	Naval / Maritime	Napier Port
+936	Nouvelle-Zélande	Naval / Maritime	Ports of Auckland
+937	Australie	Naval / Maritime	MMA Offshore
+938	Australie	Naval / Maritime	Babcock Australasia
+939	Australie	Aerospace	Qantas
+940	Nouvelle-Zélande	Aerospace	Air New Zealand
+941	Australie	Aerospace	Virgin Australia
+942	Australie	Aerospace	Alliance Aviation Services
+943	Australie	Aerospace	Airservices Australia
+944	Nouvelle-Zélande	Aerospace	Auckland Airport
+945	Australie	Aerospace	Sydney Airport
+946	Australie	Aerospace	Melbourne Airport
+947	Australie	Aerospace	Brisbane Airport
+948	Australie	Aerospace	Perth Airport
+949	Nouvelle-Zélande / États-Unis	Aerospace	Rocket Lab
+950	Australie	Aerospace	Electro Optic Systems
+951	Australie	Aerospace	Nova Systems
+952	Australie	Aerospace	NIOA
+953	Australie	Aerospace	Codan

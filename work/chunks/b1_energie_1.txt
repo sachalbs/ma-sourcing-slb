@@ -1,0 +1,67 @@
+225	États-Unis	SoCalGas	https://www.socalgas.com
+226	Espagne	Solaria	https://solariaenergia.com
+227	Espagne	Solar Pack (Zelestra)	https://zelestra.energy
+228	États-Unis	Southern Company 	https://www.southerncompany.com
+230	France	Terega	https://www.terega.fr
+231	Japon	Tokyo Gas	https://www.tokyo-gas.co.jp
+232	France	Total Énergie	https://totalenergies.com
+234	États-Unis	UGI International	https://www.ugicorp.com/company/our-businesses/international/
+235	Suisse	VARO	https://www.varoenergy.com
+236	Autriche	Verbund	https://www.verbund.com
+237	Espagne	X-ELIO	https://x-elio.com
+243	Portugal	AMORIM	https://www.amorim.com
+244	Italie	DE NORA	https://www.denora.com
+251	Royaume-Uni	INEOS	https://www.ineos.com
+252	Royaume-Uni	Johnson Matthey	https://matthey.com
+254	Pays-Bas	OCI	https://www.oci-global.com
+258	Luxembourg	Tenaris	https://www.tenaris.com
+259	Émirats arabes unis	ADNOC	https://www.adnoc.ae
+260	États-Unis	Baker Hughes	https://www.bakerhughes.com
+261	Thaïlande	Bangchak	https://www.bangchak.co.th
+262	Royaume-Uni	BP	https://www.bp.com
+263	Canada	Cenovus	https://www.cenovus.com
+264	États-Unis	Chevron	https://www.chevron.com
+265	États-Unis	ConocoPhilips	https://www.conocophillips.com
+267	Japon	Eneos	https://www.eneos.co.jp
+268	Italie	ENI	https://www.eni.com
+269	États-Unis	Eog resources 	https://www.eogresources.com
+270	Norvège	Equinor 	https://www.equinor.com
+271	États-Unis	ExxonMobil	https://corporate.exxonmobil.com
+272	Portugal	Galp energia	https://www.galp.com
+273	Corée du Sud	Kogas	https://www.kogas.or.kr
+274	États-Unis	Marathon	https://www.marathonpetroleum.com
+275	États-Unis	OXY	https://www.oxy.com
+277	Autriche	OMV	https://www.omv.com
+278	Malaisie	Petronas	https://www.petronas.com
+279	États-Unis	Philipps 66	https://www.phillips66.com
+280	Thaïlande	Ptt	https://www.pttplc.com
+281	Espagne	Repsol	https://www.repsol.com
+282	France	rubis	https://www.rubis.fr
+283	Arabie saoudite	saudi aramco	https://www.aramco.com
+284	Royaume-Uni	Shell	https://www.shell.com
+285	Chine	Sinopec	https://www.sinopecgroup.com
+286	Canada	Suncor Energy 	https://www.suncor.com
+287	États-Unis	Valero 	https://www.valero.com
+288	Allemagne	wintershall dea	https://wintershalldea.com
+289	Australie	Woodside	https://www.woodside.com
+291	États-Unis	CCI	https://www.cci.com
+292	Suisse	GLENCORE	https://www.glencore.com
+293	Chypre	GUNVOR	https://gunvorgroup.com
+294	Suisse	MERCURIA	https://www.mercuria.com
+295	Pays-Bas	STX	https://stxgroup.com
+296	Singapour	TRAFIGURA	https://www.trafigura.com
+297	Suisse	VITOL	https://www.vitol.com
+302	France	Groupe Roullier	https://www.roullier.com
+303	France	Sofiproteol	https://www.sofiproteol.com
+304	France	Eiffage	https://www.eiffage.com
+306	Royaume-Uni	Titan Energie	https://www.titanenergies.co.uk/
+340	Italie	Terna	https://www.terna.it
+341	Belgique	Elia Group	https://www.eliagroup.eu
+342	Portugal	REN	https://www.ren.pt
+343	USA	NextEra Energy	https://www.nexteraenergy.com
+344	USA	Vistra	https://www.vistracorp.com
+345	Inde	NTPC	https://www.ntpc.co.in
+346	Inde	Power Grid Corporation	https://www.powergrid.in/en/
+347	EAU	Masdar	https://masdar.ae
+348	Arabie Saoudite	ACWA Power	https://www.acwapower.com
+349	Australie	AGL Energy	https://www.agl.com.au

@@ -1,0 +1,47 @@
+17	Allemagne	SAP	https://www.sap.com/france/index.html?geotargeting_redirect=true
+18	France	Dassault Systèmes	https://www.3ds.com/fr/
+19	France	Schneider Electric	https://www.se.com/fr/fr/
+20	Allemagne	Siemens	https://www.siemens.com/fr-fr/
+21	Allemagne	Bosch SOFTWARE	https://www.bosch-softwaretechnologies.com/en/
+22	France	Capgemini	https://www.capgemini.com/be-en
+23	France	Sopra Steria	https://www.soprasteria.fr/
+24	Espagne	Indra Sistemas	https://www.indragroup.com/en
+25	Italie	Reply	https://www.reply.com/it
+26	Royaume-Uni	Sage Group	https://www.sage.com/fr-fr/
+27	Pays-Bas	Wolters Kluwer	https://www.wolterskluwer.com/en
+28	Suisse	Temenos	https://www.temenos.com/
+29	Royaume-Uni	Darktrace	https://www.darktrace.com/fr
+30	Norvège	Visma	https://www.visma.com/
+31	Suède	Hexagon AB	https://hexagon.com/
+33	Allemagne	Infineon Technologies	https://www.infineon.com/
+34	Suisse	STMicroelectronics	https://www.st.com/content/st_com/en.html
+35	Pays-Bas	ASML	https://www.asml.com/en
+44	France	Eviden / Atos	https://eviden.com
+106	États-Unis	IBM	https://www.ibm.com
+107	États-Unis	Oracle	https://www.oracle.com
+108	États-Unis	Salesforce	https://www.salesforce.com
+109	États-Unis	ServiceNow	https://www.servicenow.com
+110	États-Unis	Adobe	https://www.adobe.com
+111	États-Unis	Palantir Technologies	https://www.palantir.com
+112	États-Unis	Snowflake	https://www.snowflake.com
+113	États-Unis	Workday	https://www.workday.com
+114	États-Unis	Intuit	https://www.intuit.com
+115	États-Unis	AMD	https://www.amd.com
+116	États-Unis	Qualcomm	https://www.qualcomm.com
+117	États-Unis	Broadcom	https://www.broadcom.com
+118	États-Unis	Dell Technologies	https://www.delltechnologies.com
+119	États-Unis	Hewlett Packard Enterprise	https://www.hpe.com
+120	États-Unis	Databricks	https://www.databricks.com
+127	États-Unis	Booz Allen Hamilton	https://www.boozallen.com
+128	États-Unis	Leidos	https://www.leidos.com
+143	États-Unis	Super Micro Computer	https://www.supermicro.com
+317	Irlande	Accenture	https://www.accenture.com
+318	USA	Cognizant	https://www.cognizant.com
+319	USA	NVIDIA	https://www.nvidia.com
+320	USA	Palo Alto Networks	https://www.paloaltonetworks.com
+321	Allemagne	Bechtle	https://www.bechtle.com
+322	Inde	TCS	https://www.tcs.com
+323	Inde	Infosys	https://www.infosys.com
+324	Japon	Fujitsu	https://global.fujitsu/fr-fr
+325	Corée du Sud	Samsung SDS	https://www.samsungsds.com/
+361	Australie	IREN	https://iren.com/

@@ -1,0 +1,66 @@
+47	France	EDF	https://www.edf.fr
+48	France	Engie	https://www.engie.com
+49	Italie	Enel	https://www.enel.com
+50	Espagne	Iberdrola	https://www.iberdrola.com
+51	Allemagne	RWE	https://www.rwe.com
+52	Allemagne	E.ON	https://www.eon.com
+53	Finlande	Fortum	https://www.fortum.com
+54	Suède	Vattenfall	https://group.vattenfall.com
+55	Norvège	Statkraft	https://www.statkraft.com
+56	Portugal	EDP	https://www.edp.com
+57	Royaume-Uni	SSE	https://www.sse.com
+58	Danemark	Ørsted	https://orsted.com
+59	Autriche	Verbund	https://www.verbund.com
+60	Tchéquie	CEZ Group	https://www.cez.cz
+61	Allemagne	Uniper	https://www.uniper.energy
+74	Suisse	ABB	https://global.abb
+145	Irlande / États-Unis	Eaton	https://www.eaton.com
+146	États-Unis	Cummins	https://www.cummins.com
+147	États-Unis	Caterpillar	https://www.caterpillar.com
+148	États-Unis	GE Vernova	https://www.gevernova.com
+149	États-Unis	Constellation Energy	https://www.constellationenergy.com
+150	États-Unis	Talen Energy	https://www.talenenergy.com
+178	États-Unis	American Electric Power	https://www.aep.com
+180	Canada	Ballard	https://www.ballard.com
+181	Thaïlande	BanpuNext	https://www.banpunext.co.th/
+182	Suisse	BKW	https://www.bkw.ch/de
+183	Canada	Brookfield	https://www.brookfield.com
+184	France	Butagaz	https://www.butagaz.fr
+185	États-Unis	conEdison	https://www.coned.com
+186	États-Unis	Dominion Energy 	https://www.dominionenergy.com
+187	Royaume-Uni	Drax	https://www.drax.com
+188	États-Unis	Duke Energy 	https://www.linkedin.com/company/duke-energy-corporation/?originalSubdomain=fr
+189	France	EDF Invest	https://www.edfinvest.com
+190	Espagne	EDP Renewables	https://www.edpr.com
+191	Espagne	Enagas	https://www.enagas.es
+192	Pays-Bas	Eneco	https://www.eneco.com
+193	Italie	Enel	https://www.enel.com
+194	France	Engie	https://www.engie.com
+195	Tchéquie	EPH	https://www.epholding.cz/en
+196	Italie	ERG	https://www.erg.eu
+197	Irlande	ESB	https://www.esb.ie
+198	France	EREN	https://eren-groupe.com
+199	États-Unis	Exelon	https://www.exeloncorp.com
+200	Belgique	Fluxys	https://www.fluxys.com
+201	Finlande	Fortum	https://www.fortum.com
+202	Espagne	Frv	https://www.frv.com
+203	Pays-Bas	Gasunie	https://www.gasunie.nl
+204	Malaisie	Gentari 	https://www.gentari.com
+205	France	GRT Gaz (Natran)	https://www.grtgaz.com
+206	Suisse	Holdi Gaz	https://www.holdigaz.ch
+208	Suisse	MET Group	https://www.met.com
+209	Royaume-Uni	Nationalgrid	https://www.nationalgrid.com
+210	Espagne	Naturgy 	https://www.naturgy.com
+212	États-Unis	Northeast Utilities (Eversource Energy)	https://www.eversource.com
+213	États-Unis	nrg 	https://www.nrg.com
+214	Australie	Origin Energy 	https://www.originenergy.com.au
+215	Danemark	Orsted	https://orsted.com
+216	États-Unis	Plug	https://www.plugpower.com
+217	Allemagne	RWE	https://www.rwe.com
+218	Norvège	Scatec	https://www.scatec.com
+219	Royaume-Uni	SSE	https://www.sse.com
+220	États-Unis	Sempra Energy 	https://www.sempra.com
+221	Pays-Bas	SHV Energy 	https://www.shvenergy.com
+222	Allemagne	SIEMENS Energy 	https://www.siemens-energy.com
+223	Corée du Sud	SK E&S	https://www.skens.com
+224	Italie	SNAM	https://www.snam.it

@@ -1,0 +1,44 @@
+36	France	Thales	https://www.thalesgroup.com/en
+37	Italie	Leonardo	https://www.leonardo.com/en/home
+38	Royaume-Uni	QinetiQ	https://www.qinetiq.com
+39	Allemagne	Rohde & Schwarz	https://www.rohde-schwarz.com
+41	France	Safran	https://www.safran-group.com
+42	Pays-Bas	Airbus	https://www.airbus.com
+75	Royaume-Uni	Rolls-Royce	https://www.rolls-royce.com
+77	Allemagne	MTU Aero Engines	https://www.mtu.de
+78	France	Dassault Aviation	https://www.dassault-aviation.com
+79	Suède	Saab	https://www.saab.com
+80	Royaume-Uni	GKN Aerospace	https://www.gknaerospace.com
+81	Allemagne	OHB SE	https://www.ohb.de
+82	Belgique	Sonaca	https://www.sonaca.com
+83	Allemagne	Hensoldt	https://www.hensoldt.net
+84	Royaume-Uni	Melrose Industries	https://www.melroseplc.net
+85	Royaume-Uni	Senior plc	https://www.seniorplc.com
+86	Suisse	RUAG International	https://www.ruag.com
+87	Suisse	Pilatus Aircraft	https://www.pilatus-aircraft.com
+88	France	ArianeGroup	https://www.ariane.group
+89	Allemagne	Liebherr Aerospace	https://www.liebherr.com
+90	Royaume-Uni	BAE Systems	https://www.baesystems.com
+123	États-Unis	Lockheed Martin	https://www.lockheedmartin.com
+124	États-Unis	Northrop Grumman	https://www.northropgrumman.com
+125	États-Unis	L3Harris Technologies	https://www.l3harris.com
+126	États-Unis	General Dynamics	https://www.gd.com
+165	États-Unis	Textron	https://www.textron.com
+166	Canada	Bombardier	https://www.bombardier.com
+167	Canada	CAE	https://www.cae.com
+168	États-Unis / Suisse	Garmin	https://www.garmin.com
+169	États-Unis	Teledyne Technologies	https://www.teledyne.com
+170	États-Unis	Curtiss-Wright	https://www.curtisswright.com
+171	États-Unis	Moog Inc.	https://www.moog.com
+172	États-Unis	TransDigm Group	https://www.transdigm.com
+173	États-Unis	Woodward	https://www.woodward.com
+174	États-Unis	AeroVironment	https://www.avinc.com
+175	États-Unis	Kratos Defense & Security	https://www.kratosdefense.com
+176	Canada	MDA Space	https://mda.space
+326	Brésil	Embraer	https://www.embraer.com
+327	USA	Boeing	https://www.boeing.com
+328	USA	RTX	https://www.rtx.com
+329	Japon	Mitsubishi Heavy Industries	https://www.mhi.com
+330	Japon	Kawasaki Heavy Industries	https://global.kawasaki.com
+331	Corée du Sud	Hanwha Aerospace	https://www.hanwha.com/companies/hanwha-aerospace.do
+332	Corée du Sud	Korea Aerospace Industries	https://www.koreaaero.com/en/

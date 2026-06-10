@@ -1,0 +1,44 @@
+2	France	OVHcloud	https://www.ovhcloud.com/en/
+3	Allemagne	IONOS Group	https://www.ionos-group.com/
+4	France	Orange Business	https://www.orange-business.com/fr
+5	Allemagne	Deutsche Telekom	https://www.telekom.de/start
+6	Royaume-Uni	BT Group	https://www.bt.com/about
+7	Royaume-Uni	Vodafone Group	https://www.vodafone.com/
+8	Espagne	Telefónica	https://www.telefonica.com/es/
+9	Suisse	Swisscom	https://www.swisscom.ch/fr/
+10	Belgique	Proximus Group	https://www.proximus.com/fr/
+11	Finlande	Elisa Corporation	https://elisa.com/
+12	Norvège	Telenor	https://www.telenor.com/
+13	Suède	Telia Company	https://www.teliacompany.com/en
+14	Autriche	A1 Telekom Austria	https://a1.com/
+15	Royaume-Uni	Colt Technology Services	https://www.colt.net/
+16	France	Iliad Group	https://www.iliad.fr/en/
+32	Finlande	Nokia	https://www.nokia.com/
+91	États-Unis	American Tower / CoreSite	https://www.americantower.com/media-hub/topic/coresite
+92	États-Unis	Iron Mountain	https://www.ironmountain.com
+93	États-Unis	Lumen Technologies	https://www.lumen.com
+94	États-Unis	Cogent Communications	https://www.cogentco.com
+95	États-Unis	Zayo Group	https://www.zayo.com
+96	Canada	Rogers Communications	https://www.rogers.com
+97	Canada	BCE	https://www.bce.ca
+98	Canada	Telus	https://www.telus.com
+99	États-Unis	Flexential	https://www.flexential.com
+100	États-Unis	QTS Data Centers	https://www.qtsdatacenters.com
+101	États-Unis	CyrusOne	https://www.cyrusone.com
+102	États-Unis	Switch	https://www.switch.com
+103	États-Unis	DataBank	https://www.databank.com
+104	États-Unis	Aligned Data Centers	https://aligneddc.com
+105	Canada	Cologix	https://www.cologix.com
+144	États-Unis	Vertiv Holdings	https://www.vertiv.com
+233	France	TSG	https://www.tsg-solutions.com
+298	États-Unis	Amazon	https://www.amazon.com
+307	USA	Equinix	https://www.equinix.com
+308	USA	Digital Realty	https://www.digitalrealty.com
+309	Espagne	Cellnex	https://www.cellnex.com
+310	Suède	GlobalConnect	https://globalconnect.eu
+311	USA	Cisco	https://www.cisco.com
+312	USA	Arista Networks	https://www.arista.com
+313	Japon	NTT	https://www.ntt.com
+314	Japon	KDDI	https://www.kddi.com
+315	Singapour	Singtel	https://www.singtel.com
+316	Inde	Bharti Airtel	https://www.airtel.com

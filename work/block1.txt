@@ -1,0 +1,360 @@
+2	France	Data center / télécom / Software	OVHcloud	https://www.ovhcloud.com/en/
+3	Allemagne	Data center / télécom / Software	IONOS Group	https://www.ionos-group.com/
+4	France	Data center / télécom / Software	Orange Business	https://www.orange-business.com/fr
+5	Allemagne	Data center / télécom / Software	Deutsche Telekom	https://www.telekom.de/start
+6	Royaume-Uni	Data center / télécom / Software	BT Group	https://www.bt.com/about
+7	Royaume-Uni	Data center / télécom / Software	Vodafone Group	https://www.vodafone.com/
+8	Espagne	Data center / télécom / Software	Telefónica	https://www.telefonica.com/es/
+9	Suisse	Data center / télécom / Software	Swisscom	https://www.swisscom.ch/fr/
+10	Belgique	Data center / télécom / Software	Proximus Group	https://www.proximus.com/fr/
+11	Finlande	Data center / télécom / Software	Elisa Corporation	https://elisa.com/
+12	Norvège	Data center / télécom / Software	Telenor	https://www.telenor.com/
+13	Suède	Data center / télécom / Software	Telia Company	https://www.teliacompany.com/en
+14	Autriche	Data center / télécom / Software	A1 Telekom Austria	https://a1.com/
+15	Royaume-Uni	Data center / télécom / Software	Colt Technology Services	https://www.colt.net/
+16	France	Data center / télécom / Software	Iliad Group	https://www.iliad.fr/en/
+17	Allemagne	IA / Numérique	SAP	https://www.sap.com/france/index.html?geotargeting_redirect=true
+18	France	IA / Numérique	Dassault Systèmes	https://www.3ds.com/fr/
+19	France	IA / Numérique	Schneider Electric	https://www.se.com/fr/fr/
+20	Allemagne	IA / Numérique	Siemens	https://www.siemens.com/fr-fr/
+21	Allemagne	IA / Numérique	Bosch SOFTWARE	https://www.bosch-softwaretechnologies.com/en/
+22	France	IA / Numérique	Capgemini	https://www.capgemini.com/be-en
+23	France	IA / Numérique	Sopra Steria	https://www.soprasteria.fr/
+24	Espagne	IA / Numérique	Indra Sistemas	https://www.indragroup.com/en
+25	Italie	IA / Numérique	Reply	https://www.reply.com/it
+26	Royaume-Uni	IA / Numérique	Sage Group	https://www.sage.com/fr-fr/
+27	Pays-Bas	IA / Numérique	Wolters Kluwer	https://www.wolterskluwer.com/en
+28	Suisse	IA / Numérique	Temenos	https://www.temenos.com/
+29	Royaume-Uni	IA / Numérique	Darktrace	https://www.darktrace.com/fr
+30	Norvège	IA / Numérique	Visma	https://www.visma.com/
+31	Suède	IA / Numérique	Hexagon AB	https://hexagon.com/
+32	Finlande	Data center / télécom / Software	Nokia	https://www.nokia.com/
+33	Allemagne	IA / Numérique	Infineon Technologies	https://www.infineon.com/
+34	Suisse	IA / Numérique	STMicroelectronics	https://www.st.com/content/st_com/en.html
+35	Pays-Bas	IA / Numérique	ASML	https://www.asml.com/en
+36	France	Aerospace	Thales	https://www.thalesgroup.com/en
+37	Italie	Aerospace	Leonardo	https://www.leonardo.com/en/home
+38	Royaume-Uni	Aerospace	QinetiQ	https://www.qinetiq.com
+39	Allemagne	Aerospace	Rohde & Schwarz	https://www.rohde-schwarz.com
+40	Royaume-Uni	Quantique	Oxford Instruments	https://www.oxinst.com
+41	France	Aerospace	Safran	https://www.safran-group.com
+42	Pays-Bas	Aerospace	Airbus	https://www.airbus.com
+43	Allemagne	Quantique	Zeiss Group	https://www.zeiss.com
+44	France	IA / Numérique	Eviden / Atos	https://eviden.com
+45	Allemagne	Quantique	Jenoptik	https://www.jenoptik.com
+46	Allemagne	Quantique	TRUMPF	https://www.trumpf.com
+47	France	Énergie	EDF	https://www.edf.fr
+48	France	Énergie	Engie	https://www.engie.com
+49	Italie	Énergie	Enel	https://www.enel.com
+50	Espagne	Énergie	Iberdrola	https://www.iberdrola.com
+51	Allemagne	Énergie	RWE	https://www.rwe.com
+52	Allemagne	Énergie	E.ON	https://www.eon.com
+53	Finlande	Énergie	Fortum	https://www.fortum.com
+54	Suède	Énergie	Vattenfall	https://group.vattenfall.com
+55	Norvège	Énergie	Statkraft	https://www.statkraft.com
+56	Portugal	Énergie	EDP	https://www.edp.com
+57	Royaume-Uni	Énergie	SSE	https://www.sse.com
+58	Danemark	Énergie	Ørsted	https://orsted.com
+59	Autriche	Énergie	Verbund	https://www.verbund.com
+60	Tchéquie	Énergie	CEZ Group	https://www.cez.cz
+61	Allemagne	Énergie	Uniper	https://www.uniper.energy
+62	Allemagne	Naval / Maritime	Hapag-Lloyd	https://www.hapag-lloyd.com
+63	Danemark	Naval / Maritime	DSV	https://www.dsv.com
+64	Suisse	Naval / Maritime	Kuehne+Nagel	https://www.kuehne-nagel.com
+65	Suède	Naval / Maritime	Stena AB	https://www.stena.com
+66	Danemark	Naval / Maritime	DFDS	https://www.dfds.com
+67	Norvège	Naval / Maritime	Wallenius Wilhelmsen	https://www.walleniuswilhelmsen.com
+68	Italie	Naval / Maritime	Grimaldi Group	https://www.grimaldi.napoli.it
+69	Belgique	Naval / Maritime	CMB.TECH	https://www.cmb.tech
+70	Italie	Naval / Maritime	Fincantieri	https://www.fincantieri.com
+71	Pays-Bas	Naval / Maritime	Damen Shipyards	https://www.damen.com
+72	Finlande	Naval / Maritime	Wärtsilä	https://www.wartsila.com
+73	Norvège	Naval / Maritime	Kongsberg Gruppen	https://www.kongsberg.com
+74	Suisse	Énergie	ABB	https://global.abb
+75	Royaume-Uni	Aerospace	Rolls-Royce	https://www.rolls-royce.com
+76	Espagne	Naval / Maritime	Navantia	https://www.navantia.es
+77	Allemagne	Aerospace	MTU Aero Engines	https://www.mtu.de
+78	France	Aerospace	Dassault Aviation	https://www.dassault-aviation.com
+79	Suède	Aerospace	Saab	https://www.saab.com
+80	Royaume-Uni	Aerospace	GKN Aerospace	https://www.gknaerospace.com
+81	Allemagne	Aerospace	OHB SE	https://www.ohb.de
+82	Belgique	Aerospace	Sonaca	https://www.sonaca.com
+83	Allemagne	Aerospace	Hensoldt	https://www.hensoldt.net
+84	Royaume-Uni	Aerospace	Melrose Industries	https://www.melroseplc.net
+85	Royaume-Uni	Aerospace	Senior plc	https://www.seniorplc.com
+86	Suisse	Aerospace	RUAG International	https://www.ruag.com
+87	Suisse	Aerospace	Pilatus Aircraft	https://www.pilatus-aircraft.com
+88	France	Aerospace	ArianeGroup	https://www.ariane.group
+89	Allemagne	Aerospace	Liebherr Aerospace	https://www.liebherr.com
+90	Royaume-Uni	Aerospace	BAE Systems	https://www.baesystems.com
+91	États-Unis	Data center / télécom / Software	American Tower / CoreSite	https://www.americantower.com/media-hub/topic/coresite
+92	États-Unis	Data center / télécom / Software	Iron Mountain	https://www.ironmountain.com
+93	États-Unis	Data center / télécom / Software	Lumen Technologies	https://www.lumen.com
+94	États-Unis	Data center / télécom / Software	Cogent Communications	https://www.cogentco.com
+95	États-Unis	Data center / télécom / Software	Zayo Group	https://www.zayo.com
+96	Canada	Data center / télécom / Software	Rogers Communications	https://www.rogers.com
+97	Canada	Data center / télécom / Software	BCE	https://www.bce.ca
+98	Canada	Data center / télécom / Software	Telus	https://www.telus.com
+99	États-Unis	Data center / télécom / Software	Flexential	https://www.flexential.com
+100	États-Unis	Data center / télécom / Software	QTS Data Centers	https://www.qtsdatacenters.com
+101	États-Unis	Data center / télécom / Software	CyrusOne	https://www.cyrusone.com
+102	États-Unis	Data center / télécom / Software	Switch	https://www.switch.com
+103	États-Unis	Data center / télécom / Software	DataBank	https://www.databank.com
+104	États-Unis	Data center / télécom / Software	Aligned Data Centers	https://aligneddc.com
+105	Canada	Data center / télécom / Software	Cologix	https://www.cologix.com
+106	États-Unis	IA / Numérique	IBM	https://www.ibm.com
+107	États-Unis	IA / Numérique	Oracle	https://www.oracle.com
+108	États-Unis	IA / Numérique	Salesforce	https://www.salesforce.com
+109	États-Unis	IA / Numérique	ServiceNow	https://www.servicenow.com
+110	États-Unis	IA / Numérique	Adobe	https://www.adobe.com
+111	États-Unis	IA / Numérique	Palantir Technologies	https://www.palantir.com
+112	États-Unis	IA / Numérique	Snowflake	https://www.snowflake.com
+113	États-Unis	IA / Numérique	Workday	https://www.workday.com
+114	États-Unis	IA / Numérique	Intuit	https://www.intuit.com
+115	États-Unis	IA / Numérique	AMD	https://www.amd.com
+116	États-Unis	IA / Numérique	Qualcomm	https://www.qualcomm.com
+117	États-Unis	IA / Numérique	Broadcom	https://www.broadcom.com
+118	États-Unis	IA / Numérique	Dell Technologies	https://www.delltechnologies.com
+119	États-Unis	IA / Numérique	Hewlett Packard Enterprise	https://www.hpe.com
+120	États-Unis	IA / Numérique	Databricks	https://www.databricks.com
+121	États-Unis	Quantique	Honeywell International	https://www.honeywell.com
+122	États-Unis	Quantique	Keysight Technologies	https://www.keysight.com
+123	États-Unis	Aerospace	Lockheed Martin	https://www.lockheedmartin.com
+124	États-Unis	Aerospace	Northrop Grumman	https://www.northropgrumman.com
+125	États-Unis	Aerospace	L3Harris Technologies	https://www.l3harris.com
+126	États-Unis	Aerospace	General Dynamics	https://www.gd.com
+127	États-Unis	IA / Numérique	Booz Allen Hamilton	https://www.boozallen.com
+128	États-Unis	IA / Numérique	Leidos	https://www.leidos.com
+129	États-Unis	Quantique	Coherent Corp.	https://www.coherent.com
+130	États-Unis	Quantique	Cadence Design Systems	https://www.cadence.com
+131	États-Unis	Quantique	Synopsys	https://www.synopsys.com
+132	États-Unis	Quantique	Applied Materials	https://www.appliedmaterials.com
+133	États-Unis	Quantique	Lam Research	https://www.lamresearch.com
+134	États-Unis	Quantique	Teradyne	https://www.teradyne.com
+135	États-Unis	Quantique	Agilent Technologies	https://www.agilent.com
+136	États-Unis	Crypto mining	Marathon Digital Holdings	https://www.mara.com
+137	États-Unis	Crypto mining	Core Scientific	https://www.corescientific.com
+138	États-Unis	Crypto mining	Riot Platforms	https://www.riotplatforms.com
+139	États-Unis	Crypto mining	CleanSpark	https://www.cleanspark.com
+140	États-Unis / Canada	Crypto mining	Hut 8	https://hut8.com
+141	États-Unis	Crypto mining	Cipher Mining	https://www.ciphermining.com
+142	États-Unis	Crypto mining	TeraWulf	https://www.terawulf.com
+143	États-Unis	IA / Numérique	Super Micro Computer	https://www.supermicro.com
+144	États-Unis	Data center / télécom / Software	Vertiv Holdings	https://www.vertiv.com
+145	Irlande / États-Unis	Énergie	Eaton	https://www.eaton.com
+146	États-Unis	Énergie	Cummins	https://www.cummins.com
+147	États-Unis	Énergie	Caterpillar	https://www.caterpillar.com
+148	États-Unis	Énergie	GE Vernova	https://www.gevernova.com
+149	États-Unis	Énergie	Constellation Energy	https://www.constellationenergy.com
+150	États-Unis	Énergie	Talen Energy	https://www.talenenergy.com
+151	États-Unis	Naval / Maritime	Huntington Ingalls Industries	https://www.hii.com
+152	États-Unis	Naval / Maritime	Kirby Corporation	https://www.kirbycorp.com
+153	États-Unis	Naval / Maritime	Matson	https://www.matson.com
+154	États-Unis	Naval / Maritime	Crowley Maritime	https://www.crowley.com
+155	États-Unis	Naval / Maritime	Tidewater	https://www.tdw.com
+156	États-Unis	Naval / Maritime	Oceaneering International	https://www.oceaneering.com
+157	États-Unis	Naval / Maritime	Great Lakes Dredge & Dock	https://www.gldd.com
+158	États-Unis	Naval / Maritime	BWX Technologies	https://www.bwxt.com
+159	États-Unis	Naval / Maritime	Bollinger Shipyards	https://www.bollingershipyards.com
+160	États-Unis	Naval / Maritime	Vigor Industrial	https://www.vigor.net
+161	États-Unis	Naval / Maritime	Edison Chouest Offshore	https://www.chouest.com
+162	Canada	Naval / Maritime	Seaspan Corporation	https://www.seaspan.com
+163	États-Unis	Naval / Maritime	Fincantieri Marinette Marine	https://fincantierimarinegroup.com/about-us/us-shipyards/marinette-marine/
+164	États-Unis	Naval / Maritime	Austal USA	https://www.austalusa.com/
+165	États-Unis	Aerospace	Textron	https://www.textron.com
+166	Canada	Aerospace	Bombardier	https://www.bombardier.com
+167	Canada	Aerospace	CAE	https://www.cae.com
+168	États-Unis / Suisse	Aerospace	Garmin	https://www.garmin.com
+169	États-Unis	Aerospace	Teledyne Technologies	https://www.teledyne.com
+170	États-Unis	Aerospace	Curtiss-Wright	https://www.curtisswright.com
+171	États-Unis	Aerospace	Moog Inc.	https://www.moog.com
+172	États-Unis	Aerospace	TransDigm Group	https://www.transdigm.com
+173	États-Unis	Aerospace	Woodward	https://www.woodward.com
+174	États-Unis	Aerospace	AeroVironment	https://www.avinc.com
+175	États-Unis	Aerospace	Kratos Defense & Security	https://www.kratosdefense.com
+176	Canada	Aerospace	MDA Space	https://mda.space
+177	Suisse	Crypto mining	ALPIQ	https://www.alpiq.com
+178	États-Unis	Énergie	American Electric Power	https://www.aep.com
+179	Suisse	Crypto mining	AXPO	https://www.axpo.com
+180	Canada	Énergie	Ballard	https://www.ballard.com
+181	Thaïlande	Énergie	BanpuNext	https://www.banpunext.co.th/
+182	Suisse	Énergie	BKW	https://www.bkw.ch/de
+183	Canada	Énergie	Brookfield	https://www.brookfield.com
+184	France	Énergie	Butagaz	https://www.butagaz.fr
+185	États-Unis	Énergie	conEdison	https://www.coned.com
+186	États-Unis	Énergie	Dominion Energy 	https://www.dominionenergy.com
+187	Royaume-Uni	Énergie	Drax	https://www.drax.com
+188	États-Unis	Énergie	Duke Energy 	https://www.linkedin.com/company/duke-energy-corporation/?originalSubdomain=fr
+189	France	Énergie	EDF Invest	https://www.edfinvest.com
+190	Espagne	Énergie	EDP Renewables	https://www.edpr.com
+191	Espagne	Énergie	Enagas	https://www.enagas.es
+192	Pays-Bas	Énergie	Eneco	https://www.eneco.com
+193	Italie	Énergie	Enel	https://www.enel.com
+194	France	Énergie	Engie	https://www.engie.com
+195	Tchéquie	Énergie	EPH	https://www.epholding.cz/en
+196	Italie	Énergie	ERG	https://www.erg.eu
+197	Irlande	Énergie	ESB	https://www.esb.ie
+198	France	Énergie	EREN	https://eren-groupe.com
+199	États-Unis	Énergie	Exelon	https://www.exeloncorp.com
+200	Belgique	Énergie	Fluxys	https://www.fluxys.com
+201	Finlande	Énergie	Fortum	https://www.fortum.com
+202	Espagne	Énergie	Frv	https://www.frv.com
+203	Pays-Bas	Énergie	Gasunie	https://www.gasunie.nl
+204	Malaisie	Énergie	Gentari 	https://www.gentari.com
+205	France	Énergie	GRT Gaz (Natran)	https://www.grtgaz.com
+206	Suisse	Énergie	Holdi Gaz	https://www.holdigaz.ch
+207	Canada	Crypto mining	Hydro Québec	https://www.hydroquebec.com
+208	Suisse	Énergie	MET Group	https://www.met.com
+209	Royaume-Uni	Énergie	Nationalgrid	https://www.nationalgrid.com
+210	Espagne	Énergie	Naturgy 	https://www.naturgy.com
+211	États-Unis	Crypto mining	Nextera Energy 	https://www.nexteraenergy.com
+212	États-Unis	Énergie	Northeast Utilities (Eversource Energy)	https://www.eversource.com
+213	États-Unis	Énergie	nrg 	https://www.nrg.com
+214	Australie	Énergie	Origin Energy 	https://www.originenergy.com.au
+215	Danemark	Énergie	Orsted	https://orsted.com
+216	États-Unis	Énergie	Plug	https://www.plugpower.com
+217	Allemagne	Énergie	RWE	https://www.rwe.com
+218	Norvège	Énergie	Scatec	https://www.scatec.com
+219	Royaume-Uni	Énergie	SSE	https://www.sse.com
+220	États-Unis	Énergie	Sempra Energy 	https://www.sempra.com
+221	Pays-Bas	Énergie	SHV Energy 	https://www.shvenergy.com
+222	Allemagne	Énergie	SIEMENS Energy 	https://www.siemens-energy.com
+223	Corée du Sud	Énergie	SK E&S	https://www.skens.com
+224	Italie	Énergie	SNAM	https://www.snam.it
+225	États-Unis	Énergie	SoCalGas	https://www.socalgas.com
+226	Espagne	Énergie	Solaria	https://solariaenergia.com
+227	Espagne	Énergie	Solar Pack (Zelestra)	https://zelestra.energy
+228	États-Unis	Énergie	Southern Company 	https://www.southerncompany.com
+229	Canada	Crypto mining	TC Énergie	https://www.tcenergy.com
+230	France	Énergie	Terega	https://www.terega.fr
+231	Japon	Énergie	Tokyo Gas	https://www.tokyo-gas.co.jp
+232	France	Énergie	Total Énergie	https://totalenergies.com
+233	France	Data center / télécom / Software	TSG	https://www.tsg-solutions.com
+234	États-Unis	Énergie	UGI International	https://www.ugicorp.com/company/our-businesses/international/
+235	Suisse	Énergie	VARO	https://www.varoenergy.com
+236	Autriche	Énergie	Verbund	https://www.verbund.com
+237	Espagne	Énergie	X-ELIO	https://x-elio.com
+238	États-Unis	Quantique	Air Products	https://www.airproducts.com
+239	France	Quantique	Air Liquide	https://www.airliquide.com
+240	Luxembourg	Quantique	ArcelorMittal	https://corporate.arcelormittal.com
+241	France	Quantique	ARKEMA	https://www.arkema.com
+242	Allemagne	Quantique	O-BASF	https://www.basf.com
+243	Portugal	Énergie	AMORIM	https://www.amorim.com
+244	Italie	Énergie	DE NORA	https://www.denora.com
+245	États-Unis	Quantique	Dow	https://www.dow.com
+246	Suisse	Quantique	Dsm-firmenich	https://www.dsm-firmenich.com
+247	États-Unis	Quantique	EASTMAN	https://www.eastman.com
+248	Allemagne	Quantique	EVONIK	https://www.evonik.com
+249	Allemagne	Quantique	FREUDENBERG	https://www.freudenberg.com
+250	États-Unis	Quantique	HUNTSMAN	https://www.huntsman.com
+251	Royaume-Uni	Énergie	INEOS	https://www.ineos.com
+252	Royaume-Uni	Énergie	Johnson Matthey	https://matthey.com
+253	Royaume-Uni	Quantique	Linde	https://www.linde.com
+254	Pays-Bas	Énergie	OCI	https://www.oci-global.com
+255	Arabie saoudite	Quantique	Sabic	https://www.sabic.com
+256	France	Quantique	SAINT-GOBIN	https://www.saint-gobain.com
+257	Belgique	Quantique	SOLVAY	https://www.solvay.com
+258	Luxembourg	Énergie	Tenaris	https://www.tenaris.com
+259	Émirats arabes unis	Énergie	ADNOC	https://www.adnoc.ae
+260	États-Unis	Énergie	Baker Hughes	https://www.bakerhughes.com
+261	Thaïlande	Énergie	Bangchak	https://www.bangchak.co.th
+262	Royaume-Uni	Énergie	BP	https://www.bp.com
+263	Canada	Énergie	Cenovus	https://www.cenovus.com
+264	États-Unis	Énergie	Chevron	https://www.chevron.com
+265	États-Unis	Énergie	ConocoPhilips	https://www.conocophillips.com
+266	Canada	Crypto mining	Enbridge	https://www.enbridge.com
+267	Japon	Énergie	Eneos	https://www.eneos.co.jp
+268	Italie	Énergie	ENI	https://www.eni.com
+269	États-Unis	Énergie	Eog resources 	https://www.eogresources.com
+270	Norvège	Énergie	Equinor 	https://www.equinor.com
+271	États-Unis	Énergie	ExxonMobil	https://corporate.exxonmobil.com
+272	Portugal	Énergie	Galp energia	https://www.galp.com
+273	Corée du Sud	Énergie	Kogas	https://www.kogas.or.kr
+274	États-Unis	Énergie	Marathon	https://www.marathonpetroleum.com
+275	États-Unis	Énergie	OXY	https://www.oxy.com
+276	Pays-Bas	Naval / Maritime	SBM Offshore	https://www.sbmoffshore.com
+277	Autriche	Énergie	OMV	https://www.omv.com
+278	Malaisie	Énergie	Petronas	https://www.petronas.com
+279	États-Unis	Énergie	Philipps 66	https://www.phillips66.com
+280	Thaïlande	Énergie	Ptt	https://www.pttplc.com
+281	Espagne	Énergie	Repsol	https://www.repsol.com
+282	France	Énergie	rubis	https://www.rubis.fr
+283	Arabie saoudite	Énergie	saudi aramco	https://www.aramco.com
+284	Royaume-Uni	Énergie	Shell	https://www.shell.com
+285	Chine	Énergie	Sinopec	https://www.sinopecgroup.com
+286	Canada	Énergie	Suncor Energy 	https://www.suncor.com
+287	États-Unis	Énergie	Valero 	https://www.valero.com
+288	Allemagne	Énergie	wintershall dea	https://wintershalldea.com
+289	Australie	Énergie	Woodside	https://www.woodside.com
+290	Pays-Bas	Naval / Maritime	ADVARIO	https://advario.com/
+291	États-Unis	Énergie	CCI	https://www.cci.com
+292	Suisse	Énergie	GLENCORE	https://www.glencore.com
+293	Chypre	Énergie	GUNVOR	https://gunvorgroup.com
+294	Suisse	Énergie	MERCURIA	https://www.mercuria.com
+295	Pays-Bas	Énergie	STX	https://stxgroup.com
+296	Singapour	Énergie	TRAFIGURA	https://www.trafigura.com
+297	Suisse	Énergie	VITOL	https://www.vitol.com
+298	États-Unis	Data center / télécom	Amazon	https://www.amazon.com
+299	France	Naval / Maritime	CMA CGM	https://www.cmacgm-group.com
+300	Danemark	Naval / Maritime	Maersk	https://www.maersk.com
+301	Suisse	Naval / Maritime	MSC	https://www.msc.com
+302	France	Énergie	Groupe Roullier	https://www.roullier.com
+303	France	Énergie	Sofiproteol	https://www.sofiproteol.com
+304	France	Énergie	Eiffage	https://www.eiffage.com
+305	France	Naval / Maritime	GTT	https://www.gtt.fr
+306	Royaume-Uni	Énergie	Titan Energie	https://www.titanenergies.co.uk/
+307	USA	Data center / télécom / Software	Equinix	https://www.equinix.com
+308	USA	Data center / télécom / Software	Digital Realty	https://www.digitalrealty.com
+309	Espagne	Data center / télécom / Software	Cellnex	https://www.cellnex.com
+310	Suède	Data center / télécom / Software	GlobalConnect	https://globalconnect.eu
+311	USA	Data center / télécom / Software	Cisco	https://www.cisco.com
+312	USA	Data center / télécom / Software	Arista Networks	https://www.arista.com
+313	Japon	Data center / télécom / Software	NTT	https://www.ntt.com
+314	Japon	Data center / télécom / Software	KDDI	https://www.kddi.com
+315	Singapour	Data center / télécom / Software	Singtel	https://www.singtel.com
+316	Inde	Data center / télécom / Software	Bharti Airtel	https://www.airtel.com
+317	Irlande	IA / Numérique	Accenture	https://www.accenture.com
+318	USA	IA / Numérique	Cognizant	https://www.cognizant.com
+319	USA	IA / Numérique	NVIDIA	https://www.nvidia.com
+320	USA	IA / Numérique	Palo Alto Networks	https://www.paloaltonetworks.com
+321	Allemagne	IA / Numérique	Bechtle	https://www.bechtle.com
+322	Inde	IA / Numérique	TCS	https://www.tcs.com
+323	Inde	IA / Numérique	Infosys	https://www.infosys.com
+324	Japon	IA / Numérique	Fujitsu	https://global.fujitsu/fr-fr
+325	Corée du Sud	IA / Numérique	Samsung SDS	https://www.samsungsds.com/
+326	Brésil	Aerospace	Embraer	https://www.embraer.com
+327	USA	Aerospace	Boeing	https://www.boeing.com
+328	USA	Aerospace	RTX	https://www.rtx.com
+329	Japon	Aerospace	Mitsubishi Heavy Industries	https://www.mhi.com
+330	Japon	Aerospace	Kawasaki Heavy Industries	https://global.kawasaki.com
+331	Corée du Sud	Aerospace	Hanwha Aerospace	https://www.hanwha.com/companies/hanwha-aerospace.do
+332	Corée du Sud	Aerospace	Korea Aerospace Industries	https://www.koreaaero.com/en/
+333	USA	Quantique	Danaher	https://www.danaher.com
+334	USA	Quantique	Bruker	https://www.bruker.com
+335	Japon	Quantique	Hamamatsu Photonics	https://www.hamamatsu.com
+336	Japon	Quantique	HORIBA	https://www.horiba.com
+337	Finlande	Quantique	IQM	https://www.meetiqm.com
+338	France	Quantique	Pasqal	https://www.pasqal.com
+339	France	Quantique	Quandela	https://www.quandela.com
+340	Italie	Énergie	Terna	https://www.terna.it
+341	Belgique	Énergie	Elia Group	https://www.eliagroup.eu
+342	Portugal	Énergie	REN	https://www.ren.pt
+343	USA	Énergie	NextEra Energy	https://www.nexteraenergy.com
+344	USA	Énergie	Vistra	https://www.vistracorp.com
+345	Inde	Énergie	NTPC	https://www.ntpc.co.in
+346	Inde	Énergie	Power Grid Corporation	https://www.powergrid.in/en/
+347	EAU	Énergie	Masdar	https://masdar.ae
+348	Arabie Saoudite	Énergie	ACWA Power	https://www.acwapower.com
+349	Australie	Énergie	AGL Energy	https://www.agl.com.au
+350	Pays-Bas	Naval / Maritime	Boskalis	https://www.boskalis.com
+351	Pays-Bas	Naval / Maritime	Van Oord	https://www.vanoord.com
+352	Belgique	Naval / Maritime	Jan De Nul	https://www.jandenul.com
+353	Taïwan	Naval / Maritime	Evergreen Marine	https://www.evergreen-marine.com
+354	Japon	Naval / Maritime	NYK Line	https://www.nyk.com
+355	Japon	Naval / Maritime	MOL	https://www.mol.co.jp
+356	Corée du Sud	Naval / Maritime	Samsung Heavy Industries	https://www.samsungshi.com
+357	Chine	Naval / Maritime	COSCO Shipping	https://www.coscoshipping.com
+358	Canada	Crypto mining	Bitfarms	https://www.bitfarms.com
+359	Singapour	Crypto mining	Bitdeer	https://www.bitdeer.com
+360	USA	Crypto mining	Applied Digital	https://www.applieddigital.com
+361	Australie	IA / Numérique	IREN	https://iren.com/
