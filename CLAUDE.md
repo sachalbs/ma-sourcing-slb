@@ -41,6 +41,9 @@ continuation (on fait primaire ET secondaire), nouveaux véhicules, entrée d'un
 segments. Lecture tendance + concurrence + contrepartie de liquidité potentielle. Ne garder
 que le structurant, pas chaque micro-levée. Ne pas se limiter à CFNEWS : croiser Boursorama,
 newsrooms, Les Échos, PE Insights, Secondaries Investor, etc.
+_Filtre : priorité au smidcap français et aux deals FR._ Ne retenir un acteur large-cap ou
+international que s'il a un lien direct avec nous (contrepartie secondaire / continuation,
+concurrent sur une de nos cibles, intervenant à contacter). Sinon, écarter.
 
 ## Règles transverses
 - **Pertinence d'abord.** Mieux vaut 3 items en plein dans le mille que 20 tièdes. Coupe
