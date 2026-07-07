@@ -5,6 +5,7 @@
 - [ ] **Flux B — Mercato** : mouvements banquiers / conseils smidcap FR. _hebdo_
 - [ ] **Flux C — Normes** : évolutions ESG/SFDR/AMF à impact. _mensuel_
 - [ ] **Flux D — Deals manqués** : deals du périmètre bouclés sans nous. _hebdo_
+- [ ] **Flux E — Signaux marché** : closings de fonds structurants, secondaire / continuation, entrées d'acteurs sur nos segments (au-delà de CFNEWS). _hebdo_
 - [ ] **Check watchlist** : signaux sur cibles / concurrents / intermédiaires. _hebdo_
 
 ## Ponctuelles

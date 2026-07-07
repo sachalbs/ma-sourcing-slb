@@ -1,8 +1,13 @@
-# Mercato banquiers & Normes des fonds
+# Mercato banquiers, Normes & Signaux marché
 
 ## Mercato (mouvements banquiers / dealmakers / conseils)
 | Date | Qui | De -> Vers | Secteur / Segment | Pourquoi ça nous intéresse |
 |---|---|---|---|---|
+
+## Signaux marché / levées structurantes (fonds, secondaire, gros acteurs)
+| Date | Acteur | Événement | Chiffres | Pourquoi ça compte pour nous | Source |
+|---|---|---|---|---|---|
+| 2026-07-06 | Eurazeo | Closing final du 5ᵉ programme secondaire (ESF V), au-delà de la cible de 2 Md€ | 2,3 Md€ levés (vs 1 Md€ en 2021) ; ~50 % déployé sur 22 opé ; focus mid-market buyout européen ; équipe 30+ | Le secondaire / continuation monte en puissance sur le mid-market EU — contrepartie de liquidité et co-invest potentiels ; on fait primaire ET secondaire. | [Boursorama](https://www.boursorama.com/bourse/actualites/eurazeo-boucle-son-cinquieme-programme-secondaire-a-2-3-milliards-d-euros-c31d9fdc98103113d64ee4bce77b57af) / [CFNEWS](https://www.cfnews.net/L-actualite/Secondaire/Levee-de-fonds/Eurazeo-monte-en-puissance-sur-le-secondaire-719972) |
 
 ## Normes & réglementation (ESG, SFDR, AMF, carried…)
 | Date | Sujet | Nature du changement | Impact pour nous | Source |

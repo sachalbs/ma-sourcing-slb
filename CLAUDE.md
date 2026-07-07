@@ -14,7 +14,7 @@ Avant toute veille, lis :
 - `veille/mercato-normes.md` — mouvements banquiers + normes déjà loggés
 - `veille/taches.md` — tâches récurrentes / ponctuelles
 
-## Les 4 flux de veille
+## Les 5 flux de veille
 **A — Deals du périmètre.** Opérations récentes (7 derniers jours en priorité) matchant la
 thèse : ticket 20-50 M€, PME françaises, dans les 6 secteurs, type d'opé éligible. Inclure
 LBO, build-up notables, spin-offs, levées de transmission.
@@ -34,6 +34,14 @@ périmètre où on n'était PAS l'acquéreur : reconstituer ce qui s'est passé.
 quelle valo/multiple, via quel conseil M&A, pourquoi eux (prix, thèse, réseau, rapidité,
 track record sectoriel). Objectif : en tirer une leçon actionnable pour le deal flow.
 
+**E — Signaux marché / levées structurantes.** Mouvements structurants des acteurs du
+capital-investissement qui nous concernent : closings de fonds significatifs (surtout
+mid-market européen / smidcap FR), montée en puissance sur le **secondaire** / fonds de
+continuation (on fait primaire ET secondaire), nouveaux véhicules, entrée d'un acteur sur nos
+segments. Lecture tendance + concurrence + contrepartie de liquidité potentielle. Ne garder
+que le structurant, pas chaque micro-levée. Ne pas se limiter à CFNEWS : croiser Boursorama,
+newsrooms, Les Échos, PE Insights, Secondaries Investor, etc.
+
 ## Règles transverses
 - **Pertinence d'abord.** Mieux vaut 3 items en plein dans le mille que 20 tièdes. Coupe
   agressivement. Si un item est hors périmètre, ne le mets pas.
@@ -43,7 +51,7 @@ track record sectoriel). Objectif : en tirer une leçon actionnable pour le deal
 - Si une info clé manque (montant, multiple, conseil), dis-le — n'invente pas.
 
 ## Format de sortie
-Structure le rapport par flux (A/B/C/D), en n'affichant que les flux qui ont du contenu.
+Structure le rapport par flux (A/B/C/D/E), en n'affichant que les flux qui ont du contenu.
 
 Flux A — pour chaque deal :
 ```
@@ -55,7 +63,7 @@ Flux A — pour chaque deal :
    Source          : ...
    Action          : (ex. enrichir Lusha, screener add-ons, contacter dirigeant)
 ```
-Flux B/C — 1-3 lignes par item, avec pourquoi ça compte pour nous.
+Flux B/C/E — 1-3 lignes par item, avec pourquoi ça compte pour nous.
 Flux D — pour chaque deal manqué : gagnant, valo/multiple, conseil, **leçon**.
 
 Termine par un **top 3 priorités** tous flux confondus.
@@ -63,7 +71,7 @@ Termine par un **top 3 priorités** tous flux confondus.
 ## Journalisation
 - Deals retenus -> `veille/journal-deals.md`
 - Deals manqués analysés -> `veille/deals-manques.md`
-- Mercato + normes -> `veille/mercato-normes.md`
+- Mercato + normes + signaux marché -> `veille/mercato-normes.md`
 Toujours ajouter à la fin, ne pas réécrire.
 
 ## Tâches
