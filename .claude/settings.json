@@ -1,12 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3 scripts/recherche_entreprises.py:*)",
-      "Bash(python3 scripts/bodacc.py:*)",
-      "Bash(python3 scripts/sec_edgar.py:*)",
-      "Bash(pip install:*)",
       "Read(./**)",
-      "Write(./outputs/**)",
+      "Write(./veille/**)",
       "WebSearch",
       "WebFetch"
     ],
@@ -17,9 +13,7 @@
       "Read(./**/*secret*)",
       "Read(./**/*credential*)",
       "Read(./clients/**)",
-      "Read(./confidentiel/**)",
-      "Write(./CLAUDE.md)",
-      "Write(./SOURCES.md)"
+      "Read(./confidentiel/**)"
     ]
   }
 }
