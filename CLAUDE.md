@@ -56,16 +56,17 @@ concurrent sur une de nos cibles, intervenant à contacter). Sinon, écarter.
 ## Format de sortie
 Structure le rapport par flux (A/B/C/D/E), en n'affichant que les flux qui ont du contenu.
 
-Flux A — pour chaque deal :
-```
-🔹 [Cible] — [type d'opé]
-   Secteur / Géo   : ...
-   Ticket / Valo   : ...
-   Date            : ...
-   Fit these (0-5) : etoiles — pourquoi
-   Source          : ...
-   Action          : (ex. enrichir Lusha, screener add-ons, contacter dirigeant)
-```
+Flux A — chaque deal en **fiche structurée** selon le modèle B&Capital
+(`veille/modele-fiche-deal.md`). Blocs et lignes obligatoires :
+- **Société** : Description / Localisation / Concurrence
+- **Transaction** : Cédant(s) / Acquéreur(s) / Type / **Positionnement B&C** (`Dossier reçu`
+  / `identifié dans le radar` / `à solliciter` / `écarté`)
+- **KPIs** : VE / Ticket / CA et EBITDA / Multiple d'EBITDA (`n.a.` si non public)
+- **Conseils** : M&A / Structuration / DD Stratégique / DD Finance / DD JFS / DD ESG
+  (préciser Cédant / Acquéreur)
+Ajouter en interne Fit thèse (0-5) + Action. Le livrable hebdo se présente comme un deck
+« Deals de la semaine – JJ/MM – JJ/MM » (garde datée + *Confidentiel*, 1-2 fiches/page).
+
 Flux B/C/E — 1-3 lignes par item, avec pourquoi ça compte pour nous.
 Flux D — pour chaque deal manqué : gagnant, valo/multiple, conseil, **leçon**.
 
