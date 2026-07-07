@@ -1,38 +1,44 @@
-# Thèse d'investissement
-
-> ⚠️ À REMPLIR — ceci est un exemple. Remplace par les vrais paramètres de ton fonds.
-> Plus c'est précis, meilleur est le filtrage.
+# Thèse d'investissement — périmètre B&Capital
 
 ## Type de fonds / stratégie
-- Ex : PE mid-market, build-up / add-ons sur plateforme existante
-- Ex : VC early-stage / growth
+- PE indépendant, **buyout small & mid-cap ("smidcap") français**.
+- Fonds actuel : RB Capital France 2 (315 M€, closing 2025). Investissement unitaire ~25 M€.
+- Actionnaire stratégique : Roland Berger (accompagnement sectoriel + réseau).
 
 ## Types d'opérations recherchées
-- [ ] Levée de fonds (seed / A / B / growth)
-- [ ] Cession / changement de contrôle (LBO, MBO)
-- [ ] Add-on / bolt-on sur une participation existante
-- [ ] Spin-off / carve-out
-- [ ] Distressed / restructuration
+- Capital transmission (LBO)
+- Capital développement
+- Spin-off / carve-out de groupes
+- Management buy-in (MBI) / buy-out
+- Primaires (cœur de savoir-faire) ET secondaires
+- Prises de participation **majoritaires ou minoritaires**
 
-## Secteurs cibles
-- Ex : SaaS B2B, HealthTech, services industriels…
-- Anti-thèses (à exclure) : ex. crypto, deep-tech pré-revenu
+## Ticket / critères financiers
+- **Equity ticket : 20–50 M€** (cible de la veille)
+- Valo d'entreprise cible : typiquement < 150 M€
+- PME / ETI françaises avec potentiel de passage en ETI
 
-## Géographies
-- Ex : France + Benelux + DACH
+## Secteurs cibles (les 6 de B&Capital)
+1. Services aux entreprises
+2. Santé
+3. Distribution
+4. Technologies
+5. Industries spécialisées
+6. Environnement / transition
 
-## Taille / critères financiers
-- Ticket d'equity : ex. 5–30 M€
-- CA cible : ex. 10–100 M€
-- EBITDA : ex. > 2 M€, marge > 15 %
-- Valo d'entrée visée : ex. < 10x EBITDA
+## Géographie
+- **France** (PME françaises), avec projets d'internationalisation.
 
-## Signaux d'intérêt (déclencheurs de veille)
-- Nouvelle levée dans un secteur cible
-- Nomination d'un dirigeant avec track record de consolidation
-- Croissance de headcount / ouverture de postes (signal de scale)
-- Fondateur en fin de cycle (succession / sortie probable)
-- Concurrent d'une participation qui lève ou se fait racheter
+## Angle de création de valeur (à privilégier dans le scoring)
+- Build-up / croissance externe (add-ons)
+- Digitalisation
+- Internationalisation
+- Situations de succession / transmission de dirigeant
 
-## Participations actuelles (contexte add-on)
-- Ex : Société X (plateforme SaaS RH) → chercher des add-ons complémentaires
+## ESG
+- Signataire PRI depuis la création → démarche d'investisseur responsable.
+  Les évolutions normatives (SFDR, taxonomie, CSRD, article 8/9…) sont à suivre (flux C).
+
+## Anti-thèse (à écarter)
+- Hors France, très early-stage / pré-revenu, tickets < 15 M€ ou > 60 M€,
+  secteurs hors des 6 ci-dessus (sauf signal exceptionnel).

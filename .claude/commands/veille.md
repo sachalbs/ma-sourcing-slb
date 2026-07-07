@@ -1,15 +1,18 @@
 ---
-description: Lance un balayage de veille deal sourcing sur la période récente
+description: Veille deal sourcing complète (4 flux) sur le périmètre B&Capital
 ---
-Exécute une veille deal sourcing complète.
+Exécute une veille complète sur les 7 derniers jours (sauf période précisée : $ARGUMENTS).
 
-1. Charge `config/these-investissement.md`, `config/sources.md`, `veille/watchlist.md`,
-   `veille/journal-deals.md` et `veille/taches.md`.
-2. Interroge d'abord les connecteurs premium (PitchBook, S&P, Moody's, Lusha, Apollo,
-   Explorium), puis complète par une recherche web sur l'actu des 7 derniers jours.
-3. Filtre selon la thèse, déduplique contre le journal, score chaque deal (fit 0-5).
-4. Exécute aussi les tâches récurrentes dues dans `veille/taches.md`.
-5. Présente les deals au format défini dans CLAUDE.md, avec un top 3.
-6. Ajoute les deals retenus à `veille/journal-deals.md` (statut = nouveau).
-
-Argument optionnel : $ARGUMENTS (ex. "focus healthtech", "30 derniers jours").
+1. Charge CLAUDE.md, config/ et tous les journaux de veille/.
+2. Interroge d'abord les connecteurs premium (Apollo, Lusha, Explorium, + PitchBook/S&P/
+   Moody's si branchés), puis complète par le web.
+3. Couvre les 4 flux :
+   A. Deals du périmètre (ticket 20-50 M€, PME FR, 6 secteurs, opé éligible)
+   B. Mercato des banquiers / dealmakers / conseils
+   C. Normes & réglementation des fonds (ESG/SFDR, AMF, carried…)
+   D. Deals manqués : deals du périmètre bouclés sans nous -> pourquoi eux + leçon
+4. Filtre AGRESSIVEMENT : ne garde que le vraiment pertinent. Déduplique contre les journaux.
+5. Exécute les tâches récurrentes dues (veille/taches.md).
+6. Restitue par flux (format CLAUDE.md) + top 3 priorités tous flux confondus.
+7. Journalise : deals -> journal-deals.md ; manqués -> deals-manques.md ;
+   mercato/normes -> mercato-normes.md.

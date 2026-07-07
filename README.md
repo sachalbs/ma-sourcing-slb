@@ -1,41 +1,45 @@
-# Agent de veille deal sourcing — pour Claude Code
+# Agent de veille deal sourcing — B&Capital (pour Claude Code)
 
-Projet Claude Code préconfiguré pour faire de la veille sur les deals récents pertinents
-pour ton fonds, et auquel tu peux ajouter des tâches.
-
-## Installation (2 min)
-1. Décompresse ce dossier là où tu veux (ex. `~/veille-fonds`).
-2. Ouvre un terminal dedans et lance `claude`.
-3. Vérifie que tes connecteurs (PitchBook, S&P, Moody's, Lusha, Apollo, Explorium) sont
-   bien branchés dans Claude Code (réglages MCP). C'est ce qui rend la veille puissante.
-4. **Remplis `config/these-investissement.md`** avec les vrais critères de ton fonds.
-   (Ou colle-moi ta thèse ici et je te le pré-remplis.)
+Projet Claude Code préconfiguré : veille sur les deals récents pertinents pour un buyout
+smidcap français (tickets 20-50 M€), + mercato des banquiers, + normes des fonds (ESG…),
++ analyse des deals qu'on a ratés.
 
 ## Utilisation
-- `/veille` — balayage des deals récents matchant ta thèse. Le rapport s'affiche
-  directement dans Claude. Ajoute un focus : `/veille focus healthtech France`.
-- `/deal <nom>` — deep-dive sur une cible précise.
+- `/veille` — veille complète, 4 flux, résultat direct dans Claude.
+  Focus possible : `/veille focus santé` ou `/veille 30 derniers jours`.
+- `/deal <nom>` — deep-dive sur une cible.
+- `/manque <deal>` — pourquoi on est passé à côté d'un deal + leçon.
 - `/ajouter-tache <description>` — ajoute une tâche récurrente ou ponctuelle.
+
+## Les 4 flux
+- **A. Deals** : 20-50 M€, PME FR, 6 secteurs (services B2B, santé, distribution,
+  technologies, industries spécialisées, environnement), tous types d'opé.
+- **B. Mercato** : mouvements de banquiers M&A / associés de fonds / conseils.
+- **C. Normes** : ESG/SFDR/CSRD, AMF, carried — évolutions à impact réel.
+- **D. Deals manqués** : gagnant, valo/multiple, conseil, pourquoi eux, leçon actionnable.
 
 ## Structure
 ```
 veille-fonds/
-├── CLAUDE.md                       # cerveau de l'agent (comportement + règles)
+├── CLAUDE.md                       # comportement de l'agent (4 flux + règles)
 ├── config/
-│   ├── these-investissement.md     # ⚠️ à remplir : ce que tu cherches
-│   └── sources.md                  # où chercher (connecteurs + web)
+│   ├── these-investissement.md     # périmètre B&Capital (rempli)
+│   └── sources.md                  # connecteurs + web
 ├── veille/
-│   ├── watchlist.md                # cibles / concurrents / thèmes suivis
-│   ├── journal-deals.md            # deals déjà signalés (anti-doublon)
-│   └── taches.md                   # tes tâches récurrentes / ponctuelles
-└── .claude/commands/               # /veille, /deal, /ajouter-tache
+│   ├── watchlist.md                # cibles / concurrents / intermédiaires
+│   ├── journal-deals.md            # deals signalés (anti-doublon)
+│   ├── deals-manques.md            # deals ratés + leçons
+│   ├── mercato-normes.md           # mouvements banquiers + normes
+│   └── taches.md                   # tâches récurrentes / ponctuelles
+└── .claude/commands/               # /veille /deal /manque /ajouter-tache
 ```
 
-## Veille vraiment automatique (optionnel)
-Claude Code déclenche à la demande. Pour un balayage programmé sans rien faire, mets un cron
-qui appelle Claude en mode headless et écrit le résultat dans un fichier daté :
+## Connecteurs
+Apollo, Lusha, Explorium répondent. PitchBook / S&P / Moody's : à brancher pour
+fiabiliser les valos et multiples (utile surtout pour le flux D).
+
+## Veille programmée (optionnel)
 ```bash
-# tous les lundis à 8h — adapte le chemin
+# lundi 8h — balayage auto écrit dans un fichier daté
 0 8 * * 1 cd ~/veille-fonds && claude -p "/veille" >> veille/rapports-$(date +\%Y-\%m-\%d).md 2>&1
 ```
-Tu retrouveras les rapports dans le dossier, et tu peux ensuite en discuter avec Claude.

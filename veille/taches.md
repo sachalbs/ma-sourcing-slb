@@ -1,10 +1,13 @@
 # Tâches de l'agent
 
 ## Récurrentes (exécutées à chaque /veille si dues)
-- [ ] **Balayage hebdo** — deals des 7 derniers jours matchant la thèse. _Fréquence : hebdo_
-- [ ] **Check watchlist** — signaux nouveaux sur les sociétés suivies. _Fréquence : hebdo_
+- [ ] **Flux A — Deals** : opérations 20-50 M€ du périmètre, 7 derniers jours. _hebdo_
+- [ ] **Flux B — Mercato** : mouvements banquiers / conseils smidcap FR. _hebdo_
+- [ ] **Flux C — Normes** : évolutions ESG/SFDR/AMF à impact. _mensuel_
+- [ ] **Flux D — Deals manqués** : deals du périmètre bouclés sans nous. _hebdo_
+- [ ] **Check watchlist** : signaux sur cibles / concurrents / intermédiaires. _hebdo_
 
 ## Ponctuelles
-- [ ] _(ajoute ici, ex : "screener les add-ons de Société X sur PitchBook")_
+- [ ] _(ex : "/manque <deal> sur la dernière opé santé qu'on a ratée")_
 
 ## Historique (fait)
