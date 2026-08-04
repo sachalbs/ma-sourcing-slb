@@ -49,7 +49,9 @@ Les règles d'or M&A ci-dessus (entonnoir, sourcing des données, livrables Exce
 - **Aucune vidéo n'est offerte. Jamais.** Ce qui est proposé sans engagement, c'est **un visuel de démonstration**, un seul par société. Ne jamais écrire "la première vidéo est offerte", "le premier est de graça", "faço o primeiro de graça" ni aucune variante. La formulation juste : "mando um visual antes, sem compromisso".
 - Grille tarifaire : **59 dollars la vidéo à l'unité, 39 dollars par vidéo en pack de dix, 890 dollars par mois** pour un flux continu.
 - Deux angles de vente. Pour les villas de luxe : ce que la photo fixe ne montre pas, le volume, le passage d'une pièce à l'autre, la lumière. Pour la gestion locative en volume : le débit et le coût par bien, le traitement par lots. **Ne jamais employer le mot "IA" avec les villas de luxe.**
-- Structure présentée aux prospects : Sacha, indépendant, opérant sous le nom Villa Films. Adresse de contact : sachalbs@outlook.com. Ne pas promettre de nota fiscal brésilienne, une facture française suffit.
+- Structure présentée aux prospects : indépendant, opérant sous le nom Villa Films. Ne pas promettre de nota fiscal brésilienne, une facture française suffit.
+- **Adresse donnée aux prospects : scipbeylouni@gmail.com**, c'est là que doivent arriver les photos. sachalbs@outlook.com reste l'adresse personnelle et n'est pas communiquée aux prospects.
+- La première vague WhatsApp brésilienne est signée **Scipion**. Garder le même prénom dans toute conversation ouverte sous ce nom, ne pas basculer sur Sacha en cours d'échange.
 - Site de démonstration : https://villa-films.vercel.app
 ## Langue et restitution
 Les échanges avec les prospects brésiliens se rédigent **en portugais du Brésil**. Toujours accompagner d'une traduction ou d'un résumé en français pour Sacha, qui ne relit pas le portugais. Même logique pour l'Indonésie le jour venu, en anglais.
