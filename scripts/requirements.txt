@@ -1,5 +1,0 @@
-# Les scripts de sourcing n'utilisent que la bibliotheque standard Python (urllib, json, csv).
-# Aucune dependance externe requise pour interroger les sources legales gratuites.
-#
-# Pour la generation des livrables Excel, la skill xlsx utilise openpyxl :
-openpyxl>=3.1
