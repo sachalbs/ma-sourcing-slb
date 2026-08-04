@@ -1,0 +1,817 @@
+<title>Console Brésil — première vague</title>
+
+<style>
+  :root {
+    color-scheme: light dark;
+
+    --ground: #E7ECEE;
+    --panel: #FFFFFF;
+    --panel-2: #F2F5F6;
+    --ink: #0E1719;
+    --ink-2: #4A5A5E;
+    --ink-3: #7A8A8E;
+    --edge: #CFD8DB;
+    --edge-2: #E2E8EA;
+
+    --send: #128C3E;
+    --send-lift: #0F7735;
+    --on-send: #FFFFFF;
+
+    --open: #128C3E;
+    --shut: #9A5B0B;
+
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0A1012;
+      --panel: #121A1D;
+      --panel-2: #182226;
+      --ink: #E6EEF0;
+      --ink-2: #A0B2B7;
+      --ink-3: #6E8085;
+      --edge: #263338;
+      --edge-2: #1D272B;
+
+      --send: #1FA855;
+      --send-lift: #25C063;
+      --on-send: #04140A;
+
+      --open: #35C46E;
+      --shut: #E0973A;
+    }
+  }
+
+  :root[data-theme="light"] {
+    --ground: #E7ECEE;
+    --panel: #FFFFFF;
+    --panel-2: #F2F5F6;
+    --ink: #0E1719;
+    --ink-2: #4A5A5E;
+    --ink-3: #7A8A8E;
+    --edge: #CFD8DB;
+    --edge-2: #E2E8EA;
+    --send: #128C3E;
+    --send-lift: #0F7735;
+    --on-send: #FFFFFF;
+    --open: #128C3E;
+    --shut: #9A5B0B;
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #0A1012;
+    --panel: #121A1D;
+    --panel-2: #182226;
+    --ink: #E6EEF0;
+    --ink-2: #A0B2B7;
+    --ink-3: #6E8085;
+    --edge: #263338;
+    --edge-2: #1D272B;
+    --send: #1FA855;
+    --send-lift: #25C063;
+    --on-send: #04140A;
+    --open: #35C46E;
+    --shut: #E0973A;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- status bar ---------- */
+
+  .bar {
+    position: sticky; top: 0; z-index: 20;
+    background: var(--panel);
+    border-bottom: 1px solid var(--edge);
+  }
+
+  .bar-in {
+    max-width: 44rem; margin: 0 auto;
+    padding: .75rem 1rem;
+    display: flex; align-items: center; gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .clocks { display: flex; gap: 1.25rem; }
+
+  .clock { display: grid; gap: .0625rem; }
+
+  .clock .zone {
+    font-size: .625rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+
+  .clock .t {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 1.375rem;
+    font-weight: 600;
+    letter-spacing: -.02em;
+    line-height: 1.05;
+  }
+
+  .window {
+    display: flex; align-items: center; gap: .4375rem;
+    margin-left: auto;
+    font-size: .8125rem;
+    font-weight: 600;
+  }
+
+  .dot { width: .5rem; height: .5rem; border-radius: 50%; flex-shrink: 0; }
+
+  .window.on  { color: var(--open); }
+  .window.on  .dot { background: var(--open); animation: beat 2.4s ease-in-out infinite; }
+  .window.off { color: var(--shut); }
+  .window.off .dot { background: var(--shut); }
+
+  @keyframes beat {
+    0%, 100% { box-shadow: 0 0 0 0 currentColor; opacity: 1; }
+    50%      { box-shadow: 0 0 0 5px transparent; opacity: .55; }
+  }
+
+  .track { width: 100%; display: grid; gap: .375rem; }
+
+  .track-top {
+    display: flex; justify-content: space-between;
+    font-size: .75rem; color: var(--ink-2);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .rail { height: 3px; background: var(--edge-2); border-radius: 999px; overflow: hidden; }
+  .rail i { display: block; height: 100%; width: 0; background: var(--send); transition: width .4s ease; }
+
+  /* ---------- page ---------- */
+
+  main { max-width: 44rem; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
+
+  .lede {
+    margin: 0 0 2rem;
+    font-size: .9375rem;
+    color: var(--ink-2);
+    text-wrap: pretty;
+  }
+
+  .lede b { color: var(--ink); font-weight: 600; }
+
+  .lang {
+    display: inline-flex;
+    border: 1px solid var(--edge);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 1.75rem;
+  }
+
+  .lang button {
+    all: unset;
+    cursor: pointer;
+    padding: .4375rem .875rem;
+    font-size: .8125rem;
+    font-weight: 600;
+    color: var(--ink-2);
+    background: var(--panel);
+  }
+
+  .lang button[aria-pressed="true"] { background: var(--ink); color: var(--ground); }
+  .lang button:focus-visible { outline: 2px solid var(--send); outline-offset: -2px; }
+
+  h2 {
+    margin: 2.25rem 0 .875rem;
+    font-size: .6875rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    display: flex; align-items: baseline; gap: .625rem;
+  }
+
+  h2 span { font-weight: 500; letter-spacing: .02em; text-transform: none; font-size: .75rem; }
+
+  .list { display: grid; gap: .75rem; }
+
+  /* ---------- prospect ---------- */
+
+  .p {
+    background: var(--panel);
+    border: 1px solid var(--edge);
+    border-radius: 10px;
+    padding: 1rem;
+    display: grid;
+    gap: .75rem;
+    transition: opacity .3s ease, background .3s ease;
+  }
+
+  .p.done { opacity: .5; background: var(--panel-2); }
+
+  .head { display: flex; gap: .75rem; align-items: flex-start; }
+
+  .tier {
+    flex-shrink: 0;
+    width: 1.375rem; height: 1.375rem;
+    display: grid; place-items: center;
+    border-radius: 5px;
+    font-family: var(--mono);
+    font-size: .6875rem;
+    font-weight: 700;
+    margin-top: .125rem;
+  }
+
+  .tier.a { background: var(--ink); color: var(--ground); }
+  .tier.b { border: 1px solid var(--edge); color: var(--ink-2); }
+
+  .p h3 {
+    margin: 0;
+    font-size: 1.0625rem;
+    font-weight: 650;
+    letter-spacing: -.015em;
+    line-height: 1.25;
+  }
+
+  .p.done h3 { text-decoration: line-through; text-decoration-thickness: 1px; }
+
+  .where { margin: .125rem 0 0; font-size: .8125rem; color: var(--ink-3); }
+
+  .why {
+    margin: 0;
+    font-size: .875rem;
+    color: var(--ink-2);
+    border-left: 2px solid var(--edge);
+    padding-left: .75rem;
+  }
+
+  .line {
+    display: flex; align-items: center; gap: .5rem;
+    font-family: var(--mono);
+    font-size: .8125rem;
+    color: var(--ink-2);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .copy {
+    all: unset;
+    cursor: pointer;
+    font-family: var(--sans);
+    font-size: .6875rem;
+    font-weight: 600;
+    color: var(--ink-3);
+    border: 1px solid var(--edge);
+    border-radius: 5px;
+    padding: .1875rem .4375rem;
+  }
+
+  .copy:hover { color: var(--ink); border-color: var(--ink-3); }
+  .copy:focus-visible { outline: 2px solid var(--send); outline-offset: 1px; }
+
+  details summary {
+    cursor: pointer;
+    font-size: .8125rem;
+    font-weight: 600;
+    color: var(--ink-2);
+    list-style: none;
+    display: flex; align-items: center; gap: .375rem;
+  }
+
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before { content: "▸"; font-size: .625rem; transition: transform .2s ease; }
+  details[open] summary::before { transform: rotate(90deg); }
+  details summary:focus-visible { outline: 2px solid var(--send); outline-offset: 2px; border-radius: 3px; }
+
+  .msg {
+    margin: .625rem 0 0;
+    padding: .875rem;
+    background: var(--panel-2);
+    border: 1px solid var(--edge-2);
+    border-radius: 8px;
+    font-family: var(--sans);
+    font-size: .8125rem;
+    line-height: 1.55;
+    white-space: pre-wrap;
+    color: var(--ink-2);
+  }
+
+  .acts { display: flex; gap: .5rem; }
+
+  .send {
+    flex: 1;
+    display: flex; align-items: center; justify-content: center; gap: .4375rem;
+    padding: .8125rem;
+    border-radius: 8px;
+    background: var(--send);
+    color: var(--on-send);
+    font-size: .9375rem;
+    font-weight: 650;
+    text-decoration: none;
+    transition: background .18s ease;
+  }
+
+  .send:hover { background: var(--send-lift); }
+  .send:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .send svg { width: 1.0625rem; height: 1.0625rem; }
+
+  .done-btn {
+    all: unset;
+    cursor: pointer;
+    padding: .8125rem .875rem;
+    border: 1px solid var(--edge);
+    border-radius: 8px;
+    font-size: .8125rem;
+    font-weight: 600;
+    color: var(--ink-2);
+    text-align: center;
+  }
+
+  .done-btn:hover { border-color: var(--ink-3); color: var(--ink); }
+  .done-btn:focus-visible { outline: 2px solid var(--send); outline-offset: 1px; }
+
+  .relance { display: none; }
+  .p.done .relance { display: block; }
+
+  .relance a {
+    font-size: .8125rem;
+    font-weight: 600;
+    color: var(--ink-2);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  footer {
+    max-width: 44rem;
+    margin: 3rem auto 0;
+    padding: 1.5rem 1rem 0;
+    border-top: 1px solid var(--edge);
+    font-size: .8125rem;
+    color: var(--ink-3);
+  }
+
+  footer p { margin: 0 0 .625rem; }
+
+  .reset {
+    all: unset;
+    cursor: pointer;
+    font-size: .75rem;
+    color: var(--ink-3);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .reset:focus-visible { outline: 2px solid var(--send); outline-offset: 2px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<div class="bar">
+  <div class="bar-in">
+    <div class="clocks">
+      <div class="clock">
+        <span class="zone">Brasília</span>
+        <span class="t" id="t-br">--:--</span>
+      </div>
+      <div class="clock">
+        <span class="zone">Paris</span>
+        <span class="t" id="t-fr">--:--</span>
+      </div>
+    </div>
+
+    <div class="window off" id="win">
+      <span class="dot"></span>
+      <span id="win-txt">…</span>
+    </div>
+
+    <div class="track">
+      <div class="track-top">
+        <span id="count">0 envoyé sur 12</span>
+        <span id="left">12 restants</span>
+      </div>
+      <div class="rail"><i id="fill"></i></div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <p class="lede">
+    Douze sociétés brésiliennes qui gèrent des villas et des locations courte durée. Chaque numéro vient
+    du site officiel de la société, aucun n'est deviné. Le message est écrit sur mesure pour chacune :
+    il cite quelque chose de vrai sur son activité, propose la <b>première vidéo gratuite</b> et renvoie
+    vers le site. Un appui ouvre WhatsApp avec le texte déjà rempli, vous n'avez qu'à envoyer.
+  </p>
+
+  <div class="lang" role="group" aria-label="Langue des messages">
+    <button type="button" data-lang="pt" aria-pressed="true">Portugais</button>
+    <button type="button" data-lang="en" aria-pressed="false">Anglais</button>
+  </div>
+
+  <h2>Priorité A <span>villas de luxe, gros panier</span></h2>
+  <div class="list" id="tier-a"></div>
+
+  <h2>Priorité B <span>volume et gestion locative</span></h2>
+  <div class="list" id="tier-b"></div>
+</main>
+
+<footer>
+  <p>
+    Espacez d'au moins deux minutes entre deux envois. Une rafale depuis un numéro personnel fait
+    chuter sa note de qualité chez WhatsApp et finit par le faire restreindre.
+  </p>
+  <p>
+    Une fois qu'un prospect vous a répondu, une fenêtre de 24 heures s'ouvre où vous pouvez tout
+    envoyer librement, y compris la vidéo. C'est là qu'il faut livrer la démo.
+  </p>
+  <button type="button" class="reset" id="reset">Réinitialiser le suivi</button>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  var SITE = "villa-films.vercel.app";
+
+  var P = [
+    {
+      tier: "a",
+      name: "Matueté Villas",
+      where: "São Paulo · Trancoso, Búzios, Angra, Ilhabela",
+      wa: "5511984985186",
+      show: "+55 11 98498-5186",
+      why: "Le portefeuille de villas de luxe avec service le plus étendu du Brésil, présent sur cinq destinations à la fois. Un accord ici, c'est un catalogue entier à couvrir.",
+      pt: "Vi o catálogo de vocês, com casas em Trancoso, Búzios, Angra e Ilhabela no mesmo lugar, e reparei que quase tudo é apresentado só em foto.",
+      en: "I went through your portfolio, houses in Trancoso, Búzios, Angra and Ilhabela all in one catalogue, and noticed almost everything is presented in stills only."
+    },
+    {
+      tier: "a",
+      name: "Villas in Brazil",
+      where: "Rio de Janeiro · Angra, Trancoso",
+      wa: "5521998037681",
+      show: "+55 21 99803-7681",
+      why: "Location de villas avec conciergerie, clientèle internationale. Le client réserve à distance, sans jamais avoir vu la maison.",
+      pt: "Vi que vocês alugam villas com concierge e que boa parte dos hóspedes reserva de fora do Brasil, sem nunca ter visto a casa pessoalmente.",
+      en: "I saw you rent serviced villas with a concierge, and that a good share of your guests book from abroad, having never set foot in the house."
+    },
+    {
+      tier: "a",
+      name: "WhereInRio",
+      where: "Rio de Janeiro · Búzios",
+      wa: "5521965319121",
+      show: "+55 21 96531-9121",
+      why: "Maisons signées par des architectes, avec chef privé et chauffeur. Exactement le type de bien qu'une photo fixe n'arrive pas à rendre.",
+      pt: "Vi que vocês trabalham com casas assinadas por arquitetos, com vista panorâmica e pé na areia. Esse tipo de casa é justamente o que a foto parada não consegue mostrar: o volume do espaço, a passagem de um ambiente pro outro, a luz mudando.",
+      en: "I saw you work with architect-designed houses, panoramic views, beachfront. That is exactly the kind of property a still photo cannot carry: the volume of the space, the walk from one room to the next, the light shifting."
+    },
+    {
+      tier: "a",
+      name: "NIAMÃ",
+      where: "Trancoso, Bahia",
+      wa: "5573988495317",
+      show: "+55 73 98849-5317",
+      why: "Villas de luxe à Trancoso avec service complet, chef, sommelier, chauffeur. Panier élevé, décision rapide, structure légère.",
+      pt: "Vi as casas de vocês em Altos de Trancoso e o serviço completo que vem junto, chef, sommelier, motorista.",
+      en: "I looked at your houses in Altos de Trancoso and the full service that comes with them, chef, sommelier, driver."
+    },
+    {
+      tier: "a",
+      name: "Cocar Trancoso",
+      where: "Trancoso, Bahia",
+      wa: "5571991696993",
+      show: "+55 71 99169-6993",
+      why: "N'exploite que ses propres maisons. Pas de mandat à négocier avec un propriétaire, la décision leur appartient entièrement.",
+      pt: "Vi que vocês operam exclusivamente as casas de vocês, então o padrão visual do anúncio é decisão de vocês, não do proprietário.",
+      en: "I saw you operate only your own houses, which means the look of the listing is your call, not an owner's."
+    },
+    {
+      tier: "a",
+      name: "Latin Exclusive",
+      where: "Angra dos Reis · bureaux internationaux",
+      wa: "5521982071352",
+      show: "+55 21 98207-1352",
+      why: "Location saisonnière, longue durée et vente dans le même portefeuille. Une vidéo sert les trois, ce qui double la valeur perçue.",
+      pt: "Vi que vocês trabalham com aluguel de temporada, aluguel longo e venda no mesmo portfólio de casas em Angra. Um vídeo bem feito serve pros três, o que muda bastante a conta.",
+      en: "I saw you handle holiday lets, long term rentals and sales from the same portfolio in Angra. One good video serves all three, which changes the maths."
+    },
+    {
+      tier: "b",
+      name: "Porto Bracuhy Imóveis",
+      where: "Angra dos Reis, Rio de Janeiro",
+      wa: "5521991482404",
+      show: "+55 21 99148-2404",
+      why: "Condominium fermé avec marina à Angra. Maisons avec vue mer, piscine, accès bateau, très visuelles.",
+      pt: "Vi as casas de vocês no condomínio, com vista pro mar e acesso à marina.",
+      en: "I looked at your houses inside the gated marina community, sea views and boat access."
+    },
+    {
+      tier: "b",
+      name: "Bahia Luxury",
+      where: "Trancoso · Bahia",
+      wa: "557398439000",
+      show: "+55 73 9843-9000",
+      why: "Immobilier de luxe et location à Trancoso. Portefeuille photographié mais entièrement statique.",
+      pt: "Vi o portfólio de vocês em Trancoso e reparei que tudo é apresentado em foto, sem nenhum vídeo.",
+      en: "I went through your Trancoso portfolio and noticed everything is presented in stills, with no video at all."
+    },
+    {
+      tier: "b",
+      name: "Holmy",
+      where: "Trancoso · plateforme de villas",
+      wa: "5511933754731",
+      show: "+55 11 93375-4731",
+      why: "Plateforme de maisons et villas de temporada. Beaucoup de biens listés, donc beaucoup de vidéos possibles.",
+      pt: "Vi quantas casas e vilas vocês listam em Trancoso. Com esse volume, sessão de vídeo casa por casa simplesmente não fecha a conta.",
+      en: "I saw how many houses and villas you list in Trancoso. At that volume, a video shoot house by house simply does not add up."
+    },
+    {
+      tier: "b",
+      name: "Floripa Minha Hospedagem",
+      where: "Florianópolis, Santa Catarina",
+      wa: "5548988555811",
+      show: "+55 48 98855-5811",
+      why: "Entrée dans le réseau de co-hôtes officiel d'Airbnb en 2024. Croissance rapide, chaque nouveau bien a besoin de contenu.",
+      pt: "Vi que vocês entraram na Rede de Coanfitriões do Airbnb em 2024. Isso quer dizer imóvel novo entrando o tempo todo, e cada um precisando de conteúdo no dia seguinte.",
+      en: "I saw you joined Airbnb's official co-host network in 2024. That means new properties coming in constantly, each one needing content the next day."
+    },
+    {
+      tier: "b",
+      name: "Smartbnb",
+      where: "Rio de Janeiro",
+      wa: "5521971313905",
+      show: "+55 21 97131-3905",
+      why: "Gestion complète de locations courte durée à Rio. Marché très concurrentiel, où la vignette fait la différence.",
+      pt: "Vi que vocês fazem gestão completa de temporada no Rio. Num mercado tão disputado, o que decide o clique é a capa do anúncio.",
+      en: "I saw you run full short-let management in Rio. In a market that crowded, what decides the click is the listing cover."
+    },
+    {
+      tier: "b",
+      name: "HostnJoy",
+      where: "São Paulo, Rio, BH, Florianópolis, Brasília",
+      wa: "5531986044645",
+      show: "+55 31 98604-4645",
+      why: "Cinq villes, tarification dynamique, gestion 24/7. Profil industriel : ils raisonnent en coût par bien, pas en prix d'une vidéo.",
+      pt: "Vi que vocês administram imóveis em São Paulo, Rio, BH, Floripa e Brasília. Nesse ritmo, sessão de foto e vídeo imóvel por imóvel não escala.",
+      en: "I saw you manage properties across São Paulo, Rio, Belo Horizonte, Florianópolis and Brasília. At that pace, a shoot per property does not scale."
+    }
+  ];
+
+  var BODY = {
+    pt: {
+      open: "Oi! Aqui é o Sacha, da Villa Films.",
+      core: "A gente pega as fotos que já estão no anúncio e devolve um vídeo vertical de uns 20 segundos, pronto em 24 horas. Sem diária de fotógrafo, sem agenda, sem entrar na casa e sem incomodar hóspede. Serve pra capa do Airbnb, Reels e TikTok.",
+      close: "Faço o primeiro de graça, na casa que vocês escolherem. Se não gostar, não paga nada e a gente para por aí.",
+      link: "Assim que fica: " + SITE,
+      sign: "Sacha",
+      relance: "Oi! Só passando pra saber se faz sentido pra vocês. A oferta do primeiro vídeo de graça continua de pé, é só me mandar as fotos de uma casa que eu devolvo em 24h. Sacha"
+    },
+    en: {
+      open: "Hi! Sacha here, from Villa Films.",
+      core: "We take the photos already on your listing and send back a vertical video of around 20 seconds, ready within 24 hours. No photographer's day rate, no scheduling, nobody entering the house, no guest disturbed. It works for the Airbnb cover, Reels and TikTok.",
+      close: "I'll do the first one free, on whichever house you pick. If you don't like it, you pay nothing and we stop there.",
+      link: "Here is what one looks like: " + SITE,
+      sign: "Sacha",
+      relance: "Hi! Just checking whether this makes sense for you. The free first video still stands, send me the photos of one house and I'll have it back within 24 hours. Sacha"
+    }
+  };
+
+  function text(p, lang) {
+    var b = BODY[lang];
+    return [b.open, p[lang], b.core, b.close, b.link, b.sign].join("\n\n");
+  }
+
+  function link(p, lang) {
+    return "https://wa.me/" + p.wa + "?text=" + encodeURIComponent(text(p, lang));
+  }
+
+  function relance(p, lang) {
+    return "https://wa.me/" + p.wa + "?text=" + encodeURIComponent(BODY[lang].relance);
+  }
+
+  // ---------- state ----------
+
+  var KEY = "villafilms.br.sent";
+  var LKEY = "villafilms.br.lang";
+  var sent = {};
+  var lang = "pt";
+
+  try {
+    sent = JSON.parse(localStorage.getItem(KEY) || "{}");
+    lang = localStorage.getItem(LKEY) || "pt";
+  } catch (e) { /* private mode, keep defaults */ }
+
+  function save() {
+    try {
+      localStorage.setItem(KEY, JSON.stringify(sent));
+      localStorage.setItem(LKEY, lang);
+    } catch (e) { /* nothing to do, the session still works */ }
+  }
+
+  // ---------- render ----------
+
+  var WA_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.23 8.23 0 0 1 8.24 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.2 3.7.59.26 1.04.41 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>';
+
+  function card(p, i) {
+    var el = document.createElement("article");
+    el.className = "p" + (sent[p.wa] ? " done" : "");
+
+    var head = document.createElement("div");
+    head.className = "head";
+    head.innerHTML =
+      '<span class="tier ' + p.tier + '">' + p.tier.toUpperCase() + '</span>' +
+      '<div><h3></h3><p class="where"></p></div>';
+    head.querySelector("h3").textContent = p.name;
+    head.querySelector(".where").textContent = p.where;
+
+    var why = document.createElement("p");
+    why.className = "why";
+    why.textContent = p.why;
+
+    var line = document.createElement("div");
+    line.className = "line";
+    var num = document.createElement("span");
+    num.textContent = p.show;
+    var cp = document.createElement("button");
+    cp.type = "button";
+    cp.className = "copy";
+    cp.textContent = "Copier le texte";
+    cp.addEventListener("click", function () {
+      navigator.clipboard.writeText(text(p, lang)).then(function () {
+        cp.textContent = "Copié";
+        setTimeout(function () { cp.textContent = "Copier le texte"; }, 1600);
+      }, function () {
+        cp.textContent = "Échec";
+        setTimeout(function () { cp.textContent = "Copier le texte"; }, 1600);
+      });
+    });
+    line.appendChild(num);
+    line.appendChild(cp);
+
+    var det = document.createElement("details");
+    var sum = document.createElement("summary");
+    sum.textContent = "Voir le message";
+    var pre = document.createElement("div");
+    pre.className = "msg";
+    det.appendChild(sum);
+    det.appendChild(pre);
+
+    var acts = document.createElement("div");
+    acts.className = "acts";
+
+    var a = document.createElement("a");
+    a.className = "send";
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.innerHTML = WA_ICON + "<span>Ouvrir WhatsApp</span>";
+    a.addEventListener("click", function () {
+      sent[p.wa] = true;
+      el.classList.add("done");
+      save();
+      tally();
+    });
+
+    var db = document.createElement("button");
+    db.type = "button";
+    db.className = "done-btn";
+    db.textContent = sent[p.wa] ? "Annuler" : "Déjà fait";
+    db.addEventListener("click", function () {
+      if (sent[p.wa]) { delete sent[p.wa]; el.classList.remove("done"); db.textContent = "Déjà fait"; }
+      else { sent[p.wa] = true; el.classList.add("done"); db.textContent = "Annuler"; }
+      save();
+      tally();
+    });
+
+    acts.appendChild(a);
+    acts.appendChild(db);
+
+    var rel = document.createElement("div");
+    rel.className = "relance";
+    var ra = document.createElement("a");
+    ra.target = "_blank";
+    ra.rel = "noopener";
+    ra.textContent = "Envoyer la relance (à J+4)";
+    rel.appendChild(ra);
+
+    el.appendChild(head);
+    el.appendChild(why);
+    el.appendChild(line);
+    el.appendChild(det);
+    el.appendChild(acts);
+    el.appendChild(rel);
+
+    el._sync = function () {
+      pre.textContent = text(p, lang);
+      a.href = link(p, lang);
+      ra.href = relance(p, lang);
+      db.textContent = sent[p.wa] ? "Annuler" : "Déjà fait";
+    };
+    el._sync();
+
+    return el;
+  }
+
+  var cards = [];
+  var A = document.getElementById("tier-a");
+  var B = document.getElementById("tier-b");
+
+  P.forEach(function (p, i) {
+    var el = card(p, i);
+    cards.push(el);
+    (p.tier === "a" ? A : B).appendChild(el);
+  });
+
+  // ---------- counters ----------
+
+  var count = document.getElementById("count");
+  var left = document.getElementById("left");
+  var fill = document.getElementById("fill");
+
+  function tally() {
+    var n = P.filter(function (p) { return sent[p.wa]; }).length;
+    count.textContent = n + " envoyé" + (n > 1 ? "s" : "") + " sur " + P.length;
+    left.textContent = (P.length - n) + " restant" + (P.length - n > 1 ? "s" : "");
+    fill.style.width = (n / P.length * 100) + "%";
+  }
+
+  tally();
+
+  // ---------- language ----------
+
+  var langBtns = Array.prototype.slice.call(document.querySelectorAll(".lang button"));
+
+  function setLang(v) {
+    lang = v;
+    langBtns.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.lang === v)); });
+    cards.forEach(function (c) { c._sync(); });
+    save();
+  }
+
+  langBtns.forEach(function (b) {
+    b.addEventListener("click", function () { setLang(b.dataset.lang); });
+  });
+
+  setLang(lang);
+
+  // ---------- clocks and sending window ----------
+
+  var tBr = document.getElementById("t-br");
+  var tFr = document.getElementById("t-fr");
+  var win = document.getElementById("win");
+  var winTxt = document.getElementById("win-txt");
+
+  function inZone(tz) {
+    var f = new Intl.DateTimeFormat("fr-FR", {
+      timeZone: tz, hour: "2-digit", minute: "2-digit", weekday: "short", hour12: false
+    });
+    var parts = {};
+    f.formatToParts(new Date()).forEach(function (p) { parts[p.type] = p.value; });
+    return parts;
+  }
+
+  function ticks() {
+    var br = inZone("America/Sao_Paulo");
+    var fr = inZone("Europe/Paris");
+
+    tBr.textContent = br.hour + ":" + br.minute;
+    tFr.textContent = fr.hour + ":" + fr.minute;
+
+    var h = parseInt(br.hour, 10);
+    var weekend = /sam|dim/i.test(br.weekday || "");
+    // Brazilian business hours, lunch left out: they answer far less between noon and two
+    var open = !weekend && ((h >= 9 && h < 12) || (h >= 14 && h < 18));
+
+    win.className = "window " + (open ? "on" : "off");
+
+    if (open) {
+      winTxt.textContent = "Bon moment pour envoyer";
+    } else if (weekend) {
+      winTxt.textContent = "Week-end au Brésil, attendez lundi";
+    } else if (h >= 12 && h < 14) {
+      winTxt.textContent = "Pause déjeuner à Brasília, revenez vers 14 h";
+    } else if (h < 9) {
+      winTxt.textContent = "Trop tôt au Brésil, ouvre à 9 h";
+    } else {
+      winTxt.textContent = "Journée finie au Brésil, reprenez demain";
+    }
+  }
+
+  ticks();
+  setInterval(ticks, 20000);
+
+  // ---------- reset ----------
+
+  document.getElementById("reset").addEventListener("click", function () {
+    sent = {};
+    save();
+    cards.forEach(function (c) { c.classList.remove("done"); c._sync(); });
+    tally();
+  });
+})();
+</script>
