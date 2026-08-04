@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Villa films</title>
-<meta name="description" content="Villa listing films made from the photos you already have. 24 hours, no shoot.">
+<meta name="description" content="We turn the photos already on your listing into a short vertical film. No shoot, no crew, back in 24 hours.">
 <style>
   :root {
     --ink: #FFFFFF;
-    --mute: rgba(255,255,255,.62);
+    --mute: rgba(255,255,255,.66);
     --line: rgba(255,255,255,.16);
     --go: #21B26B;
     --go-lift: #29c97b;
@@ -27,48 +27,38 @@
     overflow-x: hidden;
   }
 
-  /* ---------- stage ---------- */
+  /* ---------- hero ---------- */
 
-  .stage { position: relative; height: 100svh; }
-  .stage.scrub { height: 340vh; }
+  .hero { position: relative; height: 100svh; overflow: hidden; }
 
-  .pin {
-    position: sticky;
-    top: 0;
-    height: 100svh;
-    overflow: hidden;
-  }
-
-  .pin video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
+  .hero video {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
     object-fit: cover;
     background: #060706;
   }
 
   .scrim {
-    position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(180deg, rgba(6,7,6,.55) 0%, rgba(6,7,6,.12) 32%, rgba(6,7,6,.20) 58%, rgba(6,7,6,.88) 100%);
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg,
+      rgba(6,7,6,.50) 0%,
+      rgba(6,7,6,.10) 30%,
+      rgba(6,7,6,.22) 55%,
+      rgba(6,7,6,.90) 100%);
   }
 
   .copy {
-    position: absolute;
-    inset: auto 0 0 0;
-    padding: 0 1.5rem 3.25rem;
-    max-width: 32rem;
-    margin: 0 auto;
+    position: absolute; inset: auto 0 0 0;
+    padding: 0 1.5rem 3rem;
+    max-width: 32rem; margin: 0 auto;
   }
 
-  .tag {
+  .mark {
     font-size: .6875rem;
     letter-spacing: .2em;
     text-transform: uppercase;
     color: var(--mute);
-    margin: 0 0 1rem;
+    margin: 0 0 1.125rem;
   }
 
   h1 {
@@ -87,38 +77,37 @@
     text-wrap: pretty;
   }
 
-  .cue {
-    position: absolute;
-    left: 50%;
-    bottom: 1rem;
-    transform: translateX(-50%);
-    font-size: .625rem;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,.4);
-    display: none;
-  }
-
-  .stage.scrub .cue { display: block; animation: bob 2.6s ease-in-out infinite; }
-
-  @keyframes bob {
-    0%, 100% { opacity: .25; transform: translate(-50%, 0); }
-    50% { opacity: .8; transform: translate(-50%, 5px); }
-  }
-
   /* ---------- close ---------- */
 
-  .close {
-    max-width: 32rem;
-    margin: 0 auto;
-    padding: 3.5rem 1.5rem 4.5rem;
+  .close { max-width: 32rem; margin: 0 auto; padding: 3.25rem 1.5rem 4.5rem; }
+
+  .steps { list-style: none; margin: 0 0 2rem; padding: 0; display: grid; gap: .875rem; }
+
+  .steps li {
+    display: grid;
+    grid-template-columns: 1.5rem 1fr;
+    gap: .75rem;
+    font-size: .9375rem;
+    color: var(--mute);
   }
 
+  .steps b { color: var(--ink); font-weight: 600; }
+
+  .steps li::before {
+    content: counter(s, decimal-leading-zero);
+    counter-increment: s;
+    font-size: .75rem;
+    color: rgba(255,255,255,.38);
+    font-variant-numeric: tabular-nums;
+    padding-top: .1875rem;
+  }
+
+  .steps { counter-reset: s; }
+
   .rates {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .375rem 1.375rem;
-    padding: 0 0 1.5rem;
+    display: flex; flex-wrap: wrap; gap: .375rem 1.375rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
     font-variant-numeric: tabular-nums;
     font-size: .9375rem;
@@ -128,23 +117,16 @@
   .rates b { font-weight: 600; }
   .rates span { color: var(--mute); }
 
-  .pitch { margin: 1.5rem 0 0; color: var(--mute); font-size: .9375rem; }
-
   /* ---------- button ---------- */
 
   .cta {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    margin: 1.75rem 0 0;
+    display: flex; align-items: center; justify-content: center; gap: .5rem;
+    margin: 2rem 0 0;
     padding: 1.0625rem;
     background: var(--go);
     color: #fff;
-    font-size: 1.0625rem;
-    font-weight: 600;
-    letter-spacing: -.01em;
+    font-size: 1.0625rem; font-weight: 600; letter-spacing: -.01em;
     text-decoration: none;
     border-radius: 4px;
     overflow: hidden;
@@ -158,12 +140,9 @@
     50%      { box-shadow: 0 0 0 12px rgba(33,178,107,0); }
   }
 
-  /* sweep */
   .cta::after {
     content: "";
-    position: absolute;
-    inset: 0 auto 0 -60%;
-    width: 45%;
+    position: absolute; inset: 0 auto 0 -60%; width: 45%;
     background: linear-gradient(100deg, transparent, rgba(255,255,255,.32), transparent);
     transform: skewX(-18deg);
     animation: sweep 4.2s ease-in-out infinite;
@@ -193,35 +172,37 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .cta, .cta::after, .cue { animation: none !important; }
+    .cta, .cta::after { animation: none !important; }
     * { transition: none !important; }
   }
 </style>
 </head>
 <body>
 
-<section class="stage" id="stage">
-  <div class="pin">
-    <video id="film" muted playsinline preload="auto" disablepictureinpicture
-           poster="https://d2ol7oe51mr4n9.cloudfront.net/user_3HQKBZUc9nPeBPXdWAs8xfGYAyl/f1616d89-4907-4e37-92b9-3fd86abe9be7.jpg"></video>
-    <div class="scrim"></div>
-    <div class="copy">
-      <p class="tag">Bali &middot; villa films</p>
-      <h1>Listing films from the photos you already have.</h1>
-      <p class="sub">Vertical, ready for the Airbnb cover and for Reels. No shoot, no crew, back in 24 hours.</p>
-    </div>
-    <div class="cue">Scroll</div>
+<section class="hero">
+  <video id="film"
+         src="https://d2ol7oe51mr4n9.cloudfront.net/user_3HQKBZUc9nPeBPXdWAs8xfGYAyl/545dc229-e8ff-44e3-a89b-782f28584f5b.mp4"
+         muted loop autoplay playsinline preload="auto" disablepictureinpicture></video>
+  <div class="scrim"></div>
+  <div class="copy">
+    <p class="mark">Villa films</p>
+    <h1>We turn your villa photos into video.</h1>
+    <p class="sub">You send the photos already on your listing. We send back a short vertical film for the Airbnb cover, Instagram Reels and TikTok. No shoot, no crew, nothing scheduled around your guests.</p>
   </div>
 </section>
 
 <section class="close">
+  <ol class="steps">
+    <li><div><b>Send the photos.</b> The ones already on the listing. Six to ten per villa.</div></li>
+    <li><div><b>We build the film.</b> Around 20 seconds, vertical, paced for a feed.</div></li>
+    <li><div><b>It lands within 24 hours.</b> One round of changes included.</div></li>
+  </ol>
+
   <div class="rates">
     <div><b>$59</b> <span>a film</span></div>
     <div><b>$39</b> <span>in tens</span></div>
     <div><b>$890</b> <span>30 a month</span></div>
   </div>
-
-  <p class="pitch">Send the photos already on your listing. Six to ten per villa is plenty. The villa never leaves the calendar.</p>
 
   <a class="cta" href="https://wa.me/33652957080?text=Hi%2C%20I%27d%20like%20the%20free%20film%20for%20one%20of%20our%20villas." target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.23 8.23 0 0 1 8.24 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.2 3.7.59.26 1.04.41 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
@@ -231,77 +212,15 @@
   <p class="free">First film free, on any villa you pick.</p>
 </section>
 
-<footer>Villa films &middot; Bali</footer>
+<footer>Villa films</footer>
 
 <script>
-(function () {
-  var HOST  = "https://d2ol7oe51mr4n9.cloudfront.net/user_3HQKBZUc9nPeBPXdWAs8xfGYAyl/";
-  var SCRUB = HOST + "01722303-e8dd-4ff6-a7b7-e17bace5e199.mp4";
-  var LOOP  = HOST + "a5b2dcfb-14ec-4483-bca9-44582f41b498.mp4";
-
-  var stage = document.getElementById("stage");
-  var film  = document.getElementById("film");
-
-  var calm    = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var roomy   = window.matchMedia("(min-width: 900px) and (pointer: fine)").matches;
-  var scrubby = roomy && !calm;
-
-  if (!scrubby) {
-    // Phones and tablets: the light cut, autoplaying on a loop.
-    film.src = LOOP;
-    film.loop = true;
-    film.autoplay = true;
-    film.play().catch(function () {});
-    return;
-  }
-
-  // Desktop: scroll drives the film, frame by frame.
-  stage.classList.add("scrub");
-  film.src = SCRUB;
-  film.loop = false;
-
-  var span = 1;
-  var target = 0;
-  var current = 0;
-  var running = false;
-
-  film.addEventListener("loadedmetadata", function () {
-    span = film.duration || 1;
-    measure();
-    tick();
-  });
-
-  var top = 0, travel = 1;
-
-  function measure() {
-    var box = stage.getBoundingClientRect();
-    top = box.top + window.scrollY;
-    travel = Math.max(1, stage.offsetHeight - window.innerHeight);
-  }
-
-  function onScroll() {
-    var p = (window.scrollY - top) / travel;
-    target = Math.min(1, Math.max(0, p)) * span;
-    if (!running) { running = true; requestAnimationFrame(tick); }
-  }
-
-  function tick() {
-    // Ease toward the target so a flick of the wheel does not jolt the picture.
-    current += (target - current) * 0.16;
-    if (Math.abs(target - current) < 0.004) current = target;
-    if (film.readyState >= 2) {
-      try { film.currentTime = current; } catch (e) {}
-    }
-    if (Math.abs(target - current) > 0.001) {
-      requestAnimationFrame(tick);
-    } else {
-      running = false;
-    }
-  }
-
-  window.addEventListener("scroll", onScroll, { passive: true });
-  window.addEventListener("resize", function () { measure(); onScroll(); }, { passive: true });
-})();
+  // Some browsers ignore the autoplay attribute until a play() call is made.
+  var film = document.getElementById("film");
+  var start = function () { var p = film.play(); if (p) p.catch(function () {}); };
+  start();
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) start(); });
+  document.addEventListener("touchstart", start, { once: true, passive: true });
 </script>
 </body>
 </html>
