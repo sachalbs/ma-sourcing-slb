@@ -52,8 +52,8 @@ directement à ce problème.
 
 ## Ce qui protège du non-paiement
 
-La première vidéo est offerte, une seule par société. Elle part en définition réduite avec une
-mention discrète. Dès la première commande payante, paiement intégral d'avance par lien Stripe
+Un visuel de démonstration est proposé sans engagement, un seul par société. La vidéo elle-même
+n'est jamais offerte. Le visuel part en définition réduite avec une mention discrète. Dès la première commande payante, paiement intégral d'avance par lien Stripe
 envoyé dans la conversation. Le détail est dans `economie-et-paiement.md`.
 
 ## Cadence

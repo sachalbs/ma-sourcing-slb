@@ -15,19 +15,21 @@ Zones : Seminyak, Kuta, Canggu, Sanur, Ungasan, Nusa Dua, Jimbaran, Ubud. 19 ans
 
 > Hello Nagisa Bali team,
 >
-> I saw you manage villas across Seminyak, Canggu, Sanur, Jimbaran, Nusa Dua and Ubud, with close to two decades in the market.
+> I saw you manage villas across Seminyak, Canggu, Sanur, Jimbaran, Nusa Dua and Ubud, with
+> close to two decades in the market.
 >
-> I turn the photos you already have for a villa into a 20 to 25 second vertical video, ready for the Airbnb listing cover, Instagram Reels and TikTok. No shoot, no crew, nothing to schedule around guests. You send the photos, you get the video back within 24 hours.
+> I turn the photos you already have for a villa into a 20 to 25 second vertical video, ready
+> for the Airbnb listing cover, Instagram Reels and TikTok. No shoot, no crew, nothing to
+> schedule around guests. You send the photos, you get the video back within 24 hours.
 >
-> For a portfolio your size the point is volume: every villa that comes online gets a video the same week, at a fraction of what a videographer charges per property.
+> For a portfolio your size the point is volume: every villa that comes online gets a video the
+> same week, at a fraction of what a videographer charges per property.
 >
-> I would like to do the first one free, on any villa you pick, so you can judge the result before we discuss anything else.
+> Happy to send a sample visual first, no strings.
 >
 > Would that be of interest?
 >
-> Best regards,
-> [Votre nom]
-> [Votre numéro WhatsApp]
+> Best regards, [Votre nom] [Votre numéro WhatsApp]
 
 ---
 
@@ -38,19 +40,21 @@ Un des plus gros portefeuilles de villas de luxe de Bali et d'Asie du Sud-Est. T
 
 > Hello Elite Havens team,
 >
-> You have one of the largest luxury villa portfolios in Bali and across Southeast Asia, and photography that is already excellent.
+> You have one of the largest luxury villa portfolios in Bali and across Southeast Asia, and
+> photography that is already excellent.
 >
-> I turn that existing photography into 20 to 25 second vertical videos, ready for the Airbnb listing cover, Instagram Reels and TikTok. No reshoot, no crew, nothing to schedule around guests. You send the photos, you get the video back within 24 hours.
+> I turn that existing photography into 20 to 25 second vertical videos, ready for the Airbnb
+> listing cover, Instagram Reels and TikTok. No reshoot, no crew, nothing to schedule around
+> guests. You send the photos, you get the video back within 24 hours.
 >
-> For a portfolio your size the point is volume: every villa gets a video without booking a videographer per property, and every new arrival is covered the week it comes online.
+> For a portfolio your size the point is volume: every villa gets a video without booking a
+> videographer per property, and every new arrival is covered the week it comes online.
 >
-> I would like to do the first one free, on any villa you pick, so you can judge the result against your own standards before we discuss anything else.
+> Happy to send a sample visual first, no strings.
 >
 > Would that be of interest?
 >
-> Best regards,
-> [Votre nom]
-> [Votre numéro WhatsApp]
+> Best regards, [Votre nom] [Votre numéro WhatsApp]
 
 ---
 
@@ -63,17 +67,18 @@ Un des plus gros portefeuilles de villas de luxe de Bali et d'Asie du Sud-Est. T
 >
 > I saw Betterplace manages over 320 properties around Canggu and Tibubeneng.
 >
-> I turn the photos you already have for a property into a 20 to 25 second vertical video, ready for the Airbnb listing cover, Instagram Reels and TikTok. No shoot, no crew, nothing to schedule around guests. You send the photos, you get the video back within 24 hours.
+> I turn the photos you already have for a property into a 20 to 25 second vertical video, ready
+> for the Airbnb listing cover, Instagram Reels and TikTok. No shoot, no crew, nothing to
+> schedule around guests. You send the photos, you get the video back within 24 hours.
 >
-> At 320 properties the point is volume: every unit gets a video without booking a videographer per property, and every new arrival is covered the week it comes online.
+> At 320 properties the point is volume: every unit gets a video without booking a videographer
+> per property, and every new arrival is covered the week it comes online.
 >
-> I would like to do the first one free, on any property you pick, so you can judge the result before we discuss anything else.
+> Happy to send a sample visual first, no strings.
 >
 > Would that be of interest?
 >
-> Best regards,
-> [Votre nom]
-> [Votre numéro WhatsApp]
+> Best regards, [Votre nom] [Votre numéro WhatsApp]
 
 ---
 
@@ -84,21 +89,23 @@ Canggu, Ubud, Uluwatu, Yogyakarta. Adresse presse, d'où la demande de transfert
 
 > Hello,
 >
-> I am writing to this address as it was the one I could find publicly. If someone else handles marketing or listing content, I would be grateful if you could forward this.
+> I am writing to this address as it was the one I could find publicly. If someone else handles
+> marketing or listing content, I would be grateful if you could forward this.
 >
 > I saw Bukit Vista manages properties across Canggu, Ubud, Uluwatu and Yogyakarta.
 >
-> I turn the photos you already have for a property into a 20 to 25 second vertical video, ready for the Airbnb listing cover, Instagram Reels and TikTok. No shoot, no crew, nothing to schedule around guests. You send the photos, you get the video back within 24 hours.
+> I turn the photos you already have for a property into a 20 to 25 second vertical video, ready
+> for the Airbnb listing cover, Instagram Reels and TikTok. No shoot, no crew, nothing to
+> schedule around guests. You send the photos, you get the video back within 24 hours.
 >
-> The value is in volume: every property that comes online gets a video the same week, at a fraction of what a videographer charges per unit.
+> The value is in volume: every property that comes online gets a video the same week, at a
+> fraction of what a videographer charges per unit.
 >
-> I would like to do the first one free, on any property you pick, so you can judge the result before we discuss anything else.
+> Happy to send a sample visual first, no strings.
 >
 > Would that be of interest?
 >
-> Best regards,
-> [Votre nom]
-> [Votre numéro WhatsApp]
+> Best regards, [Votre nom] [Votre numéro WhatsApp]
 
 ---
 
@@ -111,17 +118,18 @@ Canggu, Seminyak. WhatsApp +62 8133 7334 871.
 >
 > I saw you manage villas in Canggu and Seminyak.
 >
-> I turn the photos you already have for a villa into a 20 to 25 second vertical video, ready for the Airbnb listing cover, Instagram Reels and TikTok. No shoot, no crew, nothing to schedule around guests. You send the photos, you get the video back within 24 hours.
+> I turn the photos you already have for a villa into a 20 to 25 second vertical video, ready
+> for the Airbnb listing cover, Instagram Reels and TikTok. No shoot, no crew, nothing to
+> schedule around guests. You send the photos, you get the video back within 24 hours.
 >
-> The value is in volume: every villa that comes online gets a video the same week, at a fraction of what a videographer charges per property.
+> The value is in volume: every villa that comes online gets a video the same week, at a
+> fraction of what a videographer charges per property.
 >
-> I would like to do the first one free, on any villa you pick, so you can judge the result before we discuss anything else.
+> Happy to send a sample visual first, no strings.
 >
 > Would that be of interest?
 >
-> Best regards,
-> [Votre nom]
-> [Votre numéro WhatsApp]
+> Best regards, [Votre nom] [Votre numéro WhatsApp]
 
 ---
 
@@ -134,17 +142,18 @@ Seminyak, Canggu, Kerobokan. Tél. +62 821 1159 8787.
 >
 > I saw you manage villas around Seminyak, Canggu and Kerobokan.
 >
-> I turn the photos you already have for a villa into a 20 to 25 second vertical video, ready for the Airbnb listing cover, Instagram Reels and TikTok. No shoot, no crew, nothing to schedule around guests. You send the photos, you get the video back within 24 hours.
+> I turn the photos you already have for a villa into a 20 to 25 second vertical video, ready
+> for the Airbnb listing cover, Instagram Reels and TikTok. No shoot, no crew, nothing to
+> schedule around guests. You send the photos, you get the video back within 24 hours.
 >
-> The value is in volume: every villa that comes online gets a video the same week, at a fraction of what a videographer charges per property.
+> The value is in volume: every villa that comes online gets a video the same week, at a
+> fraction of what a videographer charges per property.
 >
-> I would like to do the first one free, on any villa you pick, so you can judge the result before we discuss anything else.
+> Happy to send a sample visual first, no strings.
 >
 > Would that be of interest?
 >
-> Best regards,
-> [Votre nom]
-> [Votre numéro WhatsApp]
+> Best regards, [Votre nom] [Votre numéro WhatsApp]
 
 ---
 
@@ -157,17 +166,18 @@ Gestion, marketing et location à Bali.
 >
 > I saw you handle management, marketing and rental for villas in Bali.
 >
-> I turn the photos you already have for a villa into a 20 to 25 second vertical video, ready for the Airbnb listing cover, Instagram Reels and TikTok. No shoot, no crew, nothing to schedule around guests. You send the photos, you get the video back within 24 hours.
+> I turn the photos you already have for a villa into a 20 to 25 second vertical video, ready
+> for the Airbnb listing cover, Instagram Reels and TikTok. No shoot, no crew, nothing to
+> schedule around guests. You send the photos, you get the video back within 24 hours.
 >
-> Since marketing is part of what you sell to owners, this is something you can pass on as an added service rather than an extra cost line.
+> Since marketing is part of what you sell to owners, this is something you can pass on as an
+> added service rather than an extra cost line.
 >
-> I would like to do the first one free, on any villa you pick, so you can judge the result before we discuss anything else.
+> Happy to send a sample visual first, no strings.
 >
 > Would that be of interest?
 >
-> Best regards,
-> [Votre nom]
-> [Votre numéro WhatsApp]
+> Best regards, [Votre nom] [Votre numéro WhatsApp]
 
 ---
 
@@ -178,16 +188,22 @@ Message identique pour tous, à adapter sur la zone et le volume. Envoyer entre 
 ### BaliSuperHost — +62 811-3820-0390
 569 villas. Le plus gros prospect de la liste, à traiter en priorité.
 
-> Hi, I saw BaliSuperHost manages 569 villas across Ubud, Canggu and Seminyak. I turn villa photos you already have into short vertical videos for Airbnb listings, Instagram and TikTok. 24h turnaround, no shoot needed.
+> Hi, I saw BaliSuperHost manages 569 villas across Ubud, Canggu and Seminyak. I turn villa
+> photos you already have into short vertical videos for Airbnb listings, Instagram and TikTok.
+> 24h turnaround, no shoot needed.
 >
-> Happy to do the first one free on any villa you pick so you can judge the result. Would that be useful? If not, no follow-up from me.
+> Happy to send a sample visual first, no strings. Would that be useful? If not, no follow-up
+> from me.
 
 ### Betterplace — +62 811-390-5023
 320+ propriétés.
 
-> Hi, I saw Betterplace manages over 320 properties around Canggu. I turn property photos you already have into short vertical videos for Airbnb listings, Instagram and TikTok. 24h turnaround, no shoot needed.
+> Hi, I saw Betterplace manages over 320 properties around Canggu. I turn property photos you
+> already have into short vertical videos for Airbnb listings, Instagram and TikTok. 24h
+> turnaround, no shoot needed.
 >
-> Happy to do the first one free on any property you pick so you can judge the result. Would that be useful? If not, no follow-up from me.
+> Happy to send a sample visual first, no strings. Would that be useful? If not, no follow-up
+> from me.
 
 ### Bukit Vista — +62 812-3901-2686 (business development)
 ### Villa Management Bali — +62 8133 7334 871
@@ -195,15 +211,20 @@ Message identique pour tous, à adapter sur la zone et le volume. Envoyer entre 
 ### Bali Familia Villa Management — +62 822 3074 2545
 ### Nagisa Bali Group — +62 818-955-390
 
-> Hi, I saw you manage villas around [zone]. I turn villa photos you already have into short vertical videos for Airbnb listings, Instagram and TikTok. 24h turnaround, no shoot needed.
+> Hi, I saw you manage villas around [zone]. I turn villa photos you already have into short
+> vertical videos for Airbnb listings, Instagram and TikTok. 24h turnaround, no shoot needed.
 >
-> Happy to do the first one free on any villa you pick so you can judge the result. Would that be useful? If not, no follow-up from me.
+> Happy to send a sample visual first, no strings. Would that be useful? If not, no follow-up
+> from me.
 
 ### Version indonésienne, pour les structures locales
 
-> Halo, saya lihat Anda mengelola villa di [zona]. Saya membuat video vertikal singkat dari foto villa yang sudah ada, siap untuk Airbnb, Instagram, dan TikTok. Selesai dalam 24 jam, tanpa perlu sesi foto baru.
+> Halo, saya lihat Anda mengelola villa di [zona]. Saya membuat video vertikal singkat dari foto
+> villa yang sudah ada, siap untuk Airbnb, Instagram, dan TikTok. Selesai dalam 24 jam, tanpa
+> perlu sesi foto baru.
 >
-> Boleh saya buatkan satu contoh gratis untuk villa pilihan Anda? Kalau tidak cocok, saya tidak akan menghubungi lagi.
+> Boleh saya buatkan satu contoh gratis untuk villa pilihan Anda? Kalau tidak cocok, saya tidak
+> akan menghubungi lagi.
 
 ---
 
@@ -213,7 +234,9 @@ Message identique pour tous, à adapter sur la zone et le volume. Envoyer entre 
 
 Message court, l'Instagram DM tolère mal le texte long :
 
-> Hi, I saw you manage villas around [zone]. I turn villa photos into short vertical videos for Airbnb, Reels and TikTok, 24h, no shoot needed. Can I make you one free on a villa of your choice? If it's not useful, no follow-up.
+> Hi, I saw you manage villas around [zone]. I turn villa photos into short vertical videos for
+> Airbnb, Reels and TikTok, 24h, no shoot needed. Can I make you one free on a villa of your
+> choice? If it's not useful, no follow-up.
 
 ---
 
@@ -221,7 +244,8 @@ Message court, l'Instagram DM tolère mal le texte long :
 
 Relance unique à J+4 sur le même canal, jamais plus :
 
-> Hi, following up once on this. Still happy to make one free video on a villa of your choice. If it's not a fit, just say so and I'll stop here.
+> Hi, following up once on this. Still happy to make one free video on a villa of your choice.
+> If it's not a fit, just say so and I'll stop here.
 
 Tableau de suivi à tenir dans `prospects-indonesie.csv`, colonne `Statut contact` : A contacter → Contacté → Relancé → Répondu → Démo envoyée → Client.
 

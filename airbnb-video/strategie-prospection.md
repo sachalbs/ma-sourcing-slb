@@ -77,9 +77,9 @@ Un message qui demande un rendez-vous ne vaut rien. Un message qui a déjà donn
 
 **Niveau 1, l'observation précise.** Ouvrir sur un constat vérifiable et propre à eux, pas une flatterie générique. « Vos 12 villas de Canggu ont des photos, aucune n'a de vidéo sur son annonce » vaut mille fois « j'adore votre travail ». Cela prouve qu'on a regardé.
 
-**Niveau 2, la vidéo offerte.** Le levier principal. On produit une vidéo sur une de leurs villas réelles, gratuitement, sans contrepartie ni engagement. Le risque perçu tombe à zéro et on passe du statut de démarcheur à celui de fournisseur qui a déjà livré.
+**Niveau 2, le visuel de démonstration.** Le levier principal. On produit un visuel sur une de leurs villas réelles, sans contrepartie ni engagement. La vidéo complète, elle, reste payante. Le risque perçu tombe à zéro et on passe du statut de démarcheur à celui de fournisseur qui a déjà livré.
 
-**Niveau 3, la vidéo non sollicitée.** Réservée aux 3 prospects du rang A. On produit la vidéo **avant** de les contacter, sur une villa prise dans leur portefeuille public, et on l'envoie sans rien demander. Le taux de réponse d'un cold email avec un livrable déjà fait est sans commune mesure avec celui d'une promesse.
+**Niveau 3, le visuel non sollicité.** Réservé aux 3 prospects du rang A. On produit le visuel **avant** de les contacter, sur une villa prise dans leur portefeuille public, et on l'envoie sans rien demander. Le taux de réponse d'un cold email avec un livrable déjà fait est sans commune mesure avec celui d'une promesse.
 
 C'est là qu'est le vrai choix stratégique de ce dossier.
 
@@ -97,7 +97,7 @@ Trois messages sur douze jours, pas davantage. Arrêt automatique dès qu'une r�
 
 | Étape | Délai | Objet |
 |---|---|---|
-| 1 | J0 | L'observation précise + la vidéo offerte |
+| 1 | J0 | L'observation précise + le visuel de démonstration |
 | 2 | J+4 | Apport de valeur sans relancer : un constat concret sur une de leurs annonces |
 | 3 | J+9 | Message de clôture, on annonce qu'on s'arrête |
 

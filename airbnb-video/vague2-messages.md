@@ -19,65 +19,67 @@ sur Paris, donc écrire entre 7 h et 11 h heure de Paris, ce qui tombe entre 13 
 ### Búzios et Região dos Lagos
 
 **@espacoreisimoveis**
-> Oi! Vi que vocês têm mais de 300 imóveis pra alugar em Búzios, tudo apresentado em foto. Eu pego
-> as fotos que já estão no anúncio e devolvo um vídeo vertical em 24h, sem fotógrafo e sem entrar
-> no imóvel. Dá pra rodar em lote. Faço o primeiro de graça, posso mandar um exemplo?
+> Oi! Vi que vocês têm mais de 300 imóveis pra alugar em Búzios, tudo apresentado em foto. Eu
+> pego as fotos que já estão no anúncio e devolvo um vídeo vertical em 24h, sem fotógrafo e sem
+> entrar no imóvel. Dá pra rodar em lote. Se quiserem, mando um visual antes, sem compromisso,
+> posso mandar um exemplo?
 
 **@casadbuziosoficial**
 > Oi! Com 200 mil seguidores, vocês já têm a audiência, o que falta é formato. Eu transformo as
-> fotos que já estão no anúncio em vídeo vertical pronto pro Reels, em 24h. Faço o primeiro de
-> graça na casa que vocês escolherem. Posso mandar?
+> fotos que já estão no anúncio em vídeo vertical pronto pro Reels, em 24h. Se quiserem, mando
+> um visual antes, sem compromisso. Posso mandar?
 
 **@buziosluxuryrentals**
 > Oi! Casa de alto padrão é justamente o que a foto parada não mostra: o volume do espaço, a
 > passagem de um ambiente pro outro. Eu transformo as fotos do anúncio em vídeo vertical, pronto
-> em 24h. Faço o primeiro de graça. Posso mandar um exemplo?
+> em 24h. Se quiserem, mando um visual antes, sem compromisso. Posso mandar um exemplo?
 
 **@host.book**
-> Oi! Vi que vocês fazem gestão completa pro proprietário na Região dos Lagos. Vídeo no anúncio é
-> argumento na hora de captar mandato novo. Eu uso as fotos que já existem e devolvo o vídeo em
-> 24h. Faço o primeiro de graça, posso mandar?
+> Oi! Vi que vocês fazem gestão completa pro proprietário na Região dos Lagos. Vídeo no anúncio
+> é argumento na hora de captar mandato novo. Eu uso as fotos que já existem e devolvo o vídeo
+> em 24h. Se quiserem, mando um visual antes, sem compromisso, posso mandar?
 
 ### Angra dos Reis et Costa Verde
 
 **@angraluxo**
-> Oi! Vi os imóveis de vocês em Porto Frade e Portobello. Condomínio fechado com marina é conteúdo
-> pronto pra vídeo, e está tudo em foto. Eu transformo as fotos do anúncio em vídeo vertical em
-> 24h. Faço o primeiro de graça. Posso mandar um exemplo?
+> Oi! Vi os imóveis de vocês em Porto Frade e Portobello. Condomínio fechado com marina é
+> conteúdo pronto pra vídeo, e está tudo em foto. Eu transformo as fotos do anúncio em vídeo
+> vertical em 24h. Se quiserem, mando um visual antes, sem compromisso. Posso mandar um exemplo?
 
 **@casadeferiasangra**
-> Oi! Com mais de 200 propriedades, sessão de vídeo imóvel por imóvel não fecha a conta. Eu uso as
-> fotos que já estão no anúncio e devolvo um vídeo vertical em 24h, em lote se precisar. Faço o
-> primeiro de graça, posso mandar?
+> Oi! Com mais de 200 propriedades, sessão de vídeo imóvel por imóvel não fecha a conta. Eu uso
+> as fotos que já estão no anúncio e devolvo um vídeo vertical em 24h, em lote se precisar. Se
+> quiserem, mando um visual antes, sem compromisso.
 
 **@casadapraia_angra**
 > Oi! Vi a nota de vocês no Booking e o selo de Superhost, então vocês já cuidam do anúncio. O
-> passo seguinte é a capa em vídeo. Eu transformo as fotos que já estão lá, pronto em 24h. Faço o
-> primeiro de graça. Posso mandar?
+> passo seguinte é a capa em vídeo. Eu transformo as fotos que já estão lá, pronto em 24h. Se
+> quiserem, mando um visual antes, sem compromisso. Posso mandar?
 
 ### Ilhabela
 
 **@imobiliariailhabela**
-> Oi! São 38 anos de portfólio em Ilhabela, e imagino que boa parte dos anúncios seja só foto. Eu
-> pego essas mesmas fotos e devolvo um vídeo vertical em 24h, sem sessão e sem deslocamento. Faço
-> o primeiro de graça, posso mandar um exemplo?
+> Oi! São 38 anos de portfólio em Ilhabela, e imagino que boa parte dos anúncios seja só foto.
+> Eu pego essas mesmas fotos e devolvo um vídeo vertical em 24h, sem sessão e sem deslocamento.
+> Se quiserem, mando um visual antes, sem compromisso.
 
 **@ilhabela_imoveis**
-> Oi! Em Ilhabela, o que vende é o caminho até a casa e a vista, e isso a foto parada não entrega.
-> Eu transformo as fotos do anúncio em vídeo vertical, pronto em 24h. Faço o primeiro de graça na
-> casa que vocês escolherem. Posso mandar?
+> Oi! Em Ilhabela, o que vende é o caminho até a casa e a vista, e isso a foto parada não
+> entrega. Eu transformo as fotos do anúncio em vídeo vertical, pronto em 24h. Se quiserem,
+> mando um visual antes, sem compromisso. Posso mandar?
 
 ### Gestion en volume
 
 **@anfitriao_prime**
-> Oi! Com o volume de imóveis que vocês administram pelo Brasil, o custo por imóvel é o que decide.
-> Eu uso as fotos que já estão no anúncio e devolvo um vídeo vertical em 24h, dez imóveis de uma
-> vez se precisar. Faço o primeiro de graça, posso mandar um exemplo?
+> Oi! Com o volume de imóveis que vocês administram pelo Brasil, o custo por imóvel é o que
+> decide. Eu uso as fotos que já estão no anúncio e devolvo um vídeo vertical em 24h, dez
+> imóveis de uma vez se precisar. Se quiserem, mando um visual antes, sem compromisso, posso
+> mandar um exemplo?
 
 **@stay_charlie**
 > Oi! Vi que 30% das reservas de vocês vêm do site e do app próprio, então conteúdo próprio pesa
-> direto no resultado. Eu transformo as fotos que já existem em vídeo vertical, pronto em 24h, em
-> lote. Faço o primeiro de graça. Posso mandar?
+> direto no resultado. Eu transformo as fotos que já existem em vídeo vertical, pronto em 24h,
+> em lote. Se quiserem, mando um visual antes, sem compromisso. Posso mandar?
 
 ---
 
@@ -109,13 +111,12 @@ toutes : **Vídeo vertical a partir das fotos que vocês já têm**
 > volta em 72 horas.
 >
 > Valores: 59 dólares o vídeo avulso, 39 por vídeo no pacote de dez, 890 por mês para um fluxo
-> contínuo. Faço o primeiro visual por minha conta, sem compromisso, para vocês verem o resultado
-> antes de decidir. É só me enviar de seis a dez fotos de um imóvel.
+> contínuo. Se quiserem, mando um visual antes, sem compromisso. É só me enviar de seis a dez
+> fotos de um imóvel.
 >
 > Um exemplo: https://villa-films.vercel.app
 >
-> Abraço,
-> Sacha
+> Abraço, Sacha
 
 | Société | Ligne à insérer |
 |---|---|
@@ -139,57 +140,58 @@ Ne jamais employer le mot "IA" avec les portefeuilles de luxe. Ton direct, phras
 **@elitehavens**
 > Hi! With close to 300 villas across Bali and the region, a video shoot villa by villa doesn't
 > scale. I turn the photos already on your listings into a 20 second vertical video, back in 24
-> hours, no shoot and no one entering the villa. First one is on me, want me to send an example?
+> hours, no shoot and no one entering the villa. Happy to send a sample visual first, no
+> strings. Want one?
 
 **@bsh.management**
 > Hi! 569 villas is a lot of listings to keep visually current. I take the photos already on the
-> listing and send back a vertical video in 24 hours, ten villas at a time if needed. First one
-> free, can I send you an example?
+> listing and send back a vertical video in 24 hours, ten villas at a time if needed. Happy to
+> send a sample visual first, no strings. Want one?
 
 **@balimanagementvillas**
-> Hi! Saw the 4.9 rating and seven years as Superhost, so the listings are clearly well kept. The
-> next step is a video cover. I use the photos already there, back in 24 hours. First one on me,
-> want to see?
+> Hi! Saw the 4. 9 rating and seven years as Superhost, so the listings are clearly well kept.
+> The next step is a video cover. I use the photos already there, back in 24 hours. Happy to
+> send a sample visual first, no strings. Want one?
 
 **@villabalimanagement**
 > Hi! 160+ villas and 28k followers, so you already have the audience and the inventory. What's
 > missing is vertical format. I turn existing listing photos into a 20 second video, ready in 24
-> hours. First one free, can I send an example?
+> hours. Happy to send a sample visual first, no strings. Want one?
 
 **@betterplace.rentals**
-> Hi! With 320+ properties in Canggu, shooting each one isn't realistic. I use the photos already
-> on the listing and return a vertical video in 24 hours, in batches. First one is on me, want an
-> example?
+> Hi! With 320+ properties in Canggu, shooting each one isn't realistic. I use the photos
+> already on the listing and return a vertical video in 24 hours, in batches. Happy to send a
+> sample visual first, no strings. Want one?
 
 **@bukitvista**
-> Hi! You run properties across Canggu, Ubud, Uluwatu and Yogyakarta. At that spread, a shoot per
-> property doesn't hold. I turn the existing listing photos into a vertical video in 24 hours.
-> First one free, can I send you one?
+> Hi! You run properties across Canggu, Ubud, Uluwatu and Yogyakarta. At that spread, a shoot
+> per property doesn't hold. I turn the existing listing photos into a vertical video in 24
+> hours. Happy to send a sample visual first, no strings. Want one?
 
 **@optimumbali**
 > Hi! 17 years in Bali means a large back catalogue of listings, most of them photo only. I turn
-> those same photos into a 20 second vertical video, ready in 24 hours. First one on me, want to
-> see an example?
+> those same photos into a 20 second vertical video, ready in 24 hours. Happy to send a sample
+> visual first, no strings. Want one?
 
 **@nagisa_bali_group**
-> Hi! You cover Seminyak, Canggu, Sanur, Ubud, Jimbaran and Nusa Dua. That's a lot of listings to
-> refresh. I use the photos already online and send back a vertical video in 24 hours. First one
-> free, can I send one?
+> Hi! You cover Seminyak, Canggu, Sanur, Ubud, Jimbaran and Nusa Dua. That's a lot of listings
+> to refresh. I use the photos already online and send back a vertical video in 24 hours. Happy
+> to send a sample visual first, no strings. Want one?
 
 **@themantavillasbali**
 > Hi! 55k followers is a real audience, and vertical video is what it's built for. I turn the
 > photos already on your listings into a 20 second video, ready in 24 hours, no shoot needed.
-> First one on me, want an example?
+> Happy to send a sample visual first, no strings. Want one?
 
 **@cpm.bali**
 > Hi! Villas, apartments and lofts across Canggu, Uluwatu, Sidemen and Flores. Shooting each one
 > means travel you don't need. I use existing listing photos and return a vertical video in 24
-> hours. First one free, can I send you one?
+> hours. Happy to send a sample visual first, no strings. Want one?
 
 **@maevillasbali**
-> Hi! Saw you're opening in Uluwatu. New properties need content the day they go live, and a shoot
-> takes weeks. I turn the photos you already have into a vertical video in 24 hours. First one on
-> me, want an example?
+> Hi! Saw you're opening in Uluwatu. New properties need content the day they go live, and a
+> shoot takes weeks. I turn the photos you already have into a vertical video in 24 hours. Happy
+> to send a sample visual first, no strings. Want one?
 
 ### Bali, par mail
 
@@ -201,23 +203,22 @@ info@kingswoodbalivillas.com, contact@propertia.com
 
 > Hello,
 >
-> My name is Sacha. I turn the photos already on a villa listing into a 20 second vertical video,
-> delivered in 24 hours. No photographer day rate, no scheduling, no one entering the villa and no
-> guest disturbed. The video works as the listing cover, and on Reels and TikTok, which is where
-> booking decisions increasingly happen.
+> My name is Sacha. I turn the photos already on a villa listing into a 20 second vertical
+> video, delivered in 24 hours. No photographer day rate, no scheduling, no one entering the
+> villa and no guest disturbed. The video works as the listing cover, and on Reels and TikTok,
+> which is where booking decisions increasingly happen.
 >
-> Because there is no shoot and no travel, it runs in batches: ten properties, ten videos, all back
-> within 72 hours. The cost per property lands in a different bracket than hiring a photographer
-> and a videographer.
+> Because there is no shoot and no travel, it runs in batches: ten properties, ten videos, all
+> back within 72 hours. The cost per property lands in a different bracket than hiring a
+> photographer and a videographer.
 >
 > Pricing: 59 dollars for a single video, 39 per video in a pack of ten, 890 per month for a
-> continuous flow. The first visual is on me, no commitment, so you can judge the result before
-> deciding anything. Just send me six to ten photos of one property.
+> continuous flow. Happy to send a sample visual first, no strings, so you can judge the result
+> before deciding anything. Just send me six to ten photos of one property.
 >
 > An example of what I deliver: https://villa-films.vercel.app
 >
-> Best,
-> Sacha
+> Best, Sacha
 
 ---
 

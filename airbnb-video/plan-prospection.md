@@ -39,9 +39,12 @@ Les canaux retenus, par taux de réponse décroissant sur ce marché :
 
 ### WhatsApp / Instagram DM (version courte, anglais)
 
-> Hi [Prénom], I saw you manage [X] villas around [Canggu]. I turn villa photos into short vertical videos for Airbnb, Instagram and TikTok listings, 24h turnaround, no shoot needed, you just send the existing photos.
+> Hi [Prénom], I saw you manage [X] villas around [Canggu]. I turn villa photos into short
+> vertical videos for Airbnb, Instagram and TikTok listings, 24h turnaround, no shoot needed,
+> you just send the existing photos.
 >
-> I made one for a villa like yours, can I send it over? If it's not useful, no follow-up from me.
+> I made one for a villa like yours, can I send it over? If it's not useful, no follow-up from
+> me.
 
 ### Email (version longue, anglais)
 
@@ -49,21 +52,26 @@ Les canaux retenus, par taux de réponse décroissant sur ce marché :
 >
 > Hi [Prénom],
 >
-> I work with villa management companies in Bali on listing video. You send the photos you already have for a villa, I send back a 20 to 25 second vertical video ready for the Airbnb cover, Instagram Reels and TikTok. No shoot, no crew, no scheduling around guests.
+> I work with villa management companies in Bali on listing video. You send the photos you
+> already have for a villa, I send back a 20 to 25 second vertical video ready for the Airbnb
+> cover, Instagram Reels and TikTok. No shoot, no crew, no scheduling around guests.
 >
-> For a portfolio the size of yours, the point is volume: every new villa gets a video the week it comes online, at a fraction of what a videographer charges per property.
+> For a portfolio the size of yours, the point is volume: every new villa gets a video the week
+> it comes online, at a fraction of what a videographer charges per property.
 >
-> Happy to do the first one free on a villa of your choice so you can judge the result.
+> Happy to send a sample visual first, no strings.
 >
 > [Signature]
 
 ### Version indonésienne (WhatsApp, pour les structures locales)
 
-> Halo [Prénom], saya lihat Anda mengelola [X] villa di [Canggu]. Saya membuat video vertikal singkat dari foto villa yang sudah ada, siap untuk Airbnb, Instagram, dan TikTok. Selesai dalam 24 jam, tanpa perlu sesi foto baru.
+> Halo [Prénom], saya lihat Anda mengelola [X] villa di [Canggu]. Saya membuat video vertikal
+> singkat dari foto villa yang sudah ada, siap untuk Airbnb, Instagram, dan TikTok. Selesai
+> dalam 24 jam, tanpa perlu sesi foto baru.
 >
 > Boleh saya kirim satu contoh? Kalau tidak cocok, saya tidak akan menghubungi lagi.
 
-Trois principes tenus dans chaque version : une seule demande, la première vidéo offerte pour lever le risque, et une sortie explicite qui évite le harcèlement et améliore le taux de réponse.
+Trois principes tenus dans chaque version : une seule demande, le visuel de démonstration sans engagement pour lever le risque, et une sortie explicite qui évite le harcèlement et améliore le taux de réponse.
 
 ## 5. Économie unitaire
 
@@ -73,14 +81,14 @@ Coûts de production relevés sur Higgsfield :
 - 10 crédits par plan animé de 5 s en 1080p
 - **environ 60 crédits par vidéo livrée** (5 plans)
 
-Solde actuel : 272,5 crédits, soit 4 vidéos avant recharge. Suffisant pour la démo et les premiers essais gratuits, insuffisant pour servir un contrat à volume.
+Solde actuel : 272,5 crédits, soit 4 vidéos avant recharge. Suffisant pour la démo et les premiers visuels de démonstration, insuffisant pour servir un contrat à volume.
 
 ## 6. Séquence de lancement
 
 1. Produire 1 vidéo démo (environ 60 crédits)
 2. Compléter les coordonnées manquantes sur les 20 fiches incomplètes
 3. Envoyer la première vague sur les 8 sociétés dont les coordonnées sont confirmées
-4. Offrir la première vidéo gratuite au premier gestionnaire qui répond, sur une villa réelle de son portefeuille
+4. Envoyer un visuel de démonstration au premier gestionnaire qui répond, sur une villa réelle de son portefeuille
 5. Convertir en abonnement mensuel au volume
 
 ## 7. Points en attente

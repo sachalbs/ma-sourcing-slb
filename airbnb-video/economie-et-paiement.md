@@ -34,17 +34,17 @@ Le tarif promoteur est plus élevé parce que la vidéo sert à vendre un bien �
 
 ## 3. Le problème du paiement après livraison
 
-Le risque est réel : on livre une vidéo gratuite, le prospect la publie et ne donne plus signe de vie. Poursuivre une société indonésienne pour 59 $ depuis la France n'existe pas. La protection ne peut donc pas être juridique, elle doit être **structurelle**.
+Le risque est réel : on livre un visuel de démonstration, le prospect s'en sert et ne donne plus signe de vie. Poursuivre une société indonésienne pour 59 $ depuis la France n'existe pas. La protection ne peut donc pas être juridique, elle doit être **structurelle**.
 
 ### Le mécanisme principal, le filigrane
 
-La vidéo offerte est livrée **avec un filigrane visible** et en basse définition. Suffisant pour juger de la qualité, inutilisable sur une annonce. Le paiement débloque le fichier propre en 1080p.
+La vidéo n'est jamais offerte. Ce qui part sans engagement est **un visuel de démonstration**, livré **avec un filigrane visible** et en définition réduite. Suffisant pour juger du rendu, inutilisable sur une annonce. La commande débloque la vidéo complète, propre, en 1080p.
 
 Le prospect ne peut pas voler ce qu'il ne peut pas publier. C'est à lui seul 90 % de la réponse.
 
 ### Les quatre autres règles
 
-1. **Une seule vidéo offerte par société, jamais deux.** Le cadeau sert à convertir, pas à alimenter.
+1. **Un seul visuel de démonstration par société, jamais deux.** Il sert à convertir, pas à alimenter.
 2. **Première commande payée à 100 % d'avance.** Standard pour un prestataire créatif indépendant, personne ne s'en offusque. On ne passe au paiement après livraison qu'après deux règlements propres.
 3. **Lien de paiement par carte envoyé dans la conversation WhatsApp.** Ne jamais attendre un virement bancaire vers l'Indonésie, c'est lent, cher, et ça donne au client mille occasions de repousser. Beaucoup de ces sociétés sont à capitaux australiens ou européens, la carte passe.
 4. **Abonnement mensuel prépayé pour les clients de volume.** À 150 ou 569 villas, le modèle à l'unité n'a aucun sens. Prélèvement en début de mois, production ensuite. Le problème d'impayé disparaît par construction.
@@ -53,14 +53,14 @@ Le prospect ne peut pas voler ce qu'il ne peut pas publier. C'est à lui seul 90
 
 À 3 € de coût de production, une vidéo volée coûte 3 €. Le risque financier réel est ailleurs : **brûler des crédits sur des prospects qui ne répondront jamais**.
 
-D'où la règle : la vidéo offerte n'est produite **qu'après une réponse**, jamais en amont. Seule exception assumée, les trois plus gros prospects du rang A, où la vidéo non sollicitée est un investissement délibéré de 9 € pour ouvrir une porte à plusieurs dizaines de milliers d'euros.
+D'où la règle : le visuel de démonstration n'est produit **qu'après une réponse**, jamais en amont. Seule exception assumée, les trois plus gros prospects du rang A, où le visuel non sollicité est un investissement délibéré de 9 € pour ouvrir une porte à plusieurs dizaines de milliers d'euros.
 
 ## 4. Séquence commerciale complète
 
 1. Message d'approche, aucune production
 2. Réponse du prospect
-3. Vidéo offerte, filigranée, basse définition, sur une de leurs villas
+3. Visuel de démonstration, filigrané, définition réduite, sur une de leurs villas
 4. Validation du rendu par le client
 5. Lien de paiement, réglé d'avance
-6. Livraison du fichier propre en 1080p
+6. Production et livraison de la vidéo complète en 1080p
 7. Proposition d'abonnement mensuel dès la deuxième commande
