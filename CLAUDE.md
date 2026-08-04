@@ -25,8 +25,14 @@ Sacha travaille depuis son téléphone. Un message qu'il doit recomposer à la m
 - Garder ces liens **courts, sous 1500 caractères**, sinon certains clients les tronquent. Raccourcir le texte du message plutôt que de laisser un lien trop long.
 - Toujours doubler le lien d'une version en texte brut à copier, en secours.
 - **Ne jamais demander au prospect de rassembler des photos.** Demander le lien d'une de ses annonces, les photos se prennent dessus. La demande de six à dix photos est ce qui a bloqué Latin Exclusive.
-## Production, le vrai plafond
-Il reste **262 crédits Higgsfield au 4 août 2026, soit quatre vidéos** à 60 crédits pièce. La prospection n'est pas le goulot, la production l'est. Ne jamais promettre plus de visuels offerts qu'il n'y a de crédits, et ne produire la vidéo offerte **qu'après une réponse**. Au delà, recharger : l'abonnement Ultra annuel donne cinquante vidéos par mois pour 99 €.
+## Quand produire la vidéo offerte, règle stricte
+Une vidéo coûte cher au regard du stock : il reste **262 crédits au 4 août 2026, soit quatre vidéos** à 60 crédits pièce. On ne génère donc **pas après une simple réponse**, on génère quand la signature est proche. Les trois conditions doivent être réunies :
+1. Le prospect a **désigné un bien précis**, en envoyant le lien d'une annonce ou des photos.
+2. Le **prix a été annoncé** et n'a pas fait reculer.
+3. L'interlocuteur est **celui qui décide**, ou l'a explicitement relayé à son décideur.
+Un "intéressant, envoyez un exemple" ne remplit aucune des trois. Dans ce cas, renvoyer le site de démonstration, qui ne coûte rien.
+Ne jamais promettre plus de visuels offerts qu'il n'y a de crédits en réserve. Au delà, recharger : l'abonnement Ultra annuel donne cinquante vidéos par mois pour 99 €.
+**Sacha est prévenu uniquement à ce moment là**, quand les trois conditions sont réunies et qu'il faut lancer la production. Le reste du cycle ne le sollicite pas.
 ## Fichiers de référence
 | Fichier | Contenu |
 |---|---|
