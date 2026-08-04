@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Villa Films, vague mail Brésil</title>
+<style>
+  :root{
+    --bg:#0d0f12; --card:#15181d; --line:#242932; --ink:#eef1f5; --dim:#98a1ae;
+    --act:#2f6df6; --act2:#1f4fc4; --ok:#2fae66; --warn:#d9822b; --hot:#e4573d;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  body{margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.5 -apple-system,BlinkMacSystemFont,"Inter Tight",Inter,Segoe UI,Roboto,sans-serif;
+    padding:env(safe-area-inset-top) 0 calc(env(safe-area-inset-bottom) + 40px)}
+  header{position:sticky; top:0; z-index:5; background:rgba(13,15,18,.92);
+    backdrop-filter:saturate(150%) blur(12px); border-bottom:1px solid var(--line); padding:14px 16px 12px}
+  h1{margin:0 0 2px; font-size:17px; letter-spacing:-.01em}
+  .sub{color:var(--dim); font-size:13px}
+  .clock{display:flex; gap:14px; align-items:baseline; margin-top:8px; font-size:13px; color:var(--dim)}
+  .clock b{color:var(--ink); font-variant-numeric:tabular-nums}
+  .win{margin-top:8px; font-size:13px; padding:7px 10px; border-radius:8px; border:1px solid var(--line)}
+  .win.on{color:#8ce0ae; border-color:#25493a; background:#122019}
+  .win.off{color:#e8b98a; border-color:#4a3720; background:#1e170f}
+  .bar{height:4px; background:var(--line); border-radius:3px; margin-top:10px; overflow:hidden}
+  .bar i{display:block; height:100%; background:var(--ok); width:0; transition:width .25s}
+  main{padding:16px 16px 0; max-width:720px; margin:0 auto}
+  .note{background:#15181d; border:1px solid var(--line); border-left:3px solid var(--warn);
+    padding:12px 14px; border-radius:10px; font-size:14px; color:var(--dim); margin-bottom:18px}
+  .note b{color:var(--ink)}
+  h2{font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--dim);
+    margin:26px 0 10px; font-weight:600}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:16px; margin-bottom:14px}
+  .card.done{opacity:.42}
+  .top{display:flex; align-items:flex-start; gap:10px; margin-bottom:4px}
+  .nm{font-size:17px; font-weight:600; letter-spacing:-.01em; flex:1}
+  .tag{font-size:11px; padding:3px 8px; border-radius:20px; border:1px solid var(--line); color:var(--dim); white-space:nowrap}
+  .tag.hot{color:#ffb4a3; border-color:#5c2b20; background:#2a1611}
+  .mail{font-size:13px; color:var(--act); word-break:break-all; margin-bottom:8px}
+  .why{font-size:14px; color:var(--dim); margin-bottom:12px}
+  details{border-top:1px solid var(--line); padding-top:10px; margin-bottom:12px}
+  summary{cursor:pointer; font-size:13px; color:var(--dim); list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:" ▾"}
+  details[open] summary::after{content:" ▴"}
+  .msg{white-space:pre-wrap; font-size:14px; background:#0f1216; border:1px solid var(--line);
+    border-radius:10px; padding:12px; margin-top:10px; color:#dfe5ec}
+  .subj{font-size:13px; color:var(--dim); margin-top:10px}
+  .subj b{color:var(--ink); font-weight:500}
+  .btns{display:flex; flex-direction:column; gap:8px}
+  a.b,button.b{display:block; width:100%; text-align:center; padding:13px 14px; border-radius:10px;
+    font-size:15px; font-weight:600; border:1px solid var(--line); background:#1b1f26; color:var(--ink);
+    text-decoration:none; cursor:pointer; font-family:inherit}
+  a.b.pri{background:var(--act); border-color:var(--act); color:#fff}
+  a.b.sec{background:#1b1f26}
+  button.b.mk{background:transparent; color:var(--dim)}
+  .card.done button.b.mk{color:var(--ok); border-color:#25493a}
+  .len{font-size:11px; color:var(--dim); text-align:center; margin-top:2px}
+  .len.bad{color:var(--warn)}
+  footer{max-width:720px; margin:30px auto 0; padding:0 16px; color:var(--dim); font-size:13px}
+  .reset{margin-top:14px; background:transparent; border:1px solid var(--line); color:var(--dim);
+    padding:10px 14px; border-radius:10px; font-size:14px; width:100%; font-family:inherit; cursor:pointer}
+</style>
+</head>
+<body>
+<header>
+  <h1>Vague mail Brésil</h1>
+  <div class="sub">Villa Films, 4 août 2026</div>
+  <div class="clock">Brasília <b id="cbr">--:--</b> Paris <b id="cpa">--:--</b></div>
+  <div class="win" id="win">…</div>
+  <div class="bar"><i id="prog"></i></div>
+</header>
+
+<main>
+  <div class="note">
+    <b>Deux choses avant de partir.</b> Les adresses marquées d'une étoile ont été relevées dans des
+    résultats de recherche, pas sur la page elle même, l'accès direct aux sites était bloqué. Une ou
+    deux peuvent rebondir, ce n'est pas grave, ça se voit tout de suite. Et espacez d'une minute au
+    moins entre deux envois, une salve depuis la même boîte finit en indésirable.
+  </div>
+  <div id="list"></div>
+  <footer>
+    <p>Chaque mail dit la même chose sur le fond : la première vidéo est offerte, une seule par
+    société, et il suffit d'envoyer le lien d'une annonce. Pas besoin de rassembler des photos,
+    c'est ce qui bloquait Latin Exclusive.</p>
+    <button class="reset" id="reset">Réinitialiser le suivi</button>
+  </footer>
+</main>
+
+<script>
+(function(){
+  "use strict";
+  var SITE = "https://villa-films.vercel.app";
+
+  var LUX =
+    "Meu nome é Sacha. Eu transformo as fotos que já estão no anúncio de uma casa em um vídeo vertical de uns 20 segundos, pronto em 24 horas. Sem diária de fotógrafo, sem agenda, sem ninguém entrando na casa.";
+  var CLOSE =
+    "Faço o primeiro por minha conta, sem compromisso. Não precisa juntar nada: me manda o link de um anúncio de vocês e eu tiro as fotos de lá.";
+  var PRICE =
+    "Valores: 59 dólares o vídeo avulso, 39 no pacote de dez, ou 890 por mês para um fluxo contínuo.";
+  var LOTE =
+    "Como não tem deslocamento nem produção no local, dá para rodar em lote: dez imóveis, dez vídeos, de volta em 72 horas.";
+
+  function pt(hook, extra){
+    return "Olá,\n\n" + LUX + "\n\n" + hook + "\n\n" + (extra ? extra + "\n\n" : "") +
+           PRICE + "\n\n" + CLOSE + "\n\nExemplo: " + SITE +
+           "\n\nFico à disposição,\nSacha";
+  }
+
+  var SUBJ_PT = "Vídeo vertical a partir das fotos que vocês já têm";
+
+  var P = [
+    {
+      id:"latinexclusive", tier:"chaud", name:"Latin Exclusive",
+      mail:"info@latinexclusive.com", star:true,
+      why:"Déjà en discussion, bloqué sur l'envoi des photos. Ce mail retire le blocage : plus besoin qu'ils rassemblent quoi que ce soit, un lien d'annonce suffit.",
+      fr:"Relance de la conversation en cours, avec la friction en moins.",
+      subject:"Your free video, straight from a listing link",
+      body:"Hi,\n\nSacha here, following up on our conversation about the vertical videos.\n\nYou don't need to gather anything on your side. Just send me the link to one of your listings and I'll pull the photos straight from it. Around 20 seconds, vertical, back within 24 hours.\n\nIt works for both sides of your portfolio: the same video sells a rental week and a property for sale.\n\nThe first one is on me, no commitment. After that: 59 dollars per video, 39 in a pack of ten, or 890 a month for a continuous flow.\n\nAn example of what I deliver: " + SITE + "\n\nBest,\nSacha"
+    },
+    {
+      id:"holmy", tier:"chaud", name:"Holmy, Estefany",
+      mail:"comercial@holmy.com.br", star:false,
+      why:"Leur équipe a elle même redirigé vers Estefany. C'est une porte ouverte de l'intérieur, c'est le mail le plus probable de la soirée.",
+      fr:"Message de présentation à la personne que leur équipe a désignée.",
+      subject:"Vídeo vertical a partir das fotos que vocês já têm",
+      body:"Olá Estefany,\n\nMeu nome é Sacha, falei com a equipe de vocês no Instagram e me indicaram você.\n\nEu transformo as fotos que já estão no anúncio em vídeo vertical de 20 segundos, pronto em 24 horas. Sem fotógrafo, sem agenda, sem ninguém entrando na casa. Serve para a capa, para Reels e para TikTok.\n\nVi o volume de casas que vocês listam em Trancoso. Nesse ritmo, sessão de vídeo casa por casa não fecha a conta. " + LOTE + "\n\n" + PRICE + "\n\nFaço o primeiro por minha conta, sem compromisso. Me manda o link de um anúncio e eu tiro as fotos de lá.\n\nExemplo: " + SITE + "\n\nFico à disposição,\nSacha"
+    },
+    {
+      id:"matuete", tier:"a", name:"Matueté Villas",
+      mail:"villas@matuete.com", star:false,
+      why:"Le portefeuille de villas de luxe avec service le plus étendu du pays, cinq destinations. Un accord ici, c'est un catalogue entier.",
+      fr:"Angle catalogue multi-destinations présenté uniquement en photo.",
+      subject:SUBJ_PT,
+      body:pt("Vi o catálogo de vocês, com casas em Trancoso, Búzios, Angra e Ilhabela no mesmo lugar, e reparei que quase tudo é apresentado só em foto.")
+    },
+    {
+      id:"villasinbrazil", tier:"a", name:"Villas in Brazil",
+      mail:"info@villasinbrazil.com", star:false,
+      why:"Clientèle internationale qui réserve à distance sans avoir vu la maison.",
+      fr:"Angle réservation à l'aveugle depuis l'étranger.",
+      subject:SUBJ_PT,
+      body:pt("Boa parte dos hóspedes de vocês reserva de fora do Brasil, sem nunca ter visto a casa pessoalmente. O vídeo é o que chega mais perto de uma visita.")
+    },
+    {
+      id:"whereinrio", tier:"a", name:"WhereInRio",
+      mail:"info@whereinrio.com", star:false,
+      why:"Maisons signées par des architectes, exactement ce que la photo fixe ne restitue pas.",
+      fr:"Angle volume et circulation, ce que la photo ne montre pas.",
+      subject:SUBJ_PT,
+      body:pt("Casa assinada por arquiteto é justamente o que a foto parada não mostra: o volume do espaço e a passagem de um ambiente pro outro.")
+    },
+    {
+      id:"niama", tier:"a", name:"NIAMÃ",
+      mail:"reservas@niama.com.br", star:false,
+      why:"Altos de Trancoso, service complet, structure légère qui décide vite.",
+      fr:"Angle service haut de gamme, qui se montre mieux en mouvement.",
+      subject:SUBJ_PT,
+      body:pt("Vi as casas de vocês em Altos de Trancoso e o serviço que vem junto. Isso se mostra melhor em movimento do que em foto parada.")
+    },
+    {
+      id:"cocar", tier:"a", name:"Cocar Trancoso",
+      mail:"reservas@cocartrancoso.com", star:false,
+      why:"N'exploite que ses propres maisons, donc décide seul, sans avoir à convaincre un propriétaire.",
+      fr:"Angle décision autonome sur le standard visuel.",
+      subject:SUBJ_PT,
+      body:pt("Como vocês operam só as casas de vocês, o padrão visual do anúncio é decisão de vocês, sem precisar convencer proprietário nenhum.")
+    },
+    {
+      id:"omnivillas", tier:"a", name:"OmniVillas",
+      mail:"hello@omnivillas.com", star:true,
+      why:"Gestionnaire de villas de luxe sur quatre continents, Brésil compris. Un accord couvre plusieurs marchés d'un coup.",
+      fr:"Angle passage à l'échelle sur un portefeuille multi-pays.",
+      subject:"Vertical video from the photos already on your listings",
+      body:"Hi,\n\nMy name is Sacha. I turn the photos already on a property listing into a vertical video of about 20 seconds, back within 24 hours. No photographer, no scheduling, nobody entering the house.\n\nYou manage homes across several countries, so the bottleneck is never one house, it is doing it at portfolio scale. There is no travel and no on-site production here, so it runs in batches: ten homes, ten videos, all back within 72 hours.\n\nPricing: 59 dollars per video, 39 in a pack of ten, or 890 a month for a continuous flow.\n\nThe first one is on me, no commitment. Just send me the link to one of your listings and I'll take the photos from there.\n\nAn example of what I deliver: " + SITE + "\n\nBest,\nSacha"
+    },
+    {
+      id:"villasdetrancoso", tier:"b", name:"Villas de Trancoso",
+      mail:"reservas@villasdetrancoso.com", star:true,
+      why:"Les villas portent le nom du resort, donc un enjeu d'image de marque, pas seulement de remplissage.",
+      fr:"Angle cohérence de marque sur les annonces et les Reels.",
+      subject:SUBJ_PT,
+      body:pt("As villas de vocês carregam o nome do resort, então o padrão da imagem conta. Um vídeo por villa mantém esse padrão nos anúncios e no Instagram.")
+    },
+    {
+      id:"portobracuhy", tier:"b", name:"Porto Bracuhy Imóveis",
+      mail:"contato@portobracuhy.com.br", star:true,
+      why:"Condominium fermé avec marina, biens très visuels et aujourd'hui figés en photo.",
+      fr:"Angle matière très visuelle laissée immobile.",
+      subject:SUBJ_PT,
+      body:pt("Condomínio com marina e casas de frente pro mar é material muito visual, e hoje está tudo parado em foto.")
+    },
+    {
+      id:"bahialuxury", tier:"b", name:"Bahia Luxury",
+      mail:"contato@bahialuxury.com.br", star:false,
+      why:"Portefeuille entièrement statique, aucune vidéo nulle part.",
+      fr:"Angle premier segment décisif sur Instagram.",
+      subject:SUBJ_PT,
+      body:pt("O portfólio de vocês está inteiro em foto, sem nenhum vídeo. Em Trancoso, quem chega pelo Instagram decide no primeiro segundo.")
+    },
+    {
+      id:"smartbnb", tier:"vol", name:"Smartbnb",
+      mail:"contato@smartbnb.com.br", star:true,
+      why:"Rio est saturé, la vignette décide du clic. Ils font entrer des biens en continu.",
+      fr:"Angle débit et coût par bien, pas prix d'une vidéo.",
+      subject:SUBJ_PT,
+      body:pt("No Rio a concorrência é enorme e quem decide o clique é a capa do anúncio. E vocês colocam imóvel novo no ar o tempo todo: um por um não acompanha esse ritmo.", LOTE)
+    },
+    {
+      id:"floripa", tier:"vol", name:"Floripa Minha Hospedagem",
+      mail:"contato@floripaminhahospedagem.com.br", star:false,
+      why:"Réseau de co-hôtes Airbnb depuis 2024, entrées de biens continues.",
+      fr:"Angle traitement par lots pour un flux d'entrées constant.",
+      subject:SUBJ_PT,
+      body:pt("Vocês entraram na rede de cohosts do Airbnb e recebem imóvel novo o tempo todo. Sessão de vídeo um por um não acompanha esse ritmo.", LOTE)
+    },
+    {
+      id:"hostnjoy", tier:"vol", name:"HostnJoy",
+      mail:"contato@hostnjoy.com", star:false,
+      why:"Cinq villes, raisonne en coût par bien et pas en prix d'une vidéo.",
+      fr:"Angle coût par bien sur un parc réparti sur cinq villes.",
+      subject:SUBJ_PT,
+      body:pt("Vocês operam em cinco cidades. A conta que importa aí não é o preço de um vídeo, é o custo por imóvel.", LOTE)
+    },
+    {
+      id:"holmysupport", tier:"repli", name:"Holmy, adresse générale",
+      mail:"support@holmy.com.br", star:true,
+      why:"À n'utiliser que si Estefany ne répond pas d'ici quelques jours. Ne jamais envoyer les deux le même jour.",
+      fr:"Repli sur l'adresse générale, seulement en second temps.",
+      subject:SUBJ_PT,
+      body:pt("Vi o volume de casas que vocês listam em Trancoso. Nesse ritmo, casa por casa não fecha a conta.", LOTE)
+    }
+  ];
+
+  var GROUPS = [
+    {k:"chaud", t:"À envoyer en premier, conversations déjà ouvertes"},
+    {k:"a",     t:"Villas de luxe, gros panier"},
+    {k:"b",     t:"Immobilier et villas, second rang"},
+    {k:"vol",   t:"Gestion locative en volume"},
+    {k:"repli", t:"Repli, pas ce soir"}
+  ];
+
+  // ---------- liens ----------
+  function outlook(p){
+    return "https://outlook.live.com/mail/0/deeplink/compose?to=" + encodeURIComponent(p.mail) +
+           "&subject=" + encodeURIComponent(p.subject) + "&body=" + encodeURIComponent(p.body);
+  }
+  function mailto(p){
+    return "mailto:" + p.mail + "?subject=" + encodeURIComponent(p.subject) +
+           "&body=" + encodeURIComponent(p.body);
+  }
+
+  // ---------- suivi ----------
+  var SKEY = "villafilms.br.mail.v1";
+  var sent = {};
+  try { sent = JSON.parse(localStorage.getItem(SKEY) || "{}") || {}; } catch(e){ sent = {}; }
+  function save(){ try { localStorage.setItem(SKEY, JSON.stringify(sent)); } catch(e){} }
+
+  function copy(str, btn, label){
+    var ok = function(good){
+      btn.textContent = good ? "Copié" : "Copie impossible";
+      setTimeout(function(){ btn.textContent = label; }, 1500);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(str).then(function(){ ok(true); }, function(){ ok(false); });
+    } else {
+      var t = document.createElement("textarea");
+      t.value = str; document.body.appendChild(t); t.select();
+      try { document.execCommand("copy"); ok(true); } catch(e){ ok(false); }
+      document.body.removeChild(t);
+    }
+  }
+
+  var cards = [];
+
+  function card(p){
+    var el = document.createElement("div");
+    el.className = "card";
+
+    var ol = outlook(p), mt = mailto(p);
+    var tooLong = ol.length > 1500;
+
+    el.innerHTML =
+      '<div class="top"><div class="nm">' + p.name + '</div>' +
+      (p.tier === "chaud" ? '<span class="tag hot">à faire en premier</span>' : '') + '</div>' +
+      '<div class="mail">' + p.mail + (p.star ? ' *' : '') + '</div>' +
+      '<div class="why">' + p.why + '</div>' +
+      '<details><summary>Voir le message</summary>' +
+      '<div class="subj">Objet : <b>' + p.subject + '</b></div>' +
+      '<div class="msg">' + p.body.replace(/&/g,"&amp;").replace(/</g,"&lt;") + '</div>' +
+      '<div class="subj" style="margin-top:8px">En français : ' + p.fr + '</div>' +
+      '</details>' +
+      '<div class="btns">' +
+      '<a class="b pri" target="_blank" rel="noopener" href="' + ol + '">Ouvrir dans Outlook web</a>' +
+      '<a class="b sec" href="' + mt + '">Ouvrir dans l\'application mail</a>' +
+      '<button class="b" type="button" data-c="body">Copier le texte</button>' +
+      '<button class="b" type="button" data-c="mail">Copier l\'adresse</button>' +
+      '<button class="b mk" type="button" data-c="mk">Marquer comme envoyé</button>' +
+      '</div>' +
+      '<div class="len' + (tooLong ? ' bad' : '') + '">' +
+      (tooLong ? 'Lien long (' + ol.length + ' caractères), si Outlook le tronque, utilisez Copier le texte'
+               : 'Lien de ' + ol.length + ' caractères, dans la limite') + '</div>';
+
+    el.querySelector('[data-c="body"]').addEventListener("click", function(){
+      copy(p.subject + "\n\n" + p.body, this, "Copier le texte");
+    });
+    el.querySelector('[data-c="mail"]').addEventListener("click", function(){
+      copy(p.mail, this, "Copier l'adresse");
+    });
+    var mk = el.querySelector('[data-c="mk"]');
+    mk.addEventListener("click", function(){
+      if (sent[p.id]) { delete sent[p.id]; } else { sent[p.id] = 1; }
+      save(); sync();
+    });
+    el.querySelector("a.b.pri").addEventListener("click", function(){
+      if (!sent[p.id]) { sent[p.id] = 1; save(); setTimeout(sync, 400); }
+    });
+
+    el._sync = function(){
+      var done = !!sent[p.id];
+      el.classList.toggle("done", done);
+      mk.textContent = done ? "Envoyé, annuler" : "Marquer comme envoyé";
+    };
+    cards.push(el);
+    return el;
+  }
+
+  var list = document.getElementById("list");
+  GROUPS.forEach(function(g){
+    var items = P.filter(function(p){ return p.tier === g.k; });
+    if (!items.length) return;
+    var h = document.createElement("h2");
+    h.textContent = g.t;
+    list.appendChild(h);
+    items.forEach(function(p){ list.appendChild(card(p)); });
+  });
+
+  function sync(){
+    cards.forEach(function(c){ c._sync(); });
+    var n = P.filter(function(p){ return !!sent[p.id]; }).length;
+    document.getElementById("prog").style.width = Math.round(n / P.length * 100) + "%";
+    document.querySelector("header .sub").textContent =
+      "Villa Films, 4 août 2026, " + n + " sur " + P.length + " envoyés";
+  }
+
+  document.getElementById("reset").addEventListener("click", function(){
+    if (!confirm("Remettre tout le suivi à zéro ?")) return;
+    sent = {}; save(); sync();
+  });
+
+  // ---------- horloge ----------
+  function hhmm(tz){
+    return new Intl.DateTimeFormat("fr-FR",{timeZone:tz,hour:"2-digit",minute:"2-digit"}).format(new Date());
+  }
+  function hourIn(tz){
+    return parseInt(new Intl.DateTimeFormat("fr-FR",{timeZone:tz,hour:"2-digit",hour12:false}).format(new Date()),10);
+  }
+  function dayIn(tz){
+    return new Intl.DateTimeFormat("en-US",{timeZone:tz,weekday:"short"}).format(new Date());
+  }
+  function tick(){
+    document.getElementById("cbr").textContent = hhmm("America/Sao_Paulo");
+    document.getElementById("cpa").textContent = hhmm("Europe/Paris");
+    var h = hourIn("Europe/Paris"), d = dayIn("Europe/Paris");
+    var weekday = ["Mon","Tue","Wed","Thu","Fri"].indexOf(d) >= 0;
+    var open = weekday && ((h >= 14 && h < 17) || (h >= 19 && h < 23));
+    var w = document.getElementById("win");
+    w.className = "win " + (open ? "on" : "off");
+    w.textContent = open
+      ? "Fenêtre ouverte, c'est le moment"
+      : (weekday ? "Hors fenêtre, les créneaux sont 14 h - 17 h et 19 h - 23 h heure de Paris"
+                 : "Week-end, à reprendre lundi");
+  }
+  tick(); setInterval(tick, 20000);
+  sync();
+})();
+</script>
+</body>
+</html>

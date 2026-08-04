@@ -15,25 +15,33 @@ Site de démonstration : https://villa-films.vercel.app
 Les échanges avec les prospects brésiliens se rédigent **en portugais du Brésil**. Toujours accompagner d'une traduction ou d'un résumé en français pour Sacha, qui ne relit pas le portugais. Même logique pour l'Indonésie le jour venu, en anglais.
 ## Canaux et cadence
 - Le numéro WhatsApp personnel a été restreint le 4 août 2026 après une première vague de douze messages. **Ne plus proposer d'envoi en rafale depuis ce numéro.**
-- Ordre de priorité actuel : Instagram d'abord, mail en second passage à J+3. Jamais les deux le même jour vers la même société.
-- Espacement : cinq minutes entre deux messages Instagram, quinze par jour maximum.
-- Fenêtre d'envoi Brésil : 14 h - 17 h et 19 h - 23 h heure de Paris, du lundi au vendredi.
+- **Aucun canal ne permet d'envoyer à la place de Sacha.** Instagram ne préremplit pas, WhatsApp est restreint, et l'envoi automatisé en masse depuis une boîte personnelle la fait basculer en indésirable. Automatiser veut dire tout préparer pour qu'un envoi soit un appui, jamais promettre un envoi automatique.
+- Canal principal depuis le 4 août 2026 : **le mail**, sans plafond quotidien. Instagram reste ouvert mais lent, quinze par jour maximum, cinq minutes d'écart.
+- Jamais deux canaux le même jour vers la même société. Relance unique à J+4.
+- Fenêtre d'envoi Brésil : 14 h - 17 h et 19 h - 23 h heure de Paris, du lundi au vendredi. Au moins une minute entre deux mails.
 ## Format attendu des livrables de prospection
 Sacha travaille depuis son téléphone. Un message qu'il doit recomposer à la main est un message qui ne part pas.
 - Fournir systématiquement un **lien cliquable qui préremplit tout** : destinataire, objet, corps. Pour le mail, un lien de rédaction Outlook web et un lien vers l'application, les deux.
 - Garder ces liens **courts, sous 1500 caractères**, sinon certains clients les tronquent. Raccourcir le texte du message plutôt que de laisser un lien trop long.
 - Toujours doubler le lien d'une version en texte brut à copier, en secours.
+- **Ne jamais demander au prospect de rassembler des photos.** Demander le lien d'une de ses annonces, les photos se prennent dessus. La demande de six à dix photos est ce qui a bloqué Latin Exclusive.
+## Production, le vrai plafond
+Il reste **262 crédits Higgsfield au 4 août 2026, soit quatre vidéos** à 60 crédits pièce. La prospection n'est pas le goulot, la production l'est. Ne jamais promettre plus de visuels offerts qu'il n'y a de crédits, et ne produire la vidéo offerte **qu'après une réponse**. Au delà, recharger : l'abonnement Ultra annuel donne cinquante vidéos par mois pour 99 €.
 ## Fichiers de référence
 | Fichier | Contenu |
 |---|---|
-| `prospects-bresil.csv` | Les douze sociétés brésiliennes, contacts, angles, statut |
+| `ce-soir.md` | Plan de la soirée du 4 août, ordre d'envoi, contraintes |
+| `prospects-bresil.csv` | Les sociétés brésiliennes, contacts, fiabilité des adresses, angles, statut |
+| `vague-mail.html` | Console de la vague mail, quatorze sociétés, liens préremplis |
+| `console-bresil.html` | Console d'envoi Instagram et WhatsApp |
 | `bresil-premiere-vague.md` | Stratégie de la première vague, choix du Brésil, cadence |
 | `bresil-instagram-et-mails.md` | Messages Instagram et mails prêts à envoyer, un par société |
 | `economie-et-paiement.md` | Modèle économique, protection contre le non-paiement |
-| `console-bresil.html` | Console d'envoi multi-canal |
 | `site/index.html` | Site de démonstration Villa Films |
 | `prospects-indonesie.csv` | Deuxième marché, pas encore attaqué |
 ## État au 4 août 2026
-- **Latin Exclusive** : en discussion, tarifs et structure communiqués, en attente des photos pour le premier visuel offert.
-- **Holmy** : a redirigé vers Estefany, comercial@holmy.com.br, mail de présentation prêt.
-- Les dix autres sociétés restent à contacter sur Instagram.
+- **Holmy** : leur équipe a redirigé vers Estefany, comercial@holmy.com.br. Mail prêt, premier à partir.
+- **Latin Exclusive** : en discussion, bloqué sur l'envoi des photos. Adresse trouvée le 4 août, info@latinexclusive.com. La relance demande un lien d'annonce au lieu des photos.
+- Douze autres sociétés ont une adresse exploitable et un message prêt dans `vague-mail.html`.
+- Neuf sociétés repérées sans adresse, à récupérer depuis leur page contact. Les deux qui valent le détour : **Seazone** (Florianópolis, plus de 250 collaborateurs, tout le Brésil) et **Anfitriões de Aluguel** (réseau en franchise).
+- Les adresses relevées en recherche sans avoir pu ouvrir la page du site sont signalées dans le CSV et marquées d'une étoile dans la console. Elles peuvent rebondir.
