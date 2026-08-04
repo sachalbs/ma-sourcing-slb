@@ -1,0 +1,386 @@
+<title>Villa listing videos, from the photos you already have</title>
+<style>
+  :root {
+    --ground: #171412;
+    --ground-2: #1F1B18;
+    --raised: #262119;
+    --ink: #F2EDE4;
+    --ink-soft: #B5AB9C;
+    --ink-faint: #7D7568;
+    --line: #332D25;
+    --brass: #C7913F;
+    --brass-soft: #2A2317;
+    --jade: #3E9970;
+    --jade-deep: #2F7A58;
+
+    --display: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --ground: #EDEEEA;
+      --ground-2: #F5F5F2;
+      --raised: #FFFFFF;
+      --ink: #191713;
+      --ink-soft: #57524A;
+      --ink-faint: #8C867B;
+      --line: #DCDCD5;
+      --brass: #8A5F14;
+      --brass-soft: #F2EADA;
+      --jade: #226A4B;
+      --jade-deep: #1B5A3F;
+    }
+  }
+
+  :root[data-theme="light"] {
+    --ground: #EDEEEA;
+    --ground-2: #F5F5F2;
+    --raised: #FFFFFF;
+    --ink: #191713;
+    --ink-soft: #57524A;
+    --ink-faint: #8C867B;
+    --line: #DCDCD5;
+    --brass: #8A5F14;
+    --brass-soft: #F2EADA;
+    --jade: #226A4B;
+    --jade-deep: #1B5A3F;
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #171412;
+    --ground-2: #1F1B18;
+    --raised: #262119;
+    --ink: #F2EDE4;
+    --ink-soft: #B5AB9C;
+    --ink-faint: #7D7568;
+    --line: #332D25;
+    --brass: #C7913F;
+    --brass-soft: #2A2317;
+    --jade: #3E9970;
+    --jade-deep: #2F7A58;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 40rem; margin: 0 auto; padding: 0 1.25rem; }
+
+  /* ---------- hero ---------- */
+
+  .hero { padding: 3rem 0 2.5rem; text-align: center; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: .6875rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin: 0 0 1.25rem;
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-size: clamp(2rem, 8vw, 2.875rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -.015em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--brass);
+  }
+
+  .lede {
+    font-size: 1.0625rem;
+    color: var(--ink-soft);
+    margin: 1rem auto 0;
+    max-width: 27rem;
+    text-wrap: pretty;
+  }
+
+  /* ---------- video ---------- */
+
+  .stage { padding: 0 0 2.5rem; }
+
+  .frame {
+    position: relative;
+    width: min(17rem, 72vw);
+    margin: 0 auto;
+    aspect-ratio: 9 / 16;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--ground-2);
+    border: 1px solid var(--line);
+    box-shadow: 0 2px 4px rgba(0,0,0,.18), 0 18px 46px rgba(0,0,0,.28);
+  }
+
+  .frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    border: 1px solid color-mix(in srgb, var(--brass) 34%, transparent);
+    pointer-events: none;
+  }
+
+  .frame video { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .625rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .placeholder span {
+    font-family: var(--mono);
+    font-size: .6875rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--brass);
+  }
+
+  .placeholder p {
+    font-size: .875rem;
+    color: var(--ink-faint);
+    margin: 0;
+    line-height: 1.45;
+  }
+
+  .caption {
+    font-family: var(--mono);
+    font-size: .6875rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    text-align: center;
+    margin: 1rem 0 0;
+  }
+
+  /* ---------- steps ---------- */
+
+  .band { border-top: 1px solid var(--line); padding: 2.5rem 0; }
+
+  h2 {
+    font-family: var(--display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    margin: 0 0 1.5rem;
+    text-wrap: balance;
+  }
+
+  .steps { display: flex; flex-direction: column; gap: 1.25rem; margin: 0; padding: 0; list-style: none; counter-reset: s; }
+
+  .steps li {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: .875rem;
+    align-items: start;
+    counter-increment: s;
+  }
+
+  .steps li::before {
+    content: counter(s);
+    font-family: var(--mono);
+    font-size: .8125rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--brass);
+    background: var(--brass-soft);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .steps b { display: block; font-weight: 600; font-size: 1rem; }
+  .steps p { margin: .1875rem 0 0; font-size: .9375rem; color: var(--ink-soft); }
+
+  /* ---------- pricing ---------- */
+
+  .prices { display: flex; flex-direction: column; gap: .625rem; }
+
+  .price {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    background: var(--raised);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: .9375rem 1.0625rem;
+  }
+
+  .price.feature { border-color: color-mix(in srgb, var(--brass) 45%, transparent); }
+
+  .price-name { font-weight: 600; font-size: .9375rem; }
+  .price-note { display: block; font-weight: 400; font-size: .8125rem; color: var(--ink-faint); margin-top: .125rem; }
+
+  .price-tag {
+    font-family: var(--mono);
+    font-size: 1.0625rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--brass);
+    white-space: nowrap;
+  }
+
+  .price-tag small { font-size: .75rem; color: var(--ink-faint); }
+
+  /* ---------- offer ---------- */
+
+  .offer {
+    background: var(--raised);
+    border: 1px solid color-mix(in srgb, var(--brass) 38%, transparent);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .offer h2 { margin-bottom: .5rem; }
+  .offer p { color: var(--ink-soft); margin: 0 auto; max-width: 26rem; font-size: .9375rem; }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-top: 1.375rem;
+    padding: .875rem 1.5rem;
+    background: var(--jade);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 9px;
+    transition: background .15s ease;
+  }
+
+  .cta:hover { background: var(--jade-deep); }
+
+  .cta svg { width: 1.125rem; height: 1.125rem; }
+
+  .fine {
+    font-size: .8125rem;
+    color: var(--ink-faint);
+    margin: 1rem 0 0;
+    text-align: center;
+  }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 1.5rem 0 3rem;
+    text-align: center;
+    font-size: .8125rem;
+    color: var(--ink-faint);
+  }
+
+  a:focus-visible, .cta:focus-visible {
+    outline: 2px solid var(--brass);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+
+<div class="wrap">
+
+  <section class="hero">
+    <p class="eyebrow">Bali &middot; villa listing video</p>
+    <h1>Your villas, in <em>video</em>.<br>From the photos you already have.</h1>
+    <p class="lede">No shoot. No crew. Nothing scheduled around your guests. The villa stays booked while we produce, and the video is back within 24 hours.</p>
+  </section>
+
+  <section class="stage">
+    <div class="frame">
+      <div class="placeholder">
+        <span>Emplacement vidéo</span>
+        <p>La vidéo de démonstration se place ici, en 9:16, lecture automatique et en boucle.</p>
+      </div>
+    </div>
+    <p class="caption">Ready for the Airbnb cover, Reels and TikTok</p>
+  </section>
+
+  <section class="band">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>
+        <div>
+          <b>You send the photos</b>
+          <p>The ones already on the listing. Six to ten per villa is plenty.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <b>We build the video</b>
+          <p>A 20 to 25 second vertical cut, shot by shot, paced for a listing cover and for social.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <b>You get it within 24 hours</b>
+          <p>One round of changes included. The villa never left the calendar.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="band">
+    <h2>Pricing</h2>
+    <div class="prices">
+      <div class="price">
+        <span class="price-name">One video<span class="price-note">Single villa, one-off</span></span>
+        <span class="price-tag">$59</span>
+      </div>
+      <div class="price">
+        <span class="price-name">Pack of ten<span class="price-note">For a portfolio going online</span></span>
+        <span class="price-tag">$390 <small>/ $39 each</small></span>
+      </div>
+      <div class="price feature">
+        <span class="price-name">Monthly<span class="price-note">30 videos a month, every new villa covered</span></span>
+        <span class="price-tag">$890 <small>/ mo</small></span>
+      </div>
+      <div class="price">
+        <span class="price-name">Investor walkthrough<span class="price-note">For developers selling off-plan or finished villas</span></span>
+        <span class="price-tag">$149 <small>/ property</small></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="offer">
+      <h2>The first one is free</h2>
+      <p>Pick any villa in your portfolio. We make the video, you judge the result, and only then do we talk about anything else. If it is not useful, that is the end of it.</p>
+      <a class="cta" href="https://wa.me/VOTRE_NUMERO?text=Hi%2C%20I%27d%20like%20the%20free%20video%20for%20one%20of%20our%20villas." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.23 8.23 0 0 1 8.24 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.2 3.7.59.26 1.04.41 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
+        Message us on WhatsApp
+      </a>
+      <p class="fine">One free video per company. Paid orders are settled before the final file is delivered.</p>
+    </div>
+  </section>
+
+  <footer>Villa listing video &middot; Bali</footer>
+
+</div>
