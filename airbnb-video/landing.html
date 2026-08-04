@@ -1,357 +1,314 @@
-<title>Villa listing videos, from the photos you already have</title>
+<title>Villa listing films &middot; Bali</title>
 <style>
   :root {
-    --ground: #171412;
-    --ground-2: #1F1B18;
-    --raised: #262119;
-    --ink: #F2EDE4;
-    --ink-soft: #B5AB9C;
-    --ink-faint: #7D7568;
-    --line: #332D25;
-    --brass: #C7913F;
-    --brass-soft: #2A2317;
-    --jade: #3E9970;
-    --jade-deep: #2F7A58;
+    --paper: #FAFAF7;
+    --raised: #FFFFFF;
+    --ink: #16201C;
+    --ink-soft: #5A6862;
+    --ink-faint: #949E99;
+    --line: #E4E7E2;
+    --green: #1F6049;
+    --green-soft: #EBF2EE;
+    --sand: #A97C36;
+    --sand-soft: #F7F0E3;
+    --jade: #1E8E5A;
+    --jade-deep: #16724A;
 
     --display: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
     --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
   }
 
-  @media (prefers-color-scheme: light) {
+  @media (prefers-color-scheme: dark) {
     :root {
-      --ground: #EDEEEA;
-      --ground-2: #F5F5F2;
-      --raised: #FFFFFF;
-      --ink: #191713;
-      --ink-soft: #57524A;
-      --ink-faint: #8C867B;
-      --line: #DCDCD5;
-      --brass: #8A5F14;
-      --brass-soft: #F2EADA;
-      --jade: #226A4B;
-      --jade-deep: #1B5A3F;
+      --paper: #121714; --raised: #19201C; --ink: #EDF1EE; --ink-soft: #A6B1AC;
+      --ink-faint: #78827D; --line: #262E29; --green: #6DC0A2; --green-soft: #172A23;
+      --sand: #CDA05C; --sand-soft: #262015; --jade: #2AA76B; --jade-deep: #35bd7c;
     }
   }
-
-  :root[data-theme="light"] {
-    --ground: #EDEEEA;
-    --ground-2: #F5F5F2;
-    --raised: #FFFFFF;
-    --ink: #191713;
-    --ink-soft: #57524A;
-    --ink-faint: #8C867B;
-    --line: #DCDCD5;
-    --brass: #8A5F14;
-    --brass-soft: #F2EADA;
-    --jade: #226A4B;
-    --jade-deep: #1B5A3F;
-  }
-
   :root[data-theme="dark"] {
-    --ground: #171412;
-    --ground-2: #1F1B18;
-    --raised: #262119;
-    --ink: #F2EDE4;
-    --ink-soft: #B5AB9C;
-    --ink-faint: #7D7568;
-    --line: #332D25;
-    --brass: #C7913F;
-    --brass-soft: #2A2317;
-    --jade: #3E9970;
-    --jade-deep: #2F7A58;
+    --paper: #121714; --raised: #19201C; --ink: #EDF1EE; --ink-soft: #A6B1AC;
+    --ink-faint: #78827D; --line: #262E29; --green: #6DC0A2; --green-soft: #172A23;
+    --sand: #CDA05C; --sand-soft: #262015; --jade: #2AA76B; --jade-deep: #35bd7c;
+  }
+  :root[data-theme="light"] {
+    --paper: #FAFAF7; --raised: #FFFFFF; --ink: #16201C; --ink-soft: #5A6862;
+    --ink-faint: #949E99; --line: #E4E7E2; --green: #1F6049; --green-soft: #EBF2EE;
+    --sand: #A97C36; --sand-soft: #F7F0E3; --jade: #1E8E5A; --jade-deep: #16724A;
   }
 
   * { box-sizing: border-box; }
 
   body {
     margin: 0;
-    background: var(--ground);
+    background: var(--paper);
     color: var(--ink);
     font-family: var(--sans);
     font-size: 17px;
-    line-height: 1.55;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
 
-  .wrap { max-width: 40rem; margin: 0 auto; padding: 0 1.25rem; }
+  img { display: block; max-width: 100%; }
+
+  .wrap { max-width: 58rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  .mark {
+    font-family: var(--mono);
+    font-size: .6875rem;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--green);
+    padding: 2.25rem 0 0;
+  }
 
   /* ---------- hero ---------- */
 
-  .hero { padding: 3rem 0 2.5rem; text-align: center; }
+  .hero { padding: 3rem 0 4.5rem; display: grid; gap: 3rem; }
 
-  .eyebrow {
-    font-family: var(--mono);
-    font-size: .6875rem;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    color: var(--brass);
-    margin: 0 0 1.25rem;
+  @media (min-width: 52rem) {
+    .hero { grid-template-columns: 1.05fr .95fr; align-items: center; gap: 4rem; padding: 4.5rem 0 6rem; }
   }
 
   h1 {
     font-family: var(--display);
-    font-size: clamp(2rem, 8vw, 2.875rem);
-    font-weight: 600;
-    line-height: 1.08;
-    letter-spacing: -.015em;
+    font-size: clamp(2.5rem, 7.2vw, 3.9rem);
+    font-weight: 500;
+    line-height: 1.04;
+    letter-spacing: -.026em;
     margin: 0;
     text-wrap: balance;
   }
 
-  h1 em {
-    font-style: italic;
-    color: var(--brass);
-  }
+  h1 em { font-style: italic; color: var(--green); }
 
   .lede {
-    font-size: 1.0625rem;
+    font-size: 1.125rem;
     color: var(--ink-soft);
-    margin: 1rem auto 0;
+    margin: 1.75rem 0 0;
     max-width: 27rem;
     text-wrap: pretty;
   }
 
-  /* ---------- video ---------- */
-
-  .stage { padding: 0 0 2.5rem; }
-
-  .frame {
+  .shot {
     position: relative;
-    width: min(17rem, 72vw);
-    margin: 0 auto;
-    aspect-ratio: 9 / 16;
-    border-radius: 18px;
+    border-radius: 4px;
     overflow: hidden;
-    background: var(--ground-2);
-    border: 1px solid var(--line);
-    box-shadow: 0 2px 4px rgba(0,0,0,.18), 0 18px 46px rgba(0,0,0,.28);
+    aspect-ratio: 3 / 4;
+    background: var(--green-soft);
+    box-shadow: 0 1px 2px rgba(22,32,28,.05), 0 24px 48px -18px rgba(22,32,28,.28);
   }
 
-  .frame::after {
-    content: "";
+  .shot img { width: 100%; height: 100%; object-fit: cover; }
+
+  .shot figcaption {
     position: absolute;
-    inset: 0;
-    border-radius: 18px;
-    border: 1px solid color-mix(in srgb, var(--brass) 34%, transparent);
-    pointer-events: none;
-  }
-
-  .frame video { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-  .placeholder {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: .625rem;
-    padding: 1.5rem;
-    text-align: center;
-  }
-
-  .placeholder span {
+    left: 0; right: 0; bottom: 0;
+    padding: 2.75rem 1.125rem .9375rem;
+    background: linear-gradient(180deg, transparent, rgba(10,16,13,.72));
+    color: #fff;
     font-family: var(--mono);
-    font-size: .6875rem;
-    letter-spacing: .12em;
+    font-size: .625rem;
+    letter-spacing: .14em;
     text-transform: uppercase;
-    color: var(--brass);
   }
 
-  .placeholder p {
-    font-size: .875rem;
-    color: var(--ink-faint);
-    margin: 0;
-    line-height: 1.45;
-  }
+  /* ---------- sections ---------- */
 
-  .caption {
-    font-family: var(--mono);
-    font-size: .6875rem;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    text-align: center;
-    margin: 1rem 0 0;
-  }
-
-  /* ---------- steps ---------- */
-
-  .band { border-top: 1px solid var(--line); padding: 2.5rem 0; }
+  section.band { border-top: 1px solid var(--line); padding: 4rem 0; }
 
   h2 {
     font-family: var(--display);
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: -.01em;
-    margin: 0 0 1.5rem;
+    font-size: clamp(1.75rem, 4.6vw, 2.4rem);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -.02em;
+    margin: 0 0 1.25rem;
     text-wrap: balance;
+    max-width: 26rem;
   }
 
-  .steps { display: flex; flex-direction: column; gap: 1.25rem; margin: 0; padding: 0; list-style: none; counter-reset: s; }
+  h2 em { font-style: italic; color: var(--green); }
 
-  .steps li {
-    display: grid;
-    grid-template-columns: 2rem 1fr;
-    gap: .875rem;
-    align-items: start;
-    counter-increment: s;
+  .kicker {
+    font-family: var(--mono);
+    font-size: .6875rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--sand);
+    margin: 0 0 1.125rem;
   }
+
+  .col { color: var(--ink-soft); max-width: 34rem; }
+  .col p { margin: 0 0 1rem; }
+  .col p:last-child { margin-bottom: 0; }
+
+  /* ---------- steps ---------- */
+
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.75rem; counter-reset: s; }
+
+  @media (min-width: 44rem) { .steps { grid-template-columns: repeat(3, 1fr); gap: 2rem; } }
+
+  .steps li { counter-increment: s; }
 
   .steps li::before {
-    content: counter(s);
+    content: counter(s, decimal-leading-zero);
+    display: block;
     font-family: var(--mono);
-    font-size: .8125rem;
+    font-size: .75rem;
+    color: var(--sand);
+    padding-bottom: .625rem;
+    margin-bottom: .75rem;
+    border-bottom: 1px solid var(--line);
     font-variant-numeric: tabular-nums;
-    color: var(--brass);
-    background: var(--brass-soft);
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
-  .steps b { display: block; font-weight: 600; font-size: 1rem; }
-  .steps p { margin: .1875rem 0 0; font-size: .9375rem; color: var(--ink-soft); }
+  .steps b { display: block; font-family: var(--display); font-size: 1.25rem; font-weight: 500; letter-spacing: -.012em; }
+  .steps p { margin: .375rem 0 0; font-size: .9375rem; color: var(--ink-soft); }
+
+  /* ---------- demo ---------- */
+
+  .demo-grid { display: grid; gap: 2.5rem; align-items: center; }
+  @media (min-width: 46rem) { .demo-grid { grid-template-columns: 1fr auto; gap: 4rem; } }
+
+  .phone {
+    width: min(15rem, 62vw);
+    margin: 0 auto;
+    aspect-ratio: 9 / 16;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    background: var(--raised);
+    border: 1px solid var(--line);
+    box-shadow: 0 1px 2px rgba(22,32,28,.05), 0 20px 44px -16px rgba(22,32,28,.25);
+  }
+
+  .phone video { width: 100%; height: 100%; object-fit: cover; }
+
+  .phone .slot {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: .5rem; padding: 1.5rem; text-align: center;
+  }
+
+  .slot span { font-family: var(--mono); font-size: .625rem; letter-spacing: .14em; text-transform: uppercase; color: var(--sand); }
+  .slot p { margin: 0; font-size: .8125rem; color: var(--ink-faint); line-height: 1.45; }
 
   /* ---------- pricing ---------- */
 
-  .prices { display: flex; flex-direction: column; gap: .625rem; }
+  .prices { display: grid; gap: .625rem; margin-top: 2rem; }
 
   .price {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
+    display: flex; align-items: baseline; justify-content: space-between; gap: 1.25rem;
+    padding: 1.125rem 1.25rem;
     background: var(--raised);
     border: 1px solid var(--line);
     border-radius: 10px;
-    padding: .9375rem 1.0625rem;
   }
 
-  .price.feature { border-color: color-mix(in srgb, var(--brass) 45%, transparent); }
+  .price.feature { border-color: color-mix(in srgb, var(--green) 42%, transparent); background: var(--green-soft); }
 
   .price-name { font-weight: 600; font-size: .9375rem; }
-  .price-note { display: block; font-weight: 400; font-size: .8125rem; color: var(--ink-faint); margin-top: .125rem; }
+  .price-note { display: block; font-weight: 400; font-size: .8125rem; color: var(--ink-faint); margin-top: .1875rem; }
 
-  .price-tag {
-    font-family: var(--mono);
-    font-size: 1.0625rem;
-    font-variant-numeric: tabular-nums;
-    color: var(--brass);
-    white-space: nowrap;
-  }
-
-  .price-tag small { font-size: .75rem; color: var(--ink-faint); }
+  .price-tag { font-family: var(--mono); font-size: 1.125rem; color: var(--green); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .price-tag small { font-size: .6875rem; color: var(--ink-faint); }
 
   /* ---------- offer ---------- */
 
-  .offer {
-    background: var(--raised);
-    border: 1px solid color-mix(in srgb, var(--brass) 38%, transparent);
-    border-radius: 12px;
-    padding: 1.5rem;
-    text-align: center;
-  }
+  .offer { background: var(--raised); border: 1px solid var(--line); border-radius: 14px; padding: 2.25rem 1.75rem; }
+  @media (min-width: 40rem) { .offer { padding: 3rem 2.5rem; } }
 
-  .offer h2 { margin-bottom: .5rem; }
-  .offer p { color: var(--ink-soft); margin: 0 auto; max-width: 26rem; font-size: .9375rem; }
+  .offer h2 { margin-bottom: 1rem; }
 
   .cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    margin-top: 1.375rem;
-    padding: .875rem 1.5rem;
-    background: var(--jade);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 9px;
-    transition: background .15s ease;
+    display: inline-flex; align-items: center; gap: .5625rem;
+    margin-top: 1.75rem;
+    padding: .9375rem 1.625rem;
+    background: var(--jade); color: #fff;
+    font-size: 1.0625rem; font-weight: 600;
+    text-decoration: none; border-radius: 9px;
+    transition: background .16s ease, transform .16s ease;
   }
 
-  .cta:hover { background: var(--jade-deep); }
+  .cta:hover { background: var(--jade-deep); transform: translateY(-1px); }
+  .cta svg { width: 1.1875rem; height: 1.1875rem; }
 
-  .cta svg { width: 1.125rem; height: 1.125rem; }
-
-  .fine {
-    font-size: .8125rem;
-    color: var(--ink-faint);
-    margin: 1rem 0 0;
-    text-align: center;
-  }
+  .fine { font-size: .8125rem; color: var(--ink-faint); margin: 1.125rem 0 0; }
 
   footer {
     border-top: 1px solid var(--line);
-    padding: 1.5rem 0 3rem;
-    text-align: center;
-    font-size: .8125rem;
+    margin-top: 4rem;
+    padding: 2rem 0 3.5rem;
+    font-family: var(--mono);
+    font-size: .6875rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
     color: var(--ink-faint);
   }
 
-  a:focus-visible, .cta:focus-visible {
-    outline: 2px solid var(--brass);
-    outline-offset: 3px;
-  }
+  a:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; border-radius: 4px; }
 
-  @media (prefers-reduced-motion: reduce) {
-    * { transition: none !important; animation: none !important; }
-  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
 <div class="wrap">
 
-  <section class="hero">
-    <p class="eyebrow">Bali &middot; villa listing video</p>
-    <h1>Your villas, in <em>video</em>.<br>From the photos you already have.</h1>
-    <p class="lede">No shoot. No crew. Nothing scheduled around your guests. The villa stays booked while we produce, and the video is back within 24 hours.</p>
-  </section>
+  <p class="mark">Villa listing films &middot; Bali</p>
 
-  <section class="stage">
-    <div class="frame">
-      <div class="placeholder">
-        <span>Emplacement vidéo</span>
-        <p>La vidéo de démonstration se place ici, en 9:16, lecture automatique et en boucle.</p>
-      </div>
+  <section class="hero">
+    <div>
+      <h1>Your villas deserve more than <em>photographs</em>.</h1>
+      <p class="lede">We turn the photos you already have into short vertical films for the listing cover, Reels and TikTok. No shoot, no crew, nothing scheduled around your guests. Back within 24 hours.</p>
     </div>
-    <p class="caption">Ready for the Airbnb cover, Reels and TikTok</p>
+    <figure class="shot" style="margin:0">
+      <img src="data:image/jpeg;base64,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" alt="Infinity pool of a Balinese villa overlooking a jungle valley at golden hour">
+      <figcaption>One frame from a listing film</figcaption>
+    </figure>
   </section>
 
   <section class="band">
-    <h2>How it works</h2>
+    <p class="kicker">Why it matters</p>
+    <h2>A guest decides in the time it takes to <em>scroll past</em>.</h2>
+    <div class="col">
+      <p>Your listing gets one frame to stop the thumb. Every villa around yours has photographs too, often from the same photographers, styled the same way.</p>
+      <p>Movement is what still stops people, and it is the one thing almost nobody in Bali puts on a listing, because it means a videographer, an empty villa, and a day off the calendar.</p>
+      <p>It does not have to.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <p class="kicker">How it works</p>
+    <h2>Three steps. One day.</h2>
     <ol class="steps">
-      <li>
-        <div>
-          <b>You send the photos</b>
-          <p>The ones already on the listing. Six to ten per villa is plenty.</p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <b>We build the video</b>
-          <p>A 20 to 25 second vertical cut, shot by shot, paced for a listing cover and for social.</p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <b>You get it within 24 hours</b>
-          <p>One round of changes included. The villa never left the calendar.</p>
-        </div>
-      </li>
+      <li><div><b>You send the photos</b><p>The ones already on the listing. Six to ten per villa is plenty.</p></div></li>
+      <li><div><b>We build the film</b><p>A 20 to 25 second vertical cut, paced for a listing cover and for social.</p></div></li>
+      <li><div><b>It lands within 24 hours</b><p>One round of changes included. The villa never left the calendar.</p></div></li>
     </ol>
   </section>
 
   <section class="band">
-    <h2>Pricing</h2>
+    <div class="demo-grid">
+      <div>
+        <p class="kicker">See one</p>
+        <h2>This is what your listing could <em>open with</em>.</h2>
+        <div class="col"><p>Vertical, silent-first, built to autoplay in a feed and to sit as the cover of an Airbnb listing.</p></div>
+      </div>
+      <div class="phone">
+        <div class="slot">
+          <span>Emplacement vid&eacute;o</span>
+          <p>La vid&eacute;o de d&eacute;monstration se place ici, en 9:16, lecture automatique et en boucle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <p class="kicker">Pricing</p>
+    <h2>Priced for a <em>portfolio</em>, not a photoshoot.</h2>
     <div class="prices">
       <div class="price">
-        <span class="price-name">One video<span class="price-note">Single villa, one-off</span></span>
+        <span class="price-name">One film<span class="price-note">Single villa, one-off</span></span>
         <span class="price-tag">$59</span>
       </div>
       <div class="price">
@@ -359,7 +316,7 @@
         <span class="price-tag">$390 <small>/ $39 each</small></span>
       </div>
       <div class="price feature">
-        <span class="price-name">Monthly<span class="price-note">30 videos a month, every new villa covered</span></span>
+        <span class="price-name">Monthly<span class="price-note">30 films a month, every new villa covered</span></span>
         <span class="price-tag">$890 <small>/ mo</small></span>
       </div>
       <div class="price">
@@ -371,16 +328,19 @@
 
   <section class="band">
     <div class="offer">
-      <h2>The first one is free</h2>
-      <p>Pick any villa in your portfolio. We make the video, you judge the result, and only then do we talk about anything else. If it is not useful, that is the end of it.</p>
-      <a class="cta" href="https://wa.me/VOTRE_NUMERO?text=Hi%2C%20I%27d%20like%20the%20free%20video%20for%20one%20of%20our%20villas." target="_blank" rel="noopener">
+      <p class="kicker">No risk</p>
+      <h2>The first one is <em>free</em>.</h2>
+      <div class="col">
+        <p>Pick any villa in your portfolio. We make the film, you judge the result, and only then do we talk about anything else. If it is not useful to you, that is the end of it.</p>
+      </div>
+      <a class="cta" href="https://wa.me/VOTRE_NUMERO?text=Hi%2C%20I%27d%20like%20the%20free%20film%20for%20one%20of%20our%20villas." target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.23 8.23 0 0 1 8.24 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.2 3.7.59.26 1.04.41 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
         Message us on WhatsApp
       </a>
-      <p class="fine">One free video per company. Paid orders are settled before the final file is delivered.</p>
+      <p class="fine">One free film per company. Paid orders are settled before the final file is delivered.</p>
     </div>
   </section>
 
-  <footer>Villa listing video &middot; Bali</footer>
+  <footer>Villa listing films &middot; Bali</footer>
 
 </div>
