@@ -3,444 +3,304 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Villa listing films &middot; Bali</title>
-<meta name="description" content="We turn the photos you already have into cinematic listing videos for your villas. No shoot, no crew, back within 24 hours.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+<title>Villa films</title>
+<meta name="description" content="Villa listing films made from the photos you already have. 24 hours, no shoot.">
 <style>
   :root {
-    --ground: #0A0B0A;
-    --ground-2: #10120F;
-    --ink: #F5F1E8;
-    --ink-soft: #B9B2A4;
-    --ink-faint: #7F7869;
-    --line: #23251F;
-    --gold: #D3A24C;
-    --lagoon: #6FBFAE;
-    --jade: #23A06B;
-    --jade-deep: #1B8055;
-
-    --display: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --ink: #FFFFFF;
+    --mute: rgba(255,255,255,.62);
+    --line: rgba(255,255,255,.16);
+    --go: #21B26B;
+    --go-lift: #29c97b;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
 
   * { box-sizing: border-box; }
-
-  html { scroll-behavior: smooth; }
+  html, body { margin: 0; padding: 0; background: #060706; }
 
   body {
-    margin: 0;
-    background: var(--ground);
     color: var(--ink);
     font-family: var(--sans);
     font-size: 17px;
-    line-height: 1.55;
+    line-height: 1.45;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
 
-  img { display: block; max-width: 100%; }
+  /* ---------- stage ---------- */
 
-  /* ---------- panels ---------- */
+  .stage { position: relative; height: 100svh; }
+  .stage.scrub { height: 340vh; }
 
-  .panel {
-    position: relative;
-    min-height: 100svh;
-    display: flex;
-    align-items: center;
+  .pin {
+    position: sticky;
+    top: 0;
+    height: 100svh;
     overflow: hidden;
-    isolation: isolate;
   }
 
-  .media {
+  .pin video {
     position: absolute;
-    inset: -8% 0;
-    z-index: -2;
-  }
-
-  .media img {
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    will-change: transform;
+    background: #060706;
   }
 
   .scrim {
     position: absolute;
     inset: 0;
-    z-index: -1;
+    background:
+      linear-gradient(180deg, rgba(6,7,6,.55) 0%, rgba(6,7,6,.12) 32%, rgba(6,7,6,.20) 58%, rgba(6,7,6,.88) 100%);
   }
 
-  .scrim.bottom { background: linear-gradient(180deg, rgba(10,11,10,.32) 0%, rgba(10,11,10,.55) 42%, rgba(10,11,10,.96) 100%); }
-  .scrim.full   { background: linear-gradient(180deg, rgba(10,11,10,.78) 0%, rgba(10,11,10,.62) 50%, rgba(10,11,10,.92) 100%); }
-  .scrim.side   { background: linear-gradient(100deg, rgba(10,11,10,.94) 0%, rgba(10,11,10,.72) 48%, rgba(10,11,10,.35) 100%); }
-
-  .inner {
-    position: relative;
-    width: 100%;
-    max-width: 62rem;
+  .copy {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 0 1.5rem 3.25rem;
+    max-width: 32rem;
     margin: 0 auto;
-    padding: 6rem 1.5rem;
   }
 
-  .narrow { max-width: 34rem; }
-
-  /* ---------- type ---------- */
-
-  .eyebrow {
-    font-family: var(--mono);
+  .tag {
     font-size: .6875rem;
     letter-spacing: .2em;
     text-transform: uppercase;
-    color: var(--gold);
-    margin: 0 0 1.5rem;
+    color: var(--mute);
+    margin: 0 0 1rem;
   }
 
   h1 {
-    font-family: var(--display);
-    font-size: clamp(2.4rem, 9.5vw, 5rem);
-    font-weight: 500;
+    font-size: clamp(2.1rem, 8.6vw, 3rem);
+    font-weight: 550;
     line-height: 1.02;
-    letter-spacing: -.028em;
+    letter-spacing: -.04em;
     margin: 0;
     text-wrap: balance;
   }
 
-  h2 {
-    font-family: var(--display);
-    font-size: clamp(1.9rem, 6.5vw, 3.1rem);
-    font-weight: 500;
-    line-height: 1.08;
-    letter-spacing: -.022em;
-    margin: 0 0 1.25rem;
-    text-wrap: balance;
-  }
-
-  em { font-style: italic; color: var(--gold); }
-
-  .lede {
-    font-size: clamp(1.0625rem, 2.6vw, 1.1875rem);
-    color: var(--ink-soft);
-    margin: 1.5rem 0 0;
-    max-width: 30rem;
+  .sub {
+    font-size: 1.0625rem;
+    color: var(--mute);
+    margin: .875rem 0 0;
     text-wrap: pretty;
   }
-
-  .body { color: var(--ink-soft); margin: 0 0 1rem; }
-  .body:last-child { margin-bottom: 0; }
-
-  /* ---------- reveal ---------- */
-
-  .rise {
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity .9s cubic-bezier(.22,.61,.36,1), transform .9s cubic-bezier(.22,.61,.36,1);
-  }
-
-  .rise.in { opacity: 1; transform: none; }
-  .rise.d1 { transition-delay: .1s; }
-  .rise.d2 { transition-delay: .2s; }
-  .rise.d3 { transition-delay: .3s; }
-  .rise.d4 { transition-delay: .4s; }
-
-  /* ---------- hero ---------- */
-
-  #hero .inner { padding-top: 7rem; padding-bottom: 7rem; }
 
   .cue {
     position: absolute;
     left: 50%;
-    bottom: 2rem;
+    bottom: 1rem;
     transform: translateX(-50%);
-    font-family: var(--mono);
     font-size: .625rem;
     letter-spacing: .2em;
     text-transform: uppercase;
-    color: var(--ink-faint);
+    color: rgba(255,255,255,.4);
+    display: none;
+  }
+
+  .stage.scrub .cue { display: block; animation: bob 2.6s ease-in-out infinite; }
+
+  @keyframes bob {
+    0%, 100% { opacity: .25; transform: translate(-50%, 0); }
+    50% { opacity: .8; transform: translate(-50%, 5px); }
+  }
+
+  /* ---------- close ---------- */
+
+  .close {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 4.5rem;
+  }
+
+  .rates {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .5rem;
-  }
-
-  .cue::after {
-    content: "";
-    width: 1px;
-    height: 2.5rem;
-    background: linear-gradient(180deg, var(--gold), transparent);
-    animation: drop 2.4s ease-in-out infinite;
-  }
-
-  @keyframes drop {
-    0%, 100% { opacity: .25; transform: scaleY(.5); transform-origin: top; }
-    50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
-  }
-
-  /* ---------- steps ---------- */
-
-  .steps { list-style: none; margin: 2.5rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 1.75rem; counter-reset: s; }
-
-  .steps li { counter-increment: s; display: grid; grid-template-columns: auto 1fr; gap: 1.125rem; align-items: start; }
-
-  .steps li::before {
-    content: counter(s, decimal-leading-zero);
-    font-family: var(--mono);
-    font-size: .75rem;
-    color: var(--gold);
-    padding-top: .3rem;
+    flex-wrap: wrap;
+    gap: .375rem 1.375rem;
+    padding: 0 0 1.5rem;
+    border-bottom: 1px solid var(--line);
     font-variant-numeric: tabular-nums;
+    font-size: .9375rem;
   }
 
-  .steps b { display: block; font-family: var(--display); font-size: 1.3125rem; font-weight: 500; letter-spacing: -.01em; }
-  .steps p { margin: .3125rem 0 0; font-size: .9375rem; color: var(--ink-soft); }
+  .rates div { white-space: nowrap; }
+  .rates b { font-weight: 600; }
+  .rates span { color: var(--mute); }
 
-  /* ---------- demo ---------- */
+  .pitch { margin: 1.5rem 0 0; color: var(--mute); font-size: .9375rem; }
 
-  #demo { background: var(--ground-2); min-height: auto; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  #demo .inner { text-align: center; padding: 5rem 1.5rem; }
-
-  .phone {
-    width: min(16.5rem, 68vw);
-    margin: 2.5rem auto 0;
-    aspect-ratio: 9 / 16;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    background: #000;
-    border: 1px solid var(--line);
-    box-shadow: 0 26px 70px rgba(0,0,0,.6), 0 0 0 1px rgba(211,162,76,.22);
-  }
-
-  .phone video { width: 100%; height: 100%; object-fit: cover; }
-
-  .phone .slot {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: .625rem;
-    padding: 1.5rem;
-  }
-
-  .slot span { font-family: var(--mono); font-size: .625rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
-  .slot p { margin: 0; font-size: .8125rem; color: var(--ink-faint); line-height: 1.45; }
-
-  /* ---------- pricing ---------- */
-
-  .prices { display: flex; flex-direction: column; gap: .625rem; margin-top: 2.25rem; }
-
-  .price {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1.25rem;
-    padding: 1.0625rem 1.25rem;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    background: rgba(16,18,15,.62);
-    backdrop-filter: blur(8px);
-  }
-
-  .price.feature { border-color: rgba(211,162,76,.5); background: rgba(211,162,76,.07); }
-
-  .price-name { font-weight: 600; font-size: .9375rem; }
-  .price-note { display: block; font-weight: 400; font-size: .8125rem; color: var(--ink-faint); margin-top: .1875rem; }
-
-  .price-tag { font-family: var(--mono); font-size: 1.125rem; color: var(--gold); white-space: nowrap; font-variant-numeric: tabular-nums; }
-  .price-tag small { font-size: .6875rem; color: var(--ink-faint); }
-
-  /* ---------- cta ---------- */
+  /* ---------- button ---------- */
 
   .cta {
-    display: inline-flex;
+    position: relative;
+    display: flex;
     align-items: center;
-    gap: .5625rem;
-    margin-top: 2rem;
-    padding: 1rem 1.75rem;
-    background: var(--jade);
+    justify-content: center;
+    gap: .5rem;
+    margin: 1.75rem 0 0;
+    padding: 1.0625rem;
+    background: var(--go);
     color: #fff;
     font-size: 1.0625rem;
     font-weight: 600;
+    letter-spacing: -.01em;
     text-decoration: none;
-    border-radius: 10px;
-    transition: background .18s ease, transform .18s ease;
+    border-radius: 4px;
+    overflow: hidden;
+    isolation: isolate;
+    transition: background .16s ease, transform .16s ease;
+    animation: halo 3.2s ease-in-out infinite;
   }
 
-  .cta:hover { background: var(--jade-deep); transform: translateY(-1px); }
-  .cta svg { width: 1.1875rem; height: 1.1875rem; }
+  @keyframes halo {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(33,178,107,.42); }
+    50%      { box-shadow: 0 0 0 12px rgba(33,178,107,0); }
+  }
 
-  .fine { font-size: .8125rem; color: var(--ink-faint); margin: 1.125rem 0 0; }
+  /* sweep */
+  .cta::after {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 -60%;
+    width: 45%;
+    background: linear-gradient(100deg, transparent, rgba(255,255,255,.32), transparent);
+    transform: skewX(-18deg);
+    animation: sweep 4.2s ease-in-out infinite;
+    z-index: -1;
+  }
+
+  @keyframes sweep {
+    0%, 62% { left: -60%; }
+    88%, 100% { left: 130%; }
+  }
+
+  .cta:hover { background: var(--go-lift); transform: translateY(-2px); }
+  .cta:active { transform: translateY(0); }
+  .cta svg { width: 1.125rem; height: 1.125rem; }
+  .cta:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+
+  .free { margin: 1rem 0 0; font-size: .875rem; color: var(--mute); text-align: center; }
 
   footer {
-    background: var(--ground);
     border-top: 1px solid var(--line);
-    padding: 2.5rem 1.5rem 3.5rem;
+    padding: 1.5rem;
     text-align: center;
-    font-family: var(--mono);
     font-size: .6875rem;
-    letter-spacing: .14em;
+    letter-spacing: .16em;
     text-transform: uppercase;
-    color: var(--ink-faint);
+    color: rgba(255,255,255,.34);
   }
 
-  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; border-radius: 4px; }
-
   @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    .rise { opacity: 1; transform: none; transition: none; }
-    .cue::after { animation: none; }
-    .media img { transform: none !important; }
+    .cta, .cta::after, .cue { animation: none !important; }
+    * { transition: none !important; }
   }
 </style>
 </head>
 <body>
 
-<!-- HERO -->
-<section class="panel" id="hero">
-  <div class="media" data-speed="0.16">
-    <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HQKBZUc9nPeBPXdWAs8xfGYAyl/hf_20260804_093045_97531085-7435-43e7-9f4e-9209b43e6e53.png" alt="Infinity pool of a Balinese villa overlooking a jungle valley at golden hour">
-  </div>
-  <div class="scrim bottom"></div>
-  <div class="inner">
-    <p class="eyebrow rise">Bali &middot; villa listing films</p>
-    <h1 class="rise d1">Your villas deserve<br>more than <em>photographs</em>.</h1>
-    <p class="lede rise d2">We turn the photos you already have into cinematic listing videos. No shoot, no crew, nothing scheduled around your guests. Back within 24 hours.</p>
-  </div>
-  <div class="cue">Scroll</div>
-</section>
-
-<!-- STAKES -->
-<section class="panel">
-  <div class="media" data-speed="0.12">
-    <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HQKBZUc9nPeBPXdWAs8xfGYAyl/hf_20260804_093144_16ac8530-f018-416b-9ebb-8d09799060af.png" alt="Balinese villa pool at dusk lit by lanterns">
-  </div>
-  <div class="scrim full"></div>
-  <div class="inner narrow">
-    <h2 class="rise">A guest decides in the time it takes to <em>scroll past</em>.</h2>
-    <p class="body rise d1">Your listing gets one frame to stop the thumb. Every villa around yours has photographs too, taken by the same photographers, styled the same way.</p>
-    <p class="body rise d2">Movement is what still stops people. And it is the one thing almost nobody in Bali puts on a listing, because it means a videographer, an empty villa, and a day off the calendar.</p>
-    <p class="body rise d3">It does not have to.</p>
-  </div>
-</section>
-
-<!-- HOW -->
-<section class="panel">
-  <div class="media" data-speed="0.12">
-    <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HQKBZUc9nPeBPXdWAs8xfGYAyl/hf_20260804_093144_cf5a8ade-aa41-44a1-932d-359233307533.png" alt="Open living pavilion of a Balinese villa with teak beams and tropical garden">
-  </div>
-  <div class="scrim side"></div>
-  <div class="inner narrow">
-    <p class="eyebrow rise">How it works</p>
-    <h2 class="rise d1">Three steps. One day.</h2>
-    <ol class="steps">
-      <li class="rise d2"><div><b>You send the photos</b><p>The ones already on the listing. Six to ten per villa is plenty.</p></div></li>
-      <li class="rise d3"><div><b>We build the film</b><p>A 20 to 25 second vertical cut, paced for a listing cover and for social.</p></div></li>
-      <li class="rise d4"><div><b>It lands within 24 hours</b><p>One round of changes included. The villa never left the calendar.</p></div></li>
-    </ol>
-  </div>
-</section>
-
-<!-- DEMO -->
-<section class="panel" id="demo">
-  <div class="inner">
-    <p class="eyebrow rise">See one</p>
-    <h2 class="rise d1">This is what your listing<br>could open with.</h2>
-    <div class="phone rise d2">
-      <div class="slot">
-        <span>Emplacement vidéo</span>
-        <p>La vidéo de démonstration se place ici, en 9:16, lecture automatique et en boucle.</p>
-      </div>
+<section class="stage" id="stage">
+  <div class="pin">
+    <video id="film" muted playsinline preload="auto" disablepictureinpicture></video>
+    <div class="scrim"></div>
+    <div class="copy">
+      <p class="tag">Bali &middot; villa films</p>
+      <h1>Listing films from the photos you already have.</h1>
+      <p class="sub">Vertical, ready for the Airbnb cover and for Reels. No shoot, no crew, back in 24 hours.</p>
     </div>
+    <div class="cue">Scroll</div>
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="panel">
-  <div class="media" data-speed="0.1">
-    <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HQKBZUc9nPeBPXdWAs8xfGYAyl/hf_20260804_093249_e2fa8921-22f3-419e-a0ed-31ed2c4c54c8.png" alt="Bedroom of a Balinese villa with canopy bed opening onto a plunge pool">
+<section class="close">
+  <div class="rates">
+    <div><b>$59</b> <span>a film</span></div>
+    <div><b>$39</b> <span>in tens</span></div>
+    <div><b>$890</b> <span>30 a month</span></div>
   </div>
-  <div class="scrim full"></div>
-  <div class="inner narrow">
-    <p class="eyebrow rise">Pricing</p>
-    <h2 class="rise d1">Priced for a <em>portfolio</em>, not a photoshoot.</h2>
-    <div class="prices">
-      <div class="price rise d2">
-        <span class="price-name">One film<span class="price-note">Single villa, one-off</span></span>
-        <span class="price-tag">$59</span>
-      </div>
-      <div class="price rise d2">
-        <span class="price-name">Pack of ten<span class="price-note">For a portfolio going online</span></span>
-        <span class="price-tag">$390 <small>/ $39 each</small></span>
-      </div>
-      <div class="price feature rise d3">
-        <span class="price-name">Monthly<span class="price-note">30 films a month, every new villa covered</span></span>
-        <span class="price-tag">$890 <small>/ mo</small></span>
-      </div>
-      <div class="price rise d3">
-        <span class="price-name">Investor walkthrough<span class="price-note">For developers selling off-plan or finished villas</span></span>
-        <span class="price-tag">$149 <small>/ property</small></span>
-      </div>
-    </div>
-  </div>
+
+  <p class="pitch">Send the photos already on your listing. Six to ten per villa is plenty. The villa never leaves the calendar.</p>
+
+  <a class="cta" href="https://wa.me/33652957080?text=Hi%2C%20I%27d%20like%20the%20free%20film%20for%20one%20of%20our%20villas." target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.23 8.23 0 0 1 8.24 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.2 3.7.59.26 1.04.41 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
+    Message on WhatsApp
+  </a>
+
+  <p class="free">First film free, on any villa you pick.</p>
 </section>
 
-<!-- CTA -->
-<section class="panel">
-  <div class="media" data-speed="0.14">
-    <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HQKBZUc9nPeBPXdWAs8xfGYAyl/hf_20260804_093044_23801df1-de3f-4b89-8e5f-422f4dc4169f.png" alt="Modern Balinese villa at dusk with warm interior light and reflecting pool">
-  </div>
-  <div class="scrim full"></div>
-  <div class="inner narrow">
-    <p class="eyebrow rise">No risk</p>
-    <h2 class="rise d1">The first one is <em>free</em>.</h2>
-    <p class="body rise d2">Pick any villa in your portfolio. We make the film, you judge the result, and only then do we talk about anything else. If it is not useful to you, that is the end of it.</p>
-    <a class="cta rise d3" href="https://wa.me/VOTRE_NUMERO?text=Hi%2C%20I%27d%20like%20the%20free%20film%20for%20one%20of%20our%20villas." target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.23 8.23 0 0 1 8.24 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.2 3.7.59.26 1.04.41 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
-      Message us on WhatsApp
-    </a>
-    <p class="fine rise d4">One free film per company. Paid orders are settled before the final file is delivered.</p>
-  </div>
-</section>
-
-<footer>Villa listing films &middot; Bali</footer>
+<footer>Villa films &middot; Bali</footer>
 
 <script>
-  // Reveal on scroll
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
-  }, { threshold: 0.16, rootMargin: "0px 0px -8% 0px" });
+(function () {
+  var HOST  = "https://d2ol7oe51mr4n9.cloudfront.net/user_3HQKBZUc9nPeBPXdWAs8xfGYAyl/";
+  var SCRUB = HOST + "d0af4e43-dc17-498c-9eb2-7aad8accb2d2.mp4";
+  var LOOP  = HOST + "1f76d852-e57c-4d53-9d79-cbf52ebc9d1c.mp4";
 
-  document.querySelectorAll(".rise").forEach(el => io.observe(el));
+  var stage = document.getElementById("stage");
+  var film  = document.getElementById("film");
 
-  // Parallax
-  const layers = [...document.querySelectorAll(".media[data-speed]")];
-  let ticking = false;
+  var calm    = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var roomy   = window.matchMedia("(min-width: 900px) and (pointer: fine)").matches;
+  var scrubby = roomy && !calm;
 
-  function frame() {
-    const vh = window.innerHeight;
-    layers.forEach(layer => {
-      const panel = layer.closest(".panel");
-      const r = panel.getBoundingClientRect();
-      if (r.bottom < -200 || r.top > vh + 200) return;
-      const progress = (r.top + r.height / 2 - vh / 2) / vh;
-      const shift = progress * vh * parseFloat(layer.dataset.speed);
-      const img = layer.firstElementChild;
-      if (img) img.style.transform = `translate3d(0, ${shift.toFixed(1)}px, 0)`;
-    });
-    ticking = false;
+  if (!scrubby) {
+    // Phones and tablets: the light cut, autoplaying on a loop.
+    film.src = LOOP;
+    film.loop = true;
+    film.autoplay = true;
+    film.play().catch(function () {});
+    return;
+  }
+
+  // Desktop: scroll drives the film, frame by frame.
+  stage.classList.add("scrub");
+  film.src = SCRUB;
+  film.loop = false;
+
+  var span = 1;
+  var target = 0;
+  var current = 0;
+  var running = false;
+
+  film.addEventListener("loadedmetadata", function () {
+    span = film.duration || 1;
+    measure();
+    tick();
+  });
+
+  var top = 0, travel = 1;
+
+  function measure() {
+    var box = stage.getBoundingClientRect();
+    top = box.top + window.scrollY;
+    travel = Math.max(1, stage.offsetHeight - window.innerHeight);
   }
 
   function onScroll() {
-    if (!ticking) { ticking = true; requestAnimationFrame(frame); }
+    var p = (window.scrollY - top) / travel;
+    target = Math.min(1, Math.max(0, p)) * span;
+    if (!running) { running = true; requestAnimationFrame(tick); }
   }
 
-  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll, { passive: true });
-    frame();
+  function tick() {
+    // Ease toward the target so a flick of the wheel does not jolt the picture.
+    current += (target - current) * 0.16;
+    if (Math.abs(target - current) < 0.004) current = target;
+    if (film.readyState >= 2) {
+      try { film.currentTime = current; } catch (e) {}
+    }
+    if (Math.abs(target - current) > 0.001) {
+      requestAnimationFrame(tick);
+    } else {
+      running = false;
+    }
   }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", function () { measure(); onScroll(); }, { passive: true });
+})();
 </script>
 </body>
 </html>
