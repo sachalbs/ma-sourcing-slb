@@ -1,0 +1,682 @@
+<title>Console d'envoi WhatsApp, prospects Indonésie</title>
+<style>
+  :root {
+    --paper: #F6F7F5;
+    --surface: #FFFFFF;
+    --ink: #10201C;
+    --ink-soft: #55655F;
+    --ink-faint: #8B9994;
+    --line: #DFE4E1;
+    --jade: #1B6B58;
+    --jade-soft: #E6F0EC;
+    --send: #1E8E5A;
+    --send-hover: #17724a;
+    --amber: #9C6413;
+    --amber-soft: #F6EEDF;
+    --done: #7C8B85;
+    --focus: #1B6B58;
+    --shadow: 0 1px 2px rgba(16, 32, 28, .05), 0 4px 14px rgba(16, 32, 28, .045);
+
+    --serif: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0D1614;
+      --surface: #15211E;
+      --ink: #E6ECE9;
+      --ink-soft: #A2B0AB;
+      --ink-faint: #74837E;
+      --line: #253430;
+      --jade: #62BFA3;
+      --jade-soft: #16302A;
+      --send: #2AA76B;
+      --send-hover: #35bd7c;
+      --amber: #D9A254;
+      --amber-soft: #2C2519;
+      --done: #5F6E69;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 14px rgba(0, 0, 0, .25);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper: #0D1614;
+    --surface: #15211E;
+    --ink: #E6ECE9;
+    --ink-soft: #A2B0AB;
+    --ink-faint: #74837E;
+    --line: #253430;
+    --jade: #62BFA3;
+    --jade-soft: #16302A;
+    --send: #2AA76B;
+    --send-hover: #35bd7c;
+    --amber: #D9A254;
+    --amber-soft: #2C2519;
+    --done: #5F6E69;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 14px rgba(0, 0, 0, .25);
+  }
+
+  :root[data-theme="light"] {
+    --paper: #F6F7F5;
+    --surface: #FFFFFF;
+    --ink: #10201C;
+    --ink-soft: #55655F;
+    --ink-faint: #8B9994;
+    --line: #DFE4E1;
+    --jade: #1B6B58;
+    --jade-soft: #E6F0EC;
+    --send: #1E8E5A;
+    --send-hover: #17724a;
+    --amber: #9C6413;
+    --amber-soft: #F6EEDF;
+    --done: #7C8B85;
+    --shadow: 0 1px 2px rgba(16, 32, 28, .05), 0 4px 14px rgba(16, 32, 28, .045);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 0 1rem 5rem;
+  }
+
+  /* ---------- header ---------- */
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: color-mix(in srgb, var(--paper) 92%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+    margin: 0 -1rem 1.5rem;
+    padding: 1rem;
+  }
+
+  .head-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .progress {
+    font-family: var(--mono);
+    font-size: .8125rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+
+  .progress b { color: var(--jade); font-weight: 600; }
+
+  .bar {
+    height: 3px;
+    background: var(--line);
+    border-radius: 2px;
+    margin-top: .75rem;
+    overflow: hidden;
+  }
+
+  .bar span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: var(--send);
+    border-radius: 2px;
+    transition: width .3s ease;
+  }
+
+  .controls {
+    display: flex;
+    gap: .5rem;
+    margin-top: .75rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .seg {
+    display: inline-flex;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+
+  .seg button {
+    font: inherit;
+    font-size: .8125rem;
+    padding: .3rem .7rem;
+    border: 0;
+    background: transparent;
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+
+  .seg button[aria-pressed="true"] {
+    background: var(--jade);
+    color: #fff;
+  }
+
+  .ghost {
+    font: inherit;
+    font-size: .8125rem;
+    padding: .3rem .7rem;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: var(--surface);
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+
+  .ghost:hover { color: var(--ink); border-color: var(--ink-faint); }
+
+  /* ---------- intro ---------- */
+
+  .intro {
+    font-size: .9375rem;
+    color: var(--ink-soft);
+    margin: 0 0 2rem;
+    max-width: 38rem;
+  }
+
+  .intro strong { color: var(--ink); font-weight: 600; }
+
+  /* ---------- groups ---------- */
+
+  .group { margin-bottom: 2.5rem; }
+
+  .group-head {
+    border-top: 1px solid var(--ink);
+    padding-top: .625rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  h2 em {
+    font-family: var(--mono);
+    font-style: normal;
+    font-size: .75rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink-faint);
+    font-weight: 400;
+  }
+
+  .angle {
+    font-size: .875rem;
+    color: var(--ink-soft);
+    margin: .375rem 0 0;
+  }
+
+  /* ---------- cards ---------- */
+
+  .cards { display: flex; flex-direction: column; gap: .75rem; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 11px;
+    padding: .9375rem;
+    box-shadow: var(--shadow);
+    transition: opacity .2s ease;
+  }
+
+  .card.done { opacity: .5; }
+
+  .card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: .75rem;
+  }
+
+  .name {
+    font-family: var(--serif);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0;
+  }
+
+  .chip {
+    font-family: var(--mono);
+    font-size: .6875rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    padding: .2rem .45rem;
+    border-radius: 5px;
+    background: var(--jade-soft);
+    color: var(--jade);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .chip.priority { background: var(--amber-soft); color: var(--amber); }
+
+  .meta {
+    font-size: .875rem;
+    color: var(--ink-soft);
+    margin: .3125rem 0 0;
+  }
+
+  .tel {
+    font-family: var(--mono);
+    font-size: .8125rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink-faint);
+    margin: .375rem 0 0;
+  }
+
+  details {
+    margin-top: .625rem;
+    border-top: 1px dashed var(--line);
+    padding-top: .625rem;
+  }
+
+  summary {
+    font-size: .8125rem;
+    color: var(--ink-soft);
+    cursor: pointer;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+  }
+
+  summary::-webkit-details-marker { display: none; }
+
+  summary::before {
+    content: "›";
+    display: inline-block;
+    transition: transform .15s ease;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  details[open] summary::before { transform: rotate(90deg); }
+
+  .msg {
+    font-size: .875rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    background: var(--paper);
+    border-radius: 7px;
+    padding: .6875rem .75rem;
+    margin-top: .5rem;
+    white-space: pre-wrap;
+  }
+
+  .actions {
+    display: flex;
+    gap: .5rem;
+    margin-top: .75rem;
+    align-items: stretch;
+  }
+
+  .send {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    font: inherit;
+    font-size: .9375rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: .6875rem 1rem;
+    border-radius: 8px;
+    background: var(--send);
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    transition: background .15s ease;
+  }
+
+  .send:hover { background: var(--send-hover); }
+
+  .send.disabled {
+    background: var(--line);
+    color: var(--ink-faint);
+    pointer-events: none;
+  }
+
+  .icon { width: 1.0625rem; height: 1.0625rem; flex-shrink: 0; }
+
+  .copy, .mark {
+    font: inherit;
+    font-size: .875rem;
+    padding: .6875rem .75rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--ink-soft);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .copy:hover, .mark:hover { color: var(--ink); border-color: var(--ink-faint); }
+
+  .mark[aria-pressed="true"] {
+    background: var(--jade-soft);
+    color: var(--jade);
+    border-color: var(--jade);
+  }
+
+  .note {
+    font-size: .8125rem;
+    color: var(--amber);
+    margin: .5rem 0 0;
+  }
+
+  :is(a, button, summary, input):focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding-top: 1rem;
+    font-size: .8125rem;
+    color: var(--ink-faint);
+    line-height: 1.6;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+
+  @media (max-width: 30rem) {
+    .actions { flex-wrap: wrap; }
+    .send { flex-basis: 100%; }
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="head-top">
+      <h1>Console d'envoi WhatsApp</h1>
+      <div class="progress"><b id="count">0</b> / <span id="total">0</span> envoyés</div>
+    </div>
+    <div class="bar"><span id="fill"></span></div>
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Langue du message">
+        <button type="button" data-lang="en" aria-pressed="true">Anglais</button>
+        <button type="button" data-lang="id" aria-pressed="false">Indonésien</button>
+      </div>
+      <button type="button" class="ghost" id="reset">Réinitialiser le suivi</button>
+    </div>
+  </header>
+
+  <p class="intro">
+    Un appui sur <strong>Ouvrir WhatsApp</strong> lance la conversation avec le message déjà rédigé, il ne reste qu'à envoyer.
+    À ouvrir <strong>depuis votre téléphone</strong>, là où WhatsApp est installé.
+    Leur journée de bureau correspond à <strong>3h – 11h heure de Paris</strong>.
+    Tenez-vous à 3 ou 4 envois par jour : une rafale depuis un numéro neuf se fait bannir avant la première réponse.
+  </p>
+
+  <div id="groups"></div>
+
+  <footer>
+    Numéros relevés le 3 août 2026 sur les sites et pages publiques des sociétés.
+    Le suivi des envois reste sur cet appareil.
+  </footer>
+</div>
+
+<script>
+  const GROUPS = [
+    {
+      title: "Gestionnaires de volume",
+      angle: "Ils achètent du débit, pas de l'économie. Leur goulot : un tournage immobilise une villa qui ne rapporte plus.",
+      prospects: [
+        { name: "BaliSuperHost", chip: "569 villas", priority: true, meta: "Ubud, Canggu, Seminyak, Jimbaran, Uluwatu, Sanur", tel: "+62 811-3820-0390", wa: "6281138200390", vol: "569 villas", zone: "Canggu and Seminyak" },
+        { name: "Betterplace", chip: "320+ biens", priority: true, meta: "Canggu, Tibubeneng", tel: "+62 811-390-5023", wa: "628113905023", vol: "over 320 properties", zone: "Canggu" },
+        { name: "Bali Management Villas", chip: "150+ biens", priority: true, meta: "Superhost 7 ans, 4,9/5 sur 5 000 avis", tel: "+62 878-6185-4989", wa: "6287861854989", vol: "over 150 properties", zone: "Bali" },
+        { name: "Bukit Vista", chip: "Multi-îles", meta: "Canggu, Ubud, Uluwatu, Yogyakarta", tel: "+62 812-3901-2686", wa: "6281239012686", vol: "properties across Canggu, Ubud and Uluwatu", zone: "Canggu and Ubud" },
+        { name: "Nagisa Bali Group", chip: "19 ans", meta: "Seminyak, Kuta, Canggu, Sanur, Jimbaran, Ubud", tel: "+62 818-955-390", wa: "62818955390", vol: "villas across eight areas of Bali", zone: "Seminyak and Canggu" },
+        { name: "Villa Management Bali", chip: "7 zones", meta: "Canggu, Seminyak, Uluwatu, Jimbaran, Sanur, Amed", tel: "+62 8133 7334 871", wa: "6281337334871", vol: "villas across seven areas", zone: "Canggu and Seminyak" }
+      ]
+    },
+    {
+      title: "Promoteurs et développeurs",
+      angle: "Segment le moins concurrencé et au panier le plus élevé. Ils ne vendent pas des nuitées, ils vendent des villas à des investisseurs qui ne viendront jamais visiter.",
+      dev: true,
+      prospects: [
+        { name: "Balitecture", chip: "200+ villas", priority: true, meta: "Uluwatu, Canggu, Seminyak, Ubud", tel: "+62 813 3978 3231", wa: "6281339783231", vol: "has built over 200 villas across Uluwatu, Canggu and Seminyak" },
+        { name: "Kingswood Bali Villas", chip: "12 ans", meta: "Constructeur et promoteur, capitaux australiens", tel: "+62 822 6636 2343", wa: "6282266362343", vol: "builds and develops villas across Bali" },
+        { name: "Propertia Bali", chip: "Agence", meta: "Agence immobilière et gestion", tel: "+62 818 0888 7711", wa: "6281808887711", vol: "sells and manages property across Bali" }
+      ]
+    },
+    {
+      title: "Structures moyennes et petites",
+      angle: "Ni budget ni temps pour la vidéo. Décision rapide, sans réunion.",
+      prospects: [
+        { name: "Optimum Bali", chip: "Depuis 2009", meta: "Seminyak, Canggu, Umalas, Uluwatu, Ubud, Sanur", tel: "+62 853 3800 2448", wa: "6285338002448", vol: "villas across seven areas of Bali", zone: "Seminyak and Canggu" },
+        { name: "Bali Villa Manager", chip: "Depuis 2016", meta: "Seminyak, Canggu, Kerobokan", tel: "+62 821 1159 8787", wa: "6282111598787", vol: "villas around Seminyak and Canggu", zone: "Seminyak and Canggu" },
+        { name: "Bali Familia", chip: "Courte durée", meta: "Location courte durée, Bali", tel: "+62 822 3074 2545", wa: "6282230742545", vol: "short-stay villas in Bali", zone: "Bali" },
+        { name: "Gestionnaire à qualifier", chip: "À identifier", meta: "Denpasar Sud, société non identifiée dans les sources", tel: "+62 813 3720 2045", wa: "6281337202045", vol: "properties in Denpasar", zone: "Denpasar" }
+      ]
+    },
+    {
+      title: "Luxe",
+      angle: "Ils ont déjà d'excellents photographes. On ne les remplace pas, on porte leurs images sur les formats verticaux où elles n'existent pas. Ne jamais prononcer le mot « IA ».",
+      prospects: [
+        { name: "Elite Havens", chip: "Ligne fixe", meta: "Portefeuille luxe Bali et Asie du Sud-Est", tel: "+62 361 738747", wa: null, note: "Ligne fixe, pas de WhatsApp. À traiter par email sur info@elitehavens.com.", vol: "", zone: "" }
+      ]
+    }
+  ];
+
+  const MSG = {
+    volume: {
+      en: p => `Hi, I saw ${p.name} manages ${p.vol}.\n\nQuick question: when a new villa joins the portfolio, how long before it has a video on its listing?\n\nI turn the photos you already have into short vertical videos for the Airbnb cover, Reels and TikTok. No shoot, so the villa stays booked while we produce it, and it's back within 24 hours.\n\nHappy to do one free on any villa you pick, so you can judge the result rather than take my word for it. If it's not useful, no follow-up from me.\n\nSacha`,
+      id: p => `Halo, saya lihat ${p.name} mengelola banyak villa di ${p.zone || "Bali"}.\n\nSatu pertanyaan singkat: kalau ada villa baru masuk, berapa lama sampai ada videonya di listing?\n\nSaya membuat video vertikal singkat dari foto yang sudah Anda punya, siap untuk Airbnb, Reels, dan TikTok. Tanpa sesi foto baru, jadi villa tetap bisa disewakan selama proses, dan selesai dalam 24 jam.\n\nSaya bisa buatkan satu contoh gratis untuk villa pilihan Anda. Kalau tidak cocok, saya tidak akan menghubungi lagi.\n\nSacha`
+    },
+    dev: {
+      en: p => `Hi, I saw ${p.name} ${p.vol}.\n\nMost of your buyers decide from abroad, and many will never walk the property before they sign.\n\nI make short vertical walkthrough videos from the photos or plans you already have, so someone in Sydney or Singapore can actually see what they are buying. It works for a finished villa and for one that is still off-plan.\n\nHappy to make one free on a property you are currently selling, so you can judge whether it moves buyers. If it's not useful, no follow-up from me.\n\nSacha`,
+      id: p => `Halo, saya lihat ${p.name} membangun dan menjual properti di Bali.\n\nSebagian besar pembeli Anda memutuskan dari luar negeri dan banyak yang tidak pernah melihat propertinya sebelum tanda tangan.\n\nSaya membuat video walkthrough vertikal singkat dari foto atau denah yang sudah ada, supaya calon pembeli di Sydney atau Singapura bisa benar-benar melihat apa yang mereka beli. Bisa untuk villa jadi maupun yang masih off-plan.\n\nSaya bisa buatkan satu contoh gratis untuk properti yang sedang Anda jual. Kalau tidak cocok, saya tidak akan menghubungi lagi.\n\nSacha`
+    }
+  };
+
+  const store = {
+    read() {
+      try { return JSON.parse(localStorage.getItem("wa-sent") || "[]"); }
+      catch { return []; }
+    },
+    write(list) {
+      try { localStorage.setItem("wa-sent", JSON.stringify(list)); } catch {}
+    }
+  };
+
+  let lang = "en";
+  let sent = store.read();
+
+  const WA_ICON = `<svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.23 8.23 0 0 1 8.24 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.2 3.7.59.26 1.04.41 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>`;
+
+  function messageFor(group, p) {
+    const kind = group.dev ? "dev" : "volume";
+    return MSG[kind][lang](p);
+  }
+
+  function render() {
+    const host = document.getElementById("groups");
+    host.textContent = "";
+    let total = 0;
+
+    GROUPS.forEach((group, gi) => {
+      const sec = document.createElement("section");
+      sec.className = "group";
+
+      const reachable = group.prospects.filter(p => p.wa).length;
+      total += reachable;
+
+      const head = document.createElement("div");
+      head.className = "group-head";
+      const h2 = document.createElement("h2");
+      h2.innerHTML = `${group.title} <em>${group.prospects.length}</em>`;
+      head.appendChild(h2);
+      const angle = document.createElement("p");
+      angle.className = "angle";
+      angle.textContent = group.angle;
+      head.appendChild(angle);
+      sec.appendChild(head);
+
+      const cards = document.createElement("div");
+      cards.className = "cards";
+
+      group.prospects.forEach((p, pi) => {
+        const id = `${gi}-${pi}`;
+        const isDone = sent.includes(id);
+        const text = p.wa ? messageFor(group, p) : "";
+
+        const card = document.createElement("article");
+        card.className = "card" + (isDone ? " done" : "");
+
+        const top = document.createElement("div");
+        top.className = "card-top";
+        const nameEl = document.createElement("h3");
+        nameEl.className = "name";
+        nameEl.textContent = p.name;
+        const chip = document.createElement("span");
+        chip.className = "chip" + (p.priority ? " priority" : "");
+        chip.textContent = p.chip;
+        top.append(nameEl, chip);
+        card.appendChild(top);
+
+        const meta = document.createElement("p");
+        meta.className = "meta";
+        meta.textContent = p.meta;
+        card.appendChild(meta);
+
+        const tel = document.createElement("p");
+        tel.className = "tel";
+        tel.textContent = p.tel;
+        card.appendChild(tel);
+
+        if (p.note) {
+          const note = document.createElement("p");
+          note.className = "note";
+          note.textContent = p.note;
+          card.appendChild(note);
+        }
+
+        if (p.wa) {
+          const det = document.createElement("details");
+          const sum = document.createElement("summary");
+          sum.textContent = "Lire le message";
+          const msg = document.createElement("div");
+          msg.className = "msg";
+          msg.textContent = text;
+          det.append(sum, msg);
+          card.appendChild(det);
+
+          const actions = document.createElement("div");
+          actions.className = "actions";
+
+          const link = document.createElement("a");
+          link.className = "send";
+          link.href = `https://wa.me/${p.wa}?text=${encodeURIComponent(text)}`;
+          link.target = "_blank";
+          link.rel = "noopener";
+          link.innerHTML = `${WA_ICON}<span>Ouvrir WhatsApp</span>`;
+          link.addEventListener("click", () => mark(id, true));
+
+          const copy = document.createElement("button");
+          copy.type = "button";
+          copy.className = "copy";
+          copy.textContent = "Copier";
+          copy.addEventListener("click", async () => {
+            try {
+              await navigator.clipboard.writeText(text);
+              copy.textContent = "Copié";
+            } catch {
+              copy.textContent = "Échec";
+            }
+            setTimeout(() => { copy.textContent = "Copier"; }, 1600);
+          });
+
+          const markBtn = document.createElement("button");
+          markBtn.type = "button";
+          markBtn.className = "mark";
+          markBtn.setAttribute("aria-pressed", String(isDone));
+          markBtn.textContent = isDone ? "Envoyé" : "À faire";
+          markBtn.addEventListener("click", () => mark(id, !sent.includes(id)));
+
+          actions.append(link, copy, markBtn);
+          card.appendChild(actions);
+        }
+
+        cards.appendChild(card);
+      });
+
+      sec.appendChild(cards);
+      host.appendChild(sec);
+    });
+
+    document.getElementById("total").textContent = String(total);
+    updateProgress(total);
+  }
+
+  function updateProgress(total) {
+    const n = sent.length;
+    document.getElementById("count").textContent = String(n);
+    const pct = total ? Math.round((n / total) * 100) : 0;
+    document.getElementById("fill").style.width = pct + "%";
+  }
+
+  function mark(id, on) {
+    sent = on ? [...new Set([...sent, id])] : sent.filter(x => x !== id);
+    store.write(sent);
+    render();
+  }
+
+  document.querySelectorAll("[data-lang]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      lang = btn.dataset.lang;
+      document.querySelectorAll("[data-lang]").forEach(b => {
+        b.setAttribute("aria-pressed", String(b.dataset.lang === lang));
+      });
+      render();
+    });
+  });
+
+  document.getElementById("reset").addEventListener("click", () => {
+    sent = [];
+    store.write(sent);
+    render();
+  });
+
+  render();
+</script>
