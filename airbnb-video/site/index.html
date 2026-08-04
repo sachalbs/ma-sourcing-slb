@@ -8,15 +8,19 @@
 <style>
   :root {
     --ink: #FFFFFF;
-    --mute: rgba(255,255,255,.66);
-    --line: rgba(255,255,255,.16);
+    --mute: rgba(255,255,255,.62);
+    --line: rgba(255,255,255,.14);
+    --card: rgba(255,255,255,.035);
     --go: #21B26B;
     --go-lift: #29c97b;
+    --bg: #060706;
+    --bg-2: #0A0C0B;
     --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
 
   * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background: #060706; }
+  html { scroll-behavior: smooth; }
+  html, body { margin: 0; padding: 0; background: var(--bg); }
 
   body {
     color: var(--ink);
@@ -27,6 +31,67 @@
     overflow-x: hidden;
   }
 
+  section { scroll-margin-top: 88px; }
+
+  /* ---------- floating pill navigation ---------- */
+
+  .nav-wrap {
+    position: fixed;
+    top: 16px; left: 0; right: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    padding: 0 12px;
+  }
+
+  .nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 6px;
+    border-radius: 999px;
+    background: #E8E8ED;
+    box-shadow: 0 8px 30px rgba(0,0,0,.28), 0 1px 0 rgba(255,255,255,.6) inset;
+    pointer-events: auto;
+    max-width: 100%;
+  }
+
+  .nav .pill {
+    position: absolute;
+    top: 6px; bottom: 6px; left: 0;
+    width: 0;
+    border-radius: 999px;
+    background: #1D1D1F;
+    transition: transform .42s cubic-bezier(.22,1,.36,1), width .42s cubic-bezier(.22,1,.36,1);
+    will-change: transform, width;
+  }
+
+  .nav a {
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding: 12px 22px;
+    font-size: 17px;
+    letter-spacing: -.37px;
+    line-height: 1;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 999px;
+    transition: color .26s ease;
+  }
+
+  .nav a.on { color: #FFFFFF; }
+  .nav a:focus-visible { outline: 2px solid #1D1D1F; outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .nav a { padding: 10px 13px; font-size: 13.5px; }
+    .nav-wrap { top: 10px; }
+  }
+
   /* ---------- hero ---------- */
 
   .hero { position: relative; height: 100svh; overflow: hidden; }
@@ -35,16 +100,16 @@
     position: absolute; inset: 0;
     width: 100%; height: 100%;
     object-fit: cover;
-    background: #060706;
+    background: var(--bg);
   }
 
   .scrim {
     position: absolute; inset: 0;
     background: linear-gradient(180deg,
-      rgba(6,7,6,.50) 0%,
+      rgba(6,7,6,.52) 0%,
       rgba(6,7,6,.10) 30%,
       rgba(6,7,6,.22) 55%,
-      rgba(6,7,6,.90) 100%);
+      rgba(6,7,6,.92) 100%);
   }
 
   .copy {
@@ -77,11 +142,20 @@
     text-wrap: pretty;
   }
 
-  /* ---------- close ---------- */
+  /* ---------- how it works ---------- */
 
-  .close { max-width: 32rem; margin: 0 auto; padding: 3.25rem 1.5rem 4.5rem; }
+  .how { max-width: 32rem; margin: 0 auto; padding: 4rem 1.5rem 1rem; }
 
-  .steps { list-style: none; margin: 0 0 2rem; padding: 0; display: grid; gap: .875rem; }
+  .eyebrow {
+    font-size: .6875rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--go);
+    margin: 0 0 .875rem;
+  }
+
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: .875rem; counter-reset: s; }
 
   .steps li {
     display: grid;
@@ -102,22 +176,218 @@
     padding-top: .1875rem;
   }
 
-  .steps { counter-reset: s; }
+  /* ---------- pricing ---------- */
 
-  .rates {
-    display: flex; flex-wrap: wrap; gap: .375rem 1.375rem;
-    padding: 1.5rem 0;
+  .pricing {
+    background: var(--bg-2);
     border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
-    font-variant-numeric: tabular-nums;
-    font-size: .9375rem;
+    margin-top: 3.5rem;
+    padding: 4.5rem 1.5rem 4rem;
   }
 
-  .rates div { white-space: nowrap; }
-  .rates b { font-weight: 600; }
-  .rates span { color: var(--mute); }
+  .pricing-head { max-width: 34rem; margin: 0 auto 2.5rem; text-align: center; }
 
-  /* ---------- button ---------- */
+  .pricing h2 {
+    margin: 0;
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -.035em;
+    line-height: 1.1;
+    text-wrap: balance;
+  }
+
+  .pricing-head p {
+    margin: .875rem auto 0;
+    max-width: 30rem;
+    font-size: .96875rem;
+    line-height: 1.65;
+    color: var(--mute);
+    text-wrap: pretty;
+  }
+
+  .cards {
+    display: flex;
+    gap: 1.375rem;
+    align-items: stretch;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 14px 0 4px;
+  }
+
+  .card {
+    position: relative;
+    isolation: isolate;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.75rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform .34s cubic-bezier(.4,0,.2,1), opacity .34s ease,
+                box-shadow .34s ease, border-color .3s ease, background .3s ease;
+  }
+
+  .card.feat { border-color: rgba(33,178,107,.55); }
+
+  /* cursor-following glass glow */
+  .card::before {
+    content: "";
+    position: absolute;
+    left: var(--mx, 50%); top: var(--my, 50%);
+    width: 340px; height: 340px;
+    margin: -170px 0 0 -170px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(33,178,107,.55), rgba(33,178,107,0) 70%);
+    filter: blur(42px);
+    opacity: 0;
+    transition: opacity .38s ease;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .card > * { position: relative; z-index: 1; }
+
+  @media (hover: hover) {
+    .cards:hover .card { opacity: .72; transform: scale(.97); }
+    .cards:hover .card:hover {
+      opacity: 1;
+      transform: scale(1.035);
+      border-color: rgba(33,178,107,.7);
+      background: rgba(255,255,255,.055);
+      box-shadow: 0 26px 70px rgba(0,0,0,.5);
+      z-index: 2;
+    }
+    .card:hover::before { opacity: 1; }
+  }
+
+  .badge {
+    position: absolute;
+    top: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background: var(--go);
+    color: #04120A;
+    font-size: .625rem;
+    font-weight: 700;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    padding: .375rem .875rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .plan { font-size: 1.25rem; font-weight: 700; letter-spacing: -.02em; }
+  .plan-desc {
+    margin: .375rem 0 1.375rem;
+    min-height: 2.6em;
+    font-size: .84375rem;
+    line-height: 1.55;
+    color: var(--mute);
+  }
+
+  .price { display: flex; align-items: flex-end; gap: 2px; margin-bottom: 1.5rem; }
+  .price .cur { font-size: 1.25rem; font-weight: 700; line-height: 1.7; }
+  .price .amt { font-size: 3.25rem; font-weight: 700; letter-spacing: -.03em; line-height: 1; }
+  .price .per { font-size: .875rem; color: var(--mute); line-height: 2.3; margin-left: .25rem; }
+
+  .buy {
+    display: flex; align-items: center; justify-content: center;
+    width: 100%;
+    padding: .8125rem 1.25rem;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--ink);
+    font-size: .875rem; font-weight: 600;
+    text-decoration: none;
+    transition: background .22s ease, color .22s ease, border-color .22s ease,
+                transform .22s ease, box-shadow .22s ease;
+  }
+
+  .card.feat .buy { background: var(--go); border-color: var(--go); color: #04120A; }
+
+  .buy:hover {
+    background: var(--go); border-color: var(--go); color: #04120A;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.35);
+  }
+
+  .buy .arrow {
+    display: inline-block; overflow: hidden; white-space: nowrap;
+    max-width: 0; opacity: 0; margin-left: 0;
+    transform: translateX(-6px);
+    transition: max-width .26s cubic-bezier(.4,0,.2,1), opacity .2s ease,
+                margin-left .26s cubic-bezier(.4,0,.2,1), transform .26s cubic-bezier(.4,0,.2,1);
+  }
+
+  .buy:hover .arrow { max-width: 1.5rem; opacity: 1; margin-left: .4375rem; transform: translateX(0); }
+
+  .incl {
+    margin: 1.625rem 0 .875rem;
+    font-size: .65625rem; font-weight: 700;
+    letter-spacing: .1em; text-transform: uppercase;
+    color: var(--mute);
+  }
+
+  .feats { list-style: none; margin: 0; padding: 0; display: grid; gap: .8125rem; width: 100%; }
+
+  .feats li {
+    display: flex; gap: .625rem; align-items: flex-start;
+    font-size: .84375rem; line-height: 1.5; color: var(--mute);
+  }
+
+  .feats svg {
+    flex-shrink: 0;
+    width: 1.125rem; height: 1.125rem;
+    margin-top: 1px;
+    border-radius: 50%;
+    background: var(--go);
+    padding: .1875rem;
+    color: #04120A;
+  }
+
+  .dots { display: none; }
+
+  @media (max-width: 900px) {
+    .cards {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      padding: 14px 6vw 4px;
+      gap: 1rem;
+    }
+    .cards::-webkit-scrollbar { display: none; }
+    .card { flex: 0 0 82vw; scroll-snap-align: center; }
+    .plan-desc { min-height: 0; }
+    .price .amt { font-size: 2.75rem; }
+    .dots { display: flex; gap: 8px; justify-content: center; margin-top: 1.5rem; }
+    .dots button {
+      all: unset; cursor: pointer;
+      width: 8px; height: 8px; border-radius: 999px;
+      background: rgba(255,255,255,.22);
+      transition: width .25s ease, background .25s ease;
+    }
+    .dots button[aria-current="true"] { width: 22px; background: var(--go); }
+  }
+
+  /* ---------- contact ---------- */
+
+  .contact { max-width: 32rem; margin: 0 auto; padding: 4rem 1.5rem 4.5rem; text-align: center; }
+
+  .contact h2 {
+    margin: 0;
+    font-size: clamp(1.5rem, 5.5vw, 2rem);
+    font-weight: 650;
+    letter-spacing: -.035em;
+    line-height: 1.1;
+  }
+
+  .contact p.lead { margin: .875rem 0 0; font-size: .96875rem; color: var(--mute); text-wrap: pretty; }
 
   .cta {
     position: relative;
@@ -159,7 +429,7 @@
   .cta svg { width: 1.125rem; height: 1.125rem; }
   .cta:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
 
-  .free { margin: 1rem 0 0; font-size: .875rem; color: var(--mute); text-align: center; }
+  .free { margin: 1rem 0 0; font-size: .875rem; color: var(--mute); }
 
   footer {
     border-top: 1px solid var(--line);
@@ -172,6 +442,7 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
     .cta, .cta::after { animation: none !important; }
     * { transition: none !important; }
   }
@@ -179,9 +450,19 @@
 </head>
 <body>
 
-<section class="hero">
-  <video id="film"
-         src="https://d2ol7oe51mr4n9.cloudfront.net/user_3HQKBZUc9nPeBPXdWAs8xfGYAyl/545dc229-e8ff-44e3-a89b-782f28584f5b.mp4"
+<div class="nav-wrap">
+  <nav class="nav" aria-label="Sections">
+    <span class="pill" aria-hidden="true"></span>
+    <a href="#film" class="on">Film</a>
+    <a href="#how">How it works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
+
+<section class="hero" id="film">
+  <video id="film-v"
+         src="https://d2ol7oe51mr4n9.cloudfront.net/user_3HQKBZUc9nPeBPXdWAs8xfGYAyl/dda659ee-9af7-47c7-95b8-579c6187cf8f.mp4"
          muted loop autoplay playsinline preload="auto" disablepictureinpicture></video>
   <div class="scrim"></div>
   <div class="copy">
@@ -191,18 +472,80 @@
   </div>
 </section>
 
-<section class="close">
+<section class="how" id="how">
+  <p class="eyebrow">How it works</p>
   <ol class="steps">
     <li><div><b>Send the photos.</b> The ones already on the listing. Six to ten per villa.</div></li>
     <li><div><b>We build the film.</b> Around 20 seconds, vertical, paced for a feed.</div></li>
     <li><div><b>It lands within 24 hours.</b> One round of changes included.</div></li>
   </ol>
+</section>
 
-  <div class="rates">
-    <div><b>$59</b> <span>a film</span></div>
-    <div><b>$39</b> <span>in tens</span></div>
-    <div><b>$890</b> <span>30 a month</span></div>
+<section class="pricing" id="pricing">
+  <div class="pricing-head">
+    <p class="eyebrow">Pricing</p>
+    <h2>One price per film. Nothing else.</h2>
+    <p>No shoot fee, no travel, no licensing. You pay per film, or by the month once you are running a portfolio.</p>
   </div>
+
+  <div class="cards" id="cards">
+
+    <article class="card">
+      <div class="plan">Single film</div>
+      <p class="plan-desc">One villa, one film. The way to see the quality before anything else.</p>
+      <div class="price"><span class="cur">$</span><span class="amt">59</span><span class="per">a film</span></div>
+      <a class="buy" href="https://wa.me/33652957080?text=Hi%2C%20I%27d%20like%20one%20film%20for%20a%20villa." target="_blank" rel="noopener"><span>Order one</span><span class="arrow" aria-hidden="true">&rarr;</span></a>
+      <p class="incl">Included</p>
+      <ul class="feats">
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>One vertical film, around 20 seconds</span></li>
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Built from the photos you already have</span></li>
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Back within 24 hours</span></li>
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>One round of changes</span></li>
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Sized for Airbnb, Reels and TikTok</span></li>
+      </ul>
+    </article>
+
+    <article class="card feat">
+      <span class="badge">Most taken</span>
+      <div class="plan">Ten films</div>
+      <p class="plan-desc">A portfolio covered in one pass, with one look across every listing.</p>
+      <div class="price"><span class="cur">$</span><span class="amt">390</span><span class="per">$39 a film</span></div>
+      <a class="buy" href="https://wa.me/33652957080?text=Hi%2C%20I%27d%20like%20the%20pack%20of%20ten%20films." target="_blank" rel="noopener"><span>Order ten</span><span class="arrow" aria-hidden="true">&rarr;</span></a>
+      <p class="incl">Everything above, plus</p>
+      <ul class="feats">
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Ten films, one per villa</span></li>
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>One consistent look across the portfolio</span></li>
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Two rounds of changes on each film</span></li>
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Whole batch back within 72 hours</span></li>
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Priority in the queue</span></li>
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Credits valid for six months</span></li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="plan">Monthly</div>
+      <p class="plan-desc">For managers onboarding new villas every week and posting every day.</p>
+      <div class="price"><span class="cur">$</span><span class="amt">890</span><span class="per">a month</span></div>
+      <a class="buy" href="https://wa.me/33652957080?text=Hi%2C%20I%27d%20like%20to%20talk%20about%20the%20monthly%20plan." target="_blank" rel="noopener"><span>Talk to us</span><span class="arrow" aria-hidden="true">&rarr;</span></a>
+      <p class="incl">Everything above, plus</p>
+      <ul class="feats">
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Thirty films every month</span></li>
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>New listings covered as they onboard</span></li>
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Unlimited rounds of changes</span></li>
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A named contact on WhatsApp</span></li>
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Formats cut for your own channels</span></li>
+        <li><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M8.4 2.6L4 7L1.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Stop any month, no notice</span></li>
+      </ul>
+    </article>
+
+  </div>
+
+  <div class="dots" id="dots" aria-hidden="true"></div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Pick a villa. We will film it tonight.</h2>
+  <p class="lead">Send the listing link on WhatsApp. You get the first film back before you have paid anything.</p>
 
   <a class="cta" href="https://wa.me/33652957080?text=Hi%2C%20I%27d%20like%20the%20free%20film%20for%20one%20of%20our%20villas." target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.23 8.23 0 0 1 8.24 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.2 3.7.59.26 1.04.41 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
@@ -215,12 +558,95 @@
 <footer>Villa films</footer>
 
 <script>
-  // Some browsers ignore the autoplay attribute until a play() call is made.
-  var film = document.getElementById("film");
+(function () {
+  // ---- hero video: some browsers ignore the autoplay attribute until play() is called
+  var film = document.getElementById("film-v");
   var start = function () { var p = film.play(); if (p) p.catch(function () {}); };
   start();
   document.addEventListener("visibilitychange", function () { if (!document.hidden) start(); });
   document.addEventListener("touchstart", start, { once: true, passive: true });
+
+  // ---- floating pill navigation
+  var nav = document.querySelector(".nav");
+  var pill = nav.querySelector(".pill");
+  var links = Array.prototype.slice.call(nav.querySelectorAll("a"));
+  var current = links[0];
+
+  function move(el) {
+    if (!el) return;
+    current = el;
+    pill.style.width = el.offsetWidth + "px";
+    pill.style.transform = "translateX(" + el.offsetLeft + "px)";
+    links.forEach(function (l) { l.classList.toggle("on", l === el); });
+  }
+
+  move(current);
+  // fonts can land after first paint and shift the widths
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { move(current); });
+  window.addEventListener("resize", function () { move(current); });
+
+  links.forEach(function (l) {
+    l.addEventListener("click", function () { move(l); });
+  });
+
+  // ---- scroll spy: the section crossing the upper third wins
+  var sections = links.map(function (l) { return document.querySelector(l.getAttribute("href")); });
+
+  var spy = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var i = sections.indexOf(e.target);
+      if (i > -1 && links[i] !== current) move(links[i]);
+    });
+  }, { rootMargin: "-30% 0px -60% 0px", threshold: 0 });
+
+  sections.forEach(function (s) { if (s) spy.observe(s); });
+
+  // ---- pricing slider dots, mobile only
+  var cards = document.getElementById("cards");
+  var dots = document.getElementById("dots");
+  var items = Array.prototype.slice.call(cards.children);
+
+  items.forEach(function (card, i) {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.setAttribute("aria-label", "Plan " + (i + 1));
+    if (i === 1) b.setAttribute("aria-current", "true");
+    b.addEventListener("click", function () {
+      cards.scrollTo({ left: card.offsetLeft - (cards.clientWidth - card.clientWidth) / 2, behavior: "smooth" });
+    });
+    dots.appendChild(b);
+  });
+
+  var buttons = Array.prototype.slice.call(dots.children);
+
+  cards.addEventListener("scroll", function () {
+    var centre = cards.scrollLeft + cards.clientWidth / 2;
+    var best = 0, bestDist = Infinity;
+    items.forEach(function (c, i) {
+      var d = Math.abs(c.offsetLeft + c.clientWidth / 2 - centre);
+      if (d < bestDist) { bestDist = d; best = i; }
+    });
+    buttons.forEach(function (b, i) {
+      if (i === best) b.setAttribute("aria-current", "true"); else b.removeAttribute("aria-current");
+    });
+  }, { passive: true });
+
+  // open on the highlighted plan
+  if (window.matchMedia("(max-width: 900px)").matches) {
+    var f = items[1];
+    cards.scrollLeft = f.offsetLeft - (cards.clientWidth - f.clientWidth) / 2;
+  }
+
+  // ---- glass glow follows the cursor
+  items.forEach(function (card) {
+    card.addEventListener("mousemove", function (e) {
+      var r = card.getBoundingClientRect();
+      card.style.setProperty("--mx", (e.clientX - r.left) + "px");
+      card.style.setProperty("--my", (e.clientY - r.top) + "px");
+    });
+  });
+})();
 </script>
 </body>
 </html>
