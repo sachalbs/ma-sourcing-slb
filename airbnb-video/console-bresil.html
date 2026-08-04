@@ -13,15 +13,22 @@
     --edge: #CFD8DB;
     --edge-2: #E2E8EA;
 
-    --send: #128C3E;
-    --send-lift: #0F7735;
-    --on-send: #FFFFFF;
+    --act: #128C3E;
+    --act-lift: #0F7735;
+    --on-act: #FFFFFF;
 
     --open: #128C3E;
     --shut: #9A5B0B;
 
     --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
     --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  /* Instagram has no green in it; the action colour follows the channel */
+  :root[data-chan="ig"] {
+    --act: #B4257A;
+    --act-lift: #9C1F6A;
+    --on-act: #FFFFFF;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -35,12 +42,17 @@
       --edge: #263338;
       --edge-2: #1D272B;
 
-      --send: #1FA855;
-      --send-lift: #25C063;
-      --on-send: #04140A;
+      --act: #1FA855;
+      --act-lift: #25C063;
+      --on-act: #04140A;
 
       --open: #35C46E;
       --shut: #E0973A;
+    }
+    :root[data-chan="ig"] {
+      --act: #E1478F;
+      --act-lift: #EC63A2;
+      --on-act: #1A0410;
     }
   }
 
@@ -53,11 +65,17 @@
     --ink-3: #7A8A8E;
     --edge: #CFD8DB;
     --edge-2: #E2E8EA;
-    --send: #128C3E;
-    --send-lift: #0F7735;
-    --on-send: #FFFFFF;
+    --act: #128C3E;
+    --act-lift: #0F7735;
+    --on-act: #FFFFFF;
     --open: #128C3E;
     --shut: #9A5B0B;
+  }
+
+  :root[data-theme="light"][data-chan="ig"] {
+    --act: #B4257A;
+    --act-lift: #9C1F6A;
+    --on-act: #FFFFFF;
   }
 
   :root[data-theme="dark"] {
@@ -69,11 +87,17 @@
     --ink-3: #6E8085;
     --edge: #263338;
     --edge-2: #1D272B;
-    --send: #1FA855;
-    --send-lift: #25C063;
-    --on-send: #04140A;
+    --act: #1FA855;
+    --act-lift: #25C063;
+    --on-act: #04140A;
     --open: #35C46E;
     --shut: #E0973A;
+  }
+
+  :root[data-theme="dark"][data-chan="ig"] {
+    --act: #E1478F;
+    --act-lift: #EC63A2;
+    --on-act: #1A0410;
   }
 
   * { box-sizing: border-box; }
@@ -152,14 +176,14 @@
   }
 
   .rail { height: 3px; background: var(--edge-2); border-radius: 999px; overflow: hidden; }
-  .rail i { display: block; height: 100%; width: 0; background: var(--send); transition: width .4s ease; }
+  .rail i { display: block; height: 100%; width: 0; background: var(--act); transition: width .4s ease, background .3s ease; }
 
   /* ---------- page ---------- */
 
   main { max-width: 44rem; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
 
   .lede {
-    margin: 0 0 2rem;
+    margin: 0 0 1.5rem;
     font-size: .9375rem;
     color: var(--ink-2);
     text-wrap: pretty;
@@ -167,15 +191,16 @@
 
   .lede b { color: var(--ink); font-weight: 600; }
 
-  .lang {
+  .switches { display: flex; gap: .625rem; flex-wrap: wrap; margin-bottom: 1.75rem; }
+
+  .seg {
     display: inline-flex;
     border: 1px solid var(--edge);
     border-radius: 999px;
     overflow: hidden;
-    margin-bottom: 1.75rem;
   }
 
-  .lang button {
+  .seg button {
     all: unset;
     cursor: pointer;
     padding: .4375rem .875rem;
@@ -185,8 +210,8 @@
     background: var(--panel);
   }
 
-  .lang button[aria-pressed="true"] { background: var(--ink); color: var(--ground); }
-  .lang button:focus-visible { outline: 2px solid var(--send); outline-offset: -2px; }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: var(--ground); }
+  .seg button:focus-visible { outline: 2px solid var(--act); outline-offset: -2px; }
 
   h2 {
     margin: 2.25rem 0 .875rem;
@@ -260,21 +285,6 @@
     font-variant-numeric: tabular-nums;
   }
 
-  .copy {
-    all: unset;
-    cursor: pointer;
-    font-family: var(--sans);
-    font-size: .6875rem;
-    font-weight: 600;
-    color: var(--ink-3);
-    border: 1px solid var(--edge);
-    border-radius: 5px;
-    padding: .1875rem .4375rem;
-  }
-
-  .copy:hover { color: var(--ink); border-color: var(--ink-3); }
-  .copy:focus-visible { outline: 2px solid var(--send); outline-offset: 1px; }
-
   details summary {
     cursor: pointer;
     font-size: .8125rem;
@@ -287,7 +297,7 @@
   details summary::-webkit-details-marker { display: none; }
   details summary::before { content: "▸"; font-size: .625rem; transition: transform .2s ease; }
   details[open] summary::before { transform: rotate(90deg); }
-  details summary:focus-visible { outline: 2px solid var(--send); outline-offset: 2px; border-radius: 3px; }
+  details summary:focus-visible { outline: 2px solid var(--act); outline-offset: 2px; border-radius: 3px; }
 
   .msg {
     margin: .625rem 0 0;
@@ -304,24 +314,25 @@
 
   .acts { display: flex; gap: .5rem; }
 
-  .send {
+  .go {
     flex: 1;
     display: flex; align-items: center; justify-content: center; gap: .4375rem;
     padding: .8125rem;
     border-radius: 8px;
-    background: var(--send);
-    color: var(--on-send);
+    background: var(--act);
+    color: var(--on-act);
     font-size: .9375rem;
     font-weight: 650;
     text-decoration: none;
+    text-align: center;
     transition: background .18s ease;
   }
 
-  .send:hover { background: var(--send-lift); }
-  .send:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
-  .send svg { width: 1.0625rem; height: 1.0625rem; }
+  .go:hover { background: var(--act-lift); }
+  .go:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .go svg { width: 1.0625rem; height: 1.0625rem; flex-shrink: 0; }
 
-  .done-btn {
+  .mark {
     all: unset;
     cursor: pointer;
     padding: .8125rem .875rem;
@@ -333,8 +344,42 @@
     text-align: center;
   }
 
-  .done-btn:hover { border-color: var(--ink-3); color: var(--ink); }
-  .done-btn:focus-visible { outline: 2px solid var(--send); outline-offset: 1px; }
+  .mark:hover { border-color: var(--ink-3); color: var(--ink); }
+  .mark:focus-visible { outline: 2px solid var(--act); outline-offset: 1px; }
+
+  .after {
+    margin: 0;
+    padding: .75rem .875rem;
+    background: var(--panel-2);
+    border: 1px dashed var(--edge);
+    border-radius: 8px;
+    display: grid;
+    gap: .5rem;
+  }
+
+  .after p { margin: 0; font-size: .75rem; color: var(--ink-3); }
+
+  .after .txt {
+    font-size: .8125rem;
+    color: var(--ink-2);
+    white-space: pre-wrap;
+    line-height: 1.5;
+  }
+
+  .mini {
+    all: unset;
+    cursor: pointer;
+    justify-self: start;
+    font-size: .6875rem;
+    font-weight: 600;
+    color: var(--ink-2);
+    border: 1px solid var(--edge);
+    border-radius: 5px;
+    padding: .25rem .5rem;
+  }
+
+  .mini:hover { color: var(--ink); border-color: var(--ink-3); }
+  .mini:focus-visible { outline: 2px solid var(--act); outline-offset: 1px; }
 
   .relance { display: none; }
   .p.done .relance { display: block; }
@@ -367,7 +412,7 @@
     text-underline-offset: 3px;
   }
 
-  .reset:focus-visible { outline: 2px solid var(--send); outline-offset: 2px; }
+  .reset:focus-visible { outline: 2px solid var(--act); outline-offset: 2px; }
 
   @media (prefers-reduced-motion: reduce) {
     * { animation: none !important; transition: none !important; }
@@ -403,16 +448,17 @@
 </div>
 
 <main>
-  <p class="lede">
-    Douze sociétés brésiliennes qui gèrent des villas et des locations courte durée. Chaque numéro vient
-    du site officiel de la société, aucun n'est deviné. Le message est écrit sur mesure pour chacune :
-    il cite quelque chose de vrai sur son activité, propose la <b>première vidéo gratuite</b> et renvoie
-    vers le site. Un appui ouvre WhatsApp avec le texte déjà rempli, vous n'avez qu'à envoyer.
-  </p>
+  <p class="lede" id="lede"></p>
 
-  <div class="lang" role="group" aria-label="Langue des messages">
-    <button type="button" data-lang="pt" aria-pressed="true">Portugais</button>
-    <button type="button" data-lang="en" aria-pressed="false">Anglais</button>
+  <div class="switches">
+    <div class="seg" role="group" aria-label="Canal">
+      <button type="button" data-chan="wa" aria-pressed="true">WhatsApp</button>
+      <button type="button" data-chan="ig" aria-pressed="false">Instagram</button>
+    </div>
+    <div class="seg" role="group" aria-label="Langue des messages">
+      <button type="button" data-lang="pt" aria-pressed="true">Portugais</button>
+      <button type="button" data-lang="en" aria-pressed="false">Anglais</button>
+    </div>
   </div>
 
   <h2>Priorité A <span>villas de luxe, gros panier</span></h2>
@@ -423,15 +469,12 @@
 </main>
 
 <footer>
+  <p id="cadence"></p>
   <p>
-    Espacez d'au moins deux minutes entre deux envois. Une rafale depuis un numéro personnel fait
-    chuter sa note de qualité chez WhatsApp et finit par le faire restreindre.
+    Une fois qu'un prospect vous a répondu, la conversation est ouverte et vous pouvez tout envoyer
+    librement, y compris la vidéo. C'est là qu'il faut demander six à dix photos d'une maison.
   </p>
-  <p>
-    Une fois qu'un prospect vous a répondu, une fenêtre de 24 heures s'ouvre où vous pouvez tout
-    envoyer librement, y compris la vidéo. C'est là qu'il faut livrer la démo.
-  </p>
-  <button type="button" class="reset" id="reset">Réinitialiser le suivi</button>
+  <button type="button" class="reset" id="reset">Réinitialiser le suivi de ce canal</button>
 </footer>
 
 <script>
@@ -448,9 +491,12 @@
       where: "São Paulo · Trancoso, Búzios, Angra, Ilhabela",
       wa: "5511984985186",
       show: "+55 11 98498-5186",
+      ig: "matuetevillas",
       why: "Le portefeuille de villas de luxe avec service le plus étendu du Brésil, présent sur cinq destinations à la fois. Un accord ici, c'est un catalogue entier à couvrir.",
       pt: "Vi o catálogo de vocês, com casas em Trancoso, Búzios, Angra e Ilhabela no mesmo lugar, e reparei que quase tudo é apresentado só em foto.",
-      en: "I went through your portfolio, houses in Trancoso, Búzios, Angra and Ilhabela all in one catalogue, and noticed almost everything is presented in stills only."
+      en: "I went through your portfolio, houses in Trancoso, Búzios, Angra and Ilhabela all in one catalogue, and noticed almost everything is presented in stills only.",
+      igpt: "Oi! Vi o catálogo de vocês, casas em Trancoso, Búzios, Angra e Ilhabela no mesmo lugar, e quase tudo apresentado só em foto. Eu transformo as fotos que já estão no anúncio em vídeo vertical, pronto em 24h, sem tirar ninguém do lugar. Faço o primeiro de graça na casa que vocês escolherem. Posso mandar um exemplo?",
+      igen: "Hi! I went through your portfolio, houses in Trancoso, Búzios, Angra and Ilhabela in one catalogue, almost all of it presented in stills. I turn the photos already on a listing into a vertical video, back within 24 hours, nobody has to move. First one free on whichever house you pick. Can I send you an example?"
     },
     {
       tier: "a",
@@ -458,9 +504,12 @@
       where: "Rio de Janeiro · Angra, Trancoso",
       wa: "5521998037681",
       show: "+55 21 99803-7681",
+      ig: "villasinbrazil",
       why: "Location de villas avec conciergerie, clientèle internationale. Le client réserve à distance, sans jamais avoir vu la maison.",
       pt: "Vi que vocês alugam villas com concierge e que boa parte dos hóspedes reserva de fora do Brasil, sem nunca ter visto a casa pessoalmente.",
-      en: "I saw you rent serviced villas with a concierge, and that a good share of your guests book from abroad, having never set foot in the house."
+      en: "I saw you rent serviced villas with a concierge, and that a good share of your guests book from abroad, having never set foot in the house.",
+      igpt: "Oi! Vi que boa parte dos hóspedes de vocês reserva de fora do Brasil, sem nunca ter visto a casa. Eu pego as fotos que já estão no anúncio e devolvo um vídeo vertical em 24h, sem fotógrafo e sem entrar na casa. Faço o primeiro de graça. Posso mandar um exemplo?",
+      igen: "Hi! I saw a good share of your guests book from abroad, having never seen the house. I take the photos already on the listing and send back a vertical video within 24 hours, no photographer, nobody entering the house. First one free. Can I send you an example?"
     },
     {
       tier: "a",
@@ -468,9 +517,12 @@
       where: "Rio de Janeiro · Búzios",
       wa: "5521965319121",
       show: "+55 21 96531-9121",
+      ig: "whereinrio",
       why: "Maisons signées par des architectes, avec chef privé et chauffeur. Exactement le type de bien qu'une photo fixe n'arrive pas à rendre.",
       pt: "Vi que vocês trabalham com casas assinadas por arquitetos, com vista panorâmica e pé na areia. Esse tipo de casa é justamente o que a foto parada não consegue mostrar: o volume do espaço, a passagem de um ambiente pro outro, a luz mudando.",
-      en: "I saw you work with architect-designed houses, panoramic views, beachfront. That is exactly the kind of property a still photo cannot carry: the volume of the space, the walk from one room to the next, the light shifting."
+      en: "I saw you work with architect-designed houses, panoramic views, beachfront. That is exactly the kind of property a still photo cannot carry: the volume of the space, the walk from one room to the next, the light shifting.",
+      igpt: "Oi! Casa assinada por arquiteto é justamente o que a foto parada não mostra: o volume do espaço, a passagem de um ambiente pro outro. Eu transformo as fotos do anúncio em vídeo vertical, pronto em 24h. Faço o primeiro de graça na casa que vocês escolherem. Posso mandar?",
+      igen: "Hi! An architect-designed house is exactly what a still photo cannot carry: the volume of the space, the walk from one room to the next. I turn the photos already on the listing into a vertical video, back within 24 hours. First one free on whichever house you pick. Can I send it?"
     },
     {
       tier: "a",
@@ -478,9 +530,12 @@
       where: "Trancoso, Bahia",
       wa: "5573988495317",
       show: "+55 73 98849-5317",
+      ig: "alugueltrancoso",
       why: "Villas de luxe à Trancoso avec service complet, chef, sommelier, chauffeur. Panier élevé, décision rapide, structure légère.",
       pt: "Vi as casas de vocês em Altos de Trancoso e o serviço completo que vem junto, chef, sommelier, motorista.",
-      en: "I looked at your houses in Altos de Trancoso and the full service that comes with them, chef, sommelier, driver."
+      en: "I looked at your houses in Altos de Trancoso and the full service that comes with them, chef, sommelier, driver.",
+      igpt: "Oi! Vi as casas de vocês em Altos de Trancoso e o serviço completo que vem junto. Eu pego as fotos que já estão no anúncio e devolvo um vídeo vertical em 24h, sem sessão e sem incomodar hóspede. Faço o primeiro de graça. Posso mandar um exemplo?",
+      igen: "Hi! I looked at your houses in Altos de Trancoso and the full service that comes with them. I take the photos already on the listing and send back a vertical video within 24 hours, no shoot, no guest disturbed. First one free. Can I send you an example?"
     },
     {
       tier: "a",
@@ -488,9 +543,12 @@
       where: "Trancoso, Bahia",
       wa: "5571991696993",
       show: "+55 71 99169-6993",
+      ig: "cocartrancoso",
       why: "N'exploite que ses propres maisons. Pas de mandat à négocier avec un propriétaire, la décision leur appartient entièrement.",
       pt: "Vi que vocês operam exclusivamente as casas de vocês, então o padrão visual do anúncio é decisão de vocês, não do proprietário.",
-      en: "I saw you operate only your own houses, which means the look of the listing is your call, not an owner's."
+      en: "I saw you operate only your own houses, which means the look of the listing is your call, not an owner's.",
+      igpt: "Oi! Como vocês operam só as casas de vocês, o padrão visual do anúncio é decisão de vocês. Eu transformo as fotos que já estão lá em vídeo vertical, pronto em 24h. Faço o primeiro de graça na casa que escolherem. Posso mandar?",
+      igen: "Hi! Since you operate only your own houses, the look of the listing is entirely your call. I turn the photos already there into a vertical video, back within 24 hours. First one free on whichever house you pick. Can I send it?"
     },
     {
       tier: "a",
@@ -498,9 +556,12 @@
       where: "Angra dos Reis · bureaux internationaux",
       wa: "5521982071352",
       show: "+55 21 98207-1352",
+      ig: "latin_exclusive",
       why: "Location saisonnière, longue durée et vente dans le même portefeuille. Une vidéo sert les trois, ce qui double la valeur perçue.",
       pt: "Vi que vocês trabalham com aluguel de temporada, aluguel longo e venda no mesmo portfólio de casas em Angra. Um vídeo bem feito serve pros três, o que muda bastante a conta.",
-      en: "I saw you handle holiday lets, long term rentals and sales from the same portfolio in Angra. One good video serves all three, which changes the maths."
+      en: "I saw you handle holiday lets, long term rentals and sales from the same portfolio in Angra. One good video serves all three, which changes the maths.",
+      igpt: "Oi! Vi que vocês trabalham temporada, aluguel longo e venda no mesmo portfólio em Angra. Um vídeo serve pros três. Eu transformo as fotos do anúncio em vídeo vertical, pronto em 24h. Faço o primeiro de graça. Posso mandar um exemplo?",
+      igen: "Hi! I saw you handle holiday lets, long term rentals and sales from the same Angra portfolio. One video serves all three. I turn the listing photos into a vertical video, back within 24 hours. First one free. Can I send you an example?"
     },
     {
       tier: "b",
@@ -508,9 +569,12 @@
       where: "Angra dos Reis, Rio de Janeiro",
       wa: "5521991482404",
       show: "+55 21 99148-2404",
+      ig: "portobracuhy",
       why: "Condominium fermé avec marina à Angra. Maisons avec vue mer, piscine, accès bateau, très visuelles.",
       pt: "Vi as casas de vocês no condomínio, com vista pro mar e acesso à marina.",
-      en: "I looked at your houses inside the gated marina community, sea views and boat access."
+      en: "I looked at your houses inside the gated marina community, sea views and boat access.",
+      igpt: "Oi! Vi as casas de vocês no condomínio, vista pro mar e acesso à marina. Eu pego as fotos que já estão no anúncio e devolvo um vídeo vertical em 24h, sem fotógrafo. Faço o primeiro de graça. Posso mandar um exemplo?",
+      igen: "Hi! I looked at your houses in the gated marina community, sea views and boat access. I take the photos already on the listing and send back a vertical video within 24 hours, no photographer. First one free. Can I send you an example?"
     },
     {
       tier: "b",
@@ -518,9 +582,12 @@
       where: "Trancoso · Bahia",
       wa: "557398439000",
       show: "+55 73 9843-9000",
+      ig: "bahialuxuryimoveis",
       why: "Immobilier de luxe et location à Trancoso. Portefeuille photographié mais entièrement statique.",
       pt: "Vi o portfólio de vocês em Trancoso e reparei que tudo é apresentado em foto, sem nenhum vídeo.",
-      en: "I went through your Trancoso portfolio and noticed everything is presented in stills, with no video at all."
+      en: "I went through your Trancoso portfolio and noticed everything is presented in stills, with no video at all.",
+      igpt: "Oi! Vi o portfólio de vocês em Trancoso, tudo em foto e nenhum vídeo. Eu transformo essas mesmas fotos em vídeo vertical, pronto em 24h. Faço o primeiro de graça na casa que escolherem. Posso mandar?",
+      igen: "Hi! I went through your Trancoso portfolio, all stills and no video. I turn those same photos into a vertical video, back within 24 hours. First one free on whichever house you pick. Can I send it?"
     },
     {
       tier: "b",
@@ -528,9 +595,12 @@
       where: "Trancoso · plateforme de villas",
       wa: "5511933754731",
       show: "+55 11 93375-4731",
+      ig: "holmy",
       why: "Plateforme de maisons et villas de temporada. Beaucoup de biens listés, donc beaucoup de vidéos possibles.",
       pt: "Vi quantas casas e vilas vocês listam em Trancoso. Com esse volume, sessão de vídeo casa por casa simplesmente não fecha a conta.",
-      en: "I saw how many houses and villas you list in Trancoso. At that volume, a video shoot house by house simply does not add up."
+      en: "I saw how many houses and villas you list in Trancoso. At that volume, a video shoot house by house simply does not add up.",
+      igpt: "Oi! Com o volume de casas que vocês listam em Trancoso, sessão de vídeo casa por casa não fecha a conta. Eu uso as fotos que já estão no anúncio e devolvo um vídeo vertical em 24h. Dá pra rodar em lote. Faço o primeiro de graça, posso mandar?",
+      igen: "Hi! At the volume of houses you list in Trancoso, a shoot house by house does not add up. I use the photos already on the listing and send back a vertical video within 24 hours, in batches if needed. First one free, can I send it?"
     },
     {
       tier: "b",
@@ -538,9 +608,12 @@
       where: "Florianópolis, Santa Catarina",
       wa: "5548988555811",
       show: "+55 48 98855-5811",
+      ig: "floripaminhahospedagem",
       why: "Entrée dans le réseau de co-hôtes officiel d'Airbnb en 2024. Croissance rapide, chaque nouveau bien a besoin de contenu.",
       pt: "Vi que vocês entraram na Rede de Coanfitriões do Airbnb em 2024. Isso quer dizer imóvel novo entrando o tempo todo, e cada um precisando de conteúdo no dia seguinte.",
-      en: "I saw you joined Airbnb's official co-host network in 2024. That means new properties coming in constantly, each one needing content the next day."
+      en: "I saw you joined Airbnb's official co-host network in 2024. That means new properties coming in constantly, each one needing content the next day.",
+      igpt: "Oi! Vi que vocês entraram na Rede de Coanfitriões do Airbnb em 2024, então é imóvel novo entrando o tempo todo. Eu transformo as fotos do anúncio em vídeo vertical, pronto em 24h, dez imóveis de uma vez se precisar. Faço o primeiro de graça. Posso mandar?",
+      igen: "Hi! I saw you joined Airbnb's co-host network in 2024, so new properties keep coming in. I turn listing photos into vertical video, back within 24 hours, ten at a time if needed. First one free. Can I send it?"
     },
     {
       tier: "b",
@@ -548,9 +621,12 @@
       where: "Rio de Janeiro",
       wa: "5521971313905",
       show: "+55 21 97131-3905",
+      ig: "smartbnb.br",
       why: "Gestion complète de locations courte durée à Rio. Marché très concurrentiel, où la vignette fait la différence.",
       pt: "Vi que vocês fazem gestão completa de temporada no Rio. Num mercado tão disputado, o que decide o clique é a capa do anúncio.",
-      en: "I saw you run full short-let management in Rio. In a market that crowded, what decides the click is the listing cover."
+      en: "I saw you run full short-let management in Rio. In a market that crowded, what decides the click is the listing cover.",
+      igpt: "Oi! Num mercado como o Rio, o que decide o clique é a capa do anúncio. Eu pego as fotos que já estão lá e devolvo um vídeo vertical em 24h, sem fotógrafo e sem agenda. Faço o primeiro de graça. Posso mandar um exemplo?",
+      igen: "Hi! In a market like Rio, what decides the click is the listing cover. I take the photos already there and send back a vertical video within 24 hours, no photographer, no scheduling. First one free. Can I send you an example?"
     },
     {
       tier: "b",
@@ -558,9 +634,12 @@
       where: "São Paulo, Rio, BH, Florianópolis, Brasília",
       wa: "5531986044645",
       show: "+55 31 98604-4645",
+      ig: "hostnjoy",
       why: "Cinq villes, tarification dynamique, gestion 24/7. Profil industriel : ils raisonnent en coût par bien, pas en prix d'une vidéo.",
       pt: "Vi que vocês administram imóveis em São Paulo, Rio, BH, Floripa e Brasília. Nesse ritmo, sessão de foto e vídeo imóvel por imóvel não escala.",
-      en: "I saw you manage properties across São Paulo, Rio, Belo Horizonte, Florianópolis and Brasília. At that pace, a shoot per property does not scale."
+      en: "I saw you manage properties across São Paulo, Rio, Belo Horizonte, Florianópolis and Brasília. At that pace, a shoot per property does not scale.",
+      igpt: "Oi! Com imóveis em cinco cidades, sessão de foto e vídeo imóvel por imóvel não escala. Eu uso as fotos que já estão no anúncio e devolvo um vídeo vertical em 24h, em lote se precisar. Faço o primeiro de graça. Posso mandar um exemplo?",
+      igen: "Hi! With properties in five cities, a shoot per property does not scale. I use the photos already on the listing and send back a vertical video within 24 hours, in batches if needed. First one free. Can I send you an example?"
     }
   ];
 
@@ -571,7 +650,8 @@
       close: "Faço o primeiro de graça, na casa que vocês escolherem. Se não gostar, não paga nada e a gente para por aí.",
       link: "Assim que fica:\n" + SITE,
       sign: "Sacha",
-      relance: "Oi! Só passando pra saber se faz sentido pra vocês. A oferta do primeiro vídeo de graça continua de pé, é só me mandar as fotos de uma casa que eu devolvo em 24h.\n\nhttps://villa-films.vercel.app\n\nSacha"
+      relance: "Oi! Só passando pra saber se faz sentido pra vocês. A oferta do primeiro vídeo de graça continua de pé, é só me mandar as fotos de uma casa que eu devolvo em 24h.\n\n" + SITE + "\n\nSacha",
+      after: "Aqui está um exemplo do que a gente entrega:\n" + SITE + "\n\nÉ só me mandar de seis a dez fotos de uma casa e eu devolvo o vídeo em 24h. Sem compromisso, o primeiro é por minha conta."
     },
     en: {
       open: "Hi! Sacha here, from Villa Films.",
@@ -579,55 +659,101 @@
       close: "I'll do the first one free, on whichever house you pick. If you don't like it, you pay nothing and we stop there.",
       link: "Here is what one looks like:\n" + SITE,
       sign: "Sacha",
-      relance: "Hi! Just checking whether this makes sense for you. The free first video still stands, send me the photos of one house and I'll have it back within 24 hours.\n\nhttps://villa-films.vercel.app\n\nSacha"
+      relance: "Hi! Just checking whether this makes sense for you. The free first video still stands, send me the photos of one house and I'll have it back within 24 hours.\n\n" + SITE + "\n\nSacha",
+      after: "Here is an example of what we deliver:\n" + SITE + "\n\nJust send me six to ten photos of one house and I'll have the video back within 24 hours. No commitment, the first one is on me."
     }
   };
 
-  function text(p, lang) {
+  // ---------- message builders ----------
+
+  function waText(p, lang) {
     var b = BODY[lang];
     return [b.open, p[lang], b.core, b.close, b.link, b.sign].join("\n\n");
   }
 
-  function link(p, lang) {
-    return "https://wa.me/" + p.wa + "?text=" + encodeURIComponent(text(p, lang));
+  function igText(p, lang) {
+    return lang === "pt" ? p.igpt : p.igen;
   }
 
-  function relance(p, lang) {
-    return "https://wa.me/" + p.wa + "?text=" + encodeURIComponent(BODY[lang].relance);
+  function text(p, lang, chan) {
+    return chan === "ig" ? igText(p, lang) : waText(p, lang);
+  }
+
+  function href(p, lang, chan) {
+    // Instagram has no way to prefill a message, so the link only opens the thread
+    return chan === "ig"
+      ? "https://ig.me/m/" + p.ig
+      : "https://wa.me/" + p.wa + "?text=" + encodeURIComponent(waText(p, lang));
   }
 
   // ---------- state ----------
 
-  var KEY = "villafilms.br.sent";
+  var SKEY = "villafilms.br.sent.v2";
   var LKEY = "villafilms.br.lang";
-  var sent = {};
+  var CKEY = "villafilms.br.chan";
+
+  var sent = { wa: {}, ig: {} };
   var lang = "pt";
+  var chan = "wa";
 
   try {
-    sent = JSON.parse(localStorage.getItem(KEY) || "{}");
+    var raw = JSON.parse(localStorage.getItem(SKEY) || "null");
+    if (raw && raw.wa && raw.ig) sent = raw;
     lang = localStorage.getItem(LKEY) || "pt";
+    chan = localStorage.getItem(CKEY) || "wa";
   } catch (e) { /* private mode, keep defaults */ }
 
   function save() {
     try {
-      localStorage.setItem(KEY, JSON.stringify(sent));
+      localStorage.setItem(SKEY, JSON.stringify(sent));
       localStorage.setItem(LKEY, lang);
+      localStorage.setItem(CKEY, chan);
     } catch (e) { /* nothing to do, the session still works */ }
   }
 
-  // ---------- render ----------
+  function isSent(p) { return !!sent[chan][p.wa]; }
+
+  // ---------- copy helper ----------
+
+  function copyTo(str, btn, label) {
+    var done = function (ok) {
+      btn.textContent = ok ? "Copié" : "Copie refusée";
+      setTimeout(function () { btn.textContent = label; }, 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(str).then(function () { done(true); }, function () { done(false); });
+      return;
+    }
+    // older mobile browsers with no clipboard API
+    var ta = document.createElement("textarea");
+    ta.value = str;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    done(ok);
+  }
+
+  // ---------- icons ----------
 
   var WA_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.23 8.23 0 0 1 8.24 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.2 3.7.59.26 1.04.41 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>';
 
-  function card(p, i) {
+  var IG_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.4"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.3" cy="6.7" r="1.15" fill="currentColor" stroke="none"/></svg>';
+
+  // ---------- render ----------
+
+  function card(p) {
     var el = document.createElement("article");
-    el.className = "p" + (sent[p.wa] ? " done" : "");
+    el.className = "p";
 
     var head = document.createElement("div");
     head.className = "head";
-    head.innerHTML =
-      '<span class="tier ' + p.tier + '">' + p.tier.toUpperCase() + '</span>' +
-      '<div><h3></h3><p class="where"></p></div>';
+    head.innerHTML = '<span class="tier ' + p.tier + '">' + p.tier.toUpperCase() +
+                     '</span><div><h3></h3><p class="where"></p></div>';
     head.querySelector("h3").textContent = p.name;
     head.querySelector(".where").textContent = p.where;
 
@@ -637,23 +763,8 @@
 
     var line = document.createElement("div");
     line.className = "line";
-    var num = document.createElement("span");
-    num.textContent = p.show;
-    var cp = document.createElement("button");
-    cp.type = "button";
-    cp.className = "copy";
-    cp.textContent = "Copier le texte";
-    cp.addEventListener("click", function () {
-      navigator.clipboard.writeText(text(p, lang)).then(function () {
-        cp.textContent = "Copié";
-        setTimeout(function () { cp.textContent = "Copier le texte"; }, 1600);
-      }, function () {
-        cp.textContent = "Échec";
-        setTimeout(function () { cp.textContent = "Copier le texte"; }, 1600);
-      });
-    });
-    line.appendChild(num);
-    line.appendChild(cp);
+    var handle = document.createElement("span");
+    line.appendChild(handle);
 
     var det = document.createElement("details");
     var sum = document.createElement("summary");
@@ -666,31 +777,52 @@
     var acts = document.createElement("div");
     acts.className = "acts";
 
-    var a = document.createElement("a");
-    a.className = "send";
-    a.target = "_blank";
-    a.rel = "noopener";
-    a.innerHTML = WA_ICON + "<span>Ouvrir WhatsApp</span>";
-    a.addEventListener("click", function () {
-      sent[p.wa] = true;
+    var go = document.createElement("a");
+    go.className = "go";
+    go.target = "_blank";
+    go.rel = "noopener";
+    go.addEventListener("click", function () {
+      // on Instagram the thread opens empty, so the text has to be on the clipboard already
+      if (chan === "ig") {
+        try { navigator.clipboard && navigator.clipboard.writeText(igText(p, lang)); } catch (e) { /* the copy button remains */ }
+      }
+      sent[chan][p.wa] = true;
       el.classList.add("done");
       save();
+      sync();
       tally();
     });
 
-    var db = document.createElement("button");
-    db.type = "button";
-    db.className = "done-btn";
-    db.textContent = sent[p.wa] ? "Annuler" : "Déjà fait";
-    db.addEventListener("click", function () {
-      if (sent[p.wa]) { delete sent[p.wa]; el.classList.remove("done"); db.textContent = "Déjà fait"; }
-      else { sent[p.wa] = true; el.classList.add("done"); db.textContent = "Annuler"; }
+    var mk = document.createElement("button");
+    mk.type = "button";
+    mk.className = "mark";
+    mk.addEventListener("click", function () {
+      if (isSent(p)) delete sent[chan][p.wa]; else sent[chan][p.wa] = true;
       save();
+      sync();
       tally();
     });
 
-    acts.appendChild(a);
-    acts.appendChild(db);
+    acts.appendChild(go);
+    acts.appendChild(mk);
+
+    // Instagram only: the follow-up that carries the link, sent once the request is accepted
+    var after = document.createElement("div");
+    after.className = "after";
+    var afterNote = document.createElement("p");
+    afterNote.textContent = "Deuxième message, une fois la demande acceptée";
+    var afterTxt = document.createElement("div");
+    afterTxt.className = "txt";
+    var afterBtn = document.createElement("button");
+    afterBtn.type = "button";
+    afterBtn.className = "mini";
+    afterBtn.textContent = "Copier";
+    afterBtn.addEventListener("click", function () {
+      copyTo(BODY[lang].after, afterBtn, "Copier");
+    });
+    after.appendChild(afterNote);
+    after.appendChild(afterTxt);
+    after.appendChild(afterBtn);
 
     var rel = document.createElement("div");
     rel.className = "relance";
@@ -698,22 +830,42 @@
     ra.target = "_blank";
     ra.rel = "noopener";
     ra.textContent = "Envoyer la relance (à J+4)";
+    var rb = document.createElement("button");
+    rb.type = "button";
+    rb.className = "mini";
+    rb.textContent = "Copier la relance";
+    rb.addEventListener("click", function () {
+      copyTo(BODY[lang].relance, rb, "Copier la relance");
+    });
     rel.appendChild(ra);
+    rel.appendChild(rb);
 
     el.appendChild(head);
     el.appendChild(why);
     el.appendChild(line);
     el.appendChild(det);
     el.appendChild(acts);
+    el.appendChild(after);
     el.appendChild(rel);
 
     el._sync = function () {
-      pre.textContent = text(p, lang);
-      a.href = link(p, lang);
-      ra.href = relance(p, lang);
-      db.textContent = sent[p.wa] ? "Annuler" : "Déjà fait";
+      var ig = chan === "ig";
+
+      el.classList.toggle("done", isSent(p));
+      handle.textContent = ig ? "@" + p.ig : p.show;
+      pre.textContent = text(p, lang, chan);
+      go.href = href(p, lang, chan);
+      go.innerHTML = (ig ? IG_ICON : WA_ICON) +
+        "<span>" + (ig ? "Copier et ouvrir Instagram" : "Ouvrir WhatsApp") + "</span>";
+      mk.textContent = isSent(p) ? "Annuler" : "Déjà fait";
+
+      after.style.display = ig ? "grid" : "none";
+      afterTxt.textContent = BODY[lang].after;
+
+      ra.style.display = ig ? "none" : "inline";
+      rb.style.display = ig ? "inline-block" : "none";
+      ra.href = "https://wa.me/" + p.wa + "?text=" + encodeURIComponent(BODY[lang].relance);
     };
-    el._sync();
 
     return el;
   }
@@ -722,43 +874,64 @@
   var A = document.getElementById("tier-a");
   var B = document.getElementById("tier-b");
 
-  P.forEach(function (p, i) {
-    var el = card(p, i);
+  P.forEach(function (p) {
+    var el = card(p);
     cards.push(el);
     (p.tier === "a" ? A : B).appendChild(el);
   });
 
-  // ---------- counters ----------
+  function sync() { cards.forEach(function (c) { c._sync(); }); }
+
+  // ---------- counters and copy ----------
 
   var count = document.getElementById("count");
   var left = document.getElementById("left");
   var fill = document.getElementById("fill");
+  var lede = document.getElementById("lede");
+  var cadence = document.getElementById("cadence");
+
+  var LEDE = {
+    wa: "Douze sociétés brésiliennes qui gèrent des villas et des locations courte durée. Chaque numéro vient du site officiel de la société, aucun n'est deviné. Un appui ouvre WhatsApp avec le texte déjà rempli, vous n'avez qu'à envoyer.",
+    ig: "Instagram ne permet pas de pré-remplir un message, c'est fermé de leur côté. Le bouton fait donc deux choses d'un coup : il met le texte dans le presse-papier et il ouvre la conversation. Vous arrivez dans le fil, vous collez, vous envoyez."
+  };
+
+  var CADENCE = {
+    wa: "Espacez d'au moins deux minutes entre deux envois. Une rafale depuis un numéro personnel fait chuter sa note de qualité chez WhatsApp et finit par le faire restreindre.",
+    ig: "Cinq minutes entre deux envois, quinze par jour au maximum. Le premier message ne contient volontairement aucun lien : un lien dans une demande de message fait chuter le taux d'acceptation. Le lien part dans le second message."
+  };
 
   function tally() {
-    var n = P.filter(function (p) { return sent[p.wa]; }).length;
+    var n = P.filter(isSent).length;
     count.textContent = n + " envoyé" + (n > 1 ? "s" : "") + " sur " + P.length;
     left.textContent = (P.length - n) + " restant" + (P.length - n > 1 ? "s" : "");
     fill.style.width = (n / P.length * 100) + "%";
   }
 
-  tally();
+  // ---------- switches ----------
 
-  // ---------- language ----------
+  var chanBtns = Array.prototype.slice.call(document.querySelectorAll("[data-chan]"));
+  var langBtns = Array.prototype.slice.call(document.querySelectorAll("[data-lang]"));
 
-  var langBtns = Array.prototype.slice.call(document.querySelectorAll(".lang button"));
-
-  function setLang(v) {
-    lang = v;
-    langBtns.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.lang === v)); });
-    cards.forEach(function (c) { c._sync(); });
+  function apply() {
+    document.documentElement.setAttribute("data-chan", chan);
+    chanBtns.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.chan === chan)); });
+    langBtns.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.lang === lang)); });
+    lede.textContent = LEDE[chan];
+    cadence.textContent = CADENCE[chan];
+    sync();
+    tally();
     save();
   }
 
-  langBtns.forEach(function (b) {
-    b.addEventListener("click", function () { setLang(b.dataset.lang); });
+  chanBtns.forEach(function (b) {
+    b.addEventListener("click", function () { chan = b.dataset.chan; apply(); });
   });
 
-  setLang(lang);
+  langBtns.forEach(function (b) {
+    b.addEventListener("click", function () { lang = b.dataset.lang; apply(); });
+  });
+
+  apply();
 
   // ---------- clocks and sending window ----------
 
@@ -809,9 +982,9 @@
   // ---------- reset ----------
 
   document.getElementById("reset").addEventListener("click", function () {
-    sent = {};
+    sent[chan] = {};
     save();
-    cards.forEach(function (c) { c.classList.remove("done"); c._sync(); });
+    sync();
     tally();
   });
 })();
