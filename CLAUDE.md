@@ -1,6 +1,7 @@
 # Villa Films
 Villa Films transforme les photos déjà présentes dans une annonce de villa en vidéo verticale de 20 secondes, livrée en 24 heures. Cible : les sociétés de location et de gestion de villas, d'abord au Brésil, puis en Indonésie. Le projet vit dans le dossier `airbnb-video/`.
-Structure présentée aux prospects : Sacha, indépendant, opérant sous le nom Villa Films. Adresse de contact : sachalbs@outlook.com. Ne pas promettre de nota fiscal brésilienne, une facture française suffit.
+Structure présentée aux prospects : Sacha, indépendant, opérant sous le nom Villa Films. Ne pas promettre de nota fiscal brésilienne, une facture française suffit.
+**Adresse d'expédition de toute la prospection depuis le 4 août 2026 : sachalbs@gmail.com**, une seule identité. L'adresse sachalbs@outlook.com reste valable pour les conversations ouvertes avant cette date, on ne change pas d'adresse au milieu d'un échange.
 Site de démonstration : https://villa-films.vercel.app
 ## Ton et style
 - Français clair, pas de jargon technique. Ne pas montrer de code ni de commandes sauf demande explicite.
@@ -15,13 +16,14 @@ Site de démonstration : https://villa-films.vercel.app
 Les échanges avec les prospects brésiliens se rédigent **en portugais du Brésil**. Toujours accompagner d'une traduction ou d'un résumé en français pour Sacha, qui ne relit pas le portugais. Même logique pour l'Indonésie le jour venu, en anglais.
 ## Canaux et cadence
 - Le numéro WhatsApp personnel a été restreint le 4 août 2026 après une première vague de douze messages. **Ne plus proposer d'envoi en rafale depuis ce numéro.**
-- **Aucun canal ne permet d'envoyer à la place de Sacha.** Instagram ne préremplit pas, WhatsApp est restreint, et l'envoi automatisé en masse depuis une boîte personnelle la fait basculer en indésirable. Automatiser veut dire tout préparer pour qu'un envoi soit un appui, jamais promettre un envoi automatique.
+- **L'envoi automatique passe par `envoi-auto.gs`**, un script hébergé dans le compte Google de Sacha. Rien ne peut envoyer de mail depuis l'environnement de travail, vérifié le 4 août 2026 sur les quatre voies possibles : le connecteur Gmail n'a pas de fonction d'envoi, l'API Google et le SMTP sont fermés par la politique réseau. Un agent qui doit faire partir un message **écrit un brouillon terminé par `##ENVIAR##`**, le script l'envoie dans les dix minutes.
+- Instagram et WhatsApp ne sont pas automatisables, les règles de Meta interdisent l'approche à froid programmée. Instagram reste manuel, WhatsApp est arrêté.
 - Canal principal depuis le 4 août 2026 : **le mail**, sans plafond quotidien. Instagram reste ouvert mais lent, quinze par jour maximum, cinq minutes d'écart.
 - Jamais deux canaux le même jour vers la même société. Relance unique à J+4.
 - Fenêtre d'envoi Brésil : 14 h - 17 h et 19 h - 23 h heure de Paris, du lundi au vendredi. Au moins une minute entre deux mails.
 ## Format attendu des livrables de prospection
 Sacha travaille depuis son téléphone. Un message qu'il doit recomposer à la main est un message qui ne part pas.
-- Fournir systématiquement un **lien cliquable qui préremplit tout** : destinataire, objet, corps. Pour le mail, un lien de rédaction Outlook web et un lien vers l'application, les deux.
+- Fournir systématiquement un **lien cliquable qui préremplit tout** : destinataire, objet, corps. Pour le mail, un lien de rédaction Gmail et un lien vers l'application, les deux.
 - Garder ces liens **courts, sous 1500 caractères**, sinon certains clients les tronquent. Raccourcir le texte du message plutôt que de laisser un lien trop long.
 - Toujours doubler le lien d'une version en texte brut à copier, en secours.
 - **Ne jamais demander au prospect de rassembler des photos.** Demander le lien d'une de ses annonces, les photos se prennent dessus. La demande de six à dix photos est ce qui a bloqué Latin Exclusive.
@@ -36,6 +38,10 @@ Ne jamais promettre plus de visuels offerts qu'il n'y a de crédits en réserve.
 ## Fichiers de référence
 | Fichier | Contenu |
 |---|---|
+| `envoi-auto.gs` | Script Apps Script qui envoie la vague et les relances seul, depuis le compte Google de Sacha |
+| `envoi-auto.md` | Notice d'installation du script, cinq étapes, et protocole du marqueur `##ENVIAR##` |
+| `agent-reponses.md` | Cadre dans lequel un agent répond seul aux prospects, limites, motifs de notification |
+| `infra-agents.md` | Architecture de la prospection tenue par des agents, couche par couche |
 | `ce-soir.md` | Plan de la soirée du 4 août, ordre d'envoi, contraintes |
 | `prospects-bresil.csv` | Les sociétés brésiliennes, contacts, fiabilité des adresses, angles, statut |
 | `vague-mail.html` | Console de la vague mail, quatorze sociétés, liens préremplis |

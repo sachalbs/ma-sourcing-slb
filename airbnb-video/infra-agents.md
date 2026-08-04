@@ -31,33 +31,42 @@ fuseau, son angle, son statut et la fiabilité de son adresse. C'est la seule so
 le reste s'y raccroche.
 
 ### 2. L'envoi automatique
-Passe par Apollo, connecté au compte personnel de Sacha, avec sa boîte sachalbs@outlook.com comme
-expéditeur. Apollo sait enchaîner une séquence, l'étaler dans le temps, respecter une fenêtre
-horaire par fuseau, et s'arrêter tout seul dès qu'un prospect répond. C'est exactement le
-comportement recherché, et il n'y a rien à écrire pour l'obtenir.
+Expéditeur retenu le 4 août 2026 : **sachalbs@gmail.com**, une seule identité pour toute la
+prospection. L'adresse Outlook reste valable pour les conversations déjà ouvertes avant cette date.
 
-Deux réserves sérieuses :
+Constat établi le 4 août 2026, en testant les quatre voies possibles : **rien ne peut envoyer un
+mail depuis l'environnement de travail**. Le connecteur Gmail lit et rédige mais n'expose aucune
+fonction d'envoi. L'API Google, les serveurs d'authentification Google et le SMTP sont tous fermés
+par la politique réseau. Un compte Apollo payant n'est pas au programme.
 
-- **Le lien avec Apollo a expiré le 4 août 2026** en cours de session. Il faut le réautoriser, une
-  fois, pour que les agents puissent envoyer.
-- **L'adresse d'envoi est un domaine gratuit.** Pour quelques dizaines de mails, aucun problème.
-  Pour de la centaine par semaine, l'adresse personnelle finit filtrée, exactement comme le numéro
-  WhatsApp a fini restreint. Le volume réel demande un domaine dédié, voir plus bas.
+D'où le montage retenu, qui retourne le problème : **ce n'est pas une machine extérieure qui
+envoie, c'est le compte Google de Sacha lui même**. Un script Apps Script, `envoi-auto.gs`, tourne
+chez Google sur son propre minuteur, avec les droits de la boîte. Il envoie la vague, respecte la
+fenêtre horaire, espace les envois, saute les sociétés qui ont répondu et relance une fois à J+4.
+Gratuit, hébergé par Google, indépendant de toute session de travail.
+
+Installation en cinq étapes dans `envoi-auto.md`, une seule fois.
+
+Réserve de fond : **gmail.com est un domaine gratuit**. Pour quelques dizaines de mails, aucun
+problème, le script se limite d'ailleurs à vingt par jour. Pour de la centaine par semaine,
+l'adresse finit filtrée, exactement comme le numéro WhatsApp a fini restreint. Le volume réel
+demande un domaine dédié, voir plus bas.
 
 ### 3. La réponse aux prospects
-C'est la couche la plus fragile, et la raison est simple : **la boîte Outlook n'est pas lisible
-depuis ici**. L'accès direct aux serveurs de messagerie est fermé par la politique réseau de
-l'environnement. Un agent ne peut donc pas voir arriver une réponse.
+Le blocage est le même, et la réponse aussi : un agent n'a pas le droit d'envoyer un mail, mais il
+a le droit d'écrire un brouillon, et le script, lui, a le droit d'envoyer.
 
-Le contournement qui fonctionne : une règle dans Outlook qui **fait suivre les réponses vers une
-boîte connectée**, que l'agent peut lire. Il lit la réponse, rédige la suite en portugais, et
-l'envoie via Apollo depuis l'adresse d'origine, ce qui garde le fil cohérent côté prospect.
+Le protocole tient en une ligne : **l'agent laisse un brouillon dont le corps se termine par
+`##ENVIAR##`**, le script le nettoie et l'envoie dans les dix minutes, dans le bon fil, depuis
+l'adresse de Sacha. Côté prospect, c'est une conversation normale. Les brouillons de réponse
+passent avant la vague initiale, une conversation en cours prime sur un nouveau contact.
 
-Garde-fous obligatoires sur cette couche, un agent qui répond seul à un client engage l'affaire :
-- Il ne négocie jamais le prix. La grille est 59, 39 en pack de dix, 890 par mois, point.
-- Il ne promet aucun délai autre que 24 heures, ni aucune vidéo offerte au delà de la première.
-- Il ne s'engage sur rien de fiscal ni de contractuel.
-- Tout ce qui sort de ce cadre remonte à Sacha au lieu de partir.
+Il reste une condition, et une seule : **activer le connecteur Gmail dans les réglages de
+claude.ai**, aujourd'hui éteint, pour que l'agent puisse lire les réponses. Tant qu'il l'est, le
+script envoie et relance seul, mais les réponses sont à traiter à la main.
+
+Le cadre complet dans lequel l'agent répond, cas par cas, avec les limites qu'il ne franchit jamais
+et les quatre seuls motifs de notification, est dans `agent-reponses.md`.
 
 ### 4. Le réveil aux bonnes heures
 Une tâche programmée par territoire, qui déclenche un agent aux heures ouvrées locales.

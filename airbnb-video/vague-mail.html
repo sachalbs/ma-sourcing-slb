@@ -77,7 +77,7 @@
     <b>Deux choses avant de partir.</b> Les adresses marquées d'une étoile ont été relevées dans des
     résultats de recherche, pas sur la page elle même, l'accès direct aux sites était bloqué. Une ou
     deux peuvent rebondir, ce n'est pas grave, ça se voit tout de suite. Et espacez d'une minute au
-    moins entre deux envois, une salve depuis la même boîte finit en indésirable.
+    moins entre deux envois, une salve depuis la même boîte finit en indésirable. Tout part de sachalbs@gmail.com, une seule identité.
   </div>
   <div id="list"></div>
   <footer>
@@ -242,9 +242,10 @@
   ];
 
   // ---------- liens ----------
+  // expéditeur retenu le 4 août 2026 : sachalbs@gmail.com, une seule identité pour toute la prospection
   function outlook(p){
-    return "https://outlook.live.com/mail/0/deeplink/compose?to=" + encodeURIComponent(p.mail) +
-           "&subject=" + encodeURIComponent(p.subject) + "&body=" + encodeURIComponent(p.body);
+    return "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(p.mail) +
+           "&su=" + encodeURIComponent(p.subject) + "&body=" + encodeURIComponent(p.body);
   }
   function mailto(p){
     return "mailto:" + p.mail + "?subject=" + encodeURIComponent(p.subject) +
@@ -292,14 +293,14 @@
       '<div class="subj" style="margin-top:8px">En français : ' + p.fr + '</div>' +
       '</details>' +
       '<div class="btns">' +
-      '<a class="b pri" target="_blank" rel="noopener" href="' + ol + '">Ouvrir dans Outlook web</a>' +
+      '<a class="b pri" target="_blank" rel="noopener" href="' + ol + '">Ouvrir dans Gmail</a>' +
       '<a class="b sec" href="' + mt + '">Ouvrir dans l\'application mail</a>' +
       '<button class="b" type="button" data-c="body">Copier le texte</button>' +
       '<button class="b" type="button" data-c="mail">Copier l\'adresse</button>' +
       '<button class="b mk" type="button" data-c="mk">Marquer comme envoyé</button>' +
       '</div>' +
       '<div class="len' + (tooLong ? ' bad' : '') + '">' +
-      (tooLong ? 'Lien long (' + ol.length + ' caractères), si Outlook le tronque, utilisez Copier le texte'
+      (tooLong ? 'Lien long (' + ol.length + ' caractères), si Gmail le tronque, utilisez Copier le texte'
                : 'Lien de ' + ol.length + ' caractères, dans la limite') + '</div>';
 
     el.querySelector('[data-c="body"]').addEventListener("click", function(){
