@@ -438,7 +438,8 @@
 (function () {
   "use strict";
 
-  var SITE = "villa-films.vercel.app";
+  // full scheme, otherwise WhatsApp leaves a bare domain as plain grey text instead of a tappable link
+  var SITE = "https://villa-films.vercel.app";
 
   var P = [
     {
@@ -568,17 +569,17 @@
       open: "Oi! Aqui é o Sacha, da Villa Films.",
       core: "A gente pega as fotos que já estão no anúncio e devolve um vídeo vertical de uns 20 segundos, pronto em 24 horas. Sem diária de fotógrafo, sem agenda, sem entrar na casa e sem incomodar hóspede. Serve pra capa do Airbnb, Reels e TikTok.",
       close: "Faço o primeiro de graça, na casa que vocês escolherem. Se não gostar, não paga nada e a gente para por aí.",
-      link: "Assim que fica: " + SITE,
+      link: "Assim que fica:\n" + SITE,
       sign: "Sacha",
-      relance: "Oi! Só passando pra saber se faz sentido pra vocês. A oferta do primeiro vídeo de graça continua de pé, é só me mandar as fotos de uma casa que eu devolvo em 24h. Sacha"
+      relance: "Oi! Só passando pra saber se faz sentido pra vocês. A oferta do primeiro vídeo de graça continua de pé, é só me mandar as fotos de uma casa que eu devolvo em 24h.\n\nhttps://villa-films.vercel.app\n\nSacha"
     },
     en: {
       open: "Hi! Sacha here, from Villa Films.",
       core: "We take the photos already on your listing and send back a vertical video of around 20 seconds, ready within 24 hours. No photographer's day rate, no scheduling, nobody entering the house, no guest disturbed. It works for the Airbnb cover, Reels and TikTok.",
       close: "I'll do the first one free, on whichever house you pick. If you don't like it, you pay nothing and we stop there.",
-      link: "Here is what one looks like: " + SITE,
+      link: "Here is what one looks like:\n" + SITE,
       sign: "Sacha",
-      relance: "Hi! Just checking whether this makes sense for you. The free first video still stands, send me the photos of one house and I'll have it back within 24 hours. Sacha"
+      relance: "Hi! Just checking whether this makes sense for you. The free first video still stands, send me the photos of one house and I'll have it back within 24 hours.\n\nhttps://villa-films.vercel.app\n\nSacha"
     }
   };
 
