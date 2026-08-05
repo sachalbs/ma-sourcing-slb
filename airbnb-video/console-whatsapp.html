@@ -1,0 +1,414 @@
+<title>Console d'envoi WhatsApp, prospects Indonésie</title>
+<style>
+  :root {
+    --paper: #F6F7F5;
+    --surface: #FFFFFF;
+    --ink: #10201C;
+    --ink-soft: #55655F;
+    --ink-faint: #8B9994;
+    --line: #DFE4E1;
+    --jade: #1B6B58;
+    --jade-soft: #E6F0EC;
+    --send: #1E8E5A;
+    --send-hover: #17724a;
+    --amber: #9C6413;
+    --amber-soft: #F6EEDF;
+    --focus: #1B6B58;
+    --shadow: 0 1px 2px rgba(16, 32, 28, .05), 0 4px 14px rgba(16, 32, 28, .045);
+    --serif: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0D1614; --surface: #15211E; --ink: #E6ECE9; --ink-soft: #A2B0AB;
+      --ink-faint: #74837E; --line: #253430; --jade: #62BFA3; --jade-soft: #16302A;
+      --send: #2AA76B; --send-hover: #35bd7c; --amber: #D9A254; --amber-soft: #2C2519;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 14px rgba(0,0,0,.25);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper: #0D1614; --surface: #15211E; --ink: #E6ECE9; --ink-soft: #A2B0AB;
+    --ink-faint: #74837E; --line: #253430; --jade: #62BFA3; --jade-soft: #16302A;
+    --send: #2AA76B; --send-hover: #35bd7c; --amber: #D9A254; --amber-soft: #2C2519;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 14px rgba(0,0,0,.25);
+  }
+
+  :root[data-theme="light"] {
+    --paper: #F6F7F5; --surface: #FFFFFF; --ink: #10201C; --ink-soft: #55655F;
+    --ink-faint: #8B9994; --line: #DFE4E1; --jade: #1B6B58; --jade-soft: #E6F0EC;
+    --send: #1E8E5A; --send-hover: #17724a; --amber: #9C6413; --amber-soft: #F6EEDF;
+    --shadow: 0 1px 2px rgba(16,32,28,.05), 0 4px 14px rgba(16,32,28,.045);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: var(--sans); font-size: 16px; line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1rem 5rem; }
+
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--paper) 92%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+    margin: 0 -1rem 1.5rem; padding: 1rem;
+  }
+
+  .head-top { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+
+  h1 { font-family: var(--serif); font-size: 1.375rem; font-weight: 600; line-height: 1.2; margin: 0; text-wrap: balance; }
+
+  .progress { font-family: var(--mono); font-size: .8125rem; font-variant-numeric: tabular-nums; color: var(--ink-soft); white-space: nowrap; }
+  .progress b { color: var(--jade); font-weight: 600; }
+
+  .bar { height: 3px; background: var(--line); border-radius: 2px; margin-top: .75rem; overflow: hidden; }
+  .bar span { display: block; height: 100%; width: 0%; background: var(--send); border-radius: 2px; transition: width .3s ease; }
+
+  .controls { display: flex; gap: .5rem; margin-top: .75rem; flex-wrap: wrap; align-items: center; }
+
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 7px; overflow: hidden; background: var(--surface); }
+  .seg button { font: inherit; font-size: .8125rem; padding: .3rem .7rem; border: 0; background: transparent; color: var(--ink-soft); cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--jade); color: #fff; }
+
+  .ghost { font: inherit; font-size: .8125rem; padding: .3rem .7rem; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); color: var(--ink-soft); cursor: pointer; }
+  .ghost:hover { color: var(--ink); border-color: var(--ink-faint); }
+
+  .intro { font-size: .9375rem; color: var(--ink-soft); margin: 0 0 2rem; max-width: 38rem; }
+  .intro strong { color: var(--ink); font-weight: 600; }
+
+  .group { margin-bottom: 2.5rem; }
+  .group-head { border-top: 1px solid var(--ink); padding-top: .625rem; margin-bottom: 1rem; }
+
+  h2 { font-family: var(--serif); font-size: 1.0625rem; font-weight: 600; margin: 0; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+  h2 em { font-family: var(--mono); font-style: normal; font-size: .75rem; font-variant-numeric: tabular-nums; color: var(--ink-faint); font-weight: 400; }
+
+  .angle { font-size: .875rem; color: var(--ink-soft); margin: .375rem 0 0; }
+
+  .cards { display: flex; flex-direction: column; gap: .75rem; }
+
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 11px; padding: .9375rem; box-shadow: var(--shadow); transition: opacity .2s ease; }
+  .card.done { opacity: .5; }
+  .card.hero { border-color: color-mix(in srgb, var(--amber) 45%, transparent); }
+
+  .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: .75rem; }
+
+  .name { font-family: var(--serif); font-size: 1.0625rem; font-weight: 600; line-height: 1.25; margin: 0; }
+
+  .chip { font-family: var(--mono); font-size: .6875rem; letter-spacing: .04em; text-transform: uppercase; padding: .2rem .45rem; border-radius: 5px; background: var(--jade-soft); color: var(--jade); white-space: nowrap; flex-shrink: 0; }
+  .chip.priority { background: var(--amber-soft); color: var(--amber); }
+
+  .meta { font-size: .875rem; color: var(--ink-soft); margin: .3125rem 0 0; }
+  .hookline { font-size: .8125rem; color: var(--amber); margin: .4375rem 0 0; line-height: 1.45; }
+  .tel { font-family: var(--mono); font-size: .8125rem; font-variant-numeric: tabular-nums; color: var(--ink-faint); margin: .375rem 0 0; }
+
+  details { margin-top: .625rem; border-top: 1px dashed var(--line); padding-top: .625rem; }
+  summary { font-size: .8125rem; color: var(--ink-soft); cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: .3rem; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "\203A"; display: inline-block; transition: transform .15s ease; font-size: 1rem; line-height: 1; }
+  details[open] summary::before { transform: rotate(90deg); }
+
+  .msg { font-size: .875rem; line-height: 1.6; color: var(--ink-soft); background: var(--paper); border-radius: 7px; padding: .6875rem .75rem; margin-top: .5rem; white-space: pre-wrap; }
+
+  .actions { display: flex; gap: .5rem; margin-top: .75rem; align-items: stretch; }
+
+  .send { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: .4rem; font: inherit; font-size: .9375rem; font-weight: 600; text-decoration: none; padding: .6875rem 1rem; border-radius: 8px; background: var(--send); color: #fff; border: 0; cursor: pointer; transition: background .15s ease; }
+  .send:hover { background: var(--send-hover); }
+
+  .icon { width: 1.0625rem; height: 1.0625rem; flex-shrink: 0; }
+
+  .copy, .mark { font: inherit; font-size: .875rem; padding: .6875rem .75rem; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink-soft); cursor: pointer; white-space: nowrap; }
+  .copy:hover, .mark:hover { color: var(--ink); border-color: var(--ink-faint); }
+  .mark[aria-pressed="true"] { background: var(--jade-soft); color: var(--jade); border-color: var(--jade); }
+
+  .note { font-size: .8125rem; color: var(--amber); margin: .5rem 0 0; }
+
+  :is(a, button, summary, input):focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+
+  footer { border-top: 1px solid var(--line); padding-top: 1rem; font-size: .8125rem; color: var(--ink-faint); line-height: 1.6; }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  @media (max-width: 30rem) { .actions { flex-wrap: wrap; } .send { flex-basis: 100%; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="head-top">
+      <h1>Console d'envoi WhatsApp</h1>
+      <div class="progress"><b id="count">0</b> / <span id="total">0</span> envoyés</div>
+    </div>
+    <div class="bar"><span id="fill"></span></div>
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Langue des messages génériques">
+        <button type="button" data-lang="en" aria-pressed="true">Anglais</button>
+        <button type="button" data-lang="id" aria-pressed="false">Indonésien</button>
+      </div>
+      <button type="button" class="ghost" id="reset">Réinitialiser le suivi</button>
+    </div>
+  </header>
+
+  <p class="intro">
+    Un appui sur <strong>Ouvrir WhatsApp</strong> lance la conversation avec le message déjà rédigé.
+    À ouvrir <strong>depuis votre téléphone</strong>. Leur journée de bureau correspond à <strong>3h – 11h heure de Paris</strong>.
+    Les cinq premiers sont écrits sur mesure, un par un : envoyez-les <strong>espacés dans la journée</strong>, jamais à la suite.
+  </p>
+
+  <div id="groups"></div>
+
+  <footer>
+    Accroches vérifiées le 3 août 2026 sur les sites et pages publiques des sociétés.
+    Le suivi des envois reste sur cet appareil.
+  </footer>
+</div>
+
+<script>
+  const SIG = "\n\nHere is what one looks like: villa-films.vercel.app\n\nSacha";
+
+  const GROUPS = [
+    {
+      title: "Les cinq premiers, écrits sur mesure",
+      angle: "Chaque message s'ouvre sur un fait précis et vérifié propre à la société. C'est ce qui distingue un message lu d'un message ignoré.",
+      prospects: [
+        {
+          name: "BaliSuperHost", chip: "569 villas", priority: true,
+          meta: "Fondée en 2021 par Jonathan, Nicolas et Ian. Ubud. Groupe Kozystay.",
+          hook: "Accroche : ils promettent aux propriétaires une mise en ligne sur toutes les plateformes en 2 à 3 semaines. La vidéo est exactement ce qui n'entre pas dans cette fenêtre.",
+          tel: "+62 811-3820-0390", wa: "6281138200390",
+          custom: "Hi, this is for Jonathan, Nicolas or Ian, or whoever owns listing content.\n\nYou tell owners their villa is live across the OTAs within two to three weeks of onboarding. At 569 villas that is a serious operational promise, and video is the one asset that never fits inside that window, because it needs a crew and an empty villa.\n\nI make it from the photos you already have. A 20 to 25 second vertical cut for the listing cover, Reels and TikTok, back within 24 hours, with the villa still on the calendar the whole time.\n\nLet me do one free on a villa you have just onboarded, so you can see whether it belongs in your onboarding flow. If it does not, no follow-up from me." + SIG
+        },
+        {
+          name: "Balitecture", chip: "200+ villas", priority: true,
+          meta: "Architecte et promoteur australien, 160 personnes en interne, primé deux fois aux International Property Awards 2025.",
+          hook: "Accroche : ils vendent des villas sur plan à partir de 199 000 $. L'acheteur paie six chiffres pour un bien qui n'est pas encore sorti de terre. C'est le meilleur argument du lot.",
+          tel: "+62 813 3978 3231", wa: "6281339783231",
+          custom: "Hi, I saw you are selling off-plan villas from $199K across Uluwatu, Ubud and Canggu, on top of the 200 or so you have already built.\n\nOff-plan is the hard sell: the buyer is in Sydney or Singapore, wiring a six figure sum for something that is not standing yet. Renders help, but they still read as drawings.\n\nI make short vertical walkthrough films, from renders and plans for off-plan, or from photos for a finished villa, so a buyer abroad can move through the property instead of studying an elevation. It plays on a phone, which is where they will actually look at it.\n\nLet me make one free on a development you are currently selling. If it does not move buyers, no follow-up from me." + SIG
+        },
+        {
+          name: "Bali Management Villas", chip: "160 villas", priority: true,
+          meta: "Kerobokan. 200 salariés. 5 000 avis Airbnb à 4,9/5, Superhost 7 années consécutives.",
+          hook: "Accroche : ils font déjà leurs shootings photo en interne. Ne surtout pas se poser en remplaçant de leur photographe, mais en prolongement de la séance déjà payée.",
+          tel: "+62 878-6185-4989", wa: "6287861854989",
+          custom: "Hi, I saw that photoshoots are already part of what you do in house, alongside the Airbnb optimisation, and that you have held Superhost seven years running across 160 villas.\n\nSo this is not about replacing your photographer. It is that the shoot you already pay for produces stills only, and vertical video is the one format those images never get turned into.\n\nI take the photos from a shoot you have already done and cut them into a 20 to 25 second vertical film for the listing cover, Reels and TikTok. Back in 24 hours, and nobody has to go back out to the villa.\n\nHappy to do one free on a villa of your choice so you can judge it against your own standard. If it does not meet it, no follow-up from me." + SIG
+        },
+        {
+          name: "Betterplace", chip: "320+ biens", priority: true,
+          meta: "Fondée en 2018, siège à Canggu, 200 à 500 salariés. Tableau de bord propriétaire, versements mensuels.",
+          hook: "Accroche : ils vendent aux propriétaires des chiffres réels d'occupation et de prix moyen, pas des promesses. Le message doit donc être falsifiable, pas enthousiaste.",
+          tel: "+62 811-390-5023", wa: "628113905023",
+          custom: "Hi, I saw Betterplace runs over 320 properties out of Canggu, and that you sell owners on real ADR and occupancy benchmarks rather than promises.\n\nSo I will keep this concrete. The listing cover is one of the few conversion levers you control that is not a price, and video is the one format there that almost nobody in Bali is running.\n\nI make it from the photos you already have. A 20 to 25 second vertical cut for the cover, Reels and TikTok, back in 24 hours, no shoot and no unit off the calendar.\n\nLet me do one free on a property you pick, and put it live. If your dashboard does not move within a fortnight, you will know, and I will stop there." + SIG
+        },
+        {
+          name: "Bukit Vista", chip: "Tech interne", priority: true,
+          meta: "Canggu, Ubud, Uluwatu, Yogyakarta. 40 collaborateurs, 5 000 voyageurs par mois. Outils maison BV GO et GAIA.",
+          hook: "Accroche : ils ont développé leurs propres outils IA. C'est le seul prospect de la liste où mentionner la technologie joue en votre faveur au lieu de vous desservir.",
+          tel: "+62 812-3901-2686", wa: "6281239012686",
+          custom: "Hi, I am writing to the business development line, for whoever owns listing content.\n\nYou built BV GO and GAIA in house, so you already know where AI earns its place in an operation and where it just adds noise. This is one of the places it earns it.\n\nI turn the photos you already have for a property into a 20 to 25 second vertical film for the listing cover, Reels and TikTok. No shoot, no crew, no unit off the calendar, back within 24 hours. Across Canggu, Ubud, Uluwatu and Yogyakarta the point is that it scales per unit at almost no marginal cost.\n\nLet me do one free on a property you pick so you can benchmark it yourself. If it does not clear your bar, no follow-up from me." + SIG
+        }
+      ]
+    },
+    {
+      title: "Deuxième vague, gestionnaires",
+      angle: "À envoyer les jours suivants, une fois les cinq premiers partis. Message générique, adapté au segment.",
+      prospects: [
+        { name: "Nagisa Bali Group", chip: "19 ans", meta: "Seminyak, Kuta, Canggu, Sanur, Jimbaran, Ubud", tel: "+62 818-955-390", wa: "62818955390", vol: "villas across eight areas of Bali", zone: "Seminyak and Canggu" },
+        { name: "Villa Management Bali", chip: "7 zones", meta: "Canggu, Seminyak, Uluwatu, Jimbaran, Sanur, Amed", tel: "+62 8133 7334 871", wa: "6281337334871", vol: "villas across seven areas", zone: "Canggu and Seminyak" },
+        { name: "Optimum Bali", chip: "Depuis 2009", meta: "Seminyak, Canggu, Umalas, Uluwatu, Ubud, Sanur", tel: "+62 853 3800 2448", wa: "6285338002448", vol: "villas across seven areas of Bali", zone: "Seminyak and Canggu" },
+        { name: "Bali Villa Manager", chip: "Depuis 2016", meta: "Seminyak, Canggu, Kerobokan", tel: "+62 821 1159 8787", wa: "6282111598787", vol: "villas around Seminyak and Canggu", zone: "Seminyak and Canggu" },
+        { name: "Bali Familia", chip: "Courte durée", meta: "Location courte durée, Bali", tel: "+62 822 3074 2545", wa: "6282230742545", vol: "short-stay villas in Bali", zone: "Bali" },
+        { name: "Gestionnaire à qualifier", chip: "À identifier", meta: "Denpasar Sud, société non identifiée dans les sources", tel: "+62 813 3720 2045", wa: "6281337202045", vol: "properties in Denpasar", zone: "Denpasar" }
+      ]
+    },
+    {
+      title: "Deuxième vague, promoteurs",
+      angle: "Même angle que Balitecture : leurs acheteurs décident depuis l'étranger, souvent sans avoir vu le bien.",
+      dev: true,
+      prospects: [
+        { name: "Kingswood Bali Villas", chip: "12 ans", meta: "Constructeur et promoteur, capitaux australiens", tel: "+62 822 6636 2343", wa: "6282266362343", vol: "builds and develops villas across Bali" },
+        { name: "Propertia Bali", chip: "Agence", meta: "Agence immobilière et gestion", tel: "+62 818 0888 7711", wa: "6281808887711", vol: "sells and manages property across Bali" }
+      ]
+    },
+    {
+      title: "Par email uniquement",
+      angle: "Ils ont déjà d'excellents photographes. On ne les remplace pas, on porte leurs images sur les formats verticaux. Ne jamais prononcer le mot « IA ».",
+      prospects: [
+        { name: "Elite Havens", chip: "Ligne fixe", meta: "Portefeuille luxe Bali et Asie du Sud-Est", tel: "+62 361 738747", wa: null, note: "Ligne fixe, pas de WhatsApp. À traiter par email sur info@elitehavens.com." }
+      ]
+    }
+  ];
+
+  const MSG = {
+    volume: {
+      en: p => `Hi, I saw ${p.name} manages ${p.vol}.\n\nQuick question: when a new villa joins the portfolio, how long before it has a video on its listing?\n\nI turn the photos you already have into short vertical videos for the Airbnb cover, Reels and TikTok. No shoot, so the villa stays booked while we produce it, and it is back within 24 hours.\n\nHappy to do one free on any villa you pick, so you can judge the result rather than take my word for it. If it is not useful, no follow-up from me.${SIG}`,
+      id: p => `Halo, saya lihat ${p.name} mengelola banyak villa di ${p.zone || "Bali"}.\n\nSatu pertanyaan singkat: kalau ada villa baru masuk, berapa lama sampai ada videonya di listing?\n\nSaya membuat video vertikal singkat dari foto yang sudah Anda punya, siap untuk Airbnb, Reels, dan TikTok. Tanpa sesi foto baru, jadi villa tetap bisa disewakan selama proses, dan selesai dalam 24 jam.\n\nSaya bisa buatkan satu contoh gratis untuk villa pilihan Anda. Kalau tidak cocok, saya tidak akan menghubungi lagi.${SIG}`
+    },
+    dev: {
+      en: p => `Hi, I saw ${p.name} ${p.vol}.\n\nMost of your buyers decide from abroad, and many will never walk the property before they sign.\n\nI make short vertical walkthrough films from the photos or plans you already have, so someone in Sydney or Singapore can actually see what they are buying. It works for a finished villa and for one that is still off-plan.\n\nHappy to make one free on a property you are currently selling, so you can judge whether it moves buyers. If it is not useful, no follow-up from me.${SIG}`,
+      id: p => `Halo, saya lihat ${p.name} membangun dan menjual properti di Bali.\n\nSebagian besar pembeli Anda memutuskan dari luar negeri dan banyak yang tidak pernah melihat propertinya sebelum tanda tangan.\n\nSaya membuat video walkthrough vertikal singkat dari foto atau denah yang sudah ada, supaya calon pembeli di Sydney atau Singapura bisa benar-benar melihat apa yang mereka beli. Bisa untuk villa jadi maupun yang masih off-plan.\n\nSaya bisa buatkan satu contoh gratis untuk properti yang sedang Anda jual. Kalau tidak cocok, saya tidak akan menghubungi lagi.${SIG}`
+    }
+  };
+
+  const store = {
+    read() { try { return JSON.parse(localStorage.getItem("wa-sent") || "[]"); } catch { return []; } },
+    write(list) { try { localStorage.setItem("wa-sent", JSON.stringify(list)); } catch {} }
+  };
+
+  let lang = "en";
+  let sent = store.read();
+
+  const WA_ICON = `<svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.23 8.23 0 0 1 8.24 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.2 3.7.59.26 1.04.41 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>`;
+
+  function messageFor(group, p) {
+    if (p.custom) return p.custom;
+    return MSG[group.dev ? "dev" : "volume"][lang](p);
+  }
+
+  function render() {
+    const host = document.getElementById("groups");
+    host.textContent = "";
+    let total = 0;
+
+    GROUPS.forEach((group, gi) => {
+      const sec = document.createElement("section");
+      sec.className = "group";
+      total += group.prospects.filter(p => p.wa).length;
+
+      const head = document.createElement("div");
+      head.className = "group-head";
+      const h2 = document.createElement("h2");
+      h2.innerHTML = `${group.title} <em>${group.prospects.length}</em>`;
+      head.appendChild(h2);
+      const angle = document.createElement("p");
+      angle.className = "angle";
+      angle.textContent = group.angle;
+      head.appendChild(angle);
+      sec.appendChild(head);
+
+      const cards = document.createElement("div");
+      cards.className = "cards";
+
+      group.prospects.forEach((p, pi) => {
+        const id = `${gi}-${pi}`;
+        const isDone = sent.includes(id);
+        const text = p.wa ? messageFor(group, p) : "";
+
+        const card = document.createElement("article");
+        card.className = "card" + (isDone ? " done" : "") + (p.custom ? " hero" : "");
+
+        const top = document.createElement("div");
+        top.className = "card-top";
+        const nameEl = document.createElement("h3");
+        nameEl.className = "name";
+        nameEl.textContent = p.name;
+        const chip = document.createElement("span");
+        chip.className = "chip" + (p.priority ? " priority" : "");
+        chip.textContent = p.chip;
+        top.append(nameEl, chip);
+        card.appendChild(top);
+
+        const meta = document.createElement("p");
+        meta.className = "meta";
+        meta.textContent = p.meta;
+        card.appendChild(meta);
+
+        if (p.hook) {
+          const hk = document.createElement("p");
+          hk.className = "hookline";
+          hk.textContent = p.hook;
+          card.appendChild(hk);
+        }
+
+        const tel = document.createElement("p");
+        tel.className = "tel";
+        tel.textContent = p.tel;
+        card.appendChild(tel);
+
+        if (p.note) {
+          const note = document.createElement("p");
+          note.className = "note";
+          note.textContent = p.note;
+          card.appendChild(note);
+        }
+
+        if (p.wa) {
+          const det = document.createElement("details");
+          const sum = document.createElement("summary");
+          sum.textContent = "Lire le message";
+          const msg = document.createElement("div");
+          msg.className = "msg";
+          msg.textContent = text;
+          det.append(sum, msg);
+          card.appendChild(det);
+
+          const actions = document.createElement("div");
+          actions.className = "actions";
+
+          const link = document.createElement("a");
+          link.className = "send";
+          link.href = `https://wa.me/${p.wa}?text=${encodeURIComponent(text)}`;
+          link.target = "_blank";
+          link.rel = "noopener";
+          link.innerHTML = `${WA_ICON}<span>Ouvrir WhatsApp</span>`;
+          link.addEventListener("click", () => mark(id, true));
+
+          const copy = document.createElement("button");
+          copy.type = "button";
+          copy.className = "copy";
+          copy.textContent = "Copier";
+          copy.addEventListener("click", async () => {
+            try { await navigator.clipboard.writeText(text); copy.textContent = "Copié"; }
+            catch { copy.textContent = "Échec"; }
+            setTimeout(() => { copy.textContent = "Copier"; }, 1600);
+          });
+
+          const markBtn = document.createElement("button");
+          markBtn.type = "button";
+          markBtn.className = "mark";
+          markBtn.setAttribute("aria-pressed", String(isDone));
+          markBtn.textContent = isDone ? "Envoyé" : "À faire";
+          markBtn.addEventListener("click", () => mark(id, !sent.includes(id)));
+
+          actions.append(link, copy, markBtn);
+          card.appendChild(actions);
+        }
+
+        cards.appendChild(card);
+      });
+
+      sec.appendChild(cards);
+      host.appendChild(sec);
+    });
+
+    document.getElementById("total").textContent = String(total);
+    updateProgress(total);
+  }
+
+  function updateProgress(total) {
+    const n = sent.length;
+    document.getElementById("count").textContent = String(n);
+    document.getElementById("fill").style.width = (total ? Math.round((n / total) * 100) : 0) + "%";
+  }
+
+  function mark(id, on) {
+    sent = on ? [...new Set([...sent, id])] : sent.filter(x => x !== id);
+    store.write(sent);
+    render();
+  }
+
+  document.querySelectorAll("[data-lang]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      lang = btn.dataset.lang;
+      document.querySelectorAll("[data-lang]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+      render();
+    });
+  });
+
+  document.getElementById("reset").addEventListener("click", () => { sent = []; store.write(sent); render(); });
+
+  render();
+</script>
